@@ -4,7 +4,7 @@ process.env.VUE_APP_VERSION = require("./package.json").version;
 module.exports = {
   runtimeCompiler: true,
   // 為了鑲嵌進laravel專案而做的設定
-  publicPath: "/",
+  publicPath: "/nanya-andre-tex",
   devServer: {
     /* https option */
     // open: process.platform === 'darwin',
