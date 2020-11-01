@@ -7,7 +7,7 @@ export default {
   },
   methods: {
     compileFilePath(file) {
-      return require(`@/assets/${this.lang}/${file}`);
+      return require(`@/assets/images/${this.lang}/${file}`);
     }
   }
 };
