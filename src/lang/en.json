@@ -6,7 +6,17 @@
   },
   "Application":{
     "material1":{
-      "title":"material1 title"
+      "title":"material1 title",
+      "content":[
+        {
+          "name":"name1",
+          "link":"blackcat.jpg"
+        },
+        {
+          "name":"name2",
+          "link":"blackcat.jpg"
+        }
+      ]
     }
   }
 }

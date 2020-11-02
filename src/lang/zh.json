@@ -6,7 +6,17 @@
   },
   "Application":{
     "material1":{
-      "title":"material1的標題"
+      "title":"material1的標題",
+      "content":[
+        {
+          "name":"名字1",
+          "link":"blackcat.jpg"
+        },
+        {
+          "name":"名字2",
+          "link":"blackcat.jpg"
+        }
+      ]
     }
   }
 }
