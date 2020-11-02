@@ -3,5 +3,10 @@
   "description": "記錄 IT 學習的軌跡",
   "About": {
     "title": "123"
+  },
+  "Application":{
+    "material1":{
+      "title":"material1的標題"
+    }
   }
 }

@@ -8,8 +8,46 @@
       router-link(to='/pon') Pon
       |  |
       router-link(to='/swiper') Swiper
+      |  |
+      router-link(to='/application/material1') application
+      |  |
+      router-link(to='/customized') customized
+      |  |
+      router-link(to='/fireTest') fireTest
+      |  |
+      router-link(to='/examples') examples
+      |  |
+      router-link(to='/certificate') certificate
+      |  |
+      router-link(to='/contact') contact
+    // 切換語系 UI
+    label(v-for='(item, index) in optionsLang' v-bind:key='index')
+      input(type='radio' v-model='$store.state.lang' :value='item.value' v-on:change='setLang(item.value)')
+      |       {{ item.text }}
     router-view
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      optionsLang: [
+        { text: "中文", value: "zh" },
+        { text: "English", value: "en" }
+      ],
+      page: "about"
+    };
+  },
+  methods: {
+    // 儲存切換的語系
+    setLang(value) {
+      this.$store.commit("setLang", value);
+      this.$i18n.locale = value;
+      localStorage.setItem("footmark-lang", value);
+    }
+  }
+};
+</script>
 
 <style lang="sass">
 #app
