@@ -7,14 +7,70 @@
   "Application":{
     "material1":{
       "title":"material1的標題",
-      "content":[
+      "content": [
         {
-          "name":"名字1",
-          "link":"blackcat.jpg"
-        },
-        {
-          "name":"名字2",
-          "link":"blackcat.jpg"
+          "name": "產品簡介",
+          "data": [
+            {
+              "link": "different.jpg",
+              "title": "產品差異",
+              "desc": "比起他牌防火毯防火能力更佳、對人體無影響"
+            }, {
+              "link": "size.jpg",
+              "title": "產品尺寸",
+              "desc": "認證厚度為2.5mm，寬幅為150公分"
+            }, {
+              "link": "transaction.jpg",
+              "title": "交易模式",
+              "desc": "50碼以下由材料商提供，50碼以上由公司直接提供"
+            }, {
+              "link": "min.jpg",
+              "title": "最低購量",
+              "desc": "50碼"
+            }
+          ]
+        }, {
+          "name": "產品特性",
+          "data": [
+            {
+              "link": "safe.jpg",
+              "title": "產品安全",
+              "desc": "無毒、無煙、不引起皮膚不適"
+            }, {
+              "link": "soft.jpg",
+              "title": "產品施工",
+              "desc": "相較於其他防火毯柔軟、好施工"
+            }, {
+              "link": "stable.jpg",
+              "title": "品質穩定",
+              "desc": "製程控制、產品測試"
+            }, {
+              "link": "custom.jpg",
+              "title": "客製展品開發",
+              "desc": "用量大時可配合客戶要求做調整"
+            }
+          ]
+        }, {
+          "name": "品質證書",
+          "data": [
+            {
+              "link": "safe.jpg",
+              "title": "產品安全",
+              "desc": "無毒、無煙、不引起皮膚不適"
+            }, {
+              "link": "soft.jpg",
+              "title": "產品施工",
+              "desc": "相較於其他防火毯柔軟、好施工"
+            }, {
+              "link": "stable.jpg",
+              "title": "品質穩定",
+              "desc": "製程控制、產品測試"
+            }, {
+              "link": "custom.jpg",
+              "title": "客製展品開發",
+              "desc": "用量大時可配合客戶要求做調整"
+            }
+          ]
         }
       ]
     }
