@@ -72,10 +72,12 @@ export default {
     position: relative
   .carousel-item
     width: 100%
+    padding: 0 10px
+    box-sizing: border-box
     .pic
       width: 100%
       height: 0px
-      padding-bottom: 50%
+      padding-bottom: 57%
       background-size: cover
       background-position: center center
   .pre-btn,.next-btn
