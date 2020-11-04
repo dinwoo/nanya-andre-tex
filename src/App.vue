@@ -9,7 +9,7 @@
       |  |
       router-link(to='/swiper') Swiper
       |  |
-      router-link(to='/application/material1') application
+      router-link(to='/application/seats') application
       |  |
       router-link(to='/customized') customized
       |  |

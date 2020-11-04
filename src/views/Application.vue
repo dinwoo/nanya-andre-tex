@@ -1,14 +1,14 @@
 <template lang="pug">
   #application
-    //- p {{$route.params.material}}
-    //- p {{ $t(`${$route.name}.${$route.params.material}.title`) }}
+    //- p {{$route.params.seats}}
+    //- p {{ $t(`${$route.name}.${$route.params.seats}.title`) }}
     .tab
       .tab-action
-        a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.material}.content`)" @click="active = item.name" :key="index") {{item.name}}
-      .tab-content(v-for="item,index in $t(`${$route.name}.${$route.params.material}.content`)" :key="index")
+        a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click="active = item.name" :key="index") {{item.name}}
+      .tab-content(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" :key="index")
         .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
           .graphicIntro-img
-            img(:src="compileFilePath(`${$route.params.material}/${el.link}`)")
+            img(:src="compileFilePath(`${$route.params.seats}/${el.link}`)")
           .graphicIntro-content
             .graphicIntro-title {{el.title}}
             .graphicIntro-desc {{el.desc}}

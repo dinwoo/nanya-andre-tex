@@ -35,7 +35,7 @@ const routes = [
     component: Swiper
   },
   {
-    path: "/application/:material",
+    path: "/application/:seats",
     name: "Application",
     component: Application
   },

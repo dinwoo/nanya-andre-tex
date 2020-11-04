@@ -5,8 +5,8 @@
     "title": "123"
   },
   "Application":{
-    "material1":{
-      "title":"material1的標題",
+    "seats":{
+      "title":"seats的標題",
       "content": [
         {
           "name": "產品簡介",
