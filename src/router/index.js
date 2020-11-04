@@ -40,17 +40,17 @@ const routes = [
     component: Application
   },
   {
-    path: "/customized",
+    path: "/customize",
     name: "Customized",
     component: Customized
   },
   {
-    path: "/fireTest",
+    path: "/test",
     name: "FireTest",
     component: FireTest
   },
   {
-    path: "/examples",
+    path: "/case",
     name: "Examples",
     component: Examples
   },
