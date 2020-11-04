@@ -90,6 +90,7 @@ export default {
 .tab  
   &-action
     padding: 0 20px
+
   &-btn
     box-sizing: border-box
     display: inline-block
@@ -114,16 +115,20 @@ export default {
   @media only screen and (max-width: 1240px)
     &-btn + &-btn
       margin-left: 50px
+
   @media only screen and (max-width: 1024px)
     &-action
       padding: 0
+
     &-btn + &-btn
       margin-left: 13px
+
     &-btn
       width: 100px
       padding: 8px
       font-size: 15px
       letter-spacing: 2px
+      
     &-content
       margin-top: 20px
 </style>
