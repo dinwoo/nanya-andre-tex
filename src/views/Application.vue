@@ -56,10 +56,18 @@ export default {
   &-desc
     font-size: 24px
     margin-top: 20px
+
   @media only screen and (max-width: 1024px)
+    max-width: 400px
+    margin: auto
+
+    &+&
+      margin-top: 20px
+      padding-top: 20px
+      border-top: 1px solid #adadad
+
     &-img,
     &-content
-      max-width: 550px
       width: 100%
 
     &-img
@@ -67,8 +75,17 @@ export default {
         width: 100%
 
     &-content
+      box-sizing: border-box
       margin-top: 20px
       margin-left: 0
+      padding: 0 20px
+
+    &-title
+      font-size: 15px
+  
+    &-desc
+      font-size: 12px
+      margin-top: 10px
 
 .tab  
   &-action
