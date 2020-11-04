@@ -6,7 +6,8 @@
         :asNavFor="$refs.c2"
         :focusOnSelect="true"
         :arrows="false"
-        :autoplay="false"
+        :autoplay="true"
+        :autoplaySpeed="2000"
       )
         .carousel-item(v-for="(pic,index) in pictureLink" :key="index")
           //- img(:src="compileFilePath(pic)")
