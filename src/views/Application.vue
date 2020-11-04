@@ -1,6 +1,5 @@
 <template lang="pug">
   #application
-    //- h1 application
     //- p {{$route.params.material}}
     //- p {{ $t(`${$route.name}.${$route.params.material}.title`) }}
     .tab
