@@ -30,12 +30,6 @@ const i18n = new VueI18n({
   }
 });
 
-import VueAwesomeSwiper from "vue-awesome-swiper";
-
-// import style (>= Swiper 6.x)
-import "swiper/swiper-bundle.css";
-
-Vue.use(VueAwesomeSwiper, /* { default options with global component } */ )
 
 Vue.config.productionTip = false;
 
