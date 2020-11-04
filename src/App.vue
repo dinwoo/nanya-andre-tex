@@ -21,7 +21,7 @@
       |  |
       router-link(to='/contact') contact
     // 切換語系 UI
-    label(v-for='(item, index) in optionsLang' v-bind:key='index')
+    //- label(v-for='(item, index) in optionsLang' v-bind:key='index')
       input(type='radio' v-model='$store.state.lang' :value='item.value' v-on:change='setLang(item.value)')
       |       {{ item.text }}
     router-view

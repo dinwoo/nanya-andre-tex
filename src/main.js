@@ -12,7 +12,7 @@ import mixinMethod from "@/mixins/index.js";
 Vue.use(VueI18n);
 Vue.mixin(mixinMethod);
 // 預設使用的語系
-let locale = "en";
+let locale = "zh";
 
 // 檢查 localStorage 是否已有保存使用者選用的語系資訊
 if (localStorage.getItem("footmark-lang")) {
