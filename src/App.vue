@@ -1,34 +1,15 @@
 <template lang="pug">
   #app
-    #nav
-      router-link(to='/') Home
-      |  |
-      router-link(to='/about') About
-      |  |
-      router-link(to='/pon') Pon
-      |  |
-      router-link(to='/swiper') Swiper
-      |  |
-      router-link(to='/application/material1') application
-      |  |
-      router-link(to='/customized') customized
-      |  |
-      router-link(to='/fireTest') fireTest
-      |  |
-      router-link(to='/examples') examples
-      |  |
-      router-link(to='/certificate') certificate
-      |  |
-      router-link(to='/contact') contact
-    // 切換語系 UI
-    //- label(v-for='(item, index) in optionsLang' v-bind:key='index')
-      input(type='radio' v-model='$store.state.lang' :value='item.value' v-on:change='setLang(item.value)')
-      |       {{ item.text }}
+    Header
     router-view
 </template>
 
 <script>
+import Header from "@/components/Header.vue";
 export default {
+  components: {
+    Header
+  },
   data() {
     return {
       optionsLang: [
@@ -50,12 +31,13 @@ export default {
 </script>
 
 <style lang="sass">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,700|Oswald:200,400&display=swap')
+
 #app
-  font-family: Avenir, Helvetica, Arial, sans-serif
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+  font-family: 'Noto Sans TC', sans-serif
   text-align: center
   color: #2c3e50
+  padding-top: 90px
 
 #nav
   padding: 30px
