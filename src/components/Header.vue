@@ -75,7 +75,7 @@ export default {
     return {
       isHamOpen: false,
       isSubMenuOpen: false,
-      screenWidth: document.body.clientWidth,
+      screenWidth: document.body.clientWidth
     };
   },
   computed: {
@@ -87,7 +87,7 @@ export default {
       } else {
         return "繁體中文";
       }
-    },
+    }
   },
   watch: {
     screenWidth(val) {
@@ -103,6 +103,12 @@ export default {
         }, 400);
       }
     },
+    $route: function(to, from) {
+      console.log("to:", to);
+      console.log("from:", from);
+      this.isHamOpen = false;
+      this.isSubMenuOpen = false;
+    }
   },
   mounted() {
     const that = this;
@@ -119,8 +125,8 @@ export default {
       this.$store.commit("setLang", value);
       this.$i18n.locale = value;
       localStorage.setItem("footmark-lang", value);
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -272,9 +278,9 @@ header
 	width: 100%
 	background-color: #f9f9f9
 	.wrapper
-		+clearfix
 		width: 1350px
 		margin: auto
+		+clearfix
 		a.nanya_logo
 			float: left
 			display: inline-block
@@ -294,7 +300,7 @@ header
 					vertical-align: middle
 					text-align: center
 					position: relative
-					+before
+					@include before
 						width: 100%
 						height: 4px
 						background-color: $red
@@ -325,7 +331,7 @@ header
 						left: -35px
 						&.disnone
 							display: none
-						+before
+						@include before
 							width: 100%
 							height: 5px
 							background-color: $red
@@ -359,7 +365,7 @@ header
 							li.subItem
 								width: 50%
 					+hover
-						+before
+						@include before
 							opacity: 1
 						ul.subMenu
 							display: block !important
@@ -419,20 +425,20 @@ header
 							font-size: 18px
 							color: $gray
 							text-align: center
-							+rwd(1000px)
+							@include rwd(1000px)
 								font-size: 12px
 							+hover
 								.subA
 									background-color: #ebebeb
 		.ham
 			display: none
-	+rwd(1400px)
+	@include rwd(1400px)
 		.wrapper
 			width: 1210px
 			.main
 				.lang
 					margin-left: 20px
-	// +rwd(1280px)
+	// @include rwd(1280px)
 	// 	.wrapper
 	// 		width: 960px
 	// 		.main
@@ -460,7 +466,7 @@ header
 					// p
 					// 	font-size: 16px
 					// 	padding-left: 10px
-	+rwd(1280px)
+	@include rwd(1280px)
 		.wrapper
 			width: 890px
 			a.nanya_logo
@@ -472,7 +478,7 @@ header
 					li.mainItem
 						width: 70px
 						// margin: 0 7.5px
-						+before
+						@include before
 						.mainA
 							padding: 33px 0
 							font-size: 14px
@@ -480,7 +486,7 @@ header
 							top: 80px
 							// width: 60px
 							// padding-bottom: 5px
-							+before
+							@include before
 							li.subItem
 								.subA
 									font-size: 14px
@@ -494,7 +500,7 @@ header
 					p
 						font-size: 12px
 						// padding-left: 10px
-	// +rwd(900px)
+	// @include rwd(900px)
 	// 	.wrapper
 	// 		width: 730px
 	// 		.main
@@ -506,7 +512,7 @@ header
 			// 		p
 			// 			font-size: 12px
 			// 			// padding-left: 10px
-	+rwd(960px)
+	@include rwd(960px)
 		.wrapper
 			width: calc(100% - 30px)
 			a.nanya_logo
@@ -532,14 +538,14 @@ header
 						margin: 0px
 						display: block
 						// border-bottom: 1px solid $red
-						+before
+						@include before
 						.mainA
 							padding: 15px 0
 							font-size: 18px
 							text-align: left
 							overflow: hidden
 							position: relative
-							+after()
+							@include after()
 								width: 100%
 								height: 1px
 								background-color: $red
@@ -547,7 +553,7 @@ header
 								bottom: 0
 						&:nth-child(3)
 							.mainA
-								+before()
+								@include before()
 									background-color: #faa
 									width: 8px
 									height: 10px
@@ -574,7 +580,7 @@ header
 							padding-bottom: 5px
 							position: static
 							transform: translateX(0%)
-							+before
+							@include before
 								width: calc(100% + 30px)
 								height: 1px
 								background-color: $red
@@ -660,19 +666,19 @@ header
 					&:nth-child(3)
 						width: 16px
 						transform: translate(-2px,5px)
-	+rwd(640px)
+	@include rwd(640px)
 		.wrapper
 			// width: 480px
 			.main
 				ul.mainMenu
 					// width: 310px
-	+rwd(520px)
+	@include rwd(520px)
 		.wrapper
 			// width: 340px
 			.main
 				ul.mainMenu
 					// width: 310px
-	+rwd(374px)
+	@include rwd(374px)
 		.wrapper
 			// width: 280px
 			.main

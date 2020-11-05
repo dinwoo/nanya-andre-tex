@@ -17,9 +17,9 @@ export default {
     return {
       optionsLang: [
         { text: "中文", value: "zh" },
-        { text: "English", value: "en" },
+        { text: "English", value: "en" }
       ],
-      page: "about",
+      page: "about"
     };
   },
   methods: {
@@ -28,12 +28,13 @@ export default {
       this.$store.commit("setLang", value);
       this.$i18n.locale = value;
       localStorage.setItem("footmark-lang", value);
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="sass">
+@import "./assets/sass/var.sass"
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,500,700|Oswald:200,400&display=swap')
 
 #app
@@ -41,6 +42,8 @@ export default {
   text-align: center
   color: #2c3e50
   padding-top: 90px
+  @include rwd(960px)
+    padding-top: 70px
 
 #nav
   padding: 30px
