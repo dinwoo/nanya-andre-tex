@@ -1,8 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
 import About from "../views/About.vue";
-import Pon from "../views/Pon.vue";
 import Swiper from "../views/Swiper.vue";
 import Application from "../views/Application.vue";
 import Customized from "../views/Customized.vue";
@@ -15,61 +13,51 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: Home
-  },
-  {
     path: "/about",
     name: "About",
-    component: About
-  },
-  {
-    path: "/pon",
-    name: "Pon",
-    component: Pon
+    component: About,
   },
   {
     path: "/swiper",
     name: "Swiper",
-    component: Swiper
+    component: Swiper,
   },
   {
     path: "/application/:seats",
     name: "Application",
-    component: Application
+    component: Application,
   },
   {
     path: "/customize",
     name: "Customized",
-    component: Customized
+    component: Customized,
   },
   {
     path: "/test",
     name: "FireTest",
-    component: FireTest
+    component: FireTest,
   },
   {
     path: "/case",
     name: "Examples",
-    component: Examples
+    component: Examples,
   },
   {
     path: "/certificate",
     name: "Certificate",
-    component: Certificate
+    component: Certificate,
   },
   {
     path: "/contact",
     name: "Contact",
-    component: Contact
-  }
+    component: Contact,
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;
