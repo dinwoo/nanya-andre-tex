@@ -128,5 +128,35 @@
         }
       ]
     }
+  },
+  "Examples":{
+    "card": [
+      {
+        "link": "#",
+        "img": "taoyuan.jpg",
+        "imgMob": "taoyuan.jpg",
+        "title": "桃園 芙蓉匯"
+      }, {
+        "link": "#",
+        "img": "xinzhuang.jpg",
+        "imgMob": "xinzhuang.jpg",
+        "title": "新莊 麗寶雙璽"
+      }, {
+        "link": "#",
+        "img": "building95.jpg",
+        "imgMob": "building95.jpg",
+        "title": "遠雄95大樓"
+      }, {
+        "link": "#",
+        "img": "seaPalace.jpg",
+        "imgMob": "seaPalace.jpg",
+        "title": "海上皇宮"
+      }, {
+        "link": "#",
+        "img": "sea.jpg",
+        "imgMob": "sea.jpg",
+        "title": "海洋都心三期"
+      }
+    ]
   }
 }
