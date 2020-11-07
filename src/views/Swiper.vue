@@ -1,8 +1,12 @@
 <template lang="pug">
   #swiper
+    select(v-model="val")
+      option(value="0") 0
+      option(value="1") 1
     CustomSwiper(
       :dotNum = "3"
-      :pictureLink="pictureLink"
+      :pictureLink="pictureArr[val]"
+      :key="val"
     )
 </template>
 
@@ -14,7 +18,20 @@ export default {
   },
   data() {
     return {
-      pictureLink: ["fuli.jpg", "blackcat1.jpg", "blackcat2.jpg", "test.jpg"]
+      val: 0,
+      pictureArr: [
+        {
+          0: "fuli.jpg",
+          1: "blackcat1.jpg",
+          2: "blackcat2.jpg"
+        },
+        {
+          0: "test.jpg",
+          1: "test2.png",
+          2: "test3.png",
+          3: "test4.png"
+        }
+      ]
     };
   },
   mounted() {},
@@ -23,4 +40,7 @@ export default {
 </script>
 
 <style lang="sass">
+#swiper
+  width: 1280px
+  margin: auto
 </style>

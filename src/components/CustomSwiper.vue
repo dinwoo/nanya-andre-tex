@@ -7,7 +7,7 @@
         :focusOnSelect="true"
         :arrows="false"
         :autoplay="true"
-        :autoplaySpeed="2000"
+        :autoplaySpeed="3000"
       )
         .carousel-item(v-for="(pic,index) in pictureLink" :key="index")
           //- img(:src="compileFilePath(pic)")
@@ -17,10 +17,10 @@
     .dot-carousel
       .pre-btn(
         @click="$refs.c2.prev()"
-      ) prev
+      )
       .next-btn(
         @click="$refs.c2.next()"
-      ) next
+      )
       VueSlickCarousel(
         ref="c2"
         :asNavFor="$refs.c1"
@@ -60,36 +60,49 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import "../assets/sass/var.sass"
+
 *:focus
   outline: none
 #custom-swiper
   width: 100%
   .main-carousel
     width: 100%
+    margin: auto
+    box-sizing: border-box
   .dot-carousel
-    width: 90%
+    width: calc(100% - 120px)
     margin: 15px auto
+    box-sizing: border-box
     position: relative
   .carousel-item
     width: 100%
+    padding: 0 10px
+    box-sizing: border-box
     .pic
       width: 100%
       height: 0px
-      padding-bottom: 50%
+      padding-bottom: 57%
       background-size: cover
       background-position: center center
   .pre-btn,.next-btn
-    width: 5%
-    height: 0%
-    padding-bottom: 5%
-    background-color: #666
+    width: 0px
+    height: 0px
     position: absolute
     top: 0
     bottom: 0
     margin: auto
     cursor: pointer
   .pre-btn
-    left: -5%
+    left: -50px
+    border-right: 30px solid $orange
+    border-top: 30px solid transparent
+    border-bottom: 30px solid transparent
+    border-left: 0px solid transparent
   .next-btn
     right: -5%
+    border-right: 00px solid transparent
+    border-top: 30px solid transparent
+    border-bottom: 30px solid transparent
+    border-left: 30px solid $orange
 </style>
