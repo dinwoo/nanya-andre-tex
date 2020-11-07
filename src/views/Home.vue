@@ -1,10 +1,11 @@
 <template lang="pug">
-  #home
-    .title
-      figure.application
-        img(:src="compileFilePath(`cardTitle.png`)")
-        img(:src="compileFilePath(`cardTitle_m.png`)")
-    btnCard(:cardData="$t(`${$route.name}.card`)")
+  article#home
+    .wrapper
+      .title
+        figure.application
+          img(:src="compileFilePath(`cardTitle.png`)")
+          img(:src="compileFilePath(`cardTitle_m.png`)")
+      btnCard(:cardData="$t(`${$route.name}.card`)")
 </template>
 
 
@@ -22,14 +23,15 @@ export default {
 
 <style lang="sass">
 @import "../assets/sass/var.sass"
-#home
-  box-sizing: border-box
-  max-width: 1240px
-  margin: auto
-  padding: 0 20px
-  @include rwd(960px)
-    max-width: 430px
-    padding: 0 15px
+article
+  .wrapper
+    box-sizing: border-box
+    max-width: 1240px
+    margin: auto
+    padding: 0 20px
+    @include rwd(960px)
+      max-width: 430px
+      padding: 0 15px
 .title
   .application
     width: 587px
