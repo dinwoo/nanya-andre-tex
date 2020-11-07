@@ -1,9 +1,9 @@
 <template lang="pug">
   .btnCard
-    a.btnCard-item(href="#" v-for="item,index in cardData" :key="index")
+    a.btnCard-item(:href="item.link" v-for="item,index in cardData" :key="index")
       .btnCard-img
-        img(:src="compileFilePath(item.link)")
-        img(:src="compileFilePath(item.linkMob)")
+        img(:src="compileFilePath(item.img)")
+        img(:src="compileFilePath(item.imgMob)")
       .btnCard-content
         .btnCard-title {{item.title}}
         .btnCard-desc(v-if="item.desc") {{item.desc}}

@@ -7,7 +7,7 @@
         .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
           .graphicIntro-img
             figure
-              img(:src="compileFilePath(`${$route.params.seats}/${el.link}`)")
+              img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
           .graphicIntro-content
             .graphicIntro-title {{el.title}}
             .graphicIntro-desc {{el.desc}}

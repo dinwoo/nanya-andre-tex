@@ -5,43 +5,51 @@
     "title": "123",
     "card": [
       {
-        "link": "01.jpg",
-        "linkMob": "01_m.jpg",
+        "link": "#",
+        "img": "01.jpg",
+        "imgMob": "01_m.jpg",
         "title": "塑膠管材",
         "desc": "給你住家、辦公大樓最好的防護"
       }, {
-        "link": "02.jpg",
-        "linkMob": "02_m.jpg",
+        "link": "#",
+        "img": "02.jpg",
+        "imgMob": "02_m.jpg",
         "title": "電焊用",
         "desc": "防火毯耐拉扯、阻攔電焊熔渣飛濺"
       }, {
-        "link": "03.jpg",
-        "linkMob": "03_m.jpg",
+        "link": "#",
+        "img": "03.jpg",
+        "imgMob": "03_m.jpg",
         "title": "家庭/飯店",
         "desc": "家庭、飯店防火安全防護最佳守衛"
       }, {
-        "link": "04.jpg",
-        "linkMob": "04_m.jpg",
+        "link": "#",
+        "img": "04.jpg",
+        "imgMob": "04_m.jpg",
         "title": "座椅內用",
         "desc": "通過多項BS國際認證與  ISO 5660:2015測試"
       }, {
-        "link": "05.jpg",
-        "linkMob": "05_m.jpg",
+        "link": "#",
+        "img": "05.jpg",
+        "imgMob": "05_m.jpg",
         "title": "排風管",
         "desc": "排風管防火、防水包覆"
       }, {
-        "link": "06.jpg",
-        "linkMob": "06_m.jpg",
+        "link": "#",
+        "img": "06.jpg",
+        "imgMob": "06_m.jpg",
         "title": "電線管路",
         "desc": "電線管路防火、耐燃絕緣、 防水的首選"
       }, {
-        "link": "07.jpg",
-        "linkMob": "07_m.jpg",
+        "link": "#",
+        "img": "07.jpg",
+        "imgMob": "07_m.jpg",
         "title": "客製開發",
         "desc": "提供定製開發，問題解決方案"
       }, {
-        "link": "08.jpg",
-        "linkMob": "08_m.jpg",
+        "link": "#",
+        "img": "08.jpg",
+        "imgMob": "08_m.jpg",
         "title": "防火測試",
         "desc": "耐瞬燃1200℃，長時耐熱350℃ 具不燃不熔融、焚燒無毒特性。"
       }
@@ -58,19 +66,19 @@
           "name": "產品簡介",
           "data": [
             {
-              "link": "different.jpg",
+              "img": "different.jpg",
               "title": "產品差異",
               "desc": "比起他牌防火毯防火能力更佳、對人體無影響"
             }, {
-              "link": "size.jpg",
+              "img": "size.jpg",
               "title": "產品尺寸",
               "desc": "認證厚度為2.5mm，寬幅為150公分"
             }, {
-              "link": "transaction.jpg",
+              "img": "transaction.jpg",
               "title": "交易模式",
               "desc": "50碼以下由材料商提供，50碼以上由公司直接提供"
             }, {
-              "link": "min.jpg",
+              "img": "min.jpg",
               "title": "最低購量",
               "desc": "50碼"
             }
@@ -79,19 +87,19 @@
           "name": "產品特性",
           "data": [
             {
-              "link": "safe.jpg",
+              "img": "safe.jpg",
               "title": "產品安全",
               "desc": "無毒、無煙、不引起皮膚不適"
             }, {
-              "link": "soft.jpg",
+              "img": "soft.jpg",
               "title": "產品施工",
               "desc": "相較於其他防火毯柔軟、好施工"
             }, {
-              "link": "stable.jpg",
+              "img": "stable.jpg",
               "title": "品質穩定",
               "desc": "製程控制、產品測試"
             }, {
-              "link": "custom.jpg",
+              "img": "custom.jpg",
               "title": "客製展品開發",
               "desc": "用量大時可配合客戶要求做調整"
             }
@@ -100,19 +108,19 @@
           "name": "品質證書",
           "data": [
             {
-              "link": "safe.jpg",
+              "img": "safe.jpg",
               "title": "產品安全",
               "desc": "無毒、無煙、不引起皮膚不適"
             }, {
-              "link": "soft.jpg",
+              "img": "soft.jpg",
               "title": "產品施工",
               "desc": "相較於其他防火毯柔軟、好施工"
             }, {
-              "link": "stable.jpg",
+              "img": "stable.jpg",
               "title": "品質穩定",
               "desc": "製程控制、產品測試"
             }, {
-              "link": "custom.jpg",
+              "img": "custom.jpg",
               "title": "客製展品開發",
               "desc": "用量大時可配合客戶要求做調整"
             }
