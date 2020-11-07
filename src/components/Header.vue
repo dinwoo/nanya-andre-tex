@@ -98,7 +98,7 @@ export default {
         setTimeout(function() {
           // that.screenWidth = that.$store.state.canvasWidth
           console.log(that.screenWidth);
-          that.init();
+          // that.init();
           that.timer = false;
         }, 400);
       }

@@ -31,13 +31,11 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+// import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "Home",
-  components: {
-    HelloWorld
-  }
+  components: {}
 };
 </script>
 
@@ -64,7 +62,7 @@ body
       &:nth-of-type(1)
         display: none
       &:nth-of-type(2)
-          display: block
+        display: block
 .btnCard
   font-size: 0
   margin: -10px
