@@ -26,8 +26,6 @@ export default {
 </script>
 
 <style lang="sass">
-body
-  margin: 0
 #application
   box-sizing: border-box
   max-width: 1240px
@@ -74,10 +72,6 @@ body
     &-img,
     &-content
       width: 100%
-
-    &-img
-      img
-        width: 100%
 
     &-content
       box-sizing: border-box

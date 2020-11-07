@@ -38,7 +38,6 @@ body
       display: none
   @media only screen and (max-width: 960px)
     img
-      width: 100%
       max-width: 355px
       &:nth-of-type(1)
         display: none
@@ -56,7 +55,6 @@ body
     text-decoration: none
     color: #000
     img
-      width: 100%
       &:nth-of-type(2)
         display: none
   &-content

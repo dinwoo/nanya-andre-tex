@@ -20,8 +20,6 @@ export default {
 </script>
 
 <style lang="sass">
-body
-  margin: 0
 #home
   box-sizing: border-box
   max-width: 1240px
@@ -37,7 +35,6 @@ body
       display: none
   @media only screen and (max-width: 960px)
     img
-      width: 100%
       max-width: 355px
       &:nth-of-type(1)
         display: none

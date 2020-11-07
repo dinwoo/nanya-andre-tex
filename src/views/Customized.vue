@@ -16,8 +16,6 @@ export default {
 </script>
 
 <style lang="sass">
-body
-  margin: 0
 #customized
   box-sizing: border-box
   max-width: 1240px
@@ -33,7 +31,6 @@ body
     max-width: 640px
     margin: auto
     img
-      width: 100%
       &:nth-of-type(1)
         display: none
       &:nth-of-type(2)
