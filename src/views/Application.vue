@@ -26,9 +26,15 @@ export default {
 </script>
 
 <style lang="sass">
+body
+  margin: 0
 #application
+  box-sizing: border-box
   max-width: 1240px
   margin: auto
+  padding: 0 20px
+  @media only screen and (max-width: 1024px)
+    padding: 0 15px
 
 .graphicIntro
   font-size: 0
@@ -87,9 +93,6 @@ export default {
       margin-top: 10px
 
 .tab  
-  &-action
-    padding: 0 20px
-
   &-btn
     box-sizing: border-box
     display: inline-block

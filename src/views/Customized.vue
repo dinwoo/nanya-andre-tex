@@ -16,9 +16,15 @@ export default {
 </script>
 
 <style lang="sass">
+body
+  margin: 0
 #customized
+  box-sizing: border-box
   max-width: 1240px
   margin: auto
+  padding: 0 20px
+  @media only screen and (max-width: 1024px)
+    padding: 0 15px
 .customized-flow
   img
     &:nth-of-type(2)
