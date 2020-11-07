@@ -1,14 +1,13 @@
 <template lang="pug">
   #application
-    //- p {{$route.params.seats}}
-    //- p {{ $t(`${$route.name}.${$route.params.seats}.title`) }}
     .tab
       .tab-action
         a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click="active = item.name" :key="index") {{item.name}}
       .tab-content(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" :key="index")
         .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
           .graphicIntro-img
-            img(:src="compileFilePath(`${$route.params.seats}/${el.link}`)")
+            figure
+              img(:src="compileFilePath(`${$route.params.seats}/${el.link}`)")
           .graphicIntro-content
             .graphicIntro-title {{el.title}}
             .graphicIntro-desc {{el.desc}}
@@ -26,12 +25,14 @@ export default {
 </script>
 
 <style lang="sass">
+@import "../assets/sass/var.sass"
 #application
   box-sizing: border-box
   max-width: 1240px
   margin: auto
   padding: 0 20px
-  @media only screen and (max-width: 1024px)
+  @include rwd(960px)
+    max-width: 430px
     padding: 0 15px
 
 .graphicIntro
@@ -45,11 +46,11 @@ export default {
     vertical-align: top
   
   &-img
-    width: 550px
+    width: 45%
   
   &-content
-    width: calc( 100% - 550px - 80px )
-    margin-left: 80px
+    width: 50%
+    margin-left: 5%
     text-align: left
   
   &-title
@@ -60,10 +61,13 @@ export default {
     font-size: 24px
     margin-top: 20px
 
-  @media only screen and (max-width: 1024px)
-    max-width: 400px
-    margin: auto
-
+  @include rwd(1280px)
+    &-title
+      font-size: 24px
+  
+    &-desc
+      font-size: 18px
+  @include rwd(960px)
     &+&
       margin-top: 20px
       padding-top: 20px
@@ -97,33 +101,34 @@ export default {
     color: #828282
     text-decoration: none
     border: 1px solid #828282
+    &+&
+      margin-left: 170px
 
     &.active
       color: #f0511d
       border: 1px solid #f0511d
 
-  &-btn + &-btn
-    margin-left: 170px
-
   &-content
     margin-top: 110px
 
-  @media only screen and (max-width: 1240px)
-    &-btn + &-btn
-      margin-left: 50px
+  @include rwd(1280px)
+    &-btn
+      width: 200px
+      font-size: 30px
+      &+&
+        margin-left: 50px
 
-  @media only screen and (max-width: 1024px)
+  @include rwd(960px)
     &-action
       padding: 0
-
-    &-btn + &-btn
-      margin-left: 13px
 
     &-btn
       width: 100px
       padding: 8px
       font-size: 15px
       letter-spacing: 2px
+      &+&
+        margin-left: 13px
       
     &-content
       margin-top: 20px

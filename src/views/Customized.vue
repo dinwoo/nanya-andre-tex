@@ -16,20 +16,20 @@ export default {
 </script>
 
 <style lang="sass">
+@import "../assets/sass/var.sass"
 #customized
   box-sizing: border-box
   max-width: 1240px
   margin: auto
   padding: 0 20px
-  @media only screen and (max-width: 1024px)
+  @include rwd(960px)
+    max-width: 430px
     padding: 0 15px
 .customized-flow
   img
     &:nth-of-type(2)
       display: none
-  @media only screen and (max-width: 1024px)
-    max-width: 640px
-    margin: auto
+  @include rwd(960px)
     img
       &:nth-of-type(1)
         display: none

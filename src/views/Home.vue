@@ -1,8 +1,9 @@
 <template lang="pug">
   #home
-    .title-index
-      img(:src="compileFilePath(`cardTitle.png`)")
-      img(:src="compileFilePath(`cardTitle_m.png`)")
+    .title
+      figure.application
+        img(:src="compileFilePath(`cardTitle.png`)")
+        img(:src="compileFilePath(`cardTitle_m.png`)")
     btnCard(:cardData="$t(`${$route.name}.card`)")
 </template>
 
@@ -20,24 +21,28 @@ export default {
 </script>
 
 <style lang="sass">
+@import "../assets/sass/var.sass"
 #home
   box-sizing: border-box
   max-width: 1240px
   margin: auto
   padding: 0 20px
-  @media only screen and (max-width: 1024px)
+  @include rwd(960px)
+    max-width: 430px
     padding: 0 15px
-.title-index
-  margin-bottom: 45px
-  img
+.title
+  .application
+    width: 587px
     margin: auto
-    &:nth-of-type(2)
-      display: none
-  @media only screen and (max-width: 960px)
+    margin-bottom: 45px
     img
-      max-width: 355px
-      &:nth-of-type(1)
-        display: none
       &:nth-of-type(2)
-          display: block
+        display: none
+    @include rwd(960px)
+      width: 200px
+      img
+        &:nth-of-type(1)
+          display: none
+        &:nth-of-type(2)
+            display: block
 </style>

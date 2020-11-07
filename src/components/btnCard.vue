@@ -21,28 +21,7 @@ export default {
 </script>
 
 <style lang="sass">
-body
-  margin: 0
-#home
-  box-sizing: border-box
-  max-width: 1240px
-  margin: auto
-  padding: 0 20px
-  @media only screen and (max-width: 1024px)
-    padding: 0 15px
-.title-index
-  margin-bottom: 45px
-  img
-    margin: auto
-    &:nth-of-type(2)
-      display: none
-  @media only screen and (max-width: 960px)
-    img
-      max-width: 355px
-      &:nth-of-type(1)
-        display: none
-      &:nth-of-type(2)
-          display: block
+@import "../assets/sass/var.sass"
 .btnCard
   font-size: 0
   margin: -10px
@@ -59,40 +38,30 @@ body
         display: none
   &-content
     min-height: 100px
-    padding: 10px 20px
+    padding: 10px 18px
   &-title
-    font-size: 22px
+    font-size: 26px
     font-weight: bold
   &-desc
-    font-size: 17px
+    margin-top: 5px
+    font-size: 18px
     text-align: left
   &.case
     text-align: left
   &.case &
     &-item
       width: calc( (100% - 80px)/3 )
-  @media only screen and (max-width: 1240px)
-    &-title
-      font-size: 20px
-    &-desc
-      font-size: 16px
-  @media only screen and (max-width: 960px)
+  @include rwd(960px)
+    margin: -5px
     &-item
       width: calc( (100% - 40px)/2 )
       max-width: 300px
+      margin: 5px
       img
         &:nth-of-type(1)
           display: none
         &:nth-of-type(2)
           display: block
-    &.case &
-      &-item
-        width: calc( 100% - 40px )
-        max-width: 460px
-  @media only screen and (max-width: 480px)
-    margin: -5px
-    &-item
-      margin: 5px
     &-content
       min-height: 100px
       padding: 5px 10px
@@ -100,4 +69,8 @@ body
       font-size: 14px
     &-desc
       font-size: 12px
+    &.case &
+      &-item
+        width: calc( 100% - 40px )
+        max-width: 460px
 </style>
