@@ -1,5 +1,5 @@
 <template lang="pug">
-  .btnCard
+  .btnCard(:class="className")
     a.btnCard-item(:href="item.link" v-for="item,index in cardData" :key="index")
       .btnCard-img
         img(:src="compileFilePath(item.img)")
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  props: ["cardData"],
+  props: ["cardData", "className"],
   data() {
     return {
     };
@@ -23,8 +23,8 @@ export default {
 <style lang="sass">
 @import "../assets/sass/var.sass"
 .btnCard
-  font-size: 0
   margin: -10px
+  font-size: 0
   &-item
     display: inline-block
     vertical-align: top
@@ -42,35 +42,43 @@ export default {
   &-title
     font-size: 26px
     font-weight: bold
+    text-align: center
   &-desc
     margin-top: 5px
     font-size: 18px
     text-align: left
-  &.case
+  &.examples
+    margin: -20px
     text-align: left
-  &.case &
+  &.examples &
     &-item
-      width: calc( (100% - 80px)/3 )
+      width: calc( (100% - 120px)/3 )
+      max-width: none
+      margin: 20px
+    &-content
+      min-height: auto
+      padding: 20px
   @include rwd(960px)
-    margin: -5px
     &-item
       width: calc( (100% - 40px)/2 )
       max-width: 300px
-      margin: 5px
       img
         &:nth-of-type(1)
           display: none
         &:nth-of-type(2)
           display: block
     &-content
-      min-height: 100px
       padding: 5px 10px
     &-title
       font-size: 14px
     &-desc
       font-size: 12px
-    &.case &
+    &.examples
+      margin: -10px
+    &.examples &
       &-item
-        width: calc( 100% - 40px )
-        max-width: 460px
+        width: calc( 100% - 20px )
+        margin: 10px
+      &-title
+        font-size: 22px
 </style>
