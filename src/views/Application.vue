@@ -1,17 +1,19 @@
 <template lang="pug">
   article#application
-    .wrapper
-      .tab
-        .tab-action
-          a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click="active = item.name" :key="index") {{item.name}}
-        .tab-content(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" :key="index")
-          .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
-            .graphicIntro-img
-              figure
-                img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
-            .graphicIntro-content
-              .graphicIntro-title {{el.title}}
-              .graphicIntro-desc {{el.desc}}
+    .block
+      .wrapper
+        .title 內容
+        .tab
+          .tab-action
+            a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click="active = item.name" :key="index") {{item.name}}
+          .tab-content(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" :key="index")
+            .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
+              .graphicIntro-img
+                figure
+                  img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
+              .graphicIntro-content
+                .graphicIntro-title {{el.title}}
+                .graphicIntro-desc {{el.desc}}
 </template>
 
 <script>
@@ -27,15 +29,6 @@ export default {
 
 <style lang="sass">
 @import "../assets/sass/var.sass"
-article
-  .wrapper
-    box-sizing: border-box
-    max-width: 1240px
-    margin: auto
-    padding: 0 20px
-    @include rwd(960px)
-      max-width: 430px
-      padding: 0 15px
 
 .graphicIntro
   font-size: 0

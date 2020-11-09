@@ -1,10 +1,11 @@
 <template lang="pug">
   article#customized
-    .wrapper
-      h1 customized
-      .customized-flow
-        img(:src="compileFilePath(`customized.jpg`)")
-        img(:src="compileFilePath(`customized_m.jpg`)")
+    .block
+      .wrapper
+        h1 customized
+        .customized-flow
+          img(:src="compileFilePath(`customized.jpg`)")
+          img(:src="compileFilePath(`customized_m.jpg`)")
 </template>
 
 <script>
@@ -18,15 +19,6 @@ export default {
 
 <style lang="sass">
 @import "../assets/sass/var.sass"
-article
-  .wrapper
-    box-sizing: border-box
-    max-width: 1240px
-    margin: auto
-    padding: 0 20px
-    @include rwd(960px)
-      max-width: 430px
-      padding: 0 15px
 .customized-flow
   img
     &:nth-of-type(2)
