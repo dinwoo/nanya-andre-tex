@@ -2,8 +2,16 @@
   article#fireTest
     section.banner
     section.main
-      h1 防火材測試
-      p 經塑膠中心測試，評等1級。可抗瞬燃1200℃高溫，長時間耐熱範圍350～450℃，具不燃燒、不熔融特性，焚燒過程不會產生有毒廢氣，無二次公害。 可供防火毯(滅火毯)、耐燃包覆材、耐熱墊材等安全防護用途。
+      .block
+        .wrapper
+          .title 防火材測試
+          .tab
+            .tab-desc 經塑膠中心測試，評等1級。可抗瞬燃1200℃高溫，長時間耐熱範圍350～450℃，具不燃燒、不熔融特性，焚燒過程不會產生有毒廢氣，無二次公害。 可供防火毯(滅火毯)、耐燃包覆材、耐熱墊材等安全防護用途。
+            .tab-action
+              a.tab-btn.solid(href="#") Ander-tex火燄實測
+              a.tab-btn.solid(href="#") 測試項目條件
+              a.tab-btn.solid(href="#") 塑膠中心測試
+              a.tab-btn.solid(href="#") 測試結果
       .block.grey
         .wrapper.overScroll
           .title 測試項目及條件
@@ -87,7 +95,6 @@
               | 限氧指數:ASTM D2863法指數45↑。
             li 應用範圍廣泛如工程明火防火毯(電焊、氣焊、砂磨、高溫切割) 防火隔簾、耐熱包覆材、保溫材、耐熱墊、汽車隔音、隔熱材、高溫作業區隔熱毯、家庭滅火毯安全防護用途。
             li 測試結果CNS 10285 L3196 A4、CNS 7614 A3125均評等1級。限氧指數:ASTM D2863法指數45↑。
-    .tab-btn
 </template>
 
 <script>
@@ -114,7 +121,6 @@ export default {
     padding: 24px
     font-size: 24px
     line-height: 1.2
-    color: #2f2f2f
     border: 1px solid #2f2f2f
   .blue
     background-color: #e3edf6
@@ -140,7 +146,6 @@ export default {
   font-size: 24px
   text-align: left
   margin-top: 20px
-  color: #2f2f2f
   a
     color: #169efe
     text-decoration: underline

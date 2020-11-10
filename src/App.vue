@@ -40,7 +40,7 @@ export default {
 #app
   font-family: 'Noto Sans TC', sans-serif
   text-align: center
-  color: #2c3e50
+  color: #2f2f2f
   padding-top: 90px
   @include rwd(960px)
     padding-top: 70px

@@ -42,7 +42,6 @@ article
 .title
   font-size: 50px
   font-weight: bold
-  color: #2f2f2f
   margin-bottom: 55px
   .attach
     margin-top: 25px
