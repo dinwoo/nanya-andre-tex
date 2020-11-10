@@ -3,14 +3,19 @@
     .block
       .wrapper
         #swiper
-          select(v-model="val")
-            option(value="0") 0
-            option(value="1") 1
           CustomSwiper(
-            :dotNum = "6"
-            :pictureLink="pictureArr[val]"
+            :title="pictureArr[val].title"
+            :subTitle="pictureArr[val].subTitle"
+            :dotNum = "5"
+            :pictureLink="pictureArr[val].link"
             :key="val"
           )
+            template(slot="option")
+              .option-title 座椅內用防火材
+              .option-items
+                .option-item(@click="val=0") 飛機座椅
+                .option-item(@click="val=1") 高鐵座椅
+                .option-item(@click="val=3") 電影院座椅
     .block
       .wrapper
         .title 內容
@@ -39,18 +44,14 @@ export default {
       val: 0,
       pictureArr: [
         {
-          0: "seats/airplane01.jpg",
-          1: "seats/airplane02.jpg",
-          2: "seats/airplane03.jpg",
-          3: "seats/airplane04.jpg",
-          4: "seats/airplane05.jpg",
-          5: "seats/airplane06.jpg"
+          title: "座椅內用防火材",
+          subTitle: "飛機座椅",
+          link: ["seats/airplane01.jpg", "seats/airplane02.jpg", "seats/airplane03.jpg", "seats/airplane04.jpg", "seats/airplane05.jpg", "seats/airplane06.jpg"]
         },
         {
-          0: "test.jpg",
-          1: "test2.png",
-          2: "test3.png",
-          3: "test4.png"
+          title: "座椅內用防火材",
+          subTitle: "高鐵座椅",
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
         }
       ]
     };
@@ -61,6 +62,45 @@ export default {
 
 <style lang="sass">
 @import "../assets/sass/var.sass"
+.option
+  &-box
+    text-align: left
+  &-title
+    display: inline-block
+    vertical-align: top
+    font-size: 25px
+    margin: 0 40px 0 20px
+  &-items
+    display: inline-block
+    vertical-align: top
+  &-item
+    position: relative
+    font-size: 24px
+    padding-left: 15px
+    transition: .3s
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      top: 10px
+      left: 0
+      display: block
+      width: 3px
+      height: 3px
+      border-radius: 50%
+      background-color: #2f2f2f
+      transition: .3s
+    &+&
+      margin-top: 25px
+    &:hover
+      color: #f0511d
+      &:before
+        background-color: #f0511d
+  @include rwd(960px)
+    &-box
+      text-align: center
+    &-title
+      display: none
 
 .graphicIntro
   font-size: 0
@@ -95,6 +135,8 @@ export default {
     &-desc
       font-size: 18px
   @include rwd(960px)
+    max-width: 640px
+    margin: auto
     &+&
       margin-top: 20px
       padding-top: 20px

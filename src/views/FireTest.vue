@@ -193,5 +193,6 @@ export default {
   margin: auto
   border-top: 1px solid #c2c2c2
   @include rwd(960px)
-    max-width: 400px
+    width: calc( 100% - 30px )
+    max-width: none
 </style>

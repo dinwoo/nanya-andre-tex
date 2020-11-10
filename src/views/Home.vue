@@ -31,7 +31,6 @@ article
     margin: auto
     padding: 0 20px
     @include rwd(960px)
-      max-width: 430px
       padding: 0 15px
 .block
   padding: 70px 0

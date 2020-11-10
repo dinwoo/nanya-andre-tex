@@ -75,9 +75,11 @@ export default {
       font-size: 12px
     &.examples
       margin: -10px
+      text-align: center
     &.examples &
       &-item
         width: calc( 100% - 20px )
+        max-width: 360px
         margin: 10px
       &-title
         font-size: 22px
