@@ -1,13 +1,16 @@
 <template lang="pug">
   #swiper
-    select(v-model="val")
-      option(value="0") 0
-      option(value="1") 1
     CustomSwiper(
+      :title="pictureArr[val].title"
+      :subTitle="pictureArr[val].subTitle"
       :dotNum = "3"
-      :pictureLink="pictureArr[val]"
+      :pictureLink="pictureArr[val].link"
       :key="val"
     )
+      template(slot="option")
+        ul
+          li(@click="val=0") aaa
+          li(@click="val=1") bbb
 </template>
 
 <script>
@@ -21,15 +24,14 @@ export default {
       val: 0,
       pictureArr: [
         {
-          0: "fuli.jpg",
-          1: "blackcat1.jpg",
-          2: "blackcat2.jpg"
+          title: "座椅內用防火材1",
+          subTitle: "飛機座椅1",
+          link: ["fuli.jpg", "blackcat1.jpg", "blackcat2.jpg"]
         },
         {
-          0: "test.jpg",
-          1: "test2.png",
-          2: "test3.png",
-          3: "test4.png"
+          title: "座椅內用防火材2",
+          subTitle: "飛機座椅2",
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
         }
       ]
     };
@@ -41,6 +43,6 @@ export default {
 
 <style lang="sass">
 #swiper
-  width: 1280px
+  width: 100%
   margin: auto
 </style>
