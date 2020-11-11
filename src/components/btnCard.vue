@@ -1,6 +1,6 @@
 <template lang="pug">
   .btnCard(:class="className")
-    a.btnCard-item(:href="item.link" v-for="item,index in cardData" :key="index")
+    a.btnCard-item(:href="item.link" v-for="item,index in cardData" :key="index" @click="cardIndex(index), incrementCounter()")
       .btnCard-img
         img(:src="compileFilePath(item.img)")
         img(:src="compileFilePath(item.imgMob)")
@@ -14,9 +14,17 @@ export default {
   props: ["cardData", "className"],
   data() {
     return {
+      swiperVal: 1
     };
   },
-  methods: {}
+  methods: {
+    incrementCounter: function(){
+      this.$emit('increment', this.swiperVal)
+    },
+    cardIndex: function(index){
+      return this.swiperVal = index
+    }
+  }
 };
 </script>
 
