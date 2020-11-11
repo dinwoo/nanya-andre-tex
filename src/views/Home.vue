@@ -107,11 +107,70 @@
             img(:src="compileFilePath(`cardTitle.png`)")
             img(:src="compileFilePath(`cardTitle_m.png`)")
         btnCard(:cardData="$t(`${$route.name}.card`)")
-    .block
+    .block.recommend-block
       .wrapper
         .recommend
           .title 推薦選購
-          .left
+          .content.content-slick
+            .arrow.arrow-pre(
+              @click="$refs.recommendSlick.prev()"
+            )
+            .recommend-slick
+              VueSlickCarousel(
+                ref="recommendSlick"
+                v-bind="settings"
+                @beforeChange="changeIndex"
+              )
+                .recommend-pic(
+                  v-for="(pic,index) in recommendLink" :key="index"
+                )
+                  .pic(
+                    :style="`background-image:url('${compileFilePath(pic)}')`"
+                  )
+            .arrow.arrow-next(
+              @click="$refs.recommendSlick.next()"
+            )
+          .content.content-info
+            .info(v-if="recommendSlickIndex==0")
+              .name 運動商品纏條(不織布)1
+              .description 
+                | 用途
+                br 
+                | 網球拍、高爾夫球桿、手套等纏條用不織布基材。
+                br
+                br
+                | 特性
+                br
+                | 厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。
+            .info(v-if="recommendSlickIndex==1")
+              .name 運動商品纏條(不織布)2
+              .description 
+                | 用途
+                br 
+                | 網球拍、高爾夫球桿、手套等纏條用不織布基材。
+                br
+                br
+                | 特性
+                br
+                | 厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。
+            .info(v-if="recommendSlickIndex==2")
+              .name 運動商品纏條(不織布)3
+              .description 
+                | 用途
+                br 
+                | 網球拍、高爾夫球桿、手套等纏條用不織布基材。
+                br
+                br
+                | 特性
+                br
+                | 厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。
+    .contact-block
+      router-link.wrapper(to="/contact")
+        .title 聯絡我們
+        figure.contact
+          img(src="@/assets/images/home-contact.png")
+          img(src="@/assets/images/home-contact-m.png")
+
 </template>
 
 
@@ -119,20 +178,170 @@
 // @ is an alias to /src
 import BannerSwiper from "@/components/BannerSwiper.vue";
 import btnCard from "@/components/btnCard.vue";
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
   name: "Home",
   components: {
     BannerSwiper,
-    btnCard
+    btnCard,
+    VueSlickCarousel
   },
   data() {
     return {
-      bannerLink: ["fuli.jpg", "blackcat1.jpg", "blackcat2.jpg"]
+      bannerLink: [
+        {
+          1: "banner-tc1.jpg",
+          2: "banner-tc2.jpg",
+          3: "banner-tc3.jpg"
+        },
+        {
+          1: "banner-tc1-m.jpg",
+          2: "banner-tc2-m.jpg",
+          3: "banner-tc3-m.jpg"
+        },
+      ],
+      recommendLink: ["fuli.jpg", "blackcat1.jpg", "blackcat2.jpg"],
+      settings:{
+        "dots": true,
+        "dotsClass": "slick-dots custom-dot-class recommend-dots",
+        "edgeFriction": 0.35,
+        "speed": 500,
+        "slidesToShow": 1,
+        "slidesToScroll": 1,
+        "autoplay": true,
+        "arrows": false
+      },
+      recommendSlickIndex: 0
+    }
+  },
+  methods: {
+    changeIndex(index){
+      this.recommendSlickIndex = index;
     }
   },
 };
 </script>
+
+<style lang="sass">
+@import "../assets/sass/var.sass"
+
+.recommend-dots
+  bottom: 10px
+  li
+    button
+      &:before
+        color: #eee
+        opacity: 1
+    &.slick-active
+      button
+        &:before
+          color: $orange
+</style>
+<style lang="sass" scoped>
+@import "../assets/sass/var.sass"
+*
+  vertical-align: top
+.recommend-block
+  padding-bottom: 8%
+  background-color: #fee4d5
+.recommend
+  .title
+    font-size: 48px
+  .content
+    width: 50%
+    text-align: left
+    box-sizing: border-box
+    +dib
+    &.content-slick
+    &.content-info
+      padding: 30px 35px
+    .arrow
+      width: 40px
+      height: 85px
+      background-size: contain
+      background-position: center center
+      background-repeat: no-repeat
+      cursor: pointer
+      +dib
+      &.arrow-pre
+        background-image: url("../assets/images/home-pre.png")
+      &.arrow-next
+        background-image: url("../assets/images/home-next.png")
+    .recommend-slick
+      width: calc(100% - 80px)
+      box-shadow: 5px 12px 10px rgba(#7e7e7e,.31)
+      +dib
+      .recommend-pic
+        .pic
+          width: 100%
+          padding-bottom: 66%
+          background-size: cover
+          background-position: center center
+          background-repeat: no-repeat
+    .name
+      font-size: 36px
+      font-weight: bold
+      margin-bottom: 50px
+    .description
+      font-size: 26px
+      line-height: 1.2
+@include rwd(768px)
+  .recommend
+    .title
+      font-size: 24px
+    .content
+      width: 100%
+      &.content-slick
+      &.content-info
+        padding: 30px 35px
+      .arrow
+        width: 20px
+        height: 42.5px
+      .recommend-slick
+        width: calc(100% - 40px)
+        .recommend-pic
+          .pic
+      .name
+        font-size: 18px
+        margin-bottom: 15px
+        text-align: center
+      .description
+        font-size: 14px
+.contact-block
+  margin-top: -8%
+  .wrapper
+    position: relative
+    .title
+      width: 100%
+      font-size: 5vw
+      color: #fff
+      text-shadow: 0px 0px 50px $orange
+      text-align: center
+      position: absolute
+      top: 45%
+      left: 0
+      z-index: 1
+    figure.contact
+      img
+        &:nth-child(1)
+          display: block
+        &:nth-child(2)
+          display: none
+  @include rwd(768px)
+    .wrapper
+      .title
+        font-size: 7vw
+        top: 40%
+      figure.contact
+        img
+          &:nth-child(1)
+            display: none
+          &:nth-child(2)
+            display: block
+</style>
 
 <style scoped>
 .clear {
