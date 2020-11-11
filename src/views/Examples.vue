@@ -3,7 +3,7 @@
     .block.grey
       .wrapper
         .title 成功案例
-        btnCard(:cardData="$t(`${$route.name}.card`)" :className="`examples`" v-on:increment="valSet")
+        btnCard(:cardData="$t(`${$route.name}.card`)" :className="`examples`" v-on:swiperClick="cardVal")
     .block#swiperTarget
       .wrapper
         #swiper
@@ -15,13 +15,12 @@
             :key="val"
           )
             template(slot="option")
-              .option-title 座椅內用防火材
               .option-items
-                .option-item(@click="valSet") 桃園 芙蓉匯
-                .option-item(@click="valSet") 新莊 麗寶雙璽
-                .option-item(@click="valSet") 遠雄95大樓
-                .option-item(@click="valSet") 海上皇宮
-                .option-item(@click="valSet") 海洋都心三期
+                .option-item(@click="cardVal(), valChange(0)") 桃園 芙蓉匯
+                .option-item(@click="cardVal(), valChange(1)") 新莊 麗寶雙璽
+                .option-item(@click="cardVal(), valChange(2)") 遠雄95大樓
+                .option-item(@click="cardVal(), valChange(3)") 海上皇宮
+                .option-item(@click="cardVal(), valChange(4)") 海洋都心三期
 </template>
 
 <script>
@@ -60,8 +59,11 @@ export default {
     };
   },
   methods: {
-    valSet: function(cardVal){
-      return this.val = cardVal
+    cardVal: function(card){
+      return this.val = card
+    },
+    valChange: function(swiperVal){
+      return this.val = swiperVal
     }
   }
 };
