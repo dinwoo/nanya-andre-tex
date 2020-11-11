@@ -135,7 +135,7 @@ export default {
     .note
       font-size: 12px
   @include rwd(960px)
-    overflow: scroll
+    overflow-x: scroll
     table
       width: 830px
       margin: auto
