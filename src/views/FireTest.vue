@@ -12,6 +12,22 @@
               a.tab-btn.solid(href="#") 測試項目條件
               a.tab-btn.solid(href="#") 塑膠中心測試
               a.tab-btn.solid(href="#") 測試結果
+      .block
+        .wrapper
+          #swiper
+            CustomSwiper(
+              :title="pictureArr[val].title"
+              :subTitle="pictureArr[val].subTitle"
+              :dotNum = "5"
+              :pictureLink="pictureArr[val].link"
+              :key="val"
+            )
+              template(slot="option")
+                .option-items
+                  .option-item(@click="val=0") 噴燈600℃X2min
+                  .option-item(@click="val=1") 電焊1070℃X30sec
+                  .option-item(@click="val=3") 噴燈1100℃X2min
+                  .option-item(@click="val=3") 電焊1300℃X30sec
       .block.grey
         .wrapper.overScroll
           .title 測試項目及條件
@@ -98,9 +114,37 @@
 </template>
 
 <script>
+import CustomSwiper from "@/components/CustomSwiper.vue";
 export default {
+  components: {
+    CustomSwiper
+  },
   data() {
-    return {};
+    return {
+      val: 0,
+      pictureArr: [
+        {
+          title: "座椅內用防火材",
+          subTitle: "影片：加工燃燒測試",
+          link: ["blackcat1.jpg", "blackcat2.jpg", "fuli.jpg"]
+        },
+        {
+          title: "座椅內用防火材",
+          subTitle: "影片：加工燃燒測試",
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
+        },
+        {
+          title: "座椅內用防火材",
+          subTitle: "影片：加工燃燒測試",
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
+        },
+        {
+          title: "座椅內用防火材",
+          subTitle: "影片：加工燃燒測試",
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
+        }
+      ]
+    };
   },
   methods: {}
 };
@@ -108,6 +152,25 @@ export default {
 
 <style lang="sass">
 @import "../assets/sass/var.sass"
+.option
+  &-box
+    text-align: center
+  &-items
+    font-size: 0
+  &-item
+    display: inline-block
+    width: 50%
+    padding: 25px 0
+    &:before
+      content: none
+    &+&
+      margin: 0
+  @include rwd(960px)
+    &-items
+      padding: 20px
+    &-item
+      width: 100%
+      padding: 20px 0
 .table
   table
     width: 100%

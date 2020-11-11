@@ -101,6 +101,8 @@ export default {
       text-align: center
     &-title
       display: none
+    &-item
+      font-size: 15px
 
 .graphicIntro
   font-size: 0
@@ -161,6 +163,7 @@ export default {
 
 .tab
   &-desc
+    margin-bottom: 60px
     font-size: 26px
     line-height: 1.3
     text-align: left
