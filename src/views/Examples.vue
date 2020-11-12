@@ -1,5 +1,8 @@
 <template lang="pug">
   article#examples
+    BannerSwiper(
+      :pictureLink="bannerLink"
+    )
     .block.grey
       .wrapper
         .title 成功案例
@@ -24,15 +27,18 @@
 </template>
 
 <script>
+import BannerSwiper from "@/components/BannerSwiper.vue";
 import btnCard from "@/components/btnCard.vue";
 import CustomSwiper from "@/components/CustomSwiper.vue";
 export default {
   components: {
+    BannerSwiper,
     btnCard,
     CustomSwiper
   },
   data() {
     return {
+      bannerLink: ["banner01.jpg", "banner01.jpg", "banner01.jpg"],
       val: 0,
       pictureArr: [
         {
