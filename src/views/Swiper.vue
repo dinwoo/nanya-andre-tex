@@ -8,9 +8,8 @@
       :key="val"
     )
       template(slot="option")
-        ul
-          li(@click="val=0") aaa
-          li(@click="val=1") bbb
+        .item(@click="val=0") aaa
+        .item(@click="val=1") bbb
 </template>
 
 <script>
@@ -45,4 +44,7 @@ export default {
 #swiper
   width: 100%
   margin: auto
+  .item
+    display: block
+    font-size: 20px
 </style>

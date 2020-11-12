@@ -4,7 +4,7 @@
       v-bind="settings"
     )
       .banner-pic(
-        v-for="(pic,index) in pictureLink" :key="index"
+        v-for="(pic,index) in pictureLink[linkIndex]" :key="index"
       )
         .pic(
           :style="`background-image:url('${compileFilePath(pic)}')`"
@@ -31,14 +31,42 @@ export default {
         "speed": 500,
         "slidesToShow": 1,
         "slidesToScroll": 1,
-        "autoplay": true
+        "autoplay": true,
+        "arrows": false
       },
       slidesToShow: 0,
-      showOption: false
+      showOption: false,
+      screenWidth: document.body.clientWidth,
+      isMobile: document.body.clientWidth<768
     };
   },
+  watch: {
+    screenWidth(val) {
+      this.isMobile = val<768
+      if (!this.timer) {
+        this.screenWidth = val;
+        this.timer = true;
+        let that = this;
+        setTimeout(function() {
+          console.log(val);
+          that.timer = false;
+        }, 400);
+      }
+    },
+  },
   mounted() {
-    // this.slidesToShow = this.dotNum;
+    const that = this;
+    window.onresize = () => {
+      return (() => {
+        window.screenWidth = document.body.clientWidth;
+        that.screenWidth = window.screenWidth;
+      })();
+    };
+  },
+  computed: {
+    linkIndex(){
+      return this.isMobile ? 1 : 0;
+    }
   },
   methods: {}
 };
@@ -74,6 +102,8 @@ export default {
     width: 100%
     padding-bottom: 38%
     position: relative
+    @include rwd(768px)
+      padding-bottom: 152%
     .pic
       width: 100%
       height: 100%
