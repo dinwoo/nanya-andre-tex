@@ -1,17 +1,41 @@
 <template lang="pug">
   article#customized
-    .block
-      .wrapper
-        h1 customized
-        .customized-flow
-          img(:src="compileFilePath(`customized.jpg`)")
-          img(:src="compileFilePath(`customized_m.jpg`)")
+    section.banner
+      BannerSwiper(
+        :pictureLink="bannerLink"
+      )
+    section.main
+      .block
+        .wrapper
+          h1 customized
+          .customized-flow
+            img(:src="compileFilePath(`customized.jpg`)")
+            img(:src="compileFilePath(`customized_m.jpg`)")
 </template>
 
 <script>
+import BannerSwiper from "@/components/BannerSwiper.vue";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
+  components: {
+    BannerSwiper
+  },
   data() {
-    return {};
+    return {
+      bannerLink: [
+        {
+          1: "banner-1.jpg",
+          2: "banner-1.jpg",
+          3: "banner-1.jpg"
+        },
+        {
+          1: "banner-1-m.jpg",
+          2: "banner-1-m.jpg",
+          3: "banner-1-m.jpg"
+        },
+      ],
+    };
   },
   methods: {}
 };

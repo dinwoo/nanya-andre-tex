@@ -1,7 +1,9 @@
 <template lang="pug">
 	article#contact
 		section.banner
-			.slogan 聯絡我們
+			BannerSwiper(
+				:pictureLink="bannerLink"
+			)
 		section.info
 			.wrapper
 				.box
@@ -70,11 +72,30 @@
 </template>
 
 <script>
+import BannerSwiper from "@/components/BannerSwiper.vue";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
-  data() {
-    return {};
-  },
-  methods: {}
+	components: {
+		BannerSwiper
+	},
+	data() {
+		return {
+			bannerLink: [
+				{
+					1: "banner-1.jpg",
+					2: "banner-1.jpg",
+					3: "banner-1.jpg"
+				},
+				{
+					1: "banner-1-m.jpg",
+					2: "banner-1-m.jpg",
+					3: "banner-1-m.jpg"
+				},
+			],
+		};
+	},
+	methods: {}
 };
 </script>
 
@@ -106,33 +127,33 @@ article
 article#contact
 	section.banner
 		// background-image: url('../images/contact_banner.png')
-		background-repeat: no-repeat
-		background-position: 92% center
-		background-size: cover
-		width: 100%
-		height: 680px
-		position: relative
-		&:before
-			content: ''
-			display: block
-			width: 100%
-			height: 100%
-			background-color: rgba(#040404,.3)
-		.slogan
-			font-size: 76px
-			color: #fff
-			text-shadow: 0px 0px 10px rgba(#000,.7)
-			+pstc5
-		@include rwd(1680px)
-			height: 590px
-		@include rwd(768px)
-			height: 340px
-			.slogan
-				font-size: 56px
-		@include rwd(560px)
-			height: 260px
-			.slogan
-				font-size: 36px
+		// background-repeat: no-repeat
+		// background-position: 92% center
+		// background-size: cover
+		// width: 100%
+		// height: 680px
+		// position: relative
+		// &:before
+		// 	content: ''
+		// 	display: block
+		// 	width: 100%
+		// 	height: 100%
+		// 	background-color: rgba(#040404,.3)
+		// .slogan
+		// 	font-size: 76px
+		// 	color: #fff
+		// 	text-shadow: 0px 0px 10px rgba(#000,.7)
+		// 	+pstc5
+		// @include rwd(1680px)
+		// 	height: 590px
+		// @include rwd(768px)
+		// 	height: 340px
+		// 	.slogan
+		// 		font-size: 56px
+		// @include rwd(560px)
+		// 	height: 260px
+		// 	.slogan
+		// 		font-size: 36px
 
 	section.info
 		padding: 60px 0
