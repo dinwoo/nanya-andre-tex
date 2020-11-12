@@ -1,6 +1,9 @@
 <template lang="pug">
   article#fireTest
     section.banner
+      BannerSwiper(
+        :pictureLink="bannerLink"
+      )
     section.main
       .block
         .wrapper
@@ -114,13 +117,29 @@
 </template>
 
 <script>
+import BannerSwiper from "@/components/BannerSwiper.vue";
 import CustomSwiper from "@/components/CustomSwiper.vue";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
+    BannerSwiper,
     CustomSwiper
   },
   data() {
     return {
+      bannerLink: [
+        {
+          1: "banner-1.jpg",
+          2: "banner-1.jpg",
+          3: "banner-1.jpg"
+        },
+        {
+          1: "banner-1-m.jpg",
+          2: "banner-1-m.jpg",
+          3: "banner-1-m.jpg"
+        },
+      ],
       val: 0,
       pictureArr: [
         {

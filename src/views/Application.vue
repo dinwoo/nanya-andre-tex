@@ -1,45 +1,66 @@
 <template lang="pug">
   article#application
-    .block
-      .wrapper
-        #swiper
-          CustomSwiper(
-            :title="pictureArr[val].title"
-            :subTitle="pictureArr[val].subTitle"
-            :dotNum = "5"
-            :pictureLink="pictureArr[val].link"
-            :key="val"
-          )
-            template(slot="option")
-              .option-title 座椅內用防火材
-              .option-items
-                .option-item(@click="val=0") 飛機座椅
-                .option-item(@click="val=1") 高鐵座椅
-                .option-item(@click="val=2") 電影院座椅
-    .block
-      .wrapper
-        .title 內容
-        .tab
-          .tab-action
-            a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click="active = item.name" :key="index") {{item.name}}
-          .tab-content(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" :key="index")
-            .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
-              .graphicIntro-img
-                figure
-                  img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
-              .graphicIntro-content
-                .graphicIntro-title {{el.title}}
-                .graphicIntro-desc {{el.desc}}
+    section.banner
+      BannerSwiper(
+        :pictureLink="bannerLink"
+      )
+    section.main
+      .block
+        .wrapper
+          #swiper
+            CustomSwiper(
+              :title="pictureArr[val].title"
+              :subTitle="pictureArr[val].subTitle"
+              :dotNum = "5"
+              :pictureLink="pictureArr[val].link"
+              :key="val"
+            )
+              template(slot="option")
+                .option-title 座椅內用防火材
+                .option-items
+                  .option-item(@click="val=0") 飛機座椅
+                  .option-item(@click="val=1") 高鐵座椅
+                  .option-item(@click="val=2") 電影院座椅
+      .block
+        .wrapper
+          .title 內容
+          .tab
+            .tab-action
+              a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click="active = item.name" :key="index") {{item.name}}
+            .tab-content(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" :key="index")
+              .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
+                .graphicIntro-img
+                  figure
+                    img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
+                .graphicIntro-content
+                  .graphicIntro-title {{el.title}}
+                  .graphicIntro-desc {{el.desc}}
 </template>
 
 <script>
+import BannerSwiper from "@/components/BannerSwiper.vue";
 import CustomSwiper from "@/components/CustomSwiper.vue";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
+    BannerSwiper,
     CustomSwiper
   },
   data() {
     return {
+      bannerLink: [
+        {
+          1: "banner-1.jpg",
+          2: "banner-1.jpg",
+          3: "banner-1.jpg"
+        },
+        {
+          1: "banner-1-m.jpg",
+          2: "banner-1-m.jpg",
+          3: "banner-1-m.jpg"
+        },
+      ],
       active: "產品簡介",
       val: 0,
       pictureArr: [
