@@ -352,11 +352,11 @@ header
 								font-size: 18px
 								color: $gray
 								text-align: center
-							+hover
+							@include hover
 								.subA
 									background-color: #ebebeb
 							// &:nth-last-child(2)
-							// 	+hover
+							// 	@include hover
 							// 		.subA
 							// 			background-color: #f9f9f9
 							// 			cursor: default
@@ -364,7 +364,7 @@ header
 							width: 370px
 							li.subItem
 								width: 50%
-					+hover
+					@include hover
 						@include before
 							opacity: 1
 						ul.subMenu
@@ -376,7 +376,7 @@ header
 				vertical-align: middle
 				position: relative
 				cursor: pointer
-				+hover
+				@include hover
 					.subMenu
 						display: block
 				.svg_box
@@ -427,7 +427,7 @@ header
 							text-align: center
 							@include rwd(1000px)
 								font-size: 12px
-							+hover
+							@include hover
 								.subA
 									background-color: #ebebeb
 		.ham
@@ -494,6 +494,7 @@ header
 									// padding: 16px 0
 				.lang
 					// padding-left: 10px
+					padding: 31.5px 0
 					.svg_box
 						// width: 17px
 						// height: 17px
