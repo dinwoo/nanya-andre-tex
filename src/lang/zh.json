@@ -132,27 +132,27 @@
   "Examples":{
     "card": [
       {
-        "link": "#",
+        "link": "#swiperTarget",
         "img": "taoyuan.jpg",
         "imgMob": "taoyuan.jpg",
         "title": "桃園 芙蓉匯"
       }, {
-        "link": "#",
+        "link": "#swiperTarget",
         "img": "xinzhuang.jpg",
         "imgMob": "xinzhuang.jpg",
         "title": "新莊 麗寶雙璽"
       }, {
-        "link": "#",
+        "link": "#swiperTarget",
         "img": "building95.jpg",
         "imgMob": "building95.jpg",
         "title": "遠雄95大樓"
       }, {
-        "link": "#",
+        "link": "#swiperTarget",
         "img": "seaPalace.jpg",
         "imgMob": "seaPalace.jpg",
         "title": "海上皇宮"
       }, {
-        "link": "#",
+        "link": "#swiperTarget",
         "img": "sea.jpg",
         "imgMob": "sea.jpg",
         "title": "海洋都心三期"

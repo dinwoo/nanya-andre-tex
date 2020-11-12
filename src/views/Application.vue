@@ -15,7 +15,7 @@
               .option-items
                 .option-item(@click="val=0") 飛機座椅
                 .option-item(@click="val=1") 高鐵座椅
-                .option-item(@click="val=3") 電影院座椅
+                .option-item(@click="val=2") 電影院座椅
     .block
       .wrapper
         .title 內容

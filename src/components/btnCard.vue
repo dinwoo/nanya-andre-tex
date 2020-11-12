@@ -1,6 +1,6 @@
 <template lang="pug">
   .btnCard(:class="className")
-    a.btnCard-item(:href="item.link" v-for="item,index in cardData" :key="index")
+    a.btnCard-item(:href="item.link" v-for="item,index in cardData" :key="index" @click="cardIndex(index), swiperChange()")
       .btnCard-img
         img(:src="compileFilePath(item.img)")
         img(:src="compileFilePath(item.imgMob)")
@@ -14,9 +14,17 @@ export default {
   props: ["cardData", "className"],
   data() {
     return {
+      swiperVal: 1
     };
   },
-  methods: {}
+  methods: {
+    swiperChange: function(){
+      this.$emit('swiperClick', this.swiperVal)
+    },
+    cardIndex: function(index){
+      return this.swiperVal = index
+    }
+  }
 };
 </script>
 
