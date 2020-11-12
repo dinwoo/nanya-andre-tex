@@ -3,102 +3,129 @@
     BannerSwiper(
       :pictureLink="bannerLink"
     )
-    //- .block
+    .block.block-thermometer
       .wrapper
-        .sect-index.heat
-          h1.model-title.style1 耐熱應用
-          .container.pc.jq-heat-container(data-language='tc' data-heat-number='3')
-            .top-group.clear
-              .col-xs-4
-                .card-group(data-heat-card='1')
-                  .img-container
-                    //- img(:src="compileFilePath(`customized.jpg`)")
-                    img.img(:src="compileFilePath(`apply-img1.png`)" alt='')
-                    .info-group
-                      p.title ANDRE-TEX P
-                      p.detail 厚度x寬度：2.2mm x 40”
-                      p.detail
-                        | 重量：400 g/M
-                        span 2
-                      p.detail 限氧指數(L.O.I.)：>40
-                  p.title 塑膠管材
-                  .detail-group
-                    img.img(:src="compileFilePath(`heat-img5.png`)" alt='')
-              .col-xs-4
-                .card-group(data-heat-card='2')
-                  .img-container
-                    img.img(:src="compileFilePath(`apply-img2.png`)" alt='')
-                    .info-group
-                      p.title ANDRE-TEX T
-                      p.detail 厚度x寬度：2.5mm x 59”
-                      p.detail
-                        | 重量：300 g/M
-                        span 2
-                      p.detail 限氧指數(L.O.I.).：40
-                  p.title 座椅內用
-                  .detail-group
-                    img.img(:src="compileFilePath(`heat-img6.png`)" alt='')
-              .col-xs-4
-                .card-group(data-heat-card='3')
-                  .img-container
-                    img.img(:src="compileFilePath(`apply-img3.png`)" alt='')
-                    .info-group
-                      p.title ANDRE-TEX W
-                      p.detail 厚度x寬度：3.0mm x 55”
-                      p.detail
-                        | 重量：500 g/M
-                        span 2
-                      p.detail 限氧指數(L.O.I.).：>40
-                  p.title 電焊用
-                  .detail-group
-                    img.img(:src="compileFilePath(`heat-img8.png`)" alt='')
-            .bottom-group.clear
-              .col-xs-4
-                .card-group(data-heat-card='1')
-                  .img-container
-                    img.img(:src="compileFilePath(`apply-img4.png`)" alt='')
-                    .info-group
-                      p.title ANDRE-TEX I
-                      p.detail 厚度x寬度：0.3mm x 40”
-                      p.detail
-                        | 重量：400 g/M
-                        span 2
-                      p.detail 限氧指數(L.O.I.).：35
-                  p.title 電線管路
-                  .detail-group
-                    img.img(:src="compileFilePath(`heat-img5.png`)" alt='')
-              .col-xs-4
-                .card-group(data-heat-card='3')
-                  .img-container
-                    img.img(:src="compileFilePath(`apply-img5.png`)" alt='')
-                    .info-group
-                      p.title ANDRE-TEX S
-                      p.detail 厚度x寬度：4.0mm x 59”
-                      p.detail
-                        | 重量：600 g/M
-                        span 2
-                      p.detail 限氧指數(L.O.I.).：35
-                  p.title 排風管
-                  .detail-group
-                    //- img.img(:src="compileFilePath(`heat-img7.png`)" alt='')
-              .col-xs-4
-                .card-group(data-heat-card='3')
-                  .img-container
-                    img.img(:src="compileFilePath(`apply-img6-tc.png`)" alt='')
-                    .info-group
-                      p.title ANDRE-TEX H
-                      p.detail 厚度x寬度：3.0mm x 59”
-                      p.detail
-                        | 重量：500 g/M
-                        span 2
-                      p.detail 限氧指數(L.O.I.).：40
-                  p.title 家庭/飯店
-                  .detail-group
-                    img.img(:src="compileFilePath(`heat-img8.png`)" alt='')
-          .container.mobile.jq-heat-container(data-language='tc' data-heat-number='3')
-            a.hover-group.style3(data-hover-number='3' href='javascript:void(0)')
-            a.hover-group.style2(data-hover-number='2' href='javascript:void(0)')
-            a.hover-group.style1(data-hover-number='1' href='javascript:void(0)')
+        .title
+          figure.thermometer-title
+            img(:src="compileFilePath(`thermometer-title.png`)")
+            img(:src="compileFilePath(`thermometer-title-m.png`)")
+        .mobile-content
+          .thermometer(
+            :style="`background-image:url('${compileFilePath(thermometerMobileLink)}')`"
+          )
+          .change-btn(@click="thermometerMobileLink='thermometer-img8-1.png'")
+          .change-btn(@click="thermometerMobileLink='thermometer-img8-2.png'")
+          .change-btn(@click="thermometerMobileLink='thermometer-img8-3.png'")
+        .content
+          .top
+            .item(
+              @mouseenter="thermometerLink='thermometer-img7-3.jpg'"
+            )
+              .pic-box
+                figure.pic
+                  img(:src="compileFilePath(`thermometer-img1-1.png`)")
+                .info
+                  p.title ANDRE-TEX P
+                  p.detail 厚度x寬度：2.2mm x 40”
+                  p.detail
+                    | 重量：400 g/M
+                    span 2
+                  p.detail 限氧指數(L.O.I.)：>40
+              figure.name
+                img(:src="compileFilePath(`thermometer-img1-2.png`)")
+              figure.arrow
+                img(:src="compileFilePath(`thermometer-arrow-1.png`)")
+            .item(
+              @mouseenter="thermometerLink='thermometer-img7-2.jpg'"
+            )
+              .pic-box
+                figure.pic
+                  img(:src="compileFilePath(`thermometer-img2-1.png`)")
+                .info
+                  p.title ANDRE-TEX T
+                  p.detail 厚度x寬度：2.5mm x 59”
+                  p.detail
+                    | 重量：300 g/M
+                    span 2
+                  p.detail 限氧指數(L.O.I.).：40
+              figure.name
+                img(:src="compileFilePath(`thermometer-img2-2.png`)")
+              figure.arrow
+                img(:src="compileFilePath(`thermometer-arrow-1.png`)")
+            .item(
+              @mouseenter="thermometerLink='thermometer-img7-1.jpg'"
+            )
+              .pic-box
+                figure.pic
+                  img(:src="compileFilePath(`thermometer-img3-1.png`)")
+                .info
+                  p.title ANDRE-TEX W
+                  p.detail 厚度x寬度：3.0mm x 55”
+                  p.detail
+                    | 重量：500 g/M
+                    span 2
+                  p.detail 限氧指數(L.O.I.).：>40
+              figure.name
+                img(:src="compileFilePath(`thermometer-img3-2.png`)")
+              figure.arrow
+                img(:src="compileFilePath(`thermometer-arrow-1.png`)")
+          .thermometer(
+            :style="`background-image:url('${compileFilePath(thermometerLink)}')`"
+          )
+          .bottom
+            .item(
+              @mouseenter="thermometerLink='thermometer-img7-3.jpg'"
+            )
+              figure.arrow
+                img(:src="compileFilePath(`thermometer-arrow-2.png`)")
+              .pic-box
+                figure.pic
+                  img(:src="compileFilePath(`thermometer-img4-1.png`)")
+                .info
+                  p.title ANDRE-TEX I
+                  p.detail 厚度x寬度：0.3mm x 40”
+                  p.detail
+                    | 重量：400 g/M
+                    span 2
+                  p.detail 限氧指數(L.O.I.).：35
+              figure.name
+                img(:src="compileFilePath(`thermometer-img4-2.png`)")
+            .item(
+              @mouseenter="thermometerLink='thermometer-img7-2.jpg'"
+            )
+              figure.arrow
+                img(:src="compileFilePath(`thermometer-arrow-2.png`)")
+              .pic-box
+                figure.pic
+                  img(:src="compileFilePath(`thermometer-img5-1.png`)")
+                .info
+                  p.title ANDRE-TEX S
+                  p.detail 厚度x寬度：4.0mm x 59”
+                  p.detail
+                    | 重量：600 g/M
+                    span 2
+                  p.detail 限氧指數(L.O.I.).：35
+              figure.name
+                img(:src="compileFilePath(`thermometer-img5-2.png`)")
+            .item(
+              @mouseenter="thermometerLink='thermometer-img7-1.jpg'"
+            )
+              figure.arrow
+                img(:src="compileFilePath(`thermometer-arrow-2.png`)")
+              .pic-box
+                figure.pic
+                  img(:src="compileFilePath(`thermometer-img6-1.png`)")
+                .info
+                  p.title ANDRE-TEX H
+                  p.detail 厚度x寬度：3.0mm x 59”
+                  p.detail
+                    | 重量：500 g/M
+                    span 2
+                  p.detail 限氧指數(L.O.I.).：40
+              figure.name
+                img(:src="compileFilePath(`thermometer-img6-2.png`)")
+            
+
 
     .block
       .wrapper
@@ -153,17 +180,6 @@
                 | 特性
                 br
                 | 厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。
-            .info(v-if="recommendSlickIndex==2")
-              .name 運動商品纏條(不織布)3
-              .description 
-                | 用途
-                br 
-                | 網球拍、高爾夫球桿、手套等纏條用不織布基材。
-                br
-                br
-                | 特性
-                br
-                | 厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。
     .contact-block
       router-link.wrapper(to="/contact")
         .title 聯絡我們
@@ -203,7 +219,9 @@ export default {
           3: "banner-tc3-m.jpg"
         },
       ],
-      recommendLink: ["fuli.jpg", "blackcat1.jpg", "blackcat2.jpg"],
+      thermometerLink:'thermometer-img7-1.jpg',
+      thermometerMobileLink:'thermometer-img8-1.png',
+      recommendLink: ["recommed-img1.png", "recommed-img2.jpg"],
       settings:{
         "dots": true,
         "dotsClass": "slick-dots custom-dot-class recommend-dots",
@@ -244,9 +262,116 @@ export default {
 @import "../assets/sass/var.sass"
 *
   vertical-align: top
+.block-thermometer
+  .title
+    figure.thermometer-title
+      width: 545px
+      margin: auto
+      img
+        &:nth-child(1)
+          display: block
+        &:nth-child(2)
+          display: none
+  .mobile-content
+    display: none
+  .content
+    width: 100%
+    position: relative
+    .top
+      padding-bottom: 11%
+      position: relative
+      z-index: 1
+    .bottom
+      position: relative
+      z-index: 1
+    .thermometer
+      width: 100%
+      padding-bottom: 46.428571%
+      // background-image: url('../assets/images/thermometer-img7-1.jpg')
+      background-size: contain
+      background-position: center center
+      background-repeat: no-repeat
+      +pstc5
+      top: 53%
+    .item
+      width: 33.333333%
+      padding: 0 2%
+      box-sizing: border-box
+      +dib
+      .pic-box
+        position: relative
+        figure.pic
+        .info
+          opacity: 0
+          width: 100%
+          height: 100%
+          padding: 20px
+          box-sizing: border-box
+          background-color: rgba(183,23,0,0.8)
+          transition: .3s
+          position: absolute
+          top: 0
+          left: 0
+          p.title
+            font-size: 26px
+            color: #fff
+            margin-bottom: 20px
+          p.detail
+            font-size: 20px
+            color: #fff
+            margin-bottom: 10px
+            text-align: left
+            span
+              font-size: 16px
+              vertical-align: super
+        @include hover
+          .info
+            opacity: 1
+      figure.name
+        width: 91%
+        margin: 2% auto
+      figure.arrow
+        width: 50px
+        margin: auto
+  @include rwd(768px)
+    .title
+      figure.thermometer-title
+        width: 46vw
+        img
+          &:nth-child(1)
+            display: none
+          &:nth-child(2)
+            display: block
+    .content
+      display: none
+    .mobile-content
+      display: block
+      position: relative
+      .thermometer
+        width: 100%
+        padding-bottom: 208.8%
+        background-size: contain
+        background-position: center center
+        background-repeat: no-repeat
+      .change-btn
+        width: 60%
+        height: 33.333333%
+        position: absolute
+        right: 0
+        &:nth-child(2)
+          top: 0
+        &:nth-child(3)
+          top: 0
+          bottom: 0
+          margin: auto
+        &:nth-child(4)
+          bottom: 0
+
+
 .recommend-block
   padding-bottom: 8%
   background-color: #fee4d5
+  
 .recommend
   .title
     font-size: 48px
