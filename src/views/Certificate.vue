@@ -16,9 +16,9 @@
             .tab-content
               .certificate-items
                 template(v-for="item,itemIndex in $t(`${$route.name}.content`)")
-                  a.certificate-item(href="#" v-for="el,index in item.data" v-if="active == item.name" :key="index")
+                  .certificate-item(href="#" v-for="el,index in item.data" v-if="active == item.name" :key="index")
                     figure
-                      img(:src="compileFilePath(el.img)")
+                      img(v-image-preview :src="compileFilePath(el.img)")
                     .certificate-title {{el.title}}{{itemIndex}}
 </template>
 
@@ -112,6 +112,7 @@ export default {
     vertical-align: top
     width: calc( (100% - 252px)/3 )
     margin: 0 42px 42px 42px
+    cursor: pointer
     figure
       box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1)
   &-title
