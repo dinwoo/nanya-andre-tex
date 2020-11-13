@@ -158,5 +158,100 @@
         "title": "海洋都心三期"
       }
     ]
+  },
+  "Certificate":{
+    "content": [
+      {
+        "btnImg": "tab01.jpg",
+        "name": "塑膠管材防火包覆",
+        "data":[
+          {
+            "img": "certificate01-1.jpg",
+            "title": "CNS 14705認證"
+          }, {
+            "img": "certificate01-2.jpg",
+            "title": "新技術新工法證書"
+          }, {
+            "img": "certificate01-3.jpg",
+            "title": "新技術新工法證書"
+          }
+        ]
+      }, {
+        "btnImg": "tab02.jpg",
+        "name": "電焊防火用",
+        "data":[
+          {
+            "img": "certificate01-1.jpg",
+            "title": "CNS 14705認證"
+          }, {
+            "img": "certificate01-2.jpg",
+            "title": "新技術新工法證書"
+          }, {
+            "img": "certificate01-3.jpg",
+            "title": "新技術新工法證書"
+          }
+        ]
+      }, {
+        "btnImg": "tab03.jpg",
+        "name": "座椅內包防火材",
+        "data":[
+          {
+            "img": "certificate01-1.jpg",
+            "title": "CNS 14705認證"
+          }, {
+            "img": "certificate01-2.jpg",
+            "title": "新技術新工法證書"
+          }, {
+            "img": "certificate01-3.jpg",
+            "title": "新技術新工法證書"
+          }
+        ]
+      }, {
+        "btnImg": "tab04.jpg",
+        "name": "家庭、飯店防火毯",
+        "data":[
+          {
+            "img": "certificate01-1.jpg",
+            "title": "CNS 14705認證"
+          }, {
+            "img": "certificate01-2.jpg",
+            "title": "新技術新工法證書"
+          }, {
+            "img": "certificate01-3.jpg",
+            "title": "新技術新工法證書"
+          }
+        ]
+      }, {
+        "btnImg": "tab05.jpg",
+        "name": "耐燃絕緣包覆材",
+        "data":[
+          {
+            "img": "certificate01-1.jpg",
+            "title": "CNS 14705認證"
+          }, {
+            "img": "certificate01-2.jpg",
+            "title": "新技術新工法證書"
+          }, {
+            "img": "certificate01-3.jpg",
+            "title": "新技術新工法證書"
+          }
+        ]
+      }, {
+        "btnImg": "tab06.jpg",
+        "name": "ISO認證",
+        "data":[
+          {
+            "img": "certificate01-1.jpg",
+            "title": "CNS 14705認證"
+          }, {
+            "img": "certificate01-2.jpg",
+            "title": "新技術新工法證書"
+          }, {
+            "img": "certificate01-3.jpg",
+            "title": "新技術新工法證書"
+          }
+        ]
+      }
+    ]
   }
 }
