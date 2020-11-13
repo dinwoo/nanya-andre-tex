@@ -33,6 +33,14 @@ const i18n = new VueI18n({
   }
 });
 
+// 點擊圖片放大
+Vue.use(VueImageView, {
+  animate: {
+    duration: 300
+  },
+  zIndex: "1000"
+})
+
 
 Vue.config.productionTip = false;
 
@@ -42,11 +50,3 @@ new Vue({
   i18n,
   render: h => h(App)
 }).$mount("#app");
-
-// 點擊圖片放大
-Vue.use(VueImageView, {
-  animate: {
-    duration: 300
-  },
-  zIndex: 1000
-})
