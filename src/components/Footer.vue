@@ -3,7 +3,7 @@ footer
 	.topFooter
 		.wrapper
 			.content
-				.title 全球銷售通路
+				.title {{$t(`Footer.title1`)}}
 				a.map(href="https://www.npc.com.tw/j2npc/zhtw/product/Cc1p06.do" target="_blank")
 					.pic
 						include ../assets/pug/earth_map.pug
@@ -19,18 +19,18 @@ footer
 					//- 	.svg_box
 					//- 		include ../assets/pug/fb_icon.pug
 			.content
-				.title 產品資訊
+				.title {{$t(`Footer.title2`)}}
 				.link_box
-					router-link.item(to="/application/pipe") 塑料管材防火包覆
-					router-link.item(to="/application/welding") 電銲防火用
-					router-link.item(to="/application/household") 家庭防火用
-					router-link.item(to="/application/seats") 座椅內包覆防火材
-					router-link.item(to="/application/daily") 民生防火材
-					router-link.item(to="/application/insulation") 耐燃絕緣包覆材
-					router-link.item(to="/customize") 客製產品開發
+					router-link.item(to="/application/pipe") {{$t(`Footer.pipe`)}}
+					router-link.item(to="/application/welding") {{$t(`Footer.welding`)}}
+					router-link.item(to="/application/household") {{$t(`Footer.household`)}}
+					router-link.item(to="/application/seats") {{$t(`Footer.seats`)}}
+					router-link.item(to="/application/daily") {{$t(`Footer.daily`)}}
+					router-link.item(to="/application/insulation") {{$t(`Footer.insulation`)}}
+					router-link.item(to="/customize") {{$t(`Footer.customize`)}}
 
 			.content
-				.title 聯絡資訊
+				.title {{$t(`Footer.title3`)}}
 				.info_box
 					a.item(href="https://www.nanya-andre-tex.com" target="_blank")
 						.icon
@@ -51,9 +51,9 @@ footer
 					a.item(href="https://goo.gl/maps/KFKPRxzyrGkB4Rfc9" target="_black")
 						.icon
 							include ../assets/pug/house_icon.pug
-						.txt 台北市敦化北路201號台塑大樓3樓502室
+						.txt {{$t(`Footer.address`)}}
 			.content
-				.title 快速連結
+				.title {{$t(`Footer.title4`)}}
 				.company_box
 					a.item(href="https://www.fpg.com.tw/tw" target="_blank")
 						figure.company
@@ -69,7 +69,7 @@ footer
 					a.item()
 						figure.QRCode
 							img(src="@/assets/images/footer_QRCode_01.png", alt="")
-						p.name 南亞塑膠城
+						p.name {{$t(`Footer.plastics`)}}
 					a.item(href="http://www.fcfc.com.tw/PRE/TW/index.html" target="_blank")
 						figure.company
 							img(src="@/assets/images/footer_company_06.png", alt="")
@@ -86,7 +86,7 @@ footer
 	.subFooter
 		.wrapper
 			.box
-				.copyright Copyright © 2019 南亞塑膠工業股份有限公司 All Rights Reserved.
+				.copyright {{$t(`Footer.copyright`)}}
 				//- .right_content
 				//- 	.link_box
 				//- 		a.item(href="http://crm2.fpg.com.tw/j2hr2p/home/IndexHomeController.do" target="_black") 人才招募
@@ -96,7 +96,7 @@ footer
 				//- 		a.item(href="" target="_black") 聯絡我們
 				//- 	.len 語系: 繁體中文
 			.box
-				.txt 網站內之所有著作及資料，其著作權、專利權、商標、其他智慧財產權、所有權或其他權利，均為本企業所有，非經本企業合法授權，不得擅自重製、改作或以其他任何形式、基於任何目的加以使用。
+				.txt {{$t(`Footer.remind`)}}
 </template>
 
 <script>

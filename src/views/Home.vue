@@ -25,12 +25,12 @@
                 figure.pic
                   img(:src="compileFilePath(`thermometer-img1-1.png`)")
                 .info
-                  p.title ANDRE-TEX P
-                  p.detail 厚度x寬度：2.2mm x 40”
+                  p.title {{ $t(`${$route.name}.thermometer[0].title`) }}
+                  p.detail {{ $t(`${$route.name}.thermometer[0].detail1`) }}
                   p.detail
-                    | 重量：400 g/M
+                    | {{ $t(`${$route.name}.thermometer[0].detail2`) }}
                     span 2
-                  p.detail 限氧指數(L.O.I.)：>40
+                  p.detail {{ $t(`${$route.name}.thermometer[0].detail3`) }}
               figure.name
                 img(:src="compileFilePath(`thermometer-img1-2.png`)")
               figure.arrow
@@ -42,12 +42,12 @@
                 figure.pic
                   img(:src="compileFilePath(`thermometer-img2-1.png`)")
                 .info
-                  p.title ANDRE-TEX T
-                  p.detail 厚度x寬度：2.5mm x 59”
+                  p.title {{ $t(`${$route.name}.thermometer[1].title`) }}
+                  p.detail {{ $t(`${$route.name}.thermometer[1].detail1`) }}
                   p.detail
-                    | 重量：300 g/M
+                    | {{ $t(`${$route.name}.thermometer[1].detail2`) }}
                     span 2
-                  p.detail 限氧指數(L.O.I.).：40
+                  p.detail {{ $t(`${$route.name}.thermometer[1].detail3`) }}
               figure.name
                 img(:src="compileFilePath(`thermometer-img2-2.png`)")
               figure.arrow
@@ -59,12 +59,12 @@
                 figure.pic
                   img(:src="compileFilePath(`thermometer-img3-1.png`)")
                 .info
-                  p.title ANDRE-TEX W
-                  p.detail 厚度x寬度：3.0mm x 55”
+                  p.title {{ $t(`${$route.name}.thermometer[2].title`) }}
+                  p.detail {{ $t(`${$route.name}.thermometer[2].detail1`) }}
                   p.detail
-                    | 重量：500 g/M
+                    | {{ $t(`${$route.name}.thermometer[2].detail2`) }}
                     span 2
-                  p.detail 限氧指數(L.O.I.).：>40
+                  p.detail {{ $t(`${$route.name}.thermometer[2].detail3`) }}
               figure.name
                 img(:src="compileFilePath(`thermometer-img3-2.png`)")
               figure.arrow
@@ -82,12 +82,12 @@
                 figure.pic
                   img(:src="compileFilePath(`thermometer-img4-1.png`)")
                 .info
-                  p.title ANDRE-TEX I
-                  p.detail 厚度x寬度：0.3mm x 40”
+                  p.title {{ $t(`${$route.name}.thermometer[3].title`) }}
+                  p.detail {{ $t(`${$route.name}.thermometer[3].detail1`) }}
                   p.detail
-                    | 重量：400 g/M
+                    | {{ $t(`${$route.name}.thermometer[3].detail2`) }}
                     span 2
-                  p.detail 限氧指數(L.O.I.).：35
+                  p.detail {{ $t(`${$route.name}.thermometer[3].detail3`) }}
               figure.name
                 img(:src="compileFilePath(`thermometer-img4-2.png`)")
             .item(
@@ -99,12 +99,12 @@
                 figure.pic
                   img(:src="compileFilePath(`thermometer-img5-1.png`)")
                 .info
-                  p.title ANDRE-TEX S
-                  p.detail 厚度x寬度：4.0mm x 59”
+                  p.title {{ $t(`${$route.name}.thermometer[4].title`) }}
+                  p.detail {{ $t(`${$route.name}.thermometer[4].detail1`) }}
                   p.detail
-                    | 重量：600 g/M
+                    | {{ $t(`${$route.name}.thermometer[4].detail2`) }}
                     span 2
-                  p.detail 限氧指數(L.O.I.).：35
+                  p.detail {{ $t(`${$route.name}.thermometer[4].detail3`) }}
               figure.name
                 img(:src="compileFilePath(`thermometer-img5-2.png`)")
             .item(
@@ -116,12 +116,12 @@
                 figure.pic
                   img(:src="compileFilePath(`thermometer-img6-1.png`)")
                 .info
-                  p.title ANDRE-TEX H
-                  p.detail 厚度x寬度：3.0mm x 59”
+                  p.title {{ $t(`${$route.name}.thermometer[5].title`) }}
+                  p.detail {{ $t(`${$route.name}.thermometer[5].detail1`) }}
                   p.detail
-                    | 重量：500 g/M
+                    | {{ $t(`${$route.name}.thermometer[5].detail2`) }}
                     span 2
-                  p.detail 限氧指數(L.O.I.).：40
+                  p.detail {{ $t(`${$route.name}.thermometer[5].detail3`) }}
               figure.name
                 img(:src="compileFilePath(`thermometer-img6-2.png`)")
             
@@ -137,7 +137,7 @@
     .block.recommend-block
       .wrapper
         .recommend
-          .title 推薦選購
+          .title {{ $t(`${$route.name}.recommend.title`) }}
           .content.content-slick
             .arrow.arrow-pre(
               @click="$refs.recommendSlick.prev()"
@@ -158,31 +158,17 @@
               @click="$refs.recommendSlick.next()"
             )
           .content.content-info
-            .info(v-if="recommendSlickIndex==0")
-              .name 運動商品纏條(不織布)1
-              .description 
-                | 用途
-                br 
-                | 網球拍、高爾夫球桿、手套等纏條用不織布基材。
-                br
-                br
-                | 特性
-                br
-                | 厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。
-            .info(v-if="recommendSlickIndex==1")
-              .name 運動商品纏條(不織布)2
-              .description 
-                | 用途
-                br 
-                | 網球拍、高爾夫球桿、手套等纏條用不織布基材。
-                br
-                br
-                | 特性
-                br
-                | 厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。
+            .info(
+              v-for="(product,index) in $t(`${$route.name}.recommend.product`)" :key="index"
+              v-if="recommendSlickIndex==index"
+            )
+              .name {{ product.name }}
+              .description(
+                v-html="product.description"
+              )
     .contact-block
       router-link.wrapper(to="/contact")
-        .title 聯絡我們
+        .title {{ $t(`${$route.name}.contact.title`) }}
         figure.contact
           img(src="@/assets/images/home-contact.png")
           img(src="@/assets/images/home-contact-m.png")
@@ -236,7 +222,8 @@ export default {
   },
   methods: {
     changeIndex(index) {
-      this.recommendSlickIndex = index;
+      let sum = this.$t(`${this.$route.name}.recommend.product`).length;
+      this.recommendSlickIndex = (index + 1 + sum) % sum;
     },
   },
 };
