@@ -7,7 +7,6 @@
     section.main
       .block
         .wrapper
-          h1 customized
           .customized-flow
             img(:src="compileFilePath(`customized.jpg`)")
             img(:src="compileFilePath(`customized_m.jpg`)")

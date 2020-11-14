@@ -2,49 +2,49 @@
   "Home": {
     "title": "123",
     "card": [{
-      "link": "Application",
+      "link": "/nanya-andre-tex/#/application/pipe",
       "img": "btnCard-1.jpg",
       "imgMob": "btnCard-1-m.jpg",
       "title": "塑膠管材",
       "desc": "給你住家、辦公大樓最好的防護"
     }, {
-      "link": "#",
+      "link": "/nanya-andre-tex/#/application/welding",
       "img": "btnCard-2.jpg",
       "imgMob": "btnCard-2-m.jpg",
       "title": "電焊用",
       "desc": "防火毯耐拉扯、阻攔電焊熔渣飛濺"
     }, {
-      "link": "#",
+      "link": "/nanya-andre-tex/#/application/household",
       "img": "btnCard-3.jpg",
       "imgMob": "btnCard-3-m.jpg",
       "title": "家庭/飯店",
       "desc": "家庭、飯店防火安全防護最佳守衛"
     }, {
-      "link": "#",
+      "link": "/nanya-andre-tex/#/application/seats",
       "img": "btnCard-4.jpg",
       "imgMob": "btnCard-4-m.jpg",
       "title": "座椅內用",
       "desc": "通過多項BS國際認證與  ISO 5660:2015測試"
     }, {
-      "link": "#",
+      "link": "/nanya-andre-tex/#/application/daily",
       "img": "btnCard-5.jpg",
       "imgMob": "btnCard-5-m.jpg",
       "title": "排風管",
       "desc": "排風管防火、防水包覆"
     }, {
-      "link": "#",
+      "link": "/nanya-andre-tex/#/application/insulation",
       "img": "btnCard-6.jpg",
       "imgMob": "btnCard-6-m.jpg",
       "title": "電線管路",
       "desc": "電線管路防火、耐燃絕緣、 防水的首選"
     }, {
-      "link": "#",
+      "link": "/nanya-andre-tex/#/customize",
       "img": "btnCard-7.jpg",
       "imgMob": "btnCard-7-m.jpg",
       "title": "客製開發",
       "desc": "提供定製開發，問題解決方案"
     }, {
-      "link": "#",
+      "link": "/nanya-andre-tex/#/test",
       "img": "btnCard-8.jpg",
       "imgMob": "btnCard-8-m.jpg",
       "title": "防火測試",
@@ -135,6 +135,7 @@
     }
   },
   "Examples": {
+    "title": "成功案例",
     "card": [{
       "link": "#swiperTarget",
       "img": "taoyuan.jpg",
@@ -160,7 +161,79 @@
       "img": "sea.jpg",
       "imgMob": "sea.jpg",
       "title": "海洋都心三期"
-    }]
+    }],
+    "Swiper": {
+      "pic": [{
+          "title": "桃園 芙蓉匯",
+          "link": ["taoyuan-1.jpg", "taoyuan-2.jpg", "taoyuan-3.jpg", "taoyuan-4.jpg", "taoyuan-5.jpg", "taoyuan-6.jpg"]
+        },
+        {
+          "title": "新莊 麗寶雙璽",
+          "link": ["xinzhuang.jpg", "xinzhuang.jpg", "xinzhuang.jpg", "xinzhuang.jpg", "xinzhuang.jpg", "xinzhuang.jpg"]
+        },
+        {
+          "title": "遠雄95大樓",
+          "link": ["building95.jpg", "building95.jpg", "building95.jpg", "building95.jpg", "building95.jpg", "building95.jpg"]
+        },
+        {
+          "title": "海上皇宮",
+          "link": ["seaPalace.jpg", "seaPalace.jpg", "seaPalace.jpg", "seaPalace.jpg", "seaPalace.jpg", "seaPalace.jpg"]
+        },
+        {
+          "title": "海洋都心三期",
+          "link": ["sea.jpg", "sea.jpg", "sea.jpg", "sea.jpg", "sea.jpg", "sea.jpg"]
+        }
+      ],
+      "option": [
+        "桃園 芙蓉匯",
+        "新莊 麗寶雙璽",
+        "遠雄95大樓",
+        "海上皇宮",
+        "海洋都心三期"
+      ]
+    }
+  },
+  "FireTest": {
+    "Swiper": {
+      "pic": [{
+          "title": "座椅內用防火材",
+          "subTitle": "影片：加工燃燒測試",
+          "link": ["test-1-1.jpg", "test-1-2.jpg", "test-1-1.jpg", "test-1-2.jpg"]
+        },
+        {
+          "title": "座椅內用防火材",
+          "subTitle": "影片：加工燃燒測試2",
+          "link": ["test-1-1.jpg", "test-1-2.jpg", "test-1-1.jpg", "test-1-2.jpg"]
+        },
+        {
+          "title": "座椅內用防火材",
+          "subTitle": "影片：加工燃燒測試3",
+          "link": ["test-1-1.jpg", "test-1-2.jpg", "test-1-1.jpg", "test-1-2.jpg"]
+        },
+        {
+          "title": "座椅內用防火材",
+          "subTitle": "影片：加工燃燒測試4",
+          "link": ["test-1-1.jpg", "test-1-2.jpg", "test-1-1.jpg", "test-1-2.jpg"]
+        }
+      ],
+      "option": [
+        "噴燈600℃X2min",
+        "電焊1070℃X30sec",
+        "噴燈1100℃X2min",
+        "電焊1300℃X30sec"
+      ]
+    },
+    "list": {
+      "title": "測試結果",
+      "listItem": [
+        "南亞防火材經噴燈高溫燃燒測試較一般市售防火、滅火(隔熱、保溫)等材質，堅固耐用、不易破損、不延燒、不熔融、不產生毒廢氣造成二次公害。",
+        "電焊測試可降低電焊焊渣彈跳高度與範圍。",
+        "重量適當可折疊、易收藏不會有玻璃纖維易脆化缺點、不含石棉及限用物質等優異特性。",
+        "限氧指數:ASTM D2863法指數45↑。",
+        "應用範圍廣泛如工程明火防火毯(電焊、氣焊、砂磨、高溫切割) 防火隔簾、耐熱包覆材、保溫材、耐熱墊、汽車隔音、隔熱材、高溫作業區隔熱毯、家庭滅火毯安全防護用途。",
+        "測試結果CNS 10285 L3196 A4、CNS 7614 A3125均評等1級。限氧指數:ASTM D2863法指數45↑。"
+      ]
+    }
   },
   "Certificate": {
     "content": [{
