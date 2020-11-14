@@ -11,11 +11,11 @@
           .tab
             .tab-desc 經塑膠中心測試，評等1級。可抗瞬燃1200℃高溫，長時間耐熱範圍350～450℃，具不燃燒、不熔融特性，焚燒過程不會產生有毒廢氣，無二次公害。 可供防火毯(滅火毯)、耐燃包覆材、耐熱墊材等安全防護用途。
             .tab-action
-              a.tab-btn.solid(href="#") Ander-tex火燄實測
-              a.tab-btn.solid(href="#") 測試項目條件
-              a.tab-btn.solid(href="#") 塑膠中心測試
-              a.tab-btn.solid(href="#") 測試結果
-      .block
+              a.tab-btn.solid(href="#swiperTarget") Ander-tex火燄實測
+              a.tab-btn.solid(href="#tableTarget") 測試項目條件
+              a.tab-btn.solid(href="#centerTarget") 塑膠中心測試
+              a.tab-btn.solid(href="#resultTarget") 測試結果
+      .block#swiperTarget
         .wrapper
           #swiper
             CustomSwiper(
@@ -26,12 +26,12 @@
               :key="val"
             )
               template(slot="option")
-                .option-items
+                .option-items.fireTest
                   .option-item(@click="val=0") 噴燈600℃X2min
                   .option-item(@click="val=1") 電焊1070℃X30sec
                   .option-item(@click="val=3") 噴燈1100℃X2min
                   .option-item(@click="val=3") 電焊1300℃X30sec
-      .block.grey
+      .block.grey#tableTarget
         .wrapper.overScroll
           .title 測試項目及條件
           .table
@@ -81,7 +81,7 @@
           p.remark ※防火材測試使用熱影像對照圖。
           p.remark ※當日測試實況：
             a(href="#" target="_blank") YouTube搜尋南亞防火毯
-      .block
+      .block#centerTarget
         .wrapper
           .title 塑膠中心測試
             .attach 評等1級
@@ -103,7 +103,7 @@
                     br
                     span (以ASTM D2863法測試)
       .separate
-      .block
+      .block#resultTarget
         .wrapper
           .title 測試結果
           ul.list
@@ -171,25 +171,26 @@ export default {
 
 <style lang="sass">
 @import "../assets/sass/var.sass"
-.option
-  &-box
-    text-align: center
-  &-items
-    font-size: 0
-  &-item
-    display: inline-block
-    width: 50%
-    padding: 25px 0
-    &:before
-      content: none
-    &+&
-      margin: 0
-  @include rwd(960px)
+#fireTest
+  .option
+    &-box
+      text-align: center
     &-items
-      padding: 20px
+      font-size: 0
     &-item
-      width: 100%
-      padding: 20px 0
+      display: inline-block
+      width: 50%
+      padding: 25px 0
+      &:before
+        content: none
+      &+&
+        margin: 0
+    @include rwd(960px)
+      &-items
+        padding: 20px
+      &-item
+        width: 100%
+        padding: 20px 0
 .table
   table
     width: 100%
