@@ -19,51 +19,51 @@
   "Home": {
     "title": "123",
     "card": [{
-      "link": "#",
-      "img": "01.jpg",
-      "imgMob": "01_m.jpg",
+      "link": "Application",
+      "img": "btnCard-1.jpg",
+      "imgMob": "btnCard-1-m.jpg",
       "title": "塑膠管材",
       "desc": "給你住家、辦公大樓最好的防護"
     }, {
       "link": "#",
-      "img": "02.jpg",
-      "imgMob": "02_m.jpg",
+      "img": "btnCard-2.jpg",
+      "imgMob": "btnCard-2-m.jpg",
       "title": "電焊用",
       "desc": "防火毯耐拉扯、阻攔電焊熔渣飛濺"
     }, {
       "link": "#",
-      "img": "03.jpg",
-      "imgMob": "03_m.jpg",
+      "img": "btnCard-3.jpg",
+      "imgMob": "btnCard-3-m.jpg",
       "title": "家庭/飯店",
       "desc": "家庭、飯店防火安全防護最佳守衛"
     }, {
       "link": "#",
-      "img": "04.jpg",
-      "imgMob": "04_m.jpg",
+      "img": "btnCard-4.jpg",
+      "imgMob": "btnCard-4-m.jpg",
       "title": "座椅內用",
       "desc": "通過多項BS國際認證與  ISO 5660:2015測試"
     }, {
       "link": "#",
-      "img": "05.jpg",
-      "imgMob": "05_m.jpg",
+      "img": "btnCard-5.jpg",
+      "imgMob": "btnCard-5-m.jpg",
       "title": "排風管",
       "desc": "排風管防火、防水包覆"
     }, {
       "link": "#",
-      "img": "06.jpg",
-      "imgMob": "06_m.jpg",
+      "img": "btnCard-6.jpg",
+      "imgMob": "btnCard-6-m.jpg",
       "title": "電線管路",
       "desc": "電線管路防火、耐燃絕緣、 防水的首選"
     }, {
       "link": "#",
-      "img": "07.jpg",
-      "imgMob": "07_m.jpg",
+      "img": "btnCard-7.jpg",
+      "imgMob": "btnCard-7-m.jpg",
       "title": "客製開發",
       "desc": "提供定製開發，問題解決方案"
     }, {
       "link": "#",
-      "img": "08.jpg",
-      "imgMob": "08_m.jpg",
+      "img": "btnCard-8.jpg",
+      "imgMob": "btnCard-8-m.jpg",
       "title": "防火測試",
       "desc": "耐瞬燃1200℃，長時耐熱350℃ 具不燃不熔融、焚燒無毒特性。"
     }]
