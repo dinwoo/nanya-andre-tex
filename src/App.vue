@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 export default {
@@ -18,9 +17,6 @@ export default {
   },
   data() {
     return {};
-  },
-  computed: {
-    ...mapState(["lang"]),
   },
   methods: {
     // 儲存切換的語系

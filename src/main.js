@@ -6,6 +6,7 @@ import store from "./store";
 import VueI18n from "vue-i18n"; // 引入 Vue I18n
 import zh from "./lang/zh"; // 存放中文語系檔
 import en from "./lang/en"; // 存放英文語系檔
+import ch from "./lang/ch"; // 存放英文語系檔
 
 import mixinMethod from "@/mixins/index.js";
 
@@ -29,7 +30,8 @@ const i18n = new VueI18n({
   locale: locale,
   messages: {
     zh,
-    en
+    en,
+    ch
   }
 });
 
