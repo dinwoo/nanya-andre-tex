@@ -75,7 +75,7 @@ export default {
     return {
       isHamOpen: false,
       isSubMenuOpen: false,
-      screenWidth: document.body.clientWidth
+      screenWidth: document.body.clientWidth,
     };
   },
   computed: {
@@ -87,7 +87,7 @@ export default {
       } else {
         return "繁體中文";
       }
-    }
+    },
   },
   watch: {
     screenWidth(val) {
@@ -108,7 +108,7 @@ export default {
       console.log("from:", from);
       this.isHamOpen = false;
       this.isSubMenuOpen = false;
-    }
+    },
   },
   mounted() {
     const that = this;
@@ -125,8 +125,8 @@ export default {
       this.$store.commit("setLang", value);
       this.$i18n.locale = value;
       localStorage.setItem("footmark-lang", value);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -501,6 +501,8 @@ header
 					p
 						font-size: 12px
 						// padding-left: 10px
+					ul.subMenu
+						top: 80px
 	// @include rwd(900px)
 	// 	.wrapper
 	// 		width: 730px

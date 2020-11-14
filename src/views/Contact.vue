@@ -73,29 +73,27 @@
 
 <script>
 import BannerSwiper from "@/components/BannerSwiper.vue";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
-	components: {
-		BannerSwiper
-	},
-	data() {
-		return {
-			bannerLink: [
-				{
-					1: "banner-1.jpg",
-					2: "banner-1.jpg",
-					3: "banner-1.jpg"
-				},
-				{
-					1: "banner-1-m.jpg",
-					2: "banner-1-m.jpg",
-					3: "banner-1-m.jpg"
-				},
-			],
-		};
-	},
-	methods: {}
+  components: {
+    BannerSwiper,
+  },
+  data() {
+    return {
+      bannerLink: [
+        {
+          1: "banner-1.jpg",
+          2: "banner-1.jpg",
+          3: "banner-1.jpg",
+        },
+        {
+          1: "banner-1-m.jpg",
+          2: "banner-1-m.jpg",
+          3: "banner-1-m.jpg",
+        },
+      ],
+    };
+  },
+  methods: {},
 };
 </script>
 
@@ -315,7 +313,7 @@ article#contact
 					outline: none
 					display: inline-block
 					vertical-align: middle
-					option
+					// option
 				input,textarea
 					font-size: 20px
 					width: calc(100% - 160px)
@@ -344,7 +342,7 @@ article#contact
 		@include rwd(1000px)
 			// padding: 40px 0
 			.wrapper
-				h1.title
+				// h1.title
 				p.txt
 					font-size: 22px
 		@include rwd(768px)
@@ -370,7 +368,7 @@ article#contact
 						width: calc(100% - 130px)
 						// padding: 14px 20px
 						// border-radius: 5px
-						option
+						// option
 					input,textarea
 						font-size: 16px
 						width: calc(100% - 130px)
@@ -388,7 +386,7 @@ article#contact
 		@include rwd(560px)
 			padding: 20px 0
 			.wrapper
-				h1.title
+				// h1.title
 					// margin-bottom: 20px
 				p.txt
 					font-size: 14px
@@ -409,7 +407,7 @@ article#contact
 						width: 100%
 						padding: 14px 10px
 						// border-radius: 5px
-						option
+						// option
 					input,textarea
 						// font-size: 16px
 						width: 100%

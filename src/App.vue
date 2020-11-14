@@ -1,26 +1,26 @@
 <template lang="pug">
-  #app
+  #app(
+    :class="`${lang}-style`"
+  )
     Header
     router-view
     Footer
 </template>
 
 <script>
+import { mapState } from "vuex";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 export default {
   components: {
     Header,
-    Footer
+    Footer,
   },
   data() {
-    return {
-      optionsLang: [
-        { text: "中文", value: "zh" },
-        { text: "English", value: "en" }
-      ],
-      page: "about"
-    };
+    return {};
+  },
+  computed: {
+    ...mapState(["lang"]),
   },
   methods: {
     // 儲存切換的語系
@@ -28,8 +28,8 @@ export default {
       this.$store.commit("setLang", value);
       this.$i18n.locale = value;
       localStorage.setItem("footmark-lang", value);
-    }
-  }
+    },
+  },
 };
 </script>
 

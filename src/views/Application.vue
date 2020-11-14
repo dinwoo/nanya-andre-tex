@@ -41,12 +41,10 @@
 <script>
 import BannerSwiper from "@/components/BannerSwiper.vue";
 import CustomSwiper from "@/components/CustomSwiper.vue";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
     BannerSwiper,
-    CustomSwiper
+    CustomSwiper,
   },
   data() {
     return {
@@ -54,12 +52,12 @@ export default {
         {
           1: "banner-1.jpg",
           2: "banner-1.jpg",
-          3: "banner-1.jpg"
+          3: "banner-1.jpg",
         },
         {
           1: "banner-1-m.jpg",
           2: "banner-1-m.jpg",
-          3: "banner-1-m.jpg"
+          3: "banner-1-m.jpg",
         },
       ],
       active: "產品簡介",
@@ -68,17 +66,24 @@ export default {
         {
           title: "座椅內用防火材",
           subTitle: "飛機座椅",
-          link: ["seats/airplane01.jpg", "seats/airplane02.jpg", "seats/airplane03.jpg", "seats/airplane04.jpg", "seats/airplane05.jpg", "seats/airplane06.jpg"]
+          link: [
+            "seats/airplane01.jpg",
+            "seats/airplane02.jpg",
+            "seats/airplane03.jpg",
+            "seats/airplane04.jpg",
+            "seats/airplane05.jpg",
+            "seats/airplane06.jpg",
+          ],
         },
         {
           title: "座椅內用防火材",
           subTitle: "高鐵座椅",
-          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
-        }
-      ]
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"],
+        },
+      ],
     };
   },
-  methods: {}
+  methods: {},
 };
 </script>
 
@@ -130,24 +135,24 @@ export default {
   font-size: 0
   &+&
     margin-top: 50px
-  
+
   &-img,
   &-content
     display: inline-block
     vertical-align: top
-  
+
   &-img
     width: 45%
-  
+
   &-content
     width: 50%
     margin-left: 5%
     text-align: left
-  
+
   &-title
     font-size: 30px
     font-weight: bold
-  
+
   &-desc
     font-size: 24px
     margin-top: 20px
@@ -155,7 +160,7 @@ export default {
   @include rwd(1280px)
     &-title
       font-size: 24px
-  
+
     &-desc
       font-size: 18px
   @include rwd(960px)
@@ -178,7 +183,7 @@ export default {
 
     &-title
       font-size: 15px
-  
+
     &-desc
       font-size: 12px
       margin-top: 10px
@@ -255,7 +260,7 @@ export default {
         padding: 12px 8px
         &:nth-of-type(2n-1)
           margin-left: 0
-      
+
     &-content
       margin-top: 20px
 </style>

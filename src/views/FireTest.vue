@@ -119,12 +119,10 @@
 <script>
 import BannerSwiper from "@/components/BannerSwiper.vue";
 import CustomSwiper from "@/components/CustomSwiper.vue";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
     BannerSwiper,
-    CustomSwiper
+    CustomSwiper,
   },
   data() {
     return {
@@ -132,12 +130,12 @@ export default {
         {
           1: "banner-1.jpg",
           2: "banner-1.jpg",
-          3: "banner-1.jpg"
+          3: "banner-1.jpg",
         },
         {
           1: "banner-1-m.jpg",
           2: "banner-1-m.jpg",
-          3: "banner-1-m.jpg"
+          3: "banner-1-m.jpg",
         },
       ],
       val: 0,
@@ -145,27 +143,27 @@ export default {
         {
           title: "座椅內用防火材",
           subTitle: "影片：加工燃燒測試",
-          link: ["blackcat1.jpg", "blackcat2.jpg", "fuli.jpg"]
+          link: ["blackcat1.jpg", "blackcat2.jpg", "fuli.jpg"],
         },
         {
           title: "座椅內用防火材",
           subTitle: "影片：加工燃燒測試",
-          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"],
         },
         {
           title: "座椅內用防火材",
           subTitle: "影片：加工燃燒測試",
-          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"],
         },
         {
           title: "座椅內用防火材",
           subTitle: "影片：加工燃燒測試",
-          link: ["test.jpg", "test2.png", "test3.png", "test4.png"]
-        }
-      ]
+          link: ["test.jpg", "test2.png", "test3.png", "test4.png"],
+        },
+      ],
     };
   },
-  methods: {}
+  methods: {},
 };
 </script>
 

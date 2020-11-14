@@ -25,12 +25,10 @@
 <script>
 import BannerSwiper from "@/components/BannerSwiper.vue";
 import btnCard from "@/components/btnCard.vue";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
     BannerSwiper,
-    btnCard
+    btnCard,
   },
   data() {
     return {
@@ -38,18 +36,18 @@ export default {
         {
           1: "banner-1.jpg",
           2: "banner-1.jpg",
-          3: "banner-1.jpg"
+          3: "banner-1.jpg",
         },
         {
           1: "banner-1-m.jpg",
           2: "banner-1-m.jpg",
-          3: "banner-1-m.jpg"
+          3: "banner-1-m.jpg",
         },
       ],
-      active: "塑膠管材防火包覆"
+      active: "塑膠管材防火包覆",
     };
   },
-  methods: {}
+  methods: {},
 };
 </script>
 

@@ -56,19 +56,19 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
-    VueSlickCarousel
+    VueSlickCarousel,
   },
   props: ["title", "subTitle", "dotNum", "pictureLink"],
   data() {
     return {
       slidesToShow: 0,
-      showOption: false
+      showOption: false,
     };
   },
   mounted() {
     this.slidesToShow = this.dotNum;
   },
-  methods: {}
+  methods: {},
 };
 </script>
 
@@ -190,14 +190,14 @@ export default {
             // width: 50%
             font-size: 20px
             padding: 10px 0
-    .main-carousel
+    // .main-carousel
     .dot-carousel
       // padding: 0 15px
       // margin: 15px auto
     .carousel-item
       // padding: 0 10px
-      .pic
-    .pre-btn,.next-btn
+    //   .pic
+    // .pre-btn,.next-btn
   @include rwd(540px)
     .title
       font-size: 25px
@@ -223,12 +223,12 @@ export default {
             // width: 50%
             font-size: 16px
             padding: 5px 0
-    .main-carousel
+    // .main-carousel
     .dot-carousel
       // padding: 0 15px
       // margin: 15px auto
     .carousel-item
       padding: 0 2px
-      .pic
-    .pre-btn,.next-btn
+    //   .pic
+    // .pre-btn,.next-btn
 </style>

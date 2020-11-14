@@ -15,11 +15,9 @@
 
 <script>
 import BannerSwiper from "@/components/BannerSwiper.vue";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
-    BannerSwiper
+    BannerSwiper,
   },
   data() {
     return {
@@ -27,17 +25,17 @@ export default {
         {
           1: "banner-1.jpg",
           2: "banner-1.jpg",
-          3: "banner-1.jpg"
+          3: "banner-1.jpg",
         },
         {
           1: "banner-1-m.jpg",
           2: "banner-1-m.jpg",
-          3: "banner-1-m.jpg"
+          3: "banner-1-m.jpg",
         },
       ],
     };
   },
-  methods: {}
+  methods: {},
 };
 </script>
 

@@ -343,7 +343,7 @@ footer
 			.wrapper
 				width: 320px
 				.box
-					.copyright
+					// .copyright
 					.right_content
 						.link_box
 							a.item
@@ -357,25 +357,16 @@ footer
 				width: 300px
 				padding: 0 10px
 				.content
-					// width: 100%
-					.title
-						// width: 100%
-					a.map
-						.pic
-							// width: 100%
 					.company_box
 						a.item
 							// width: 100px
 							.name
 								letter-spacing: -2px
-					&:nth-child(4)
-						.title
-							// width: 100%
 		.subFooter
 			.wrapper
 				width: 270px
 				.box
-					.copyright
+					// .copyright
 					.right_content
 						.link_box
 							a.item
