@@ -10,46 +10,46 @@ header
 		)
 			ul.mainMenu
 				li.mainItem 
-					router-link.mainA(to="/") 首頁
+					router-link.mainA(to="/") {{headerTxt.home}}
 				li.mainItem 
-					a.mainA(href="http://www.nanya-plastics-mall.com.tw") 南亞塑膠城
+					a.mainA(href="http://www.nanya-plastics-mall.com.tw") {{headerTxt.plastics}}
 				li.mainItem(
 					:class="{'active':isSubMenuOpen}"
 				)
 					.mainA(
 						href="javascript:;"
 						@click="isSubMenuOpen=!isSubMenuOpen"
-					) 防火材應用
+					) {{headerTxt.application}}
 					ul.subMenu.two_column(
 						v-if="isSubMenuOpen||screenWidth>960"
 						:class="{'disnone':screenWidth>960}"
 					)
 						li.subItem
-							router-link.subA(to="/application/pipe") 塑料管材防火包覆
+							router-link.subA(to="/application/pipe") {{headerTxt.pipe}}
 						li.subItem
-							router-link.subA(to="/application/welding") 電銲防火用
+							router-link.subA(to="/application/welding") {{headerTxt.welding}}
 						li.subItem
-							router-link.subA(to="/application/household") 家庭防火用
+							router-link.subA(to="/application/household") {{headerTxt.household}}
 						li.subItem
-							router-link.subA(to="/application/seats") 座椅內包覆防火材
+							router-link.subA(to="/application/seats") {{headerTxt.seats}}
 						li.subItem
-							router-link.subA(to="/application/daily") 民生防火材
+							router-link.subA(to="/application/daily") {{headerTxt.daily}}
 						li.subItem
-							router-link.subA(to="/application/insulation") 耐燃絕緣包覆材
+							router-link.subA(to="/application/insulation") {{headerTxt.insulation}}
 						li.subItem
-							router-link.subA(to="/customize") 客製產品開發
+							router-link.subA(to="/customize") {{headerTxt.customize}}
 				li.mainItem 
-					router-link.mainA(to="/test") 防火測試
+					router-link.mainA(to="/test") {{headerTxt.test}}
 				li.mainItem 
-					router-link.mainA(to="/case") 成功案例
+					router-link.mainA(to="/case") {{headerTxt.case}}
 				li.mainItem 
-					router-link.mainA(to="/certificate") 品質證書
+					router-link.mainA(to="/certificate") {{headerTxt.certificate}}
 				li.mainItem 
-					router-link.mainA(to="/contact") 聯絡我們
+					router-link.mainA(to="/contact") {{headerTxt.contact}}
 			.lang(href="")
 				.svg_box
 					include ../assets/pug/earth_svg.pug
-				p 語系 : {{langTxt}} ▼
+				p {{headerTxt.lang}} : {{langTxt}} ▼
 				ul.subMenu
 					li.subItem
 						.subA(@click="setLang('zh')") 繁體中文
@@ -76,6 +76,59 @@ export default {
       isHamOpen: false,
       isSubMenuOpen: false,
       screenWidth: document.body.clientWidth,
+      text: {
+        zh: {
+          home: "首頁",
+          plastics: "南亞塑膠城",
+          application: "防火材應用",
+          pipe: "塑料管材防火包覆",
+          welding: "電銲防火用",
+          household: "家庭防火用",
+          seats: "座椅內包覆防火材",
+          daily: "民生防火材",
+          insulation: "耐燃絕緣包覆材",
+          customize: "客製產品開發",
+          test: "防火測試",
+          case: "成功案例",
+          certificate: "品質證書",
+          contact: "聯絡我們",
+          lang: "語系",
+        },
+        ch: {
+          home: "首页",
+          plastics: "南亚塑胶城",
+          application: "防火材应用",
+          pipe: "塑料管材防火包覆",
+          welding: "电焊防火用",
+          household: "家庭防火用",
+          seats: "座椅内包覆防火材",
+          daily: "民生防火材",
+          insulation: "耐燃绝缘包覆材",
+          customize: "客制产品开发",
+          test: "防火测试",
+          case: "成功案例",
+          certificate: "品质证书",
+          contact: "联络我们",
+          lang: "语系",
+        },
+        en: {
+          home: "Home",
+          plastics: "South Asia Plastic City",
+          application: "Fireproof Material Application",
+          pipe: "Plastic pipe fireproof coating",
+          welding: "For electric welding fire prevention",
+          household: "Household fire protection",
+          seats: "The seat is covered with fireproof material",
+          daily: "People's Livelihood Fireproof Material",
+          insulation: "Fire-resistant insulating coating",
+          customize: "Customized Product Development",
+          test: "Fire Test",
+          case: "Success Case",
+          certificate: "Quality Certificate",
+          contact: "Contact Us",
+          lang: "Language",
+        },
+      },
     };
   },
   computed: {
@@ -86,6 +139,15 @@ export default {
         return "简体中文";
       } else {
         return "繁體中文";
+      }
+    },
+    headerTxt() {
+      if (this.lang == "en") {
+        return this.text.en;
+      } else if (this.lang == "ch") {
+        return this.text.ch;
+      } else {
+        return this.text.zh;
       }
     },
   },
@@ -126,6 +188,9 @@ export default {
       this.$i18n.locale = value;
       localStorage.setItem("footmark-lang", value);
     },
+    // findText(text) {
+    //   return this.text;
+    // },
   },
 };
 </script>
