@@ -20,12 +20,12 @@
               :key="val"
             )
               template(slot="option")
-              .option-items
-                .option-item(@click="cardVal(), valChange(0)") 桃園 芙蓉匯
-                .option-item(@click="cardVal(), valChange(1)") 新莊 麗寶雙璽
-                .option-item(@click="cardVal(), valChange(2)") 遠雄95大樓
-                .option-item(@click="cardVal(), valChange(3)") 海上皇宮
-                .option-item(@click="cardVal(), valChange(4)") 海洋都心三期
+                .option-items
+                  .option-item(@click="cardVal(), valChange(0)") 桃園 芙蓉匯
+                  .option-item(@click="cardVal(), valChange(1)") 新莊 麗寶雙璽
+                  .option-item(@click="cardVal(), valChange(2)") 遠雄95大樓
+                  .option-item(@click="cardVal(), valChange(3)") 海上皇宮
+                  .option-item(@click="cardVal(), valChange(4)") 海洋都心三期
 </template>
 
 <script>

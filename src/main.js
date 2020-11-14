@@ -9,6 +9,9 @@ import en from "./lang/en"; // 存放英文語系檔
 
 import mixinMethod from "@/mixins/index.js";
 
+import VueImageView from "vue-directive-image-previewer";
+import "vue-directive-image-previewer/dist/assets/style.css";
+
 Vue.use(VueI18n);
 Vue.mixin(mixinMethod);
 // 預設使用的語系
@@ -29,6 +32,14 @@ const i18n = new VueI18n({
     en
   }
 });
+
+// 點擊圖片放大
+Vue.use(VueImageView, {
+  animate: {
+    duration: 300
+  },
+  zIndex: "1000"
+})
 
 
 Vue.config.productionTip = false;

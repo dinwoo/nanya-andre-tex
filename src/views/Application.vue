@@ -26,15 +26,16 @@
           .title 內容
           .tab
             .tab-action
-              a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click="active = item.name" :key="index") {{item.name}}
-            .tab-content(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" :key="index")
-              .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
-                .graphicIntro-img
-                  figure
-                    img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
-                .graphicIntro-content
-                  .graphicIntro-title {{el.title}}
-                  .graphicIntro-desc {{el.desc}}
+              a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click.prevent="active = item.name" :key="index") {{item.name}}
+            .tab-content
+              template(v-for="item in $t(`${$route.name}.${$route.params.seats}.content`)")
+                .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
+                  .graphicIntro-img
+                    figure
+                      img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
+                  .graphicIntro-content
+                    .graphicIntro-title {{el.title}}
+                    .graphicIntro-desc {{el.desc}}
 </template>
 
 <script>
