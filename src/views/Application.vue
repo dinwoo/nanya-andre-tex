@@ -50,14 +50,14 @@ export default {
     return {
       bannerLink: [
         {
-          1: "banner-1.jpg",
-          2: "banner-1.jpg",
-          3: "banner-1.jpg",
+          1: "seats/banner-1.jpg",
+          2: "seats/banner-1.jpg",
+          3: "seats/banner-1.jpg",
         },
         {
-          1: "banner-1-m.jpg",
-          2: "banner-1-m.jpg",
-          3: "banner-1-m.jpg",
+          1: "seats/banner-1-m.jpg",
+          2: "seats/banner-1-m.jpg",
+          3: "seats/banner-1-m.jpg",
         },
       ],
       active: "產品簡介",
@@ -67,18 +67,37 @@ export default {
           title: "座椅內用防火材",
           subTitle: "飛機座椅",
           link: [
-            "seats/airplane01.jpg",
-            "seats/airplane02.jpg",
-            "seats/airplane03.jpg",
-            "seats/airplane04.jpg",
-            "seats/airplane05.jpg",
-            "seats/airplane06.jpg",
+            "seats/airplane-1.jpg",
+            "seats/airplane-2.jpg",
+            "seats/airplane-3.jpg",
+            "seats/airplane-4.jpg",
+            "seats/airplane-5.jpg",
+            "seats/airplane-6.jpg",
           ],
         },
         {
           title: "座椅內用防火材",
           subTitle: "高鐵座椅",
-          link: ["test.jpg", "test2.png", "test3.png", "test4.png"],
+          link: [
+            "seats/airplane-1.jpg",
+            "seats/airplane-2.jpg",
+            "seats/airplane-3.jpg",
+            "seats/airplane-4.jpg",
+            "seats/airplane-5.jpg",
+            "seats/airplane-6.jpg",
+          ],
+        },
+        {
+          title: "座椅內用防火材",
+          subTitle: "電影院座椅",
+          link: [
+            "seats/airplane-1.jpg",
+            "seats/airplane-2.jpg",
+            "seats/airplane-3.jpg",
+            "seats/airplane-4.jpg",
+            "seats/airplane-5.jpg",
+            "seats/airplane-6.jpg",
+          ],
         },
       ],
     };
@@ -89,47 +108,50 @@ export default {
 
 <style lang="sass">
 @import "../assets/sass/var.sass"
-.option
-  &-box
-    text-align: left
-  &-title
-    display: inline-block
-    vertical-align: top
-    font-size: 25px
-    margin: 0 40px 0 20px
-  &-items
-    display: inline-block
-    vertical-align: top
-  &-item
-    position: relative
-    font-size: 24px
-    padding-left: 15px
-    transition: .3s
-    cursor: pointer
-    &:before
-      content: ''
-      position: absolute
-      top: 10px
-      left: 0
-      display: block
-      width: 3px
-      height: 3px
-      border-radius: 50%
-      background-color: #2f2f2f
-      transition: .3s
-    &+&
-      margin-top: 25px
-    &:hover
-      color: #f0511d
-      &:before
-        background-color: #f0511d
-  @include rwd(960px)
+#application
+  .option
     &-box
-      text-align: center
+      text-align: left
     &-title
-      display: none
+      display: inline-block
+      vertical-align: top
+      font-size: 25px
+      margin: 0 40px 0 20px
+    &-items
+      display: inline-block
+      vertical-align: top
     &-item
-      font-size: 15px
+      position: relative
+      margin-top: 25px
+      font-size: 24px
+      transition: .3s
+      cursor: pointer
+      &:first-of-type
+        margin-top: 0
+      &:before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 3px
+        height: 3px
+        margin-right: 10px
+        margin-bottom: 3px
+        border-radius: 50%
+        background-color: #2f2f2f
+        transition: .3s
+      &:hover
+        color: #f0511d
+        &:before
+          background-color: #f0511d
+    @include rwd(960px)
+      &-box
+        text-align: center
+      &-title
+        display: none
+      &-items
+        padding: 20px 0
+      &-item
+        font-size: 15px
 
 .graphicIntro
   font-size: 0
@@ -245,15 +267,14 @@ export default {
       padding: 0
 
     &-btn
-      width: 100px
+      width: 90px
       padding: 8px
-      font-size: 15px
+      font-size: 14px
       letter-spacing: 2px
       &+&
-        margin-left: 13px
+        margin-left: 10px
       &.solid
         width: calc( (100% - 10px)/2 )
-        font-size: 14px
         letter-spacing: 0
         margin-left: 10px
         margin-top: 10px

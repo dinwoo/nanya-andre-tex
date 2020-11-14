@@ -131,8 +131,8 @@
       .wrapper
         .title
           figure.application
-            img(:src="compileFilePath(`cardTitle.png`)")
-            img(:src="compileFilePath(`cardTitle_m.png`)")
+            img(:src="compileFilePath(`application-title.png`)")
+            img(:src="compileFilePath(`application-title-m.png`)")
         btnCard(:cardData="$t(`${$route.name}.card`)")
     .block.recommend-block
       .wrapper
@@ -434,6 +434,7 @@ export default {
         font-size: 14px
 .contact-block
   margin-top: -8%
+  margin-bottom: 8%
   .wrapper
     position: relative
     .title
@@ -3671,7 +3672,7 @@ article
   &.grey
     background-color: #f7f7f7
   @include rwd(960px)
-    padding: 55px 0
+    padding: 25px 0
 .title
   font-size: 50px
   font-weight: bold
@@ -3693,10 +3694,8 @@ article
     img
       &:nth-of-type(2)
         display: none
-    @include rwd(1280px)
-      width: 480px
     @include rwd(960px)
-      width: 200px
+      width: 46vw
       img
         &:nth-of-type(1)
           display: none
