@@ -26,11 +26,8 @@
               :key="val"
             )
               template(slot="option")
-                .option-items.fireTest
-                  .option-item(@click="val=0") 噴燈600℃X2min
-                  .option-item(@click="val=1") 電焊1070℃X30sec
-                  .option-item(@click="val=3") 噴燈1100℃X2min
-                  .option-item(@click="val=3") 電焊1300℃X30sec
+                .option-items
+                  .option-item(v-for="item, index in $t(`${$route.name}.Swiper.option`)" :key="index" @click="val=index") {{item}}
       .block.grey#tableTarget
         .wrapper.overScroll
           .title 測試項目及條件
@@ -105,15 +102,9 @@
       .separate
       .block#resultTarget
         .wrapper
-          .title 測試結果
-          ul.list
-            li 南亞防火材經噴燈高溫燃燒測試較一般市售防火、滅火(隔熱、保溫)等材質，堅固耐用、不易破損、不延燒、不熔融、不產生毒廢氣造成二次公害。
-            li 電焊測試可降低電焊焊渣彈跳高度與範圍。
-            li 重量適當可折疊、易收藏不會有玻璃纖維易脆化缺點、不含石棉及限用物質等優異特性。
-              br
-              | 限氧指數:ASTM D2863法指數45↑。
-            li 應用範圍廣泛如工程明火防火毯(電焊、氣焊、砂磨、高溫切割) 防火隔簾、耐熱包覆材、保溫材、耐熱墊、汽車隔音、隔熱材、高溫作業區隔熱毯、家庭滅火毯安全防護用途。
-            li 測試結果CNS 10285 L3196 A4、CNS 7614 A3125均評等1級。限氧指數:ASTM D2863法指數45↑。
+          .title {{$t(`${$route.name}.list.title`)}}
+          ol.list
+            li(v-for="item,index in $t(`${$route.name}.list.listItem`)" :key="index") {{item}}
 </template>
 
 <script>
@@ -139,29 +130,13 @@ export default {
         },
       ],
       val: 0,
-      pictureArr: [
-        {
-          title: "座椅內用防火材",
-          subTitle: "影片：加工燃燒測試",
-          link: ["blackcat1.jpg", "blackcat2.jpg", "fuli.jpg"],
-        },
-        {
-          title: "座椅內用防火材",
-          subTitle: "影片：加工燃燒測試",
-          link: ["test.jpg", "test2.png", "test3.png", "test4.png"],
-        },
-        {
-          title: "座椅內用防火材",
-          subTitle: "影片：加工燃燒測試",
-          link: ["test.jpg", "test2.png", "test3.png", "test4.png"],
-        },
-        {
-          title: "座椅內用防火材",
-          subTitle: "影片：加工燃燒測試",
-          link: ["test.jpg", "test2.png", "test3.png", "test4.png"],
-        },
-      ],
+      pictureArr: this.$t(`${this.$route.name}.Swiper.pic`),
     };
+  },
+  watch: {
+    lang() {
+      this.pictureArr = this.$t(`${this.$route.name}.Swiper.pic`);
+    },
   },
   methods: {},
 };
@@ -179,16 +154,18 @@ export default {
       display: inline-block
       width: 50%
       padding: 25px 0
-      &:before
-        content: none
+      font-size: 24px
+      transition: .3s
+      cursor: pointer
       &+&
         margin: 0
+      &:hover
+        color: #f0511d
     @include rwd(960px)
-      &-items
-        padding: 20px
       &-item
         width: 100%
-        padding: 20px 0
+        padding: 10px 0
+        font-size: 15px
 .table
   table
     width: 100%

@@ -263,6 +263,9 @@ export default {
           margin-left: 0
 
   @include rwd(960px)
+    &-desc
+      margin-bottom: 30px
+      font-size: 14px
     &-action
       padding: 0
 
@@ -284,4 +287,8 @@ export default {
 
     &-content
       margin-top: 20px
+  @include rwd(374px)
+    &-btn
+      &.solid
+        font-size: 14px
 </style>

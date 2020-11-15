@@ -100,6 +100,11 @@ export default {
         font-size: 12px
       &-content
         margin-top: 30px
+  @include rwd(374px)
+    &.certificate &
+      &-name
+        box-sizing: border-box
+        min-height: 34px
 
 .certificate
   &-items

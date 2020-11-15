@@ -7,7 +7,7 @@
     section.main
       .block.grey
         .wrapper
-          .title 成功案例
+          .title {{$t(`${$route.name}.title`)}}
           btnCard(:cardData="$t(`${$route.name}.card`)" :className="`examples`" v-on:swiperClick="cardVal")
       .block#swiperTarget
         .wrapper
@@ -21,11 +21,7 @@
             )
               template(slot="option")
                 .option-items
-                  .option-item(@click="cardVal(), valChange(0)") 桃園 芙蓉匯
-                  .option-item(@click="cardVal(), valChange(1)") 新莊 麗寶雙璽
-                  .option-item(@click="cardVal(), valChange(2)") 遠雄95大樓
-                  .option-item(@click="cardVal(), valChange(3)") 海上皇宮
-                  .option-item(@click="cardVal(), valChange(4)") 海洋都心三期
+                  .option-item(v-for="item,index in $t(`${$route.name}.Swiper.option`)" @click="cardVal(), valChange(index)" :key="index") {{item}}
 </template>
 
 <script>
@@ -53,39 +49,13 @@ export default {
         },
       ],
       val: 0,
-      pictureArr: [
-        {
-          title: "桃園 芙蓉匯",
-          link: ["taoyuan.jpg", "taoyuan.jpg", "taoyuan.jpg"],
-        },
-        {
-          title: "新莊 麗寶雙璽",
-          link: [
-            "xinzhuang.jpg",
-            "xinzhuang.jpg",
-            "xinzhuang.jpg",
-            "xinzhuang.jpg",
-          ],
-        },
-        {
-          title: "遠雄95大樓",
-          link: [
-            "building95.jpg",
-            "building95.jpg",
-            "building95.jpg",
-            "building95.jpg",
-          ],
-        },
-        {
-          title: "海上皇宮",
-          link: ["seaPalace.jpg", "seaPalace.jpg"],
-        },
-        {
-          title: "海洋都心三期",
-          link: ["sea.jpg", "sea.jpg"],
-        },
-      ],
+      pictureArr: this.$t(`${this.$route.name}.Swiper.pic`),
     };
+  },
+  watch: {
+    lang() {
+      this.pictureArr = this.$t(`${this.$route.name}.Swiper.pic`);
+    },
   },
   methods: {
     cardVal: function(card) {
@@ -100,4 +70,46 @@ export default {
 
 <style lang="sass">
 @import "../assets/sass/var.sass"
+#examples
+  .option
+    &-items
+      padding: 20px 0
+      font-size: 0
+    &-item
+      position: relative
+      display: inline-block
+      vertical-align: top
+      margin-left: 50px
+      font-size: 24px
+      transition: .3s
+      cursor: pointer
+      &:first-of-type
+        margin-left: 0
+      &:before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 3px
+        height: 3px
+        margin-right: 10px
+        margin-bottom: 3px
+        border-radius: 50%
+        background-color: #2f2f2f
+        transition: .3s
+      &:hover
+        color: #f0511d
+        &:before
+          background-color: #f0511d
+    @include rwd(1280px)
+      &-item
+        margin-left: 40px
+        font-size: 20px
+    @include rwd(960px)
+      &-item
+        width: 100%
+        font-size: 15px
+        margin-left: 0
+        margin-top: 20px
+        &:first-of-type
+          margin-top: 0
 </style>
