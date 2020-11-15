@@ -35,13 +35,9 @@ export default {
       bannerLink: [
         {
           1: "banner-1.jpg",
-          2: "banner-1.jpg",
-          3: "banner-1.jpg",
         },
         {
           1: "banner-1-m.jpg",
-          2: "banner-1-m.jpg",
-          3: "banner-1-m.jpg",
         },
       ],
       active: "塑膠管材防火包覆",
