@@ -27,7 +27,7 @@ export default {
         dots: true,
         dotsClass: "slick-dots custom-dot-class banner-dots",
         edgeFriction: 0.35,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -48,7 +48,7 @@ export default {
         this.timer = true;
         let that = this;
         setTimeout(function() {
-          console.log(val);
+          // console.log(val);
           that.timer = false;
         }, 400);
       }

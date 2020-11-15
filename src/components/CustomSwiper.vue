@@ -34,10 +34,7 @@
         VueSlickCarousel(
           ref="c2"
           :asNavFor="$refs.c1"
-          :slidesToShow="slidesToShow"
-          :focusOnSelect="true"
-          :arrows="false"
-          :centerMode="true"
+          v-bind="dotSetting"
         )
           .carousel-item(v-for="(pic,index) in pictureLink" :key="index")
             //- img(:src="compileFilePath(pic)")
@@ -63,10 +60,25 @@ export default {
     return {
       slidesToShow: 0,
       showOption: false,
+      dotSetting:{
+          "slidesToShow":this.slidesToShow,
+          "focusOnSelect":true,
+          "arrows":false,
+          "centerMode":true,
+          "responsive": [
+            {
+              "breakpoint": 768,
+              "settings": {
+                "slidesToShow":2,
+              }
+            },
+          ]
+      }
     };
   },
   mounted() {
     this.slidesToShow = this.dotNum;
+    this.dotSetting.slidesToShow = this.dotNum;
   },
   methods: {},
 };
@@ -225,10 +237,13 @@ export default {
             padding: 5px 0
     // .main-carousel
     .dot-carousel
-      // padding: 0 15px
-      // margin: 15px auto
+      width: 90%
+      padding: 0 5px
+      margin: 5px auto
     .carousel-item
       padding: 0 2px
     //   .pic
-    // .pre-btn,.next-btn
+    .pre-btn,.next-btn
+      width: 5%
+      padding-bottom: 10%
 </style>
