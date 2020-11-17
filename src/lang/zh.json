@@ -62,76 +62,85 @@
         "pic": [{
             "title": "座椅內用防火材",
             "subTitle": "飛機座椅",
-            "link": ["seats/airplane01.jpg", "seats/airplane02.jpg", "seats/airplane03.jpg", "seats/airplane04.jpg", "seats/airplane05.jpg", "seats/airplane06.jpg"]
+            "link": ["seats/airplane-1.jpg", "seats/airplane-2.jpg", "seats/airplane-3.jpg", "seats/airplane-4.jpg", "seats/airplane-5.jpg", "seats/airplane-6.jpg"]
           },
           {
-            "title": "座椅內用防火材2",
+            "title": "座椅內用防火材",
             "subTitle": "高鐵座椅",
-            "link": ["test.jpg", "test2.png", "test3.png", "test4.png"]
+            "link": ["seats/airplane-1.jpg", "seats/airplane-2.jpg", "seats/airplane-3.jpg", "seats/airplane-4.jpg", "seats/airplane-5.jpg", "seats/airplane-6.jpg"]
+          },
+          {
+            "title": "座椅內用防火材",
+            "subTitle": "電影院座椅",
+            "link": ["seats/airplane-1.jpg", "seats/airplane-2.jpg", "seats/airplane-3.jpg", "seats/airplane-4.jpg", "seats/airplane-5.jpg", "seats/airplane-6.jpg"]
           }
         ],
         "option": {
-          "title": ""
+          "title": "座椅內用防火材",
+          "item": ["飛機座椅", "高鐵座椅", "電影院座椅"]
         }
       },
-      "content": [{
-        "name": "產品簡介",
-        "data": [{
-          "img": "different.jpg",
-          "title": "產品差異",
-          "desc": "比起他牌防火毯防火能力更佳、對人體無影響"
-        }, {
-          "img": "size.jpg",
-          "title": "產品尺寸",
-          "desc": "認證厚度為2.5mm，寬幅為150公分"
-        }, {
-          "img": "transaction.jpg",
-          "title": "交易模式",
-          "desc": "50碼以下由材料商提供，50碼以上由公司直接提供"
-        }, {
-          "img": "min.jpg",
-          "title": "最低購量",
-          "desc": "50碼"
+      "tab": {
+        "title": "內容",
+        "content": [{
+          "name": "產品簡介",
+          "data": [{
+            "img": "different.jpg",
+            "title": "產品差異",
+            "desc": "比起他牌防火毯防火能力更佳、對人體無影響"
+          }, {
+            "img": "size.jpg",
+            "title": "產品尺寸",
+            "desc": "認證厚度為2.5mm，寬幅為150公分"
+          }, {
+            "img": "transaction.jpg",
+            "title": "交易模式",
+            "desc": "50碼以下由材料商提供，50碼以上由公司直接提供"
+          }, {
+            "img": "min.jpg",
+            "title": "最低購量",
+            "desc": "50碼"
+          }]
+        },{
+          "name": "產品特性",
+          "data": [{
+            "img": "safe.jpg",
+            "title": "產品安全",
+            "desc": "無毒、無煙、不引起皮膚不適"
+          }, {
+            "img": "soft.jpg",
+            "title": "產品施工",
+            "desc": "相較於其他防火毯柔軟、好施工"
+          }, {
+            "img": "stable.jpg",
+            "title": "品質穩定",
+            "desc": "製程控制、產品測試"
+          }, {
+            "img": "custom.jpg",
+            "title": "客製展品開發",
+            "desc": "用量大時可配合客戶要求做調整"
+          }]
+        },{
+          "name": "品質證書",
+          "data": [{
+            "img": "safe.jpg",
+            "title": "產品安全",
+            "desc": "無毒、無煙、不引起皮膚不適"
+          }, {
+            "img": "soft.jpg",
+            "title": "產品施工",
+            "desc": "相較於其他防火毯柔軟、好施工"
+          }, {
+            "img": "stable.jpg",
+            "title": "品質穩定",
+            "desc": "製程控制、產品測試"
+          }, {
+            "img": "custom.jpg",
+            "title": "客製展品開發",
+            "desc": "用量大時可配合客戶要求做調整"
+          }]
         }]
-      },{
-        "name": "產品特性",
-        "data": [{
-          "img": "safe.jpg",
-          "title": "產品安全",
-          "desc": "無毒、無煙、不引起皮膚不適"
-        }, {
-          "img": "soft.jpg",
-          "title": "產品施工",
-          "desc": "相較於其他防火毯柔軟、好施工"
-        }, {
-          "img": "stable.jpg",
-          "title": "品質穩定",
-          "desc": "製程控制、產品測試"
-        }, {
-          "img": "custom.jpg",
-          "title": "客製展品開發",
-          "desc": "用量大時可配合客戶要求做調整"
-        }]
-      },{
-        "name": "品質證書",
-        "data": [{
-          "img": "safe.jpg",
-          "title": "產品安全",
-          "desc": "無毒、無煙、不引起皮膚不適"
-        }, {
-          "img": "soft.jpg",
-          "title": "產品施工",
-          "desc": "相較於其他防火毯柔軟、好施工"
-        }, {
-          "img": "stable.jpg",
-          "title": "品質穩定",
-          "desc": "製程控制、產品測試"
-        }, {
-          "img": "custom.jpg",
-          "title": "客製展品開發",
-          "desc": "用量大時可配合客戶要求做調整"
-        }]
-      }]
+      }
     }
   },
   "Examples": {

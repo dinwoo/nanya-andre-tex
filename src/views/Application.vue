@@ -16,20 +16,18 @@
               :key="val"
             )
               template(slot="option")
-                .option-title 座椅內用防火材
+                .option-title {{$t(`${$route.name}.${$route.params.seats}.Swiper.option.title`)}}
                 .option-items
-                  .option-item(@click="val=0") 飛機座椅
-                  .option-item(@click="val=1") 高鐵座椅
-                  .option-item(@click="val=2") 電影院座椅
+                  .option-item(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.Swiper.option.item`)" @click="val = index") {{item}}
       .block
         .wrapper
-          .title 內容
+          .title {{$t(`${$route.name}.${$route.params.seats}.tab.title`)}}
           .tab
             .tab-action
-              a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.content`)" @click.prevent="active = item.name" :key="index") {{item.name}}
+              a.tab-btn(href="#" :class="{'active': active == index}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.tab.content`)" @click.prevent="active = index" :key="index") {{item.name}}
             .tab-content
-              template(v-for="item in $t(`${$route.name}.${$route.params.seats}.content`)")
-                .graphicIntro(v-for="el,index in item.data" v-if="active == item.name" :key="index")
+              template(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.tab.content`)")
+                .graphicIntro(v-for="el,elIndex in item.data" v-if="active == index" :key="elIndex")
                   .graphicIntro-img
                     figure
                       img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
@@ -60,47 +58,15 @@ export default {
           3: "seats/banner-1-m.jpg",
         },
       ],
-      active: "產品簡介",
+      active: 0,
       val: 0,
-      pictureArr: [
-        {
-          title: "座椅內用防火材",
-          subTitle: "飛機座椅",
-          link: [
-            "seats/airplane-1.jpg",
-            "seats/airplane-2.jpg",
-            "seats/airplane-3.jpg",
-            "seats/airplane-4.jpg",
-            "seats/airplane-5.jpg",
-            "seats/airplane-6.jpg",
-          ],
-        },
-        {
-          title: "座椅內用防火材",
-          subTitle: "高鐵座椅",
-          link: [
-            "seats/airplane-1.jpg",
-            "seats/airplane-2.jpg",
-            "seats/airplane-3.jpg",
-            "seats/airplane-4.jpg",
-            "seats/airplane-5.jpg",
-            "seats/airplane-6.jpg",
-          ],
-        },
-        {
-          title: "座椅內用防火材",
-          subTitle: "電影院座椅",
-          link: [
-            "seats/airplane-1.jpg",
-            "seats/airplane-2.jpg",
-            "seats/airplane-3.jpg",
-            "seats/airplane-4.jpg",
-            "seats/airplane-5.jpg",
-            "seats/airplane-6.jpg",
-          ],
-        },
-      ],
+      pictureArr: this.$t(`${this.$route.name}.${this.$route.params.seats}.Swiper.pic`),
     };
+  },
+  watch: {
+    lang() {
+      this.pictureArr = this.$t(`${this.$route.name}.${this.$route.params.seats}.Swiper.pic`);
+    },
   },
   methods: {},
 };
