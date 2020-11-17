@@ -18,37 +18,37 @@ import "vue-slick-carousel/dist/vue-slick-carousel.css";
 import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 export default {
   components: {
-    VueSlickCarousel
+    VueSlickCarousel,
   },
   props: ["pictureLink"],
   data() {
     return {
-      settings:{
-        "dots": true,
-        "dotsClass": "slick-dots custom-dot-class banner-dots",
-        "edgeFriction": 0.35,
-        "infinite": false,
-        "speed": 500,
-        "slidesToShow": 1,
-        "slidesToScroll": 1,
-        "autoplay": true,
-        "arrows": false
+      settings: {
+        dots: true,
+        dotsClass: "slick-dots custom-dot-class banner-dots",
+        edgeFriction: 0.35,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrows: false,
       },
       slidesToShow: 0,
       showOption: false,
       screenWidth: document.body.clientWidth,
-      isMobile: document.body.clientWidth<768
+      isMobile: document.body.clientWidth < 768,
     };
   },
   watch: {
     screenWidth(val) {
-      this.isMobile = val<768
+      this.isMobile = val < 768;
       if (!this.timer) {
         this.screenWidth = val;
         this.timer = true;
         let that = this;
         setTimeout(function() {
-          console.log(val);
+          // console.log(val);
           that.timer = false;
         }, 400);
       }
@@ -64,11 +64,11 @@ export default {
     };
   },
   computed: {
-    linkIndex(){
+    linkIndex() {
       return this.isMobile ? 1 : 0;
-    }
+    },
   },
-  methods: {}
+  methods: {},
 };
 </script>
 
@@ -76,6 +76,7 @@ export default {
 @import "../assets/sass/var.sass"
 
 .banner-dots
+  bottom: 10px
   li
     button
       &:before
@@ -96,7 +97,7 @@ export default {
     outline: none
 #banner-swiper
   width: 100%
-  padding-bottom: 40px
+  // padding-bottom: 40px
   overflow: hidden
   .banner-pic
     width: 100%

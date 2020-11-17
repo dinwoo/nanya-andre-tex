@@ -65,7 +65,7 @@
 				.row
 					label(for="") 您的留言
 					textarea#txt(name="", placeholder="您想反應的狀況，建議，或諮詢事項")
-				.send_btn 送出
+				.send_btn(@click="") 送出
 
 		section.map
 			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.33372852544!2d121.54750761500672!3d25.05667548396177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abef461278a7%3A0x2cc681970e60513d!2z5Y-w5aGR5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1604591479166!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
@@ -73,6 +73,9 @@
 
 <script>
 import BannerSwiper from "@/components/BannerSwiper.vue";
+// import Email from "../../public/assets/js/smtp";
+import emailjs from "emailjs-com";
+
 export default {
   components: {
     BannerSwiper,
@@ -82,18 +85,33 @@ export default {
       bannerLink: [
         {
           1: "banner-1.jpg",
-          2: "banner-1.jpg",
-          3: "banner-1.jpg",
         },
         {
           1: "banner-1-m.jpg",
-          2: "banner-1-m.jpg",
-          3: "banner-1-m.jpg",
         },
       ],
     };
   },
-  methods: {},
+  methods: {
+    sendMail() {
+      const templateParams = {
+        to_name: "福利",
+        from_name: "daniel",
+        message: "成功寄信",
+        test_msg: "ya!!",
+      };
+      const user_id = "user_2Ard5IDrGnOvWsMdEOkPy";
+
+      emailjs.send("gmail", "template_3piy0z5", templateParams, user_id).then(
+        (res) => {
+          console.log(res);
+        },
+        (err) => {
+          console.log(err);
+        }
+      );
+    },
+  },
 };
 </script>
 

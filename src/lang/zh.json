@@ -1,6 +1,76 @@
 {
+  "Header": {
+    "home": "首頁",
+    "plastics": "南亞塑膠城",
+    "application": "防火材應用",
+    "pipe": "塑料管材防火包覆",
+    "welding": "電銲防火用",
+    "household": "家庭防火用",
+    "seats": "座椅內包覆防火材",
+    "daily": "民生防火材",
+    "insulation": "耐燃絕緣包覆材",
+    "customize": "客製產品開發",
+    "test": "防火測試",
+    "case": "成功案例",
+    "certificate": "品質證書",
+    "contact": "聯絡我們",
+    "lang": "語系"
+  },
+  "Footer": {
+    "title1": "全球銷售通路",
+    "title2": "產品資訊",
+    "title3": "聯絡資訊",
+    "title4": "快速連結",
+    "plastics": "南亞塑膠城",
+    "pipe": "塑料管材防火包覆",
+    "welding": "電銲防火用",
+    "household": "家庭防火用",
+    "seats": "座椅內包覆防火材",
+    "daily": "民生防火材",
+    "insulation": "耐燃絕緣包覆材",
+    "customize": "客製產品開發",
+    "address": "台北市敦化北路201號台塑大樓3樓502室",
+    "copyright": "Copyright © 2019 南亞塑膠工業股份有限公司 All Rights Reserved.",
+    "remind": "網站內之所有著作及資料，其著作權、專利權、商標、其他智慧財產權、所有權或其他權利，均為本企業所有，非經本企業合法授權，不得擅自重製、改作或以其他任何形式、基於任何目的加以使用。"
+  },
   "Home": {
-    "title": "123",
+    "thermometer": [{
+        "title": "ANDRE-TEX P",
+        "detail1": "厚度x寬度：2.2mm x 40”",
+        "detail2": "重量：400 g/M",
+        "detail3": "限氧指數(L.O.I.)：>40"
+      },
+      {
+        "title": "ANDRE-TEX T",
+        "detail1": "厚度x寬度：2.5mm x 59”",
+        "detail2": "重量：300 g/M",
+        "detail3": "限氧指數(L.O.I.).：40"
+      },
+      {
+        "title": "ANDRE-TEX W",
+        "detail1": "厚度x寬度：3.0mm x 55”",
+        "detail2": "重量：500 g/M",
+        "detail3": "限氧指數(L.O.I.).：>40"
+      },
+      {
+        "title": "ANDRE-TEX I",
+        "detail1": "厚度x寬度：0.3mm x 40”",
+        "detail2": "重量：400 g/M",
+        "detail3": "限氧指數(L.O.I.).：35"
+      },
+      {
+        "title": "ANDRE-TEX S",
+        "detail1": "厚度x寬度：4.0mm x 59”",
+        "detail2": "重量：600 g/M",
+        "detail3": "限氧指數(L.O.I.).：35"
+      },
+      {
+        "title": "ANDRE-TEX H",
+        "detail1": "厚度x寬度：3.0mm x 59”",
+        "detail2": "重量：500 g/M",
+        "detail3": "限氧指數(L.O.I.).：40"
+      }
+    ],
     "card": [{
       "link": "/nanya-andre-tex/#/application/pipe",
       "img": "btnCard-1.jpg",
@@ -49,7 +119,20 @@
       "imgMob": "btnCard-8-m.jpg",
       "title": "防火測試",
       "desc": "耐瞬燃1200℃，長時耐熱350℃ 具不燃不熔融、焚燒無毒特性。"
-    }]
+    }],
+    "recommend": {
+      "title": "推薦選購",
+      "product": [{
+        "name": "運動商品纏條(不織布)1",
+        "description": "用途<br>網球拍、高爾夫球桿、手套等纏條用不織布基材。<br><br>特性<br>厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。"
+      }, {
+        "name": "運動商品纏條(不織布)2",
+        "description": "用途<br>網球拍、高爾夫球桿、手套等纏條用不織布基材。<br><br>特性<br>厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。"
+      }]
+    },
+    "contact": {
+      "title": "聯絡我們"
+    }
   },
   "About": {
     "title": "123"

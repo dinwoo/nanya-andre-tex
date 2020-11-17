@@ -38,6 +38,8 @@ export default {
   text-align: center
   color: #2f2f2f
   padding-top: 90px
+  @include rwd(1280px)
+    padding-top: 80px
   @include rwd(960px)
     padding-top: 70px
 

@@ -49,13 +49,9 @@ export default {
       bannerLink: [
         {
           1: "seats/banner-1.jpg",
-          2: "seats/banner-1.jpg",
-          3: "seats/banner-1.jpg",
         },
         {
           1: "seats/banner-1-m.jpg",
-          2: "seats/banner-1-m.jpg",
-          3: "seats/banner-1-m.jpg",
         },
       ],
       active: 0,

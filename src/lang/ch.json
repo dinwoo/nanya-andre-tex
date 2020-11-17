@@ -1,4 +1,21 @@
 {
+  "Header": {
+    "home": "首页",
+    "plastics": "南亚塑胶城",
+    "application": "防火材应用",
+    "pipe": "塑料管材防火包覆",
+    "welding": "电焊防火用",
+    "household": "家庭防火用",
+    "seats": "座椅内包覆防火材",
+    "daily": "民生防火材",
+    "insulation": "耐燃绝缘包覆材",
+    "customize": "客制产品开发",
+    "test": "防火测试",
+    "case": "成功案例",
+    "certificate": "品质证书",
+    "contact": "联络我们",
+    "lang": "语系"
+  },
   "Home": {
     "title": "123",
     "card": [{
