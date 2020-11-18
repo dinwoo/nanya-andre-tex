@@ -286,6 +286,28 @@
     }
   },
   "FireTest": {
+    "tab": {
+      "title": "防火材測試",
+      "desc": "經塑膠中心測試，評等1級。可抗瞬燃1200℃高溫，長時間耐熱範圍350～450℃，具不燃燒、不熔融特性，焚燒過程不會產生有毒廢氣，無二次公害。 可供防火毯(滅火毯)、耐燃包覆材、耐熱墊材等安全防護用途。",
+      "btn": [
+        {
+          "link": "#swiperTarget",
+          "text": "Ander-tex火燄實測"
+        },
+        {
+          "link": "#tableTarget",
+          "text": "測試項目條件"
+        },
+        {
+          "link": "#centerTarget",
+          "text": "塑膠中心測試"
+        },
+        {
+          "link": "#resultTarget",
+          "text": "測試結果"
+        }
+      ]
+    },
     "Swiper": {
       "pic": [{
           "title": "座椅內用防火材",
@@ -314,6 +336,76 @@
         "噴燈1100℃X2min",
         "電焊1300℃X30sec"
       ]
+    },
+    "table": {
+      "title": "測試項目及條件",
+      "thead": {
+        "item": "項次",
+        "source": "防火隔熱材來源",
+        "species": "明火種類",
+        "temperature": "溫度",
+        "time": "接觸時間",
+        "status": "防火隔熱材狀態"
+      },
+      "tr1": {
+        "item": "1",
+        "source": "市售一般級<br>保溫.隔熱.隔音材",
+        "species": "噴燈",
+        "temperature": "600℃",
+        "time": "4sec",
+        "status": "延燒、破洞、黑煙、熔融。"
+      },
+      "tr2": {
+        "item": "2",
+        "source": "市售防火.隔熱.保溫毯",
+        "temperature": "600℃",
+        "time": "18sec",
+        "status": "不延燒、破洞、白煙、熔融。"
+      },
+      "tr3": {
+        "item": "南亞",
+        "source": "樹林廠開發防火毯",
+        "temperature": "635℃",
+        "time": "2 min",
+        "status": "不延燒、無熔融、無廢氣產生、1000℃↑有碳化現象。"
+      },
+      "tr4": {
+        "temperature": "1100℃"
+      },
+      "tr5": {
+        "source": "樹林廠開發防火毯",
+        "species": "電焊焊渣<br><span class='note'>(掉落高度40cm)</span>",
+        "temperature": "1070℃",
+        "time": "30sec",
+        "status": "不延燒、無熔融、無廢氣產生、降低電焊焊渣彈跳高度與範圍。"
+      },
+      "tr6": {
+        "temperature": "1300℃"
+      },
+      "remark1": "※防火材測試使用熱影像對照圖。",
+      "remark2": "※當日測試實況：",
+      "remarkLink": "YouTube搜尋南亞防火毯"
+    },
+    "test": {
+      "title": "塑膠中心測試",
+      "attach": "評等1級",
+      "content": {
+        "title": "南亞防火毯，噴燈高溫燃燒防火性、防燄性、限氧指數，測試評等 1 級。",
+        "list": [
+          {
+            "text": "防火性：評等 1 級。",
+            "note": "(依CNS 10285 L3196 A4測試)"
+          },
+          {
+            "text": "防燄性：評等 1 級。",
+            "note": "(以CNS 7614 A3125 前處理A法測試)"
+          },
+          {
+            "text": "限氧指數：指數45↑。",
+            "note": "(以ASTM D2863法測試)"
+          }
+        ]
+      }
     },
     "list": {
       "title": "測試結果",

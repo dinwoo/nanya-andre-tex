@@ -7,15 +7,12 @@
     section.main
       .block
         .wrapper
-          .title 防火材測試
+          .title {{$t(`${$route.name}.tab.title`)}}
           .tab
-            .tab-desc 經塑膠中心測試，評等1級。可抗瞬燃1200℃高溫，長時間耐熱範圍350～450℃，具不燃燒、不熔融特性，焚燒過程不會產生有毒廢氣，無二次公害。 可供防火毯(滅火毯)、耐燃包覆材、耐熱墊材等安全防護用途。
+            .tab-desc {{$t(`${$route.name}.tab.desc`)}}
             .tab-action
-              a.tab-btn.solid(href="#swiperTarget") Ander-tex火燄實測
-              a.tab-btn.solid(href="#tableTarget") 測試項目條件
-              a.tab-btn.solid(href="#centerTarget") 塑膠中心測試
-              a.tab-btn.solid(href="#resultTarget") 測試結果
-      .block#swiperTarget
+              a.tab-btn.solid(:href="item.link" v-for="item,index in $t(`${$route.name}.tab.btn`)" :key="index") {{item.text}}
+      .block
         .wrapper
           #swiper
             CustomSwiper(
@@ -30,75 +27,65 @@
                   .option-item(v-for="item, index in $t(`${$route.name}.Swiper.option`)" :key="index" @click="val=index") {{item}}
       .block.grey#tableTarget
         .wrapper.overScroll
-          .title 測試項目及條件
+          .title {{$t(`${$route.name}.table.title`)}}
           .table
             table
               thead
                 tr
-                  td(width="9%") 項次
-                  td(width="27%") 防火隔熱材來源
-                  td(width="14%") 明火種類
-                  td(width="10%") 溫度
-                  td(width="13%") 接觸時間
-                  td(width="27%") 防火隔熱材狀態
+                  td(width="9%") {{$t(`${$route.name}.table.thead.item`)}}
+                  td(width="27%") {{$t(`${$route.name}.table.thead.source`)}}
+                  td(width="14%") {{$t(`${$route.name}.table.thead.species`)}}
+                  td(width="10%") {{$t(`${$route.name}.table.thead.temperature`)}}
+                  td(width="13%") {{$t(`${$route.name}.table.thead.time`)}}
+                  td(width="27%") {{$t(`${$route.name}.table.thead.status`)}}
               tbody
                 tr
-                  td 1
-                  td.left 市售一般級
-                    br
-                    | 保溫.隔熱.隔音材
-                  td(rowspan="4") 噴燈
-                  td 600℃
-                  td 4sec
-                  td.left 延燒、破洞、黑煙、熔融。
+                  td {{$t(`${$route.name}.table.tr1.item`)}}
+                  td.left(v-html="$t(`${$route.name}.table.tr1.source`)")
+                  td(rowspan="4") {{$t(`${$route.name}.table.tr1.species`)}}
+                  td {{$t(`${$route.name}.table.tr1.temperature`)}}
+                  td {{$t(`${$route.name}.table.tr1.time`)}}
+                  td.left {{$t(`${$route.name}.table.tr1.status`)}}
                 tr
-                  td 2
-                  td.left 市售防火.隔熱.保溫毯
-                  td 600℃
-                  td 18sec
-                  td.left 不延燒、破洞、白煙、熔融。
+                  td {{$t(`${$route.name}.table.tr2.item`)}}
+                  td.left {{$t(`${$route.name}.table.tr2.source`)}}
+                  td {{$t(`${$route.name}.table.tr2.temperature`)}}
+                  td {{$t(`${$route.name}.table.tr2.time`)}}
+                  td.left {{$t(`${$route.name}.table.tr2.status`)}}
                 tr.blue
-                  td(rowspan="4") 南亞
-                  td.left(rowspan="2") 樹林廠開發防火毯
-                  td 635℃
-                  td(rowspan="2") 2 min
-                  td.left(rowspan="2") 不延燒、無熔融、無廢氣產生、1000℃↑有碳化現象。
+                  td(rowspan="4") {{$t(`${$route.name}.table.tr3.item`)}}
+                  td.left(rowspan="2") {{$t(`${$route.name}.table.tr3.source`)}}
+                  td {{$t(`${$route.name}.table.tr3.temperature`)}}
+                  td(rowspan="2") {{$t(`${$route.name}.table.tr3.time`)}}
+                  td.left(rowspan="2") {{$t(`${$route.name}.table.tr3.status`)}}
                 tr.blue
-                  td 1100℃
+                  td {{$t(`${$route.name}.table.tr4.temperature`)}}
                 tr.blue
-                  td.left(rowspan="2") 樹林廠開發防火毯
-                  td.left(rowspan="2") 電焊焊渣
-                    br
-                    span.note (掉落高度40cm)
-                  td 1070℃
-                  td(rowspan="2") 30sec
-                  td.left(rowspan="2") 不延燒、無熔融、無廢氣產生、降低電焊焊渣彈跳高度與範圍。
+                  td.left(rowspan="2") {{$t(`${$route.name}.table.tr5.source`)}}
+                  td.left(rowspan="2" v-html="$t(`${$route.name}.table.tr5.species`)")
+                  td {{$t(`${$route.name}.table.tr5.temperature`)}}
+                  td(rowspan="2") {{$t(`${$route.name}.table.tr5.time`)}}
+                  td.left(rowspan="2") {{$t(`${$route.name}.table.tr5.status`)}}
                 tr.blue
-                  td 1300℃
-          p.remark ※防火材測試使用熱影像對照圖。
-          p.remark ※當日測試實況：
-            a(href="#" target="_blank") YouTube搜尋南亞防火毯
+                  td {{$t(`${$route.name}.table.tr6.temperature`)}}
+          p.remark {{$t(`${$route.name}.table.remark1`)}}
+          p.remark {{$t(`${$route.name}.table.remark2`)}}
+            a(href="#" target="_blank") {{$t(`${$route.name}.table.remarkLink`)}}
       .block#centerTarget
         .wrapper
-          .title 塑膠中心測試
-            .attach 評等1級
+          .title {{$t(`${$route.name}.test.title`)}}
+            .attach {{$t(`${$route.name}.test.attach`)}}
           .graphicIntro
             .graphicIntro-img
               figure
                 img(:src="compileFilePath(`test.jpg`)")
             .graphicIntro-content
-              .graphicIntro-title.gapTop 南亞防火毯，噴燈高溫燃燒防火性、防燄性、限氧指數，測試評等 1 級。
+              .graphicIntro-title.gapTop {{$t(`${$route.name}.test.content.title`)}}
               .graphicIntro-desc 
                 ul.list
-                  li 防火性：評等 1 級。
+                  li(v-for="item,index in $t(`${$route.name}.test.content.list`)" :key="index") {{item.text}}
                     br
-                    span (依CNS 10285 L3196 A4測試)
-                  li 防燄性：評等 1 級。
-                    br
-                    span (以CNS 7614 A3125 前處理A法測試)
-                  li 限氧指數：指數45↑。
-                    br
-                    span (以ASTM D2863法測試)
+                    span {{item.note}}
       .separate
       .block#resultTarget
         .wrapper

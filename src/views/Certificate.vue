@@ -9,14 +9,14 @@
         .wrapper
           .tab.certificate
             .tab-action
-              a.tab-btn(href="#" :class="{'active': active == item.name}" v-for="item,index in $t(`${$route.name}.content`)" @click.prevent="active = item.name" :key="index")
+              a.tab-btn(href="#" :class="{'active': active == index}" v-for="item,index in $t(`${$route.name}.content`)" @click.prevent="active = index" :key="index")
                 .tab-img
                   img(:src="compileFilePath(item.btnImg)")
                 .tab-name {{item.name}}
             .tab-content
               .certificate-items
                 template(v-for="item,itemIndex in $t(`${$route.name}.content`)")
-                  .certificate-item(href="#" v-for="el,index in item.data" v-if="active == item.name" :key="index")
+                  .certificate-item(href="#" v-for="el,index in item.data" v-if="active == itemIndex" :key="index")
                     figure
                       img(v-image-preview :src="compileFilePath(el.img)")
                     .certificate-title {{el.title}}{{itemIndex}}
@@ -40,7 +40,7 @@ export default {
           1: "banner-1-m.jpg",
         },
       ],
-      active: "塑膠管材防火包覆",
+      active: 0,
     };
   },
   methods: {},
