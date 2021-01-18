@@ -19,7 +19,7 @@
                   .certificate-item(href="#" v-for="el,index in item.data" v-if="active == itemIndex" :key="index")
                     figure
                       img(v-image-preview :src="compileFilePath(el.img)")
-                    .certificate-title {{el.title}}{{itemIndex}}
+                    .certificate-title {{el.title}}
 </template>
 
 <script>
