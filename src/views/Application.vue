@@ -30,7 +30,8 @@
                 .graphicIntro(:class="{'certificate':index == '2'}" v-for="el,elIndex in item.data" v-if="active == index" :key="elIndex")
                   .graphicIntro-img
                     figure
-                      img(:src="compileFilePath(`${$route.params.seats}/${el.img}`)")
+                      img(v-if="index == 2" v-image-preview :src="compileFilePath(`${$route.params.seats}/${el.img}`)")
+                      img(v-else :src="compileFilePath(`${$route.params.seats}/${el.img}`)")
                   .graphicIntro-content
                     .graphicIntro-title {{el.title}}
                     .graphicIntro-desc(v-if="el.desc") {{el.desc}}
@@ -138,6 +139,7 @@ export default {
 
   &-img
     width: 45%
+    pointer-events: none
 
   &-content
     width: 50%
@@ -162,6 +164,8 @@ export default {
   &.certificate &
     &-img
       width: 100%
+      pointer-events: auto
+      cursor: pointer
     &-content
       width: 100%
       display: block
