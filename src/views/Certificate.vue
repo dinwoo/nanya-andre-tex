@@ -24,11 +24,9 @@
 
 <script>
 import BannerSwiper from "@/components/BannerSwiper.vue";
-import btnCard from "@/components/btnCard.vue";
 export default {
   components: {
     BannerSwiper,
-    btnCard,
   },
   data() {
     return {

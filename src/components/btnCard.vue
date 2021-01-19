@@ -42,8 +42,13 @@ export default {
     text-decoration: none
     color: #000
     img
+      transition: .5s
+      &:hover
+        transform: scale(1.2)
       &:nth-of-type(2)
         display: none
+  &-img
+    overflow: hidden
   &-content
     min-height: 100px
     padding: 10px 18px

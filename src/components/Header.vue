@@ -11,8 +11,8 @@ header
 			ul.mainMenu
 				li.mainItem 
 					router-link.mainA(to="/") {{$t(`Header.home`)}}
-				li.mainItem 
-					a.mainA(href="http://www.nanya-plastics-mall.com.tw") {{$t(`Header.plastics`)}}
+				//- li.mainItem 
+				//- 	a.mainA(href="http://www.nanya-plastics-mall.com.tw") {{$t(`Header.plastics`)}}
 				li.mainItem(
 					:class="{'active':isSubMenuOpen}"
 				)

@@ -70,7 +70,7 @@
                   td {{$t(`${$route.name}.table.tr6.temperature`)}}
           p.remark {{$t(`${$route.name}.table.remark1`)}}
           p.remark {{$t(`${$route.name}.table.remark2`)}}
-            a(href="#" target="_blank") {{$t(`${$route.name}.table.remarkLink`)}}
+            a(href="https://youtu.be/fXYThc0ofws" target="_blank") {{$t(`${$route.name}.table.remarkLink`)}}
       .block#centerTarget
         .wrapper
           .title {{$t(`${$route.name}.test.title`)}}
