@@ -195,7 +195,13 @@
           }]
         },{
           "name": "品質證書",
-          "data": []
+          "data": [{
+            "img": "certificate-1.jpg",
+            "title": "檢驗報告"
+          }, {
+            "img": "certificate-2.jpg",
+            "title": "檢驗報告"
+          }]
         }]
       }
     },
@@ -412,12 +418,12 @@
           {
             "title": "座椅內用防火材",
             "subTitle": "高鐵座椅內用",
-            "link": ["seats/airplane-1.jpg", "seats/airplane-2.jpg", "seats/airplane-3.jpg", "seats/airplane-4.jpg", "seats/airplane-5.jpg", "seats/airplane-6.jpg"]
+            "link": ["seats/highSpeedRail-1.jpg", "seats/highSpeedRail-2.jpg", "seats/highSpeedRail-3.jpg", "seats/highSpeedRail-4.jpg", "seats/highSpeedRail-5.jpg"]
           },
           {
             "title": "座椅內用防火材",
             "subTitle": "電影院座椅內用",
-            "link": ["seats/airplane-1.jpg", "seats/airplane-2.jpg", "seats/airplane-3.jpg", "seats/airplane-4.jpg", "seats/airplane-5.jpg", "seats/airplane-6.jpg"]
+            "link": ["seats/movieTheater-1.jpg", "seats/movieTheater-2.jpg", "seats/movieTheater-3.jpg"]
           }
         ],
         "option": {
@@ -775,7 +781,13 @@
     "content": [{
       "btnImg": "tab01.jpg",
       "name": "塑膠管材防火包覆",
-      "data": []
+      "data": [{
+        "img": "certificate01-1.jpg",
+        "title": "檢驗報告"
+      }, {
+        "img": "certificate01-2.jpg",
+        "title": "檢驗報告"
+      }]
     }, {
       "btnImg": "tab02.jpg",
       "name": "電焊防火用",
@@ -851,14 +863,6 @@
         "img": "certificate04-6.jpg",
         "title": "檢驗報告"
       }]
-    }, {
-      "btnImg": "tab05.jpg",
-      "name": "耐燃絕緣包覆材",
-      "data": []
-    }, {
-      "btnImg": "tab06.jpg",
-      "name": "ISO認證",
-      "data": []
     }]
   },
   "Swiper": {
