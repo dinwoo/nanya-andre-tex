@@ -147,7 +147,7 @@ export default {
     text-align: left
 
   &-title
-    font-size: 30px
+    font-size: 28px
     font-weight: bold
 
   &-desc
@@ -157,8 +157,8 @@ export default {
   &.certificate
     display: inline-block
     vertical-align: top
-    width: calc( (100% - 252px)/3 )
-    margin: 0 42px 84px 42px
+    width: calc( (100% - 180px)/3 )
+    margin: 0 30px 60px 30px
     figure
       box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1)
   &.certificate &
@@ -171,7 +171,7 @@ export default {
       display: block
       margin: 0
     &-title
-      margin-top: 45px
+      margin-top: 30px
       text-align: center
       color: $orange
 
@@ -223,21 +223,21 @@ export default {
 .tab
   &-desc
     margin-bottom: 60px
-    font-size: 26px
+    font-size: 24px
     line-height: 1.3
     text-align: left
   &-btn
     box-sizing: border-box
     display: inline-block
-    width: 280px
+    width: 240px
     padding: 16px
-    font-size: 36px
+    font-size: 32px
     letter-spacing: 5px
     color: #828282
     text-decoration: none
     border: 1px solid #828282
     &+&
-      margin-left: 170px
+      margin-left: 120px
 
     &.active
       color: #f0511d
@@ -247,8 +247,8 @@ export default {
       width: calc( (100% - 60px)/4 )
       margin-left: 20px
       padding: 20px 10px
-      font-size: 26px
-      letter-spacing: 3px
+      font-size: 24px
+      letter-spacing: 0
       transition: .3s
       &:hover
         color: #fff
@@ -263,12 +263,12 @@ export default {
   @include rwd(1280px)
     &-btn
       width: 200px
-      font-size: 30px
+      font-size: 28px
       &+&
-        margin-left: 50px
+        margin-left: 100px
       &.solid
         margin-left: 20px
-        font-size: 18px
+        font-size: 22px
         &:nth-of-type(1)
           margin-left: 0
 

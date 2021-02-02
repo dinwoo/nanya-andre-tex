@@ -31,7 +31,7 @@ export default {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         arrows: false,
       },
       slidesToShow: 0,
@@ -101,7 +101,7 @@ export default {
   overflow: hidden
   .banner-pic
     width: 100%
-    padding-bottom: 38%
+    padding-bottom: 44%
     position: relative
     @include rwd(768px)
       padding-bottom: 152%

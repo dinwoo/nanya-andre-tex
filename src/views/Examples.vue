@@ -75,8 +75,8 @@ export default {
       position: relative
       display: inline-block
       vertical-align: top
-      margin-left: 50px
-      font-size: 24px
+      margin-left: 45px
+      font-size: 22px
       transition: .3s
       cursor: pointer
       &:first-of-type
@@ -96,10 +96,6 @@ export default {
         color: #f0511d
         &:before
           background-color: #f0511d
-    @include rwd(1280px)
-      &-item
-        margin-left: 40px
-        font-size: 20px
     @include rwd(960px)
       &-item
         width: 100%

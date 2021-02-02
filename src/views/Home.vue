@@ -393,11 +393,11 @@ export default {
           background-position: center center
           background-repeat: no-repeat
     .name
-      font-size: 36px
+      font-size: 32px
       font-weight: bold
       margin-bottom: 50px
     .description
-      font-size: 26px
+      font-size: 20px
       line-height: 1.2
 @include rwd(768px)
   .recommend
@@ -426,7 +426,7 @@ export default {
     position: relative
     .title
       width: 100%
-      font-size: 5vw
+      font-size: 3.5vw
       color: #fff
       text-shadow: 0px 0px 50px $orange
       text-align: center
@@ -3649,7 +3649,7 @@ body #wrapper main .sect-index.contact > .container .img-container .img.mobile {
 article
   .wrapper
     box-sizing: border-box
-    max-width: 1240px
+    max-width: 1000px
     margin: auto
     padding: 0 20px
     @include rwd(960px)

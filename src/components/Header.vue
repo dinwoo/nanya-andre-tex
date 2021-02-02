@@ -38,6 +38,12 @@ header
 							router-link.subA(to="/application/insulation") {{$t(`Header.insulation`)}}
 						li.subItem
 							router-link.subA(to="/customize") {{$t(`Header.customize`)}}
+						li.subItem
+							a.subA.more(href="http://www.nanya-plastics-mall.com.tw" target="_blank") {{$t(`Header.more`)}}
+								|
+								span.arrow
+									img(src="@/assets/images/arrow.png", alt="")
+							img(src="@/assets/images/nanya-house.png", alt="")
 				li.mainItem 
 					router-link.mainA(to="/test") {{$t(`Header.test`)}}
 				li.mainItem 
@@ -322,14 +328,14 @@ header
 						// display: none
 						// width: 165px
 						background-color: #f9f9f9
-						width: 185px
+						width: 150px
 						border: 1px solid #acacac
 						padding-bottom: 5px
 						text-align: left
 						position: absolute
 						z-index: 10
 						top: 90px
-						left: -35px
+						left: 0
 						&.disnone
 							display: none
 						@include before
@@ -344,27 +350,43 @@ header
 							.subA
 								// width: 165px
 								width: 100%
-								padding: 16px 10px
+								padding: 8px 10px
 								box-sizing: border-box
 								text-align: left
 								background-color: #f9f9f9
 								display: inline-block
 								vertical-align: middle
 								font-size: 18px
+								font-weight: bold
 								color: $gray
-								text-align: center
+								&.more
+									position: relative
+									padding: 12px 10px 10px
+									font-size: 16px
+									&::before
+										content: ''
+										position: absolute
+										top: 0
+										left: 10px
+										display: block
+										width: calc( 100% - 20px )
+										border-top: 1px solid #8b8b8b
+									.arrow
+										margin-left: 5px
+										img
+											width: 15px
 							@include hover
 								.subA
-									background-color: #ebebeb
+									background-color: #dbdbdb
 							// &:nth-last-child(2)
 							// 	@include hover
 							// 		.subA
 							// 			background-color: #f9f9f9
 							// 			cursor: default
-						&.two_column
-							width: 370px
-							li.subItem
-								width: 50%
+						// &.two_column
+						// 	width: 370px
+						// 	li.subItem
+						// 		width: 50%
 					@include hover
 						@include before
 							opacity: 1
@@ -491,6 +513,8 @@ header
 							li.subItem
 								.subA
 									font-size: 14px
+									&.more
+										font-size: 12px
 									// width: 165px
 									// padding: 16px 0
 				.lang
@@ -555,7 +579,7 @@ header
 								background-color: $red
 								position: absolute
 								bottom: 0
-						&:nth-child(3)
+						&:nth-child(2)
 							.mainA
 								@include before()
 									background-color: #faa
@@ -596,10 +620,18 @@ header
 								text-align: left
 								.subA
 									width: 100%
-									padding: 16px 0
+									padding: 8px 0
 									font-size: 18px
+									&.more
+										margin-top: 10px
+										padding: 10px 0
+										font-size: 16px
+										&::before
+											left: 0
+											width: 100%
 							&.two_column
 								width: calc(100% - 30px)
+								padding: 10px 0 0 0
 								li.subItem
 									width: 100%
 				.lang

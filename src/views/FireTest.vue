@@ -80,7 +80,7 @@
               figure
                 img(:src="compileFilePath(`test.jpg`)")
             .graphicIntro-content
-              .graphicIntro-title.gapTop {{$t(`${$route.name}.test.content.title`)}}
+              .graphicIntro-title {{$t(`${$route.name}.test.content.title`)}}
               .graphicIntro-desc 
                 ul.list
                   li(v-for="item,index in $t(`${$route.name}.test.content.list`)" :key="index") {{item.text}}
@@ -159,8 +159,8 @@ export default {
   td
     box-sizing: border-box
     vertical-align: middle
-    padding: 24px
-    font-size: 24px
+    padding: 18px
+    font-size: 20px
     line-height: 1.2
     border: 1px solid #2f2f2f
   .blue
@@ -168,13 +168,13 @@ export default {
   .left
     text-align: left
   .note
-    font-size: 16px
+    font-size: 12px
   @include rwd(1280px)
     td
       padding: 18px
       font-size: 16px
-    .note
-      font-size: 12px
+    // .note
+    //   font-size: 12px
   @include rwd(960px)
     overflow-x: scroll
     table
@@ -184,7 +184,7 @@ export default {
       padding: 14px
       font-size: 14px
 .remark
-  font-size: 24px
+  font-size: 20px
   text-align: left
   margin-top: 20px
   a
@@ -196,29 +196,27 @@ export default {
     font-size: 14px
 .list
   padding-left: 1em
-  font-size: 24px
+  font-size: 20px
   line-height: 1.2
   text-align: left
   color: #696969
   list-style: decimal
   li+li
-    margin-top: 30px
+    margin-top: 24px
   @include rwd(1280px)
     font-size: 16px
     li+li
-      margin-top: 20px
+      margin-top: 18px
   @include rwd(960px)
     font-size: 12px
     li+li
       margin-top: 10px
 .graphicIntro-content
-  .gapTop
-    margin-top: 25px
   .list
-    font-size: 30px
+    font-size: 28px
     color: #2f2f2f
     span
-      font-size: 24px
+      font-size: 22px
   @include rwd(1280px)
     .list
       font-size: 24px

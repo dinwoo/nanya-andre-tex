@@ -2,7 +2,7 @@
 footer
 	.topFooter
 		.wrapper
-			.content
+			.content.global
 				.title {{$t(`Footer.title1`)}}
 				a.map(href="https://www.npc.com.tw/j2npc/zhtw/product/Cc1p06.do" target="_blank")
 					.pic
@@ -18,7 +18,7 @@ footer
 					//- a.icon(href="")
 					//- 	.svg_box
 					//- 		include ../assets/pug/fb_icon.pug
-			.content
+			.content.product
 				.title {{$t(`Footer.title2`)}}
 				.link_box
 					router-link.item(to="/application/pipe") {{$t(`Footer.pipe`)}}
@@ -28,8 +28,13 @@ footer
 					router-link.item(to="/application/daily") {{$t(`Footer.daily`)}}
 					router-link.item(to="/application/insulation") {{$t(`Footer.insulation`)}}
 					router-link.item(to="/customize") {{$t(`Footer.customize`)}}
+					a.item.more(href="http://www.nanya-plastics-mall.com.tw" target="_blank") {{$t(`Footer.more`)}}
+						|
+						span.arrow
+							img(src="@/assets/images/arrow.png", alt="")
+					img(src="@/assets/images/nanya-house.png", alt="")
 
-			.content
+			.content.info
 				.title {{$t(`Footer.title3`)}}
 				.info_box
 					a.item(href="https://www.nanya-andre-tex.com" target="_blank")
@@ -114,24 +119,32 @@ footer
 			font-size: 0
 			+wrapperStyle
 			.content
-				width: 25%
+				width: 27%
+				box-sizing: border-box
 				margin-bottom: 30px
+				padding-right: 20px
 				display: inline-block
 				vertical-align: top
 				text-align: left
+				&.global
+					width: 25%
+				&.product
+					width: 18%
+				&.info
+					width: 30%
 				.title
-					width: 220px
 					color: $gray
 					font-size: 20px
 					font-weight: 500
 					padding-bottom: 10px
+					margin-bottom: 10px
 					border-bottom: 1px solid #e1e1e1
 					position: relative
 					&:before
 						content: ''
 						display: block
 						width: 85px
-						height: 2px
+						height: 4px
 						background-color: $red
 						position: absolute
 						bottom: -2px
@@ -150,8 +163,7 @@ footer
 					display: block
 					padding-top: 30px
 					.pic
-						width: 210px
-						fill: $gray
+						fill: #969eab
 				.social_box
 					// padding-top: 50px
 					a.icon
@@ -188,13 +200,18 @@ footer
 					font-size: 0
 					padding-top: 7px
 					a.item
-						width: 140px
+						width: 100%
 						font-size: 15px
 						color: $gray
-						padding: 7px 10px
+						padding: 7px 10px 7px 0
 						display: inline-block
 						vertical-align: middle
 						box-sizing: border-box
+					.more
+						.arrow
+							margin-left: 5px
+							img
+								width: 15px
 
 				.info_box
 					padding-top: 7px
@@ -207,22 +224,22 @@ footer
 							height: 15px
 							padding-left: 4px
 							display: inline-block
-							vertical-align: middle
+							vertical-align: top
 							fill: $gray
 						.txt
-							width: 230px
+							width: calc( 100% - 30px )
 							padding-left: 10px
 							font-size: 15px
 							color: $gray
 							display: inline-block
-							vertical-align: middle
+							vertical-align: top
 
 				.company_box
 					padding-top: 6px
 					font-size: 0
 					text-align: left
 					a.item
-						margin-top: 8px
+						// margin-top: 6px
 						// width: 79px
 						width: calc((100% - 16px)/4)
 						padding: 6px 0
@@ -232,12 +249,15 @@ footer
 						box-sizing: border-box
 						border-radius: 5px
 						overflow: hidden
-						vertical-align: middle
+						vertical-align: top
 						margin-left: 3px
 						&:nth-child(4n+1)
 							margin-left: 0
 						&:nth-child(4n)
+							// margin-top: -5px
+							margin-bottom: 0
 							margin-left: 8px
+							padding: 0
 							background-color: rgba(#fff,0)
 							border: none
 						figure.company
@@ -249,7 +269,7 @@ footer
 							figure.company
 								width: 100%
 						figure.QRCode
-							width: 55px
+							width: 50px
 							margin: auto
 						.name
 							font-size: 12px
@@ -260,7 +280,7 @@ footer
 	.subFooter
 		background-color: #f0511d
 		.wrapper
-			width: 1060px
+			+wrapperStyle
 			margin: auto
 			.box
 				font-size: 12px
@@ -297,21 +317,32 @@ footer
 					border-top: 1px solid #fff
 					padding: 15px 0 20px
 
-	@include rwd(1280px)
+	// @include rwd(1280px)
+	// 	.topFooter
+	// 		// padding: 70px 0
+	// 		.wrapper
+	// 			width: 620px
+	// 			.content
+	// 				width: 50%
+	// @include rwd(1120px)
+	// 	.subFooter
+	// 		.wrapper
+	// 			width: 900px
+	@include rwd(960px)
 		.topFooter
-			// padding: 70px 0
 			.wrapper
-				width: 620px
+				max-width: 590px
 				.content
 					width: 50%
-	@include rwd(1120px)
+					&.global
+						width: 50%
+					&.product
+						width: 50%
+					&.info
+						width: 50%
 		.subFooter
 			.wrapper
-				width: 900px
-	@include rwd(960px)
-		.subFooter
-			.wrapper
-				width: 590px
+				max-width: 590px
 				.box
 					.copyright
 						float: none
@@ -328,6 +359,13 @@ footer
 				padding: 0 15px
 				.content
 					width: 100%
+					padding-right: 0
+					&.global
+						width: 100%
+					&.product
+						width: 100%
+					&.info
+						width: 100%
 					.title
 						width: 100%
 					a.map
@@ -354,7 +392,7 @@ footer
 		.topFooter
 			// padding: 70px 0
 			.wrapper
-				width: 300px
+				width: 100%
 				padding: 0 10px
 				.content
 					.company_box

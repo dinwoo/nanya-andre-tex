@@ -55,7 +55,7 @@ export default {
     &-btn
       display: inline-block
       vertical-align: top
-      width: calc( (100% - 120px)/6 )
+      width: calc( (100% - 120px)/4 )
       margin: 10px
       padding: 0
       letter-spacing: 0
@@ -75,15 +75,6 @@ export default {
     &-name
       color: #fff
       background-color: #f0511d
-  @include rwd(1280px)
-    &.certificate &
-      &-action
-        margin: -5px
-      &-btn
-        width: calc( (100% - 60px)/6 )
-        margin: 5px
-      &-name
-        font-size: 15px
   @include rwd(960px)
     &.certificate &
       &-btn
