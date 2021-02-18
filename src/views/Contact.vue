@@ -13,9 +13,11 @@
 					//- 	| 任何問題請您與我們聯絡
 					//- 	br
 					//- 	| 進一步討論服務細節
-					p.contact_txt 電話：+886-2-2680-6311#2612
-					p.contact_txt 傳真：+886-2-2680-5771
-					p.contact_txt SW.Meng@npc.com.tw
+					p.contact_txt 聯絡人：孟書瑋
+					p.contact_txt 電話：+886-2-2717-8249
+					p.contact_txt 手機：+886-988-867-669
+					p.contact_txt 傳真：+886-2-2712-6113
+					p.contact_txt 信箱：SW.Meng@npc.com.tw
 				.box
 					p.name 
 						| 南亞塑膠工業股份有限公司
@@ -248,7 +250,7 @@ article#contact
 						margin-left: 0px
 					&:before
 						// height: 230px
-						height: 180px
+						height: 220px
 					p.txt
 						margin-bottom: 20px
 						font-size: 18px
@@ -273,7 +275,7 @@ article#contact
 						// margin-left: 0px
 					&:before
 						// height: 200px
-						height: 160px
+						height: 200px
 					p.txt
 						// margin-bottom: 20px
 						font-size: 14px
