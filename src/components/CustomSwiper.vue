@@ -121,7 +121,7 @@ export default {
     font-size: 0
     .option-box
       width: 100%
-      padding: 40px 20px
+      padding: 15px
       background-color: rgba(#fff,.55)
       box-sizing: border-box
       box-shadow: 0px 16px 35px rgba(#000,.4)

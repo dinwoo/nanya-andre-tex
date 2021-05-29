@@ -24,7 +24,6 @@
               :key="`${$route.params.seats}-${val}`"
             )
               template(slot="option")
-                .option-title {{$t(`${$route.name}.${$route.params.seats}.Swiper.option.title`)}}
                 .option-items
                   .option-item(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.Swiper.option.item`)" @click="val = index") {{item}}
       .block
@@ -109,29 +108,27 @@ export default {
   .option
     &-box
       text-align: left
-    &-title
-      display: inline-block
-      vertical-align: top
-      font-size: 25px
-      margin: 0 40px 0 20px
     &-items
-      display: inline-block
-      vertical-align: top
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      max-height: 120px
+      padding: 0 80px
     &-item
       position: relative
-      margin-top: 25px
-      font-size: 24px
+      margin-top: 15px
+      +fontH2
       transition: .3s
       cursor: pointer
-      &:first-of-type
+      &:nth-of-type(3n+1)
         margin-top: 0
       &:before
         content: ''
         display: inline-block
         vertical-align: middle
-        width: 3px
-        height: 3px
-        margin-right: 10px
+        width: 12px
+        height: 12px
+        margin-right: 15px
         margin-bottom: 3px
         border-radius: 50%
         background-color: #2f2f2f

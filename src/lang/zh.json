@@ -425,23 +425,23 @@
                 "val": 0,
                 "pic": [{
                         "title": "座椅內用防火材",
-                        "subTitle": "飛機座椅內用",
+                        "subTitle": "飛機座椅",
                         "link": ["seats/airplane-1.jpg", "seats/airplane-2.jpg", "seats/airplane-3.jpg", "seats/airplane-4.jpg", "seats/airplane-5.jpg", "seats/airplane-6.jpg"]
                     },
                     {
                         "title": "座椅內用防火材",
-                        "subTitle": "高鐵座椅內用",
+                        "subTitle": "高鐵座椅",
                         "link": ["seats/highSpeedRail-1.jpg", "seats/highSpeedRail-2.jpg", "seats/highSpeedRail-3.jpg", "seats/highSpeedRail-4.jpg", "seats/highSpeedRail-5.jpg"]
                     },
                     {
                         "title": "座椅內用防火材",
-                        "subTitle": "電影院座椅內用",
+                        "subTitle": "遊覽車座椅",
                         "link": ["seats/movieTheater-1.jpg", "seats/movieTheater-2.jpg", "seats/movieTheater-3.jpg"]
                     }
                 ],
                 "option": {
                     "title": "座椅內用防火材",
-                    "item": ["飛機座椅內用", "高鐵座椅內用", "電影院座椅內用"]
+                    "item": ["飛機座椅", "高鐵座椅", "遊覽車座椅", "轎車座椅", "電影院座椅", "遊艇內用", "兒童椅"]
                 }
             },
             "tab": {
