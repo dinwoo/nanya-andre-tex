@@ -98,13 +98,13 @@ export default {
   margin: 30px auto
   box-sizing: border-box
   .title
-    font-size: 50px
+    +fontH1
     font-weight: bold
     margin-bottom: 20px
     border-bottom: 5px solid $orange
     display: inline-block
   .sub-title
-    font-size: 30px
+    +fontH2
     margin-bottom: 20px
   .option-btn
     width: 0
