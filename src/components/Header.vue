@@ -322,7 +322,7 @@ header
 						width: 100%
 						padding: 36px 0
 						display: inline-block
-						font-size: 18px
+						font-size: 20px
 						color: $gray
 					ul.subMenu
 						// display: none
@@ -356,7 +356,7 @@ header
 								background-color: #f9f9f9
 								display: inline-block
 								vertical-align: middle
-								font-size: 18px
+								font-size: 16px
 								font-weight: bold
 								color: $gray
 								&.more

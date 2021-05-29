@@ -21,7 +21,7 @@
               :subTitle="pictureArr[val].subTitle"
               :dotNum = "5"
               :pictureLink="pictureArr[val].link"
-              :key="val"
+              :key="`${$route.params.seats}-${val}`"
             )
               template(slot="option")
                 .option-title {{$t(`${$route.name}.${$route.params.seats}.Swiper.option.title`)}}
@@ -69,6 +69,9 @@ export default {
     };
   },
   watch: {
+    '$route.params.seats':function () {
+      this.val = 0
+    },
     lang() {
       this.pictureArr = this.$t(`${this.$route.name}.${this.$route.params.seats}.Swiper.pic`);
     },
