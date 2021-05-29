@@ -103,7 +103,7 @@ export default {
   overflow: hidden
   .banner-pic
     width: 100%
-    padding-bottom: 42%
+    padding-bottom: 38%
     position: relative
     @include rwd(768px)
       padding-bottom: 152%
