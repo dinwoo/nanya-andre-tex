@@ -7,6 +7,14 @@
     section.main
       .block
         .wrapper
+          .textContent
+            .title {{$t(`${$route.name}.${$route.params.seats}.title`)}}
+            p {{$t(`${$route.name}.${$route.params.seats}.text`)}}
+          .textContent
+            .subTitle {{$t(`${$route.name}.${$route.params.seats}.subTitle`)}}
+            p {{$t(`${$route.name}.${$route.params.seats}.subText`)}}
+      .block.grey
+        .wrapper
           #swiper
             CustomSwiper(
               :title="pictureArr[val].title"
@@ -83,6 +91,18 @@ export default {
 <style lang="sass">
 @import "../assets/sass/var.sass"
 #application
+  .textContent
+    p
+      +fontP
+      line-height: 1.5
+      text-align: left
+  .textContent+.textContent
+    margin-top: 60px
+  .subTitle
+    +fontH2
+    font-weight: bold
+    text-align: left
+    margin-bottom: 15px
   .option
     &-box
       text-align: left
@@ -128,9 +148,14 @@ export default {
         font-size: 15px
 
 .graphicIntro
+  display: inline-block
+  vertical-align: top
+  width: calc( (100% - 30px)/2 )
   font-size: 0
-  &+&
-    margin-top: 50px
+  margin-left: 30px
+  margin-top: 60px
+  &:nth-of-type(odd)
+    margin-left: 0
 
   &-img,
   &-content
@@ -138,8 +163,20 @@ export default {
     vertical-align: top
 
   &-img
+    position: relative
+    box-sizing: border-box
     width: 45%
+    padding: 8px
     pointer-events: none
+    &::after
+      content: ''
+      position: absolute
+      top: -6px
+      right: -6px
+      bottom: -6px
+      left: -6px
+      background-image: url(../assets/images/frame.png)
+      background-size: 100% 100%
 
   &-content
     width: 50%
@@ -147,25 +184,29 @@ export default {
     text-align: left
 
   &-title
-    font-size: 28px
+    +fontH2
     font-weight: bold
 
   &-desc
-    font-size: 24px
-    margin-top: 20px
+    +fontP
+    margin-top: 10px
+    line-height: 1.2
 
   &.certificate
     display: inline-block
     vertical-align: top
     width: calc( (100% - 180px)/3 )
-    margin: 0 30px 60px 30px
+    margin: 60px 30px 0 30px
     figure
       box-shadow: 0 0 10px 5px rgba(0, 0, 0, .1)
   &.certificate &
     &-img
       width: 100%
+      padding: 0
       pointer-events: auto
       cursor: pointer
+      &::after
+        content: none
     &-content
       width: 100%
       display: block
@@ -229,19 +270,20 @@ export default {
   &-btn
     box-sizing: border-box
     display: inline-block
-    width: 240px
-    padding: 16px
-    font-size: 32px
-    letter-spacing: 5px
-    color: #828282
+    width: 214px
+    padding: 10px 16px
+    +fontH2
+    letter-spacing: 3px
+    color: #d53d26
     text-decoration: none
-    border: 1px solid #828282
+    border-radius: 8px
+    border: 1px solid #d53d26
     &+&
-      margin-left: 120px
+      margin-left: 90px
 
     &.active
-      color: #f0511d
-      border: 1px solid #f0511d
+      color: #ffffff
+      background-color: #d53d26
 
     &.solid
       width: calc( (100% - 60px)/4 )
@@ -257,15 +299,15 @@ export default {
       &:nth-of-type(1)
         margin-left: 0
 
-  &-content
-    margin-top: 110px
+  // &-content
+  //   margin-top: 110px
 
   @include rwd(1280px)
     &-btn
       width: 200px
       font-size: 28px
-      &+&
-        margin-left: 100px
+      // &+&
+      //   margin-left: 100px
       &.solid
         margin-left: 20px
         font-size: 22px
@@ -295,8 +337,8 @@ export default {
         &:nth-of-type(2n-1)
           margin-left: 0
 
-    &-content
-      margin-top: 20px
+    // &-content
+    //   margin-top: 20px
   @include rwd(374px)
     &-btn
       &.solid

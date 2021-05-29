@@ -3666,15 +3666,15 @@ article
     @include rwd(960px)
       padding: 0 15px
 .block
-  padding: 70px 0
+  padding: 50px 0
   &.grey
     background-color: #f7f7f7
   @include rwd(960px)
     padding: 25px 0
 .title
-  font-size: 50px
+  +fontH1
   font-weight: bold
-  margin-bottom: 55px
+  margin-bottom: 30px
   .attach
     margin-top: 25px
     font-size: 30px
