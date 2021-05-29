@@ -206,7 +206,18 @@ export default {
       ],
       thermometerLink: "thermometer-img7-1.jpg",
       thermometerMobileLink: "thermometer-img8-1.png",
-      recommendLink: ["recommed-img1.png", "recommed-img2.jpg"],
+      recommendLink: [
+        "recommed-img1.jpg", 
+        "recommed-img2.jpg",
+        "recommed-img3.jpg",
+        "recommed-img4.jpg",
+        "recommed-img5.jpg",
+        "recommed-img6.jpg",
+        "recommed-img7.jpg",
+        "recommed-img8.jpg",
+        "recommed-img9.jpg",
+        "recommed-img10.jpg",
+        ],
       settings: {
         dots: true,
         dotsClass: "slick-dots custom-dot-class recommend-dots",
@@ -360,7 +371,7 @@ export default {
 
 .recommend
   .title
-    font-size: 48px
+    +fontH1
   .content
     width: 50%
     text-align: left
@@ -393,11 +404,11 @@ export default {
           background-position: center center
           background-repeat: no-repeat
     .name
-      font-size: 32px
+      +fontH2
       font-weight: bold
       margin-bottom: 50px
     .description
-      font-size: 20px
+      +fontP
       line-height: 1.2
 @include rwd(768px)
   .recommend

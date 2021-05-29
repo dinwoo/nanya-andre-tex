@@ -33,6 +33,8 @@ export default {
         slidesToScroll: 1,
         // autoplay: true,
         arrows: false,
+        // pauseOnHover: false,
+        // pauseOnFocus: false
       },
       slidesToShow: 0,
       showOption: false,
