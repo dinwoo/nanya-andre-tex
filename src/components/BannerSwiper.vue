@@ -39,12 +39,12 @@ export default {
       slidesToShow: 0,
       showOption: false,
       screenWidth: document.body.clientWidth,
-      isMobile: document.body.clientWidth < 768,
+      isMobile: document.body.clientWidth < 775,
     };
   },
   watch: {
     screenWidth(val) {
-      this.isMobile = val < 768;
+      this.isMobile = val < 775;
       if (!this.timer) {
         this.screenWidth = val;
         this.timer = true;
