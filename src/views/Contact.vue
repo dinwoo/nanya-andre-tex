@@ -294,14 +294,14 @@ article#contact
 		padding: 40px 0
 		.wrapper
 			h1.title
+				+fontH1
 				margin-bottom: 30px
-				font-size: 48px
 				line-height: 1.5
 				color: $orange
 				font-weight: normal
 				text-align: center
 			p.txt
-				font-size: 24px
+				+fontP
 				line-height: 1.5
 				color: #121212
 				text-align: center
