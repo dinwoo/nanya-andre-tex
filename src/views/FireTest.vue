@@ -149,6 +149,14 @@ export default {
         width: 100%
         padding: 10px 0
         font-size: 15px
+  .graphicIntro
+    width: 100%
+    margin-left: 0
+    margin-top: 0
+    &-img
+      padding: 0
+      &::after
+        content: none
 .table
   table
     width: 100%

@@ -291,6 +291,9 @@ export default {
       padding: 20px 10px
       font-size: 24px
       letter-spacing: 0
+      color: #828282
+      border-radius: 0
+      border: 1px solid #828282
       transition: .3s
       &:hover
         color: #fff
