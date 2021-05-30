@@ -219,7 +219,7 @@
                 "pic": [{
                     "title": "家庭防火用",
                     "subTitle": "家庭/飯店",
-                    "link": ["household/hotelFamily-1.jpg", "household/hotelFamily-2.jpg", "household/hotelFamily-3.jpg", "household/hotelFamily-4.jpg", "household/hotelFamily-5.jpg", "household/hotelFamily-6.jpg", "household/hotelFamily-7.jpg", "household/hotelFamily-8.jpg"]
+                    "link": ["household/hotelFamily-1.jpg", "household/hotelFamily-2.jpg", "household/hotelFamily-3.jpg", "household/hotelFamily-4.jpg", "household/hotelFamily-5.jpg", "household/hotelFamily-6.jpg", "household/hotelFamily-7.jpg", "household/hotelFamily-8.jpg", "household/hotelFamily-9.jpg"]
                 }],
                 "option": {
                     "title": "家庭防火用",
@@ -362,12 +362,12 @@
                 "val": 0,
                 "pic": [{
                     "title": "電線管路",
-                    "subTitle": "電銲用",
-                    "link": ["insulation/welding-1.jpg", "insulation/welding-2.jpg", "insulation/welding-3.jpg", "insulation/welding-4.jpg", "insulation/welding-5.jpg", "insulation/welding-6.jpg", "insulation/welding-7.jpg", "insulation/welding-8.jpg", "insulation/welding-9.jpg", "insulation/welding-10.jpg", "insulation/welding-11.jpg", "insulation/welding-12.jpg"]
+                    "subTitle": "電線",
+                    "link": ["insulation/wire-1.jpg", "insulation/wire-2.jpg", "insulation/wire-3.jpg", "insulation/wire-4.jpg"]
                 }],
                 "option": {
                     "title": "電線管路",
-                    "item": ["電銲用"]
+                    "item": ["電線"]
                 }
             },
             "tab": {
@@ -436,7 +436,27 @@
                     {
                         "title": "座椅內用防火材",
                         "subTitle": "遊覽車座椅",
+                        "link": ["seats/bus-1.jpg"]
+                    },
+                    {
+                        "title": "座椅內用防火材",
+                        "subTitle": "轎車座椅",
+                        "link": ["seats/car-1.jpg", "seats/car-2.jpg", "seats/car-3.jpg", "seats/car-4.jpg", "seats/car-5.jpg"]
+                    },
+                    {
+                        "title": "座椅內用防火材",
+                        "subTitle": "電影院座椅",
                         "link": ["seats/movieTheater-1.jpg", "seats/movieTheater-2.jpg", "seats/movieTheater-3.jpg"]
+                    },
+                    {
+                        "title": "座椅內用防火材",
+                        "subTitle": "遊艇內用",
+                        "link": ["seats/yacht-1.jpg", "seats/yacht-2.jpg", "seats/yacht-3.jpg", "seats/yacht-4.jpg", "seats/yacht-5.jpg", "seats/yacht-6.jpg"]
+                    },
+                    {
+                        "title": "座椅內用防火材",
+                        "subTitle": "兒童椅",
+                        "link": ["seats/children-1.jpg", "seats/children-2.jpg", "seats/children-3.jpg", "seats/children-4.jpg"]
                     }
                 ],
                 "option": {
