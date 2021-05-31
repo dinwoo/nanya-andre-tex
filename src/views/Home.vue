@@ -248,7 +248,7 @@ export default {
 @import "../assets/sass/var.sass"
 
 .recommend-dots
-  bottom: 10px
+  bottom: 0px
   li
     button
       &:before
@@ -403,7 +403,7 @@ export default {
       .recommend-pic
         .pic
           width: 100%
-          padding-bottom: 66%
+          padding-bottom: 56.338028%
           background-size: cover
           background-position: center center
           background-repeat: no-repeat

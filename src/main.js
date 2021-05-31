@@ -26,6 +26,10 @@ if (localStorage.getItem("footmark-lang")) {
   store.commit("setLang", locale);
 }
 
+router.afterEach(() => {
+  window.scrollTo(0,0); //切换路由之后滚动条始终在最顶部
+});
+
 const i18n = new VueI18n({
   locale: locale,
   messages: {

@@ -55,8 +55,12 @@ header
 			.lang(href="")
 				.svg_box
 					include ../assets/pug/earth_svg.pug
-				p {{$t(`Header.lang`)}} : {{langTxt}} ▼
-				ul.subMenu
+				p(
+					@click="isLangMenuOpen=!isLangMenuOpen"
+				) {{$t(`Header.lang`)}} : {{langTxt}} ▼
+				ul.subMenu(
+					v-if="isLangMenuOpen||screenWidth>960"
+				)
 					li.subItem
 						.subA(@click="setLang('zh')") 繁體中文
 						.subA(@click="setLang('zh')") 简体中文
@@ -81,6 +85,7 @@ export default {
     return {
       isHamOpen: false,
       isSubMenuOpen: false,
+      isLangMenuOpen: false,
       screenWidth: document.body.clientWidth,
     };
   },
@@ -409,7 +414,7 @@ header
 					display: inline-block
 					vertical-align: middle
 				p
-					font-size: 16px
+					font-size: 20px
 					padding-left: 10px
 					color: $gray
 					display: inline-block
@@ -445,14 +450,14 @@ header
 							background-color: #f9f9f9
 							display: inline-block
 							vertical-align: middle
-							font-size: 18px
+							font-size: 16px
 							color: $gray
 							text-align: center
+							transition: .3s
 							@include rwd(1000px)
 								font-size: 12px
 							@include hover
-								.subA
-									background-color: #ebebeb
+								color: $orange
 		.ham
 			display: none
 	@include rwd(1400px)
@@ -512,7 +517,7 @@ header
 							@include before
 							li.subItem
 								.subA
-									font-size: 14px
+									font-size: 12px
 									&.more
 										font-size: 12px
 									// width: 165px
@@ -524,7 +529,7 @@ header
 						// width: 17px
 						// height: 17px
 					p
-						font-size: 12px
+						font-size: 14px
 						// padding-left: 10px
 					ul.subMenu
 						top: 80px
@@ -621,7 +626,7 @@ header
 								.subA
 									width: 100%
 									padding: 8px 0
-									font-size: 18px
+									font-size: 16px
 									&.more
 										margin-top: 10px
 										padding: 10px 0
@@ -644,10 +649,10 @@ header
 						width: 17px
 						height: 17px
 					p
-						font-size: 16px
+						font-size: 18px
 						padding-left: 10px
 					.subMenu
-						display: none
+						display: block
 						width: calc(100% - 30px)
 						margin: auto
 						border: none
@@ -660,7 +665,7 @@ header
 							.subA
 								width: 100%
 								padding: 16px 0
-								font-size: 18px
+								font-size: 16px
 				.close
 					width: 50px
 					height: 50px

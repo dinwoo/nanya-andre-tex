@@ -26,6 +26,11 @@ export default {
       localStorage.setItem("footmark-lang", value);
     },
   },
+  watch: {
+    $route(to, from) {
+      console.log(to,from)
+    }
+  }
 };
 </script>
 
