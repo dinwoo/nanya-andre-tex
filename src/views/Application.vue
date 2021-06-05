@@ -42,6 +42,11 @@
                   .graphicIntro-content
                     .graphicIntro-title {{el.title}}
                     .graphicIntro-desc(v-if="el.desc") {{el.desc}}
+      .block
+        .wrapper
+          .title {{$t(`${$route.name}.${$route.params.seats}.video.title`)}}
+          .video
+            iframe(:src="$t(`${$route.name}.${$route.params.seats}.video.link`)" title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 </template>
 
 <script>
@@ -346,4 +351,18 @@ export default {
     &-btn
       &.solid
         font-size: 14px
+.video
+  position: relative
+  box-sizing: border-box
+  margin: 0 60px
+  padding-bottom: 49.2%
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  @include rwd(960px)
+    margin: 0
+    padding-bottom: 56.2%
 </style>

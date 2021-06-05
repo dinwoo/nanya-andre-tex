@@ -207,6 +207,10 @@
                         "title": "檢驗報告"
                     }]
                 }]
+            },
+            "video": {
+                "title": "產品影片",
+                "link": "https://www.youtube.com/embed/Zqx_Q_gWiZo"
             }
         },
         "household": {
@@ -288,6 +292,10 @@
                         "title": "檢驗報告"
                     }]
                 }]
+            },
+            "video": {
+                "title": "產品影片",
+                "link": "https://www.youtube.com/embed/fXYThc0ofws"
             }
         },
         "daily": {
@@ -351,6 +359,10 @@
                     "name": "品質證書",
                     "data": []
                 }]
+            },
+            "video": {
+                "title": "產品影片",
+                "link": "https://www.youtube.com/embed/fXYThc0ofws"
             }
         },
         "insulation": {
@@ -414,6 +426,10 @@
                     "name": "品質證書",
                     "data": []
                 }]
+            },
+            "video": {
+                "title": "產品影片",
+                "link": "https://www.youtube.com/embed/fXYThc0ofws"
             }
         },
         "seats": {
@@ -532,6 +548,10 @@
                         "title": "檢驗報告"
                     }]
                 }]
+            },
+            "video": {
+                "title": "產品影片",
+                "link": "https://www.youtube.com/embed/fXYThc0ofws"
             }
         },
         "welding": {
@@ -616,66 +636,189 @@
                         "title": "檢驗報告"
                     }]
                 }]
+            },
+            "video": {
+                "title": "產品影片",
+                "link": "https://www.youtube.com/embed/fXYThc0ofws"
             }
         }
     },
     "Examples": {
-        "title": "成功案例",
-        "card": [{
-            "link": "#swiperTarget",
-            "img": "taoyuan.jpg",
-            "imgMob": "taoyuan.jpg",
-            "title": "桃園 芙蓉匯"
-        }, {
-            "link": "#swiperTarget",
-            "img": "xinzhuang.jpg",
-            "imgMob": "xinzhuang.jpg",
-            "title": "新莊 麗寶雙璽"
-        }, {
-            "link": "#swiperTarget",
-            "img": "building95.jpg",
-            "imgMob": "building95.jpg",
-            "title": "遠雄95大樓"
-        }, {
-            "link": "#swiperTarget",
-            "img": "seaPalace.jpg",
-            "imgMob": "seaPalace.jpg",
-            "title": "海上皇宮"
-        }, {
-            "link": "#swiperTarget",
-            "img": "sea.jpg",
-            "imgMob": "sea.jpg",
-            "title": "海洋都心三期"
-        }],
-        "Swiper": {
-            "pic": [{
-                    "title": "桃園 芙蓉匯",
-                    "link": ["taoyuan-1.jpg", "taoyuan-2.jpg", "taoyuan-3.jpg", "taoyuan-4.jpg", "taoyuan-5.jpg", "taoyuan-6.jpg"]
-                },
-                {
-                    "title": "新莊 麗寶雙璽",
-                    "link": ["xinzhuang-1.jpg", "xinzhuang-2.jpg", "xinzhuang-3.jpg", "xinzhuang-4.jpg", "xinzhuang-5.jpg"]
-                },
-                {
-                    "title": "遠雄95大樓",
-                    "link": ["building95-1.jpg", "building95-2.jpg", "building95-3.jpg", "building95-4.jpg", "building95-5.jpg", "building95-6.jpg"]
-                },
-                {
-                    "title": "海上皇宮",
-                    "link": ["seaPalace-1.jpg", "seaPalace-2.jpg", "seaPalace-3.jpg", "seaPalace-4.jpg"]
-                },
-                {
-                    "title": "海洋都心三期",
-                    "link": ["sea-1.jpg", "sea-2.jpg", "sea-3.jpg", "sea-4.jpg", "sea-5.jpg", "sea-6.jpg"]
-                }
-            ],
-            "option": [
-                "桃園 芙蓉匯",
-                "新莊 麗寶雙璽",
-                "遠雄95大樓",
-                "海上皇宮",
-                "海洋都心三期"
-            ]
+        "pipe": {
+            "title": "塑膠管材",
+            "card": [{
+                "link": "#swiperTarget",
+                "img": "pipe/taoyuan.jpg",
+                "imgMob": "pipe/taoyuan.jpg",
+                "title": "桃園 芙蓉匯"
+            }, {
+                "link": "#swiperTarget",
+                "img": "pipe/xinzhuang.jpg",
+                "imgMob": "pipe/xinzhuang.jpg",
+                "title": "新莊 麗寶雙璽"
+            }, {
+                "link": "#swiperTarget",
+                "img": "pipe/building95.jpg",
+                "imgMob": "pipe/building95.jpg",
+                "title": "遠雄95大樓"
+            }, {
+                "link": "#swiperTarget",
+                "img": "pipe/seaPalace.jpg",
+                "imgMob": "pipe/seaPalace.jpg",
+                "title": "海上皇宮"
+            }, {
+                "link": "#swiperTarget",
+                "img": "pipe/sea.jpg",
+                "imgMob": "pipe/sea.jpg",
+                "title": "海洋都心三期"
+            }],
+            "Swiper": {
+                "pic": [{
+                        "title": "桃園 芙蓉匯",
+                        "link": ["pipe/taoyuan-1.jpg", "pipe/taoyuan-2.jpg", "pipe/taoyuan-3.jpg", "pipe/taoyuan-4.jpg", "pipe/taoyuan-5.jpg", "pipe/taoyuan-6.jpg"]
+                    },
+                    {
+                        "title": "新莊 麗寶雙璽",
+                        "link": ["pipe/xinzhuang-1.jpg", "pipe/xinzhuang-2.jpg", "pipe/xinzhuang-3.jpg", "pipe/xinzhuang-4.jpg", "pipe/xinzhuang-5.jpg"]
+                    },
+                    {
+                        "title": "遠雄95大樓",
+                        "link": ["pipe/building95-1.jpg", "pipe/building95-2.jpg", "pipe/building95-3.jpg", "pipe/building95-4.jpg", "pipe/building95-5.jpg", "pipe/building95-6.jpg"]
+                    },
+                    {
+                        "title": "海上皇宮",
+                        "link": ["pipe/seaPalace-1.jpg", "pipe/seaPalace-2.jpg", "pipe/seaPalace-3.jpg", "pipe/seaPalace-4.jpg"]
+                    },
+                    {
+                        "title": "海洋都心三期",
+                        "link": ["pipe/sea-1.jpg", "pipe/sea-2.jpg", "pipe/sea-3.jpg", "pipe/sea-4.jpg", "pipe/sea-5.jpg", "pipe/sea-6.jpg"]
+                    }
+                ],
+                "option": [
+                    "桃園 芙蓉匯",
+                    "新莊 麗寶雙璽",
+                    "遠雄95大樓",
+                    "海上皇宮",
+                    "海洋都心三期"
+                ]
+            }
+        },
+        "welding": {
+            "title": "電焊用",
+            "card": [{
+                "link": "#swiperTarget",
+                "img": "welding/FPG.jpg",
+                "imgMob": "welding/FPG.jpg",
+                "title": "台塑集團"
+            }, {
+                "link": "#swiperTarget",
+                "img": "welding/repair.jpg",
+                "imgMob": "welding/repair.jpg",
+                "title": "石化廠管路維修"
+            }, {
+                "link": "#swiperTarget",
+                "img": "welding/restaurant.jpg",
+                "imgMob": "welding/restaurant.jpg",
+                "title": "高級飯店/餐廳裝修"
+            }, {
+                "link": "#swiperTarget",
+                "img": "welding/ship.jpg",
+                "imgMob": "welding/ship.jpg",
+                "title": "船舶維修"
+            }, {
+                "link": "#swiperTarget",
+                "img": "welding/steel.jpg",
+                "imgMob": "welding/steel.jpg",
+                "title": "鋼鐵廠"
+            }],
+            "Swiper": {
+                "pic": [{
+                        "title": "台塑集團",
+                        "link": ["welding/FPG-1.jpg", "welding/FPG-2.jpg", "welding/FPG-3.jpg", "welding/FPG-4.jpg", "welding/FPG-5.jpg", "welding/FPG-6.jpg"]
+                    },
+                    {
+                        "title": "石化廠管路維修",
+                        "link": ["welding/repair-1.jpg", "welding/repair-2.jpg", "welding/repair-3.jpg", "welding/repair-4.jpg", "welding/repair-5.jpg", "welding/repair-6.jpg", "welding/repair-7.jpg"]
+                    },
+                    {
+                        "title": "高級飯店/餐廳裝修",
+                        "link": ["welding/restaurant-1.jpg", "welding/restaurant-2.jpg", "welding/restaurant-3.jpg", "welding/restaurant-4.jpg", "welding/restaurant-5.jpg", "welding/restaurant-6.jpg"]
+                    },
+                    {
+                        "title": "船舶維修",
+                        "link": ["welding/ship-1.jpg", "welding/ship-2.jpg", "welding/ship-3.jpg", "welding/ship-4.jpg"]
+                    },
+                    {
+                        "title": "鋼鐵廠",
+                        "link": ["welding/steel-1.jpg", "welding/steel-2.jpg", "welding/steel-3.jpg", "welding/steel-4.jpg", "welding/steel-5.jpg", "welding/steel-6.jpg", "welding/steel-7.jpg"]
+                    }
+                ],
+                "option": [
+                    "台塑集團",
+                    "石化廠管路維修",
+                    "高級飯店/餐廳裝修",
+                    "船舶維修",
+                    "鋼鐵廠"
+                ]
+            }
+        },
+        "household": {
+            "title": "家庭/飯店",
+            "card": [{
+                "link": "#swiperTarget",
+                "img": "household/family.jpg",
+                "imgMob": "household/family.jpg",
+                "title": "家庭防火用"
+            }, {
+                "link": "#swiperTarget",
+                "img": "household/restaurant.png",
+                "imgMob": "household/restaurant.png",
+                "title": "飯店防火用"
+            }],
+            "Swiper": {
+                "pic": [{
+                        "title": "家庭防火用",
+                        "link": ["household/family-1.jpg", "household/family-2.jpg", "household/family-3.jpg", "household/family-4.jpg", "household/family-5.jpg", "household/family-6.jpg", "household/family-7.jpg", "household/family-8.jpg", "household/family-9.jpg", "household/family-10.jpg", "household/family-11.jpg", "household/family-12.jpg", "household/family-13.png"]
+                    },
+                    {
+                        "title": "飯店防火用",
+                        "link": ["household/restaurant-1.png", "household/restaurant-2.jpg", "household/restaurant-3.jpg", "household/restaurant-4.jpg", "household/restaurant-5.jpg"]
+                    }
+                ],
+                "option": [
+                    "家庭防火用",
+                    "飯店防火用"
+                ]
+            }
+        },
+        "seats": {
+            "title": "座椅用",
+            "card": [{
+                "link": "#swiperTarget",
+                "img": "seats/train.png",
+                "imgMob": "seats/train.png",
+                "title": "列車座椅"
+            }, {
+                "link": "#swiperTarget",
+                "img": "seats/seat.jpg",
+                "imgMob": "seats/seat.jpg",
+                "title": "座椅測試"
+            }],
+            "Swiper": {
+                "pic": [{
+                        "title": "列車座椅",
+                        "link": ["seats/train-1.png", "seats/train-2.jpg", "seats/train-3.jpg", "seats/train-4.jpg", "seats/train-5.jpg", "seats/train-6.jpg", "seats/train-7.jpg", "seats/train-8.jpg", "seats/train-9.jpg", "seats/train-10.jpg", "seats/train-11.jpg", "seats/train-12.jpg"]
+                    },
+                    {
+                        "title": "座椅測試",
+                        "link": ["seats/seat-1.jpg", "seats/seat-2.jpg", "seats/seat-3.jpg", "seats/seat-4.jpg", "seats/seat-5.jpg", "seats/seat-6.jpg", "seats/seat-7.jpg"]
+                    }
+                ],
+                "option": [
+                    "列車座椅",
+                    "座椅測試"
+                ]
+            }
         }
     },
     "FireTest": {

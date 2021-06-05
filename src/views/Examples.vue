@@ -7,8 +7,8 @@
     section.main
       .block.grey
         .wrapper
-          .title {{$t(`${$route.name}.title`)}}
-          btnCard(:cardData="$t(`${$route.name}.card`)" :className="`examples`" v-on:swiperClick="cardVal")
+          .title {{$t(`${$route.name}.${$route.params.pipe}.title`)}}
+          btnCard(:cardData="$t(`${$route.name}.${$route.params.pipe}.card`)" :className="`examples`" v-on:swiperClick="cardVal")
       .block#swiperTarget
         .wrapper
           #swiper
@@ -17,11 +17,11 @@
               :subTitle="pictureArr[val].subTitle"
               :dotNum = "5"
               :pictureLink="pictureArr[val].link"
-              :key="val"
+              :key="`${$route.params.pipe}-${val}`"
             )
               template(slot="option")
                 .option-items
-                  .option-item(v-for="item,index in $t(`${$route.name}.Swiper.option`)" @click="cardVal(), valChange(index)" :key="index") {{item}}
+                  .option-item(v-for="item,index in $t(`${$route.name}.${$route.params.pipe}.Swiper.option.item`)" @click="cardVal(), valChange(index)" :key="index") {{item}}
 </template>
 
 <script>
@@ -38,20 +38,35 @@ export default {
     return {
       bannerLink: [
         {
-          1: "banner-1.jpg",
+          1: this.$t(`${this.$route.params.pipe}/banner-1.jpg`),
         },
         {
-          1: "banner-1-m.jpg",
+          1: this.$t(`${this.$route.params.pipe}/banner-1-m.jpg`),
         },
       ],
+      active: 0,
       val: 0,
-      pictureArr: this.$t(`${this.$route.name}.Swiper.pic`),
+      pictureArr: this.$t(`${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`),
     };
   },
   watch: {
-    lang() {
-      this.pictureArr = this.$t(`${this.$route.name}.Swiper.pic`);
+    '$route.params.pipe':function () {
+      this.val = 0
     },
+    lang() {
+      this.pictureArr = this.$t(`${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`);
+    },
+    $route() {
+      this.bannerLink = [
+        {
+          1: this.$t(`${this.$route.params.pipe}/banner-1.jpg`),
+        },
+        {
+          1: this.$t(`${this.$route.params.pipe}/banner-1-m.jpg`),
+        },
+      ];
+      this.pictureArr = this.$t(`${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`);
+    }
   },
   methods: {
     cardVal: function(card) {

@@ -3678,7 +3678,7 @@ article
 .title
   +fontH1
   font-weight: bold
-  margin-bottom: 30px
+  margin-bottom: 40px
   .attach
     margin-top: 25px
     font-size: 30px

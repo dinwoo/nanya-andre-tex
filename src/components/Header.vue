@@ -46,8 +46,25 @@ header
 							img(src="@/assets/images/nanya-house.png", alt="")
 				li.mainItem 
 					router-link.mainA(to="/test") {{$t(`Header.test`)}}
-				li.mainItem 
-					router-link.mainA(to="/case") {{$t(`Header.case`)}}
+				li.mainItem(
+					:class="{'active':isSubMenuOpen}"
+				)
+					.mainA(
+						href="javascript:;"
+						@click="isSubMenuOpen=!isSubMenuOpen"
+					) {{$t(`Header.case`)}}
+					ul.subMenu.two_column(
+						v-if="isSubMenuOpen||screenWidth>960"
+						:class="{'disnone':screenWidth>960}"
+					)
+						li.subItem
+							router-link.subA(to="/case/pipe") {{$t(`Header.pipe`)}}
+						li.subItem
+							router-link.subA(to="/case/welding") {{$t(`Header.welding`)}}
+						li.subItem
+							router-link.subA(to="/case/household") {{$t(`Header.household`)}}
+						li.subItem
+							router-link.subA(to="/case/seats") {{$t(`Header.seats`)}}
 				li.mainItem 
 					router-link.mainA(to="/certificate") {{$t(`Header.certificate`)}}
 				li.mainItem 
