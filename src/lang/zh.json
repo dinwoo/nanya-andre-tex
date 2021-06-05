@@ -46,31 +46,31 @@
                 "title": "ANDRE-TEX T",
                 "detail1": "厚度x寬度：2.5mm x 59”",
                 "detail2": "重量：300 g/M",
-                "detail3": "限氧指數(L.O.I.).：40"
+                "detail3": "限氧指數(L.O.I.)：40"
             },
             {
                 "title": "ANDRE-TEX W",
                 "detail1": "厚度x寬度：3.0mm x 55”",
                 "detail2": "重量：500 g/M",
-                "detail3": "限氧指數(L.O.I.).：>40"
+                "detail3": "限氧指數(L.O.I.)：>40"
             },
             {
                 "title": "ANDRE-TEX I",
                 "detail1": "厚度x寬度：0.3mm x 40”",
                 "detail2": "重量：400 g/M",
-                "detail3": "限氧指數(L.O.I.).：35"
+                "detail3": "限氧指數(L.O.I.)：35"
             },
             {
                 "title": "ANDRE-TEX S",
                 "detail1": "厚度x寬度：4.0mm x 59”",
                 "detail2": "重量：600 g/M",
-                "detail3": "限氧指數(L.O.I.).：35"
+                "detail3": "限氧指數(L.O.I.)：35"
             },
             {
                 "title": "ANDRE-TEX H",
                 "detail1": "厚度x寬度：3.0mm x 59”",
                 "detail2": "重量：500 g/M",
-                "detail3": "限氧指數(L.O.I.).：40"
+                "detail3": "限氧指數(L.O.I.)：40"
             }
         ],
         "card": [{
