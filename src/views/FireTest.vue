@@ -11,8 +11,8 @@
           .tab
             .tab-desc {{$t(`${$route.name}.tab.desc`)}}
             .tab-action
-              a.tab-btn.solid(:href="item.link" v-for="item,index in $t(`${$route.name}.tab.btn`)" :key="index") {{item.text}}
-      .block
+              a.tab-btn.solid(:href="`#`" v-for="item,index in $t(`${$route.name}.tab.btn`)" :key="index" @click.prevent="goAnchor(item.link)") {{item.text}}
+      .block#swiperTarget
         .wrapper
           #swiper
             CustomSwiper(
@@ -121,7 +121,12 @@ export default {
       this.pictureArr = this.$t(`${this.$route.name}.Swiper.pic`);
     },
   },
-  methods: {},
+  methods: {
+    goAnchor(link) {
+      var anchor = document.querySelector(link).offsetTop - 93;
+      window.scrollTo(0, anchor);
+    }
+  },
 };
 </script>
 

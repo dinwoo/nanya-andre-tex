@@ -1,6 +1,6 @@
 <template lang="pug">
   .btnCard(:class="className")
-    a.btnCard-item(:href="item.link" v-for="item,index in cardData" :key="index" @click="cardIndex(index), swiperChange()")
+    a.btnCard-item(:href="`#`" v-for="item,index in cardData" :key="index" @click.prevent="cardIndex(index), swiperChange(), goAnchor(item.link)")
       .btnCard-img
         img(:src="compileFilePath(item.img)")
         img(:src="compileFilePath(item.imgMob)")
@@ -23,6 +23,14 @@ export default {
     },
     cardIndex: function(index){
       return this.swiperVal = index
+    },
+    goAnchor(link) {
+      if (this.$el.classList.contains('examples')) {
+        var anchor = document.querySelector('#swiperTarget').offsetTop - 93;
+        window.scrollTo(0, anchor);
+      } else {
+        window.location.href = link;
+      }
     }
   }
 };

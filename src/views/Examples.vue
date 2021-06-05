@@ -74,7 +74,7 @@ export default {
     },
     valChange: function(swiperVal) {
       return (this.val = swiperVal);
-    },
+    }
   },
 };
 </script>

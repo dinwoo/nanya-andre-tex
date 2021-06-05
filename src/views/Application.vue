@@ -291,9 +291,9 @@ export default {
       background-color: #d53d26
 
     &.solid
-      width: calc( (100% - 60px)/4 )
-      margin-left: 20px
-      padding: 20px 10px
+      width: calc( (100% - 45px)/4 )
+      margin-left: 15px
+      padding: 20px 0
       font-size: 24px
       letter-spacing: 0
       color: #828282
@@ -317,7 +317,6 @@ export default {
       // &+&
       //   margin-left: 100px
       &.solid
-        margin-left: 20px
         font-size: 22px
         &:nth-of-type(1)
           margin-left: 0

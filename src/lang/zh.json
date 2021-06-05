@@ -647,27 +647,22 @@
         "pipe": {
             "title": "塑膠管材",
             "card": [{
-                "link": "#swiperTarget",
                 "img": "pipe/taoyuan.jpg",
                 "imgMob": "pipe/taoyuan.jpg",
                 "title": "桃園 芙蓉匯"
             }, {
-                "link": "#swiperTarget",
                 "img": "pipe/xinzhuang.jpg",
                 "imgMob": "pipe/xinzhuang.jpg",
                 "title": "新莊 麗寶雙璽"
             }, {
-                "link": "#swiperTarget",
                 "img": "pipe/building95.jpg",
                 "imgMob": "pipe/building95.jpg",
                 "title": "遠雄95大樓"
             }, {
-                "link": "#swiperTarget",
                 "img": "pipe/seaPalace.jpg",
                 "imgMob": "pipe/seaPalace.jpg",
                 "title": "海上皇宮"
             }, {
-                "link": "#swiperTarget",
                 "img": "pipe/sea.jpg",
                 "imgMob": "pipe/sea.jpg",
                 "title": "海洋都心三期"
@@ -706,27 +701,22 @@
         "welding": {
             "title": "電焊用",
             "card": [{
-                "link": "#swiperTarget",
                 "img": "welding/FPG.jpg",
                 "imgMob": "welding/FPG.jpg",
                 "title": "台塑集團"
             }, {
-                "link": "#swiperTarget",
                 "img": "welding/repair.jpg",
                 "imgMob": "welding/repair.jpg",
                 "title": "石化廠管路維修"
             }, {
-                "link": "#swiperTarget",
                 "img": "welding/restaurant.jpg",
                 "imgMob": "welding/restaurant.jpg",
                 "title": "高級飯店/餐廳裝修"
             }, {
-                "link": "#swiperTarget",
                 "img": "welding/ship.jpg",
                 "imgMob": "welding/ship.jpg",
                 "title": "船舶維修"
             }, {
-                "link": "#swiperTarget",
                 "img": "welding/steel.jpg",
                 "imgMob": "welding/steel.jpg",
                 "title": "鋼鐵廠"
@@ -765,12 +755,10 @@
         "household": {
             "title": "家庭/飯店",
             "card": [{
-                "link": "#swiperTarget",
                 "img": "household/family.jpg",
                 "imgMob": "household/family.jpg",
                 "title": "家庭防火用"
             }, {
-                "link": "#swiperTarget",
                 "img": "household/restaurant.png",
                 "imgMob": "household/restaurant.png",
                 "title": "飯店防火用"
@@ -794,12 +782,10 @@
         "seats": {
             "title": "座椅用",
             "card": [{
-                "link": "#swiperTarget",
                 "img": "seats/train.png",
                 "imgMob": "seats/train.png",
                 "title": "列車座椅"
             }, {
-                "link": "#swiperTarget",
                 "img": "seats/seat.jpg",
                 "imgMob": "seats/seat.jpg",
                 "title": "座椅測試"
