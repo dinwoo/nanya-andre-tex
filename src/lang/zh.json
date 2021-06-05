@@ -23,13 +23,13 @@
         "title3": "聯絡資訊",
         "title4": "快速連結",
         "plastics": "南亞塑膠城",
-        "pipe": "塑料管材防火保護",
-        "welding": "電銲防火用",
-        "household": "家庭/飯店防火毯",
-        "seats": "座椅內包覆防火材",
+        "pipe": "塑料管材",
+        "welding": "電銲用",
+        "household": "家庭/飯店",
+        "seats": "座椅內用",
         "daily": "排風管",
         "insulation": "電線管路",
-        "customize": "客製產品開發",
+        "customize": "客製開發",
         "more": "更多南亞商品",
         "address": "台北市敦化北路201號台塑大樓3樓502室",
         "copyright": "Copyright © 2019 南亞塑膠工業股份有限公司 All Rights Reserved.",
@@ -46,31 +46,31 @@
                 "title": "ANDRE-TEX T",
                 "detail1": "厚度x寬度：2.5mm x 59”",
                 "detail2": "重量：300 g/M",
-                "detail3": "限氧指數(L.O.I.)：40"
+                "detail3": "限氧指數(L.O.I.).：40"
             },
             {
                 "title": "ANDRE-TEX W",
                 "detail1": "厚度x寬度：3.0mm x 55”",
                 "detail2": "重量：500 g/M",
-                "detail3": "限氧指數(L.O.I.)：>40"
+                "detail3": "限氧指數(L.O.I.).：>40"
             },
             {
                 "title": "ANDRE-TEX I",
                 "detail1": "厚度x寬度：0.3mm x 40”",
                 "detail2": "重量：400 g/M",
-                "detail3": "限氧指數(L.O.I.)：35"
+                "detail3": "限氧指數(L.O.I.).：35"
             },
             {
                 "title": "ANDRE-TEX S",
                 "detail1": "厚度x寬度：4.0mm x 59”",
                 "detail2": "重量：600 g/M",
-                "detail3": "限氧指數(L.O.I.)：35"
+                "detail3": "限氧指數(L.O.I.).：35"
             },
             {
                 "title": "ANDRE-TEX H",
                 "detail1": "厚度x寬度：3.0mm x 59”",
                 "detail2": "重量：500 g/M",
-                "detail3": "限氧指數(L.O.I.)：40"
+                "detail3": "限氧指數(L.O.I.).：40"
             }
         ],
         "card": [{

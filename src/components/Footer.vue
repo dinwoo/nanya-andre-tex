@@ -32,9 +32,9 @@ footer
 						|
 						span.arrow
 							img(src="@/assets/images/arrow.png", alt="")
-					img.nanya-house(src="@/assets/images/nanya-house.png", alt="")
+					img(src="@/assets/images/nanya-house.png", alt="")
 
-			//- .content.info
+			.content.info
 				.title {{$t(`Footer.title3`)}}
 				.info_box
 					a.item(href="https://www.nanya-andre-tex.com" target="_blank")
@@ -129,7 +129,7 @@ footer
 				&.global
 					width: 25%
 				&.product
-					width: 25%
+					width: 18%
 				&.info
 					width: 30%
 				.title
@@ -212,9 +212,6 @@ footer
 							margin-left: 5px
 							img
 								width: 15px
-					.nanya-house
-						pointer-events: none
-						transform: translateY(-100%)
 
 				.info_box
 					padding-top: 7px
@@ -334,15 +331,15 @@ footer
 	@include rwd(960px)
 		.topFooter
 			.wrapper
-				max-width: 370px
+				max-width: 590px
 				.content
-					width: 100%
+					width: 50%
 					&.global
-						width: 100%
+						width: 50%
 					&.product
-						width: 100%
+						width: 50%
 					&.info
-						width: 100%
+						width: 50%
 		.subFooter
 			.wrapper
 				max-width: 590px
