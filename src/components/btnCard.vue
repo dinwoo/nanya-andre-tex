@@ -90,6 +90,7 @@ export default {
           display: block
     &-content
       padding: 5px 10px
+      min-height: 60px
     &-title
       font-size: 14px
     &-desc

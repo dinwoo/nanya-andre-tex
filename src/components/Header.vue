@@ -14,14 +14,14 @@ header
 				//- li.mainItem 
 				//- 	a.mainA(href="http://www.nanya-plastics-mall.com.tw") {{$t(`Header.plastics`)}}
 				li.mainItem(
-					:class="{'active':isSubMenuOpen}"
+					:class="{'active':isApplicationMenuOpen}"
 				)
 					.mainA(
 						href="javascript:;"
-						@click="isSubMenuOpen=!isSubMenuOpen"
+						@click="isApplicationMenuOpen=!isApplicationMenuOpen"
 					) {{$t(`Header.application`)}}
 					ul.subMenu.two_column(
-						v-if="isSubMenuOpen||screenWidth>960"
+						v-if="isApplicationMenuOpen||screenWidth>960"
 						:class="{'disnone':screenWidth>960}"
 					)
 						li.subItem
@@ -47,14 +47,14 @@ header
 				li.mainItem 
 					router-link.mainA(to="/test") {{$t(`Header.test`)}}
 				li.mainItem(
-					:class="{'active':isSubMenuOpen}"
+					:class="{'active':isCaseMenuOpen}"
 				)
 					.mainA(
 						href="javascript:;"
-						@click="isSubMenuOpen=!isSubMenuOpen"
+						@click="isCaseMenuOpen=!isCaseMenuOpen"
 					) {{$t(`Header.case`)}}
 					ul.subMenu.two_column(
-						v-if="isSubMenuOpen||screenWidth>960"
+						v-if="isCaseMenuOpen||screenWidth>960"
 						:class="{'disnone':screenWidth>960}"
 					)
 						li.subItem
@@ -101,7 +101,8 @@ export default {
   data() {
     return {
       isHamOpen: false,
-      isSubMenuOpen: false,
+      isApplicationMenuOpen: false,
+      isCaseMenuOpen: false,
       isLangMenuOpen: false,
       screenWidth: document.body.clientWidth,
     };
@@ -133,7 +134,8 @@ export default {
     },
     $route: function() {
       this.isHamOpen = false;
-      this.isSubMenuOpen = false;
+      this.isApplicationMenuOpen = false;
+      this.isCaseMenuOpen = false;
     },
   },
   mounted() {
