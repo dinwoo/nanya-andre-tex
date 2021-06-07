@@ -120,7 +120,8 @@ export default {
         display: none
       &-items
         display: block
-        padding: 0
+        max-height: none
+        padding: 0 0 15px 0
       &-item
         text-align: left
         &:nth-of-type(3n+1)
