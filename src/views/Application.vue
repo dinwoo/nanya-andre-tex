@@ -103,6 +103,9 @@ export default {
       +fontP
       line-height: 1.5
       text-align: left
+    @include rwd(960px)
+      p
+        font-size: 18px
   .textContent+.textContent
     margin-top: 60px
   .subTitle
@@ -110,6 +113,8 @@ export default {
     font-weight: bold
     text-align: left
     margin-bottom: 15px
+    @include rwd(960px)
+      font-size: 24px
   .option
     &-box
       text-align: left
@@ -122,7 +127,6 @@ export default {
     &-item
       position: relative
       margin-top: 15px
-      +fontH2
       transition: .3s
       cursor: pointer
       &:nth-of-type(3n+1)
@@ -150,7 +154,9 @@ export default {
       &-items
         padding: 20px 0
       &-item
-        font-size: 15px
+        text-align: left
+        &:nth-of-type(4n+1)
+          margin-top: 0
 
 .graphicIntro
   display: inline-block
@@ -231,8 +237,9 @@ export default {
       &-title
         font-size: 26px
   @include rwd(960px)
+    width: 100%
     max-width: 640px
-    margin: auto
+    margin: 20px auto 0 auto
     &+&
       margin-top: 20px
       padding-top: 20px
@@ -249,22 +256,22 @@ export default {
       padding: 0 20px
 
     &-title
-      font-size: 15px
+      font-size: 20px
 
     &-desc
-      font-size: 12px
+      font-size: 16px
       margin-top: 10px
 
     &.certificate
       width: calc( (100% - 80px)/2 )
-      margin: 0 20px 40px 20px
+      margin: 30px 20px 40px 20px
       &+&
         padding-top: 0
         border-top: none
     &.certificate &
       &-title
         margin-top: 20px
-        font-size: 14px
+        font-size: 20px
 
 .tab
   &-desc
@@ -291,6 +298,8 @@ export default {
       background-color: #d53d26
 
     &.solid
+      position: relative
+      vertical-align: middle
       width: calc( (100% - 45px)/4 )
       margin-left: 15px
       padding: 20px 0
@@ -324,32 +333,42 @@ export default {
   @include rwd(960px)
     &-desc
       margin-bottom: 30px
-      font-size: 14px
+      font-size: 18px
     &-action
       padding: 0
 
     &-btn
       width: 90px
       padding: 8px
-      font-size: 14px
-      letter-spacing: 2px
+      font-size: 18px
+      letter-spacing: 0
       &+&
         margin-left: 10px
       &.solid
         width: calc( (100% - 10px)/2 )
+        font-size: 20px
         letter-spacing: 0
         margin-left: 10px
         margin-top: 10px
         padding: 12px 8px
         &:nth-of-type(2n-1)
           margin-left: 0
+  @include rwd(540px)
+    &-btn
+      &.solid
+        height: 66px
+        span
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          box-sizing: border-box
+          width: 100%
+          padding: 12px 8px
 
     // &-content
     //   margin-top: 20px
-  @include rwd(374px)
-    &-btn
-      &.solid
-        font-size: 14px
+
 .video
   position: relative
   box-sizing: border-box

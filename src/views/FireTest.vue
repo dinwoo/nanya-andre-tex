@@ -11,7 +11,8 @@
           .tab
             .tab-desc {{$t(`${$route.name}.tab.desc`)}}
             .tab-action
-              a.tab-btn.solid(:href="`#`" v-for="item,index in $t(`${$route.name}.tab.btn`)" :key="index" @click.prevent="goAnchor(item.link)") {{item.text}}
+              a.tab-btn.solid(:href="`#`" v-for="item,index in $t(`${$route.name}.tab.btn`)" :key="index" @click.prevent="goAnchor(item.link)")
+                span {{item.text}}
       .block#swiperTarget
         .wrapper
           #swiper
@@ -185,7 +186,7 @@ export default {
   @include rwd(1280px)
     td
       padding: 18px
-      font-size: 16px
+      font-size: 18px
     // .note
     //   font-size: 12px
   @include rwd(960px)
@@ -195,7 +196,6 @@ export default {
       margin: auto
     td
       padding: 14px
-      font-size: 14px
 .remark
   font-size: 20px
   text-align: left
@@ -205,8 +205,6 @@ export default {
     text-decoration: underline
   @include rwd(1280px)
     font-size: 16px
-  @include rwd(960px)
-    font-size: 14px
 .list
   padding-left: 1em
   font-size: 20px
@@ -221,7 +219,6 @@ export default {
     li+li
       margin-top: 18px
   @include rwd(960px)
-    font-size: 12px
     li+li
       margin-top: 10px
 .graphicIntro-content
@@ -237,9 +234,9 @@ export default {
         font-size: 16px
   @include rwd(960px)
     .list
-      font-size: 15px
+      font-size: 20px
       span
-        font-size: 12px
+        font-size: 14px
 .separate
   max-width: 1280px
   margin: auto

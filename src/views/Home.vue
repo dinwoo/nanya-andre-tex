@@ -3673,8 +3673,6 @@ article
   padding: 50px 0
   &.grey
     background-color: #f7f7f7
-  @include rwd(960px)
-    padding: 25px 0
 .title
   +fontH1
   font-weight: bold
@@ -3683,13 +3681,11 @@ article
     margin-top: 25px
     font-size: 30px
     color: #f0511d
-  @include rwd(1280px)
-    font-size: 40px
   @include rwd(960px)
-    font-size: 26px
+    font-size: 30px
     margin-bottom: 40px
     &.overScroll
-        max-width: none
+      max-width: none
   .application
     width: 587px
     margin: auto

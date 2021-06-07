@@ -115,6 +115,8 @@ export default {
     border-left: 30px solid transparent
     margin: 0 auto 20px
     cursor: pointer
+  .option-item
+    +fontH2
   .carousel-box
     padding: 25px 5% 0
     position: relative
@@ -179,11 +181,11 @@ export default {
     background-image: url('../assets/images/arrow_next.png')
   @include rwd(960px)
     .title
-      font-size: 40px
+      font-size: 30px
       // margin-bottom: 20px
       // border-bottom: 5px solid $orange
     .sub-title
-      font-size: 25px
+      font-size: 24px
       // margin-bottom: 20px
     .option-btn
       border-right: 20px solid transparent
@@ -202,6 +204,8 @@ export default {
             // width: 50%
             font-size: 20px
             padding: 10px 0
+      .option-item
+        font-size: 18px
     // .main-carousel
     .dot-carousel
       // padding: 0 15px
@@ -212,11 +216,11 @@ export default {
     // .pre-btn,.next-btn
   @include rwd(540px)
     .title
-      font-size: 25px
+      // font-size: 25px
       margin-bottom: 10px
       border-bottom: 2px solid $orange
     .sub-title
-      font-size: 15px
+      // font-size: 15px
       margin-bottom: 10px
     .option-btn
       border-right: 10px solid transparent

@@ -793,7 +793,7 @@
             "Swiper": {
                 "pic": [{
                         "title": "列車座椅",
-                        "link": ["seats/train-1.png", "seats/train-2.jpg", "seats/train-3.jpg", "seats/train-4.jpg", "seats/train-5.jpg", "seats/train-6.jpg", "seats/train-7.jpg", "seats/train-8.jpg", "seats/train-9.jpg", "seats/train-10.jpg", "seats/train-11.jpg", "seats/train-12.jpg"]
+                        "link": ["seats/train-1.jpg", "seats/train-2.jpg", "seats/train-3.jpg", "seats/train-4.jpg", "seats/train-5.jpg", "seats/train-6.jpg", "seats/train-7.jpg", "seats/train-8.jpg", "seats/train-9.jpg", "seats/train-10.jpg", "seats/train-11.jpg"]
                     },
                     {
                         "title": "座椅測試",
