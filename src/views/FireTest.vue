@@ -154,7 +154,7 @@ export default {
       &-item
         width: 100%
         padding: 10px 0
-        font-size: 15px
+        font-size: 14px
   .graphicIntro
     width: 100%
     margin-left: 0
@@ -174,7 +174,7 @@ export default {
     box-sizing: border-box
     vertical-align: middle
     padding: 18px
-    font-size: 20px
+    font-size: 22px
     line-height: 1.2
     border: 1px solid #2f2f2f
   .blue
@@ -183,19 +183,14 @@ export default {
     text-align: left
   .note
     font-size: 12px
-  @include rwd(1280px)
-    td
-      padding: 18px
-      font-size: 18px
-    // .note
-    //   font-size: 12px
   @include rwd(960px)
     overflow-x: scroll
     table
-      width: 830px
+      min-width: 830px
       margin: auto
     td
       padding: 14px
+      font-size: 14px
 .remark
   font-size: 20px
   text-align: left
@@ -203,40 +198,30 @@ export default {
   a
     color: #169efe
     text-decoration: underline
-  @include rwd(1280px)
-    font-size: 16px
+  @include rwd(960px)
+    font-size: 12px
 .list
   padding-left: 1em
-  font-size: 20px
+  +fontP
   line-height: 1.2
   text-align: left
   color: #696969
   list-style: decimal
   li+li
     margin-top: 24px
-  @include rwd(1280px)
-    font-size: 16px
-    li+li
-      margin-top: 18px
   @include rwd(960px)
     li+li
       margin-top: 10px
 .graphicIntro-content
   .list
-    font-size: 28px
+    +fontP
     color: #2f2f2f
     span
-      font-size: 22px
-  @include rwd(1280px)
-    .list
-      font-size: 24px
-      span
-        font-size: 16px
+      font-size: 20px
   @include rwd(960px)
     .list
-      font-size: 20px
       span
-        font-size: 14px
+        font-size: 12px
 .separate
   max-width: 1280px
   margin: auto

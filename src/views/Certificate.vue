@@ -62,12 +62,13 @@ export default {
       text-decoration: none
       color: #000
       border: none
+      border-radius: 0
       transition: .3s
       &:hover
         box-shadow: 0 0 10px 0px rgba(0, 0, 0, .3)
     &-name
       padding: 10px
-      font-size: 18px
+      font-size: 24px
       transition: .3s
     &-content
         margin-top: 60px
@@ -78,18 +79,13 @@ export default {
   @include rwd(960px)
     &.certificate &
       &-btn
-        width: calc( (100% - 30px)/3 )
+        width: calc( (100% - 40px)/2 )
         box-shadow: 0 0 10px 0px rgba(0, 0, 0, .3)
       &-name
         padding: 5px
-        font-size: 12px
+        font-size: 15px
       &-content
         margin-top: 30px
-  @include rwd(374px)
-    &.certificate &
-      &-name
-        box-sizing: border-box
-        min-height: 34px
 
 .certificate
   &-items
@@ -108,9 +104,6 @@ export default {
     font-size: 30px
     text-align: center
     color: $orange
-  @include rwd(1280px)
-    &-title
-      font-size: 26px
   @include rwd(960px)
     &-items
       margin: 0 -20px -30px -20px

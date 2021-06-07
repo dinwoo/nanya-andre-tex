@@ -603,7 +603,8 @@ header
 								background-color: $red
 								position: absolute
 								bottom: 0
-						&:nth-child(2)
+						&:nth-child(2),
+						&:nth-child(4)
 							.mainA
 								@include before()
 									background-color: #faa

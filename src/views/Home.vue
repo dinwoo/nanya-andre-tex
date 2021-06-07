@@ -416,8 +416,6 @@ export default {
       line-height: 1.2
 @include rwd(768px)
   .recommend
-    .title
-      font-size: 24px
     .content
       width: 100%
       // &.content-slick
@@ -3679,10 +3677,8 @@ article
   margin-bottom: 40px
   .attach
     margin-top: 25px
-    font-size: 30px
     color: #f0511d
   @include rwd(960px)
-    font-size: 30px
     margin-bottom: 40px
     &.overScroll
       max-width: none

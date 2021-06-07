@@ -181,11 +181,9 @@ export default {
     background-image: url('../assets/images/arrow_next.png')
   @include rwd(960px)
     .title
-      font-size: 30px
       // margin-bottom: 20px
       // border-bottom: 5px solid $orange
     .sub-title
-      font-size: 24px
       // margin-bottom: 20px
     .option-btn
       border-right: 20px solid transparent
@@ -205,7 +203,6 @@ export default {
             font-size: 20px
             padding: 10px 0
       .option-item
-        font-size: 18px
     // .main-carousel
     .dot-carousel
       // padding: 0 15px

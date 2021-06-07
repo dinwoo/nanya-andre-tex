@@ -103,9 +103,6 @@ export default {
       +fontP
       line-height: 1.5
       text-align: left
-    @include rwd(960px)
-      p
-        font-size: 18px
   .textContent+.textContent
     margin-top: 60px
   .subTitle
@@ -113,8 +110,6 @@ export default {
     font-weight: bold
     text-align: left
     margin-bottom: 15px
-    @include rwd(960px)
-      font-size: 24px
   .option
     &-box
       text-align: left
@@ -152,11 +147,12 @@ export default {
       &-title
         display: none
       &-items
-        padding: 20px 0
+        display: block
+        padding: 0
       &-item
         text-align: left
-        &:nth-of-type(4n+1)
-          margin-top: 0
+        &:nth-of-type(3n+1)
+          margin-top: 15px
 
 .graphicIntro
   display: inline-block
@@ -226,16 +222,6 @@ export default {
       margin-top: 30px
       text-align: center
       color: $orange
-
-  @include rwd(1280px)
-    &-title
-      font-size: 24px
-
-    &-desc
-      font-size: 18px
-    &.certificate &
-      &-title
-        font-size: 26px
   @include rwd(960px)
     width: 100%
     max-width: 640px
@@ -253,13 +239,9 @@ export default {
       box-sizing: border-box
       margin-top: 20px
       margin-left: 0
-      padding: 0 20px
-
-    &-title
-      font-size: 20px
+      // padding: 0 20px
 
     &-desc
-      font-size: 16px
       margin-top: 10px
 
     &.certificate
@@ -276,7 +258,7 @@ export default {
 .tab
   &-desc
     margin-bottom: 60px
-    font-size: 24px
+    +fontP
     line-height: 1.3
     text-align: left
   &-btn
@@ -316,24 +298,10 @@ export default {
       &:nth-of-type(1)
         margin-left: 0
 
-  // &-content
-  //   margin-top: 110px
-
-  @include rwd(1280px)
-    &-btn
-      width: 200px
-      font-size: 28px
-      // &+&
-      //   margin-left: 100px
-      &.solid
-        font-size: 22px
-        &:nth-of-type(1)
-          margin-left: 0
 
   @include rwd(960px)
     &-desc
       margin-bottom: 30px
-      font-size: 18px
     &-action
       padding: 0
 

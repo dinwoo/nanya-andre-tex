@@ -21,7 +21,7 @@
             )
               template(slot="option")
                 .option-items
-                  .option-item(v-for="item,index in $t(`${$route.name}.${$route.params.pipe}.Swiper.option.item`)" @click="cardVal(), valChange(index)" :key="index") {{item}}
+                  .option-item(v-for="item,index in $t(`${$route.name}.${$route.params.pipe}.Swiper.option`)" @click="cardVal(), valChange(index)" :key="index") {{item}}
 </template>
 
 <script>
@@ -83,26 +83,28 @@ export default {
 @import "../assets/sass/var.sass"
 #examples
   .option
+    &-box
+      text-align: left
     &-items
-      padding: 20px 0
-      font-size: 0
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      max-height: 120px
+      padding: 0 80px
     &-item
       position: relative
-      display: inline-block
-      vertical-align: top
-      margin-left: 45px
-      font-size: 22px
+      margin-top: 15px
       transition: .3s
       cursor: pointer
-      &:first-of-type
-        margin-left: 0
+      &:nth-of-type(3n+1)
+        margin-top: 0
       &:before
         content: ''
         display: inline-block
         vertical-align: middle
-        width: 3px
-        height: 3px
-        margin-right: 10px
+        width: 12px
+        height: 12px
+        margin-right: 15px
         margin-bottom: 3px
         border-radius: 50%
         background-color: #2f2f2f
@@ -112,11 +114,16 @@ export default {
         &:before
           background-color: #f0511d
     @include rwd(960px)
+      &-box
+        text-align: center
+      &-title
+        display: none
+      &-items
+        display: block
+        padding: 0
       &-item
-        width: 100%
-        font-size: 15px
-        margin-left: 0
-        margin-top: 20px
-        &:first-of-type
-          margin-top: 0
+        text-align: left
+        &:nth-of-type(3n+1)
+          margin-top: 15px
+
 </style>
