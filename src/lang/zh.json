@@ -123,11 +123,8 @@
             "desc": "耐瞬燃1200℃，長時耐熱350℃ 具不燃不熔融、焚燒無毒特性。"
         }],
         "recommend": {
-            "title": "推薦選購",
+            "title": "推薦首選",
             "product": [{
-                "name": "運動商品纏條(不織布)",
-                "description": "用途<br>網球拍、高爾夫球桿、手套等纏條用不織布基材。<br><br>特性<br>厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。"
-            }, {
                 "name": "運動商品纏條(不織布)",
                 "description": "用途<br>網球拍、高爾夫球桿、手套等纏條用不織布基材。<br><br>特性<br>厚度可依客戶需求調整，不織布複合樹脂微伸縮性，易加工。"
             }]
@@ -136,15 +133,12 @@
             "title": "聯絡我們"
         }
     },
-    "About": {
-        "title": "123"
-    },
     "Application": {
         "pipe": {
             "title": "塑料管材",
-            "text": "裝潢座椅內襯縫製防火毯，當火災意外發生時，可避免火勢擴散，增加人員疏散時間。防火材夾於座椅內襯，可通過多項BS國際認證 與ISO 5660:2015。",
-            "subTitle": "大眾運輸、室內座椅",
-            "subText": "飛機、高鐵、汽車座椅內襯防火毯，當大規模火災發生時，每一張座椅都成為阻絕火勢的工具，讓乘客的安全多一層保護。由於室內電影院聚集很多人，當火災意外發生時容易造成大量傷亡，因此於電影座位內襯縫製防火毯，可減緩火勢延燒，增加人員疏散時間。",
+            "text": "建築技術規則247條規定高層建物(16樓以上)的管材須採用不燃材，或以不燃材包覆後方可使用。Andre-tex P包覆塑膠管材後符合規定，特色為載重輕、耐水壓高、好施工且價格低。",
+            "subTitle": "大樓、商場",
+            "subText": "Andre-tex P通過CNS14705-1耐燃一級測試並取得內政部新技術新工法認證，可以在高層建築上的包覆防火使用。",
             "Swiper": {
                 "val": 0,
                 "pic": [{
@@ -160,7 +154,7 @@
             "tab": {
                 "title": "內容介紹",
                 "content": [{
-                    "name": "產品簡介",
+                    "name": "產品介紹",
                     "data": [{
                         "img": "different.png",
                         "title": "產品差異",
@@ -215,9 +209,9 @@
         },
         "household": {
             "title": "家庭/飯店",
-            "text": "裝潢座椅內襯縫製防火毯，當火災意外發生時，可避免火勢擴散，增加人員疏散時間。防火材夾於座椅內襯，可通過多項BS國際認證 與ISO 5660:2015。",
-            "subTitle": "大眾運輸、室內座椅",
-            "subText": "飛機、高鐵、汽車座椅內襯防火毯，當大規模火災發生時，每一張座椅都成為阻絕火勢的工具，讓乘客的安全多一層保護。由於室內電影院聚集很多人，當火災意外發生時容易造成大量傷亡，因此於電影座位內襯縫製防火毯，可減緩火勢延燒，增加人員疏散時間。",
+            "text": "Andre-tex H簡易收納，可鋪蓋隔絕空氣直至滅火，過程完全無毒，即時撲滅常見的居家火源，為未來居家基本配備。",
+            "subTitle": "家庭、飯店、廚房用",
+            "subText": "搭配美觀、功能性外袋組成活潑可愛的抱枕或摺疊毯，平時擺放美觀、災害發生時則變成保命用具。",
             "Swiper": {
                 "val": 0,
                 "pic": [{
@@ -233,7 +227,7 @@
             "tab": {
                 "title": "內容介紹",
                 "content": [{
-                    "name": "產品簡介",
+                    "name": "產品介紹",
                     "data": [{
                         "img": "different.jpg",
                         "title": "產品差異",
@@ -300,9 +294,9 @@
         },
         "daily": {
             "title": "排風管",
-            "text": "裝潢座椅內襯縫製防火毯，當火災意外發生時，可避免火勢擴散，增加人員疏散時間。防火材夾於座椅內襯，可通過多項BS國際認證 與ISO 5660:2015。",
-            "subTitle": "大眾運輸、室內座椅",
-            "subText": "飛機、高鐵、汽車座椅內襯防火毯，當大規模火災發生時，每一張座椅都成為阻絕火勢的工具，讓乘客的安全多一層保護。由於室內電影院聚集很多人，當火災意外發生時容易造成大量傷亡，因此於電影座位內襯縫製防火毯，可減緩火勢延燒，增加人員疏散時間。",
+            "text": "火災發生時，排風管就會成為火焰亂竄的通道，因此做好排風管的防火對防火安全是相當必要的。",
+            "subTitle": "風管、排氣管",
+            "subText": "Andre-tex WP同時兼顧防水及防火，平常可保護管路不被髒汙汙染，意外發生時又可以保護管路，是相當優良的防火產品。",
             "Swiper": {
                 "val": 0,
                 "pic": [{
@@ -318,7 +312,7 @@
             "tab": {
                 "title": "內容介紹",
                 "content": [{
-                    "name": "產品簡介",
+                    "name": "產品介紹",
                     "data": [{
                         "img": "different.png",
                         "title": "產品差異",
@@ -367,25 +361,25 @@
         },
         "insulation": {
             "title": "電線管路",
-            "text": "裝潢座椅內襯縫製防火毯，當火災意外發生時，可避免火勢擴散，增加人員疏散時間。防火材夾於座椅內襯，可通過多項BS國際認證 與ISO 5660:2015。",
-            "subTitle": "大眾運輸、室內座椅",
-            "subText": "飛機、高鐵、汽車座椅內襯防火毯，當大規模火災發生時，每一張座椅都成為阻絕火勢的工具，讓乘客的安全多一層保護。由於室內電影院聚集很多人，當火災意外發生時容易造成大量傷亡，因此於電影座位內襯縫製防火毯，可減緩火勢延燒，增加人員疏散時間。",
+            "text": "通過CNS14705-1耐燃一級認證外，絕緣方面介電強度可達11kV，體積阻抗大於6x10^14歐姆，兼具防火、防水和絕緣性質的優良材料。",
+            "subTitle": "電線防火、匯流排、遮煙捲簾",
+            "subText": "可用於匯流排、電線等管線的絕緣及耐燃上，避免系統在火災發生後斷電，造成更大的危害。",
             "Swiper": {
                 "val": 0,
                 "pic": [{
                     "title": "電線管路",
-                    "subTitle": "電線",
+                    "subTitle": "電線管路",
                     "link": ["insulation/wire-1.jpg", "insulation/wire-2.jpg", "insulation/wire-3.jpg", "insulation/wire-4.jpg"]
                 }],
                 "option": {
                     "title": "電線管路",
-                    "item": ["電線"]
+                    "item": ["電線管路"]
                 }
             },
             "tab": {
                 "title": "內容介紹",
                 "content": [{
-                    "name": "產品簡介",
+                    "name": "產品介紹",
                     "data": [{
                         "img": "different.png",
                         "title": "產品差異",
@@ -446,18 +440,18 @@
                     },
                     {
                         "title": "座椅內用防火材",
-                        "subTitle": "高鐵座椅",
-                        "link": ["seats/highSpeedRail-1.jpg", "seats/highSpeedRail-2.jpg", "seats/highSpeedRail-3.jpg", "seats/highSpeedRail-4.jpg", "seats/highSpeedRail-5.jpg"]
-                    },
-                    {
-                        "title": "座椅內用防火材",
-                        "subTitle": "遊覽車座椅",
-                        "link": ["seats/bus-1.jpg"]
-                    },
-                    {
-                        "title": "座椅內用防火材",
                         "subTitle": "轎車座椅",
                         "link": ["seats/car-1.jpg", "seats/car-2.jpg", "seats/car-3.jpg", "seats/car-4.jpg", "seats/car-5.jpg"]
+                    },
+                    {
+                        "title": "座椅內用防火材",
+                        "subTitle": "兒童座椅",
+                        "link": ["seats/children-1.jpg", "seats/children-2.jpg", "seats/children-3.jpg", "seats/children-4.jpg"]
+                    },
+                    {
+                        "title": "座椅內用防火材",
+                        "subTitle": "高鐵座椅",
+                        "link": ["seats/highSpeedRail-1.jpg", "seats/highSpeedRail-2.jpg", "seats/highSpeedRail-3.jpg", "seats/highSpeedRail-4.jpg", "seats/highSpeedRail-5.jpg"]
                     },
                     {
                         "title": "座椅內用防火材",
@@ -466,24 +460,24 @@
                     },
                     {
                         "title": "座椅內用防火材",
-                        "subTitle": "遊艇內用",
-                        "link": ["seats/yacht-1.jpg", "seats/yacht-2.jpg", "seats/yacht-3.jpg", "seats/yacht-4.jpg", "seats/yacht-5.jpg", "seats/yacht-6.jpg"]
+                        "subTitle": "遊覽車座椅",
+                        "link": ["seats/bus-1.jpg"]
                     },
                     {
                         "title": "座椅內用防火材",
-                        "subTitle": "兒童椅",
-                        "link": ["seats/children-1.jpg", "seats/children-2.jpg", "seats/children-3.jpg", "seats/children-4.jpg"]
+                        "subTitle": "遊艇內用",
+                        "link": ["seats/yacht-1.jpg", "seats/yacht-2.jpg", "seats/yacht-3.jpg", "seats/yacht-4.jpg", "seats/yacht-5.jpg", "seats/yacht-6.jpg"]
                     }
                 ],
                 "option": {
                     "title": "座椅內用防火材",
-                    "item": ["飛機座椅", "高鐵座椅", "遊覽車座椅", "轎車座椅", "電影院座椅", "遊艇內用", "兒童椅"]
+                    "item": ["飛機座椅", "轎車座椅", "兒童座椅", "高鐵座椅", "電影院座椅", "遊覽車座椅", "遊艇內用"]
                 }
             },
             "tab": {
                 "title": "內容介紹",
                 "content": [{
-                    "name": "產品簡介",
+                    "name": "產品介紹",
                     "data": [{
                         "img": "different.jpg",
                         "title": "產品差異",
@@ -556,9 +550,9 @@
         },
         "welding": {
             "title": "電銲用",
-            "text": "裝潢座椅內襯縫製防火毯，當火災意外發生時，可避免火勢擴散，增加人員疏散時間。防火材夾於座椅內襯，可通過多項BS國際認證 與ISO 5660:2015。",
-            "subTitle": "大眾運輸、室內座椅",
-            "subText": "飛機、高鐵、汽車座椅內襯防火毯，當大規模火災發生時，每一張座椅都成為阻絕火勢的工具，讓乘客的安全多一層保護。由於室內電影院聚集很多人，當火災意外發生時容易造成大量傷亡，因此於電影座位內襯縫製防火毯，可減緩火勢延燒，增加人員疏散時間。",
+            "text": "Andre-tex W可抗瞬燃1,200度，且通過國內CNS防焰一級與歐洲最高等級的煙毒測試。",
+            "subTitle": "化工廠、工廠、鋼鐵廠",
+            "subText": "除了可避免銲渣滴落也加強了拉扯強度，使用過程不會對皮膚、呼吸道造成傷害和不適，使用時間久了還是會破損，屆時應立即更換，目前已於國內大型化工廠、鋼鐵廠、發電廠等地使用",
             "Swiper": {
                 "val": 0,
                 "pic": [{
@@ -574,7 +568,7 @@
             "tab": {
                 "title": "內容介紹",
                 "content": [{
-                    "name": "產品簡介",
+                    "name": "產品介紹",
                     "data": [{
                         "img": "different.png",
                         "title": "產品差異",
@@ -1026,6 +1020,67 @@
                 "title": "檢驗報告"
             }]
         }]
+    },
+    "Contact":{
+        "info":{
+            "person":"聯絡人：孟書瑋",
+            "phone":"電話：+886-2-2717-8249",
+            "mobile":"手機：+886-988-867-669",
+            "fax":"傳真：+886-2-2712-6113",
+            "email":"信箱：SW.Meng@npc.com.tw",
+            "txt":"南亞塑膠工業股份有限公司<br>塑一部營業三處",
+            "address":"地址:台北市敦化北路201號3樓502室"
+        },
+        "form":{
+            "title":"聯絡我們",
+            "remind":"如果您對南亞公司有任何的建議或批評，我們非常歡迎您能來信指教，或致電客服專線，我們將用心聆聽，並以最快的速度回應給您，謝謝。",
+            "nature":"選擇聯絡性質",
+            "name":"姓名",
+            "namePlaceholder":"請輸入您的姓名",
+            "phone":"聯絡電話",
+            "phonePlaceholder":"請輸入您的聯絡電話",
+            "mobile":"手機號碼",
+            "mobilePlaceholder":"請輸入您的手機號碼",
+            "email":"電子信箱",
+            "emailPlaceholder":"請輸入您的電子信箱",
+            "message":"您的留言",
+            "messagePlaceholder":"您想反應的狀況，建議，或諮詢事項",
+            "submit":"送出",
+            "emailSelect":[
+                {
+                    "id":1,
+                    "name": "塑膠管材"
+                },
+                {
+                    "id":2,
+                    "name": "電焊用"
+                },
+                {
+                    "id":3,
+                    "name": "家庭/飯店"
+                },
+                {
+                    "id":4,
+                    "name": "座椅內用"
+                },
+                {
+                    "id":5,
+                    "name": "排風管"
+                },
+                {
+                    "id":6,
+                    "name": "電線管路"
+                },
+                {
+                    "id":7,
+                    "name": "客製開發"
+                },
+                {
+                    "id":8,
+                    "name": "其他"
+                }
+            ]
+        }
     },
     "Swiper": {
         "pic": [{
