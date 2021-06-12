@@ -80,8 +80,8 @@ header
 				)
 					li.subItem
 						.subA(@click="setLang('zh')") 繁體中文
-						.subA(@click="setLang('zh')") 简体中文
-						.subA(@click="setLang('zh')") English
+						.subA(@click="setLang('ch')") 简体中文
+						.subA(@click="setLang('en')") English
 			.close(
 				@click="isHamOpen=false"
 			)
