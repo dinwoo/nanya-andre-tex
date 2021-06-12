@@ -13,61 +13,38 @@
 					//- 	| 任何問題請您與我們聯絡
 					//- 	br
 					//- 	| 進一步討論服務細節
-					p.contact_txt 聯絡人：孟書瑋
-					p.contact_txt 電話：+886-2-2717-8249
-					p.contact_txt 手機：+886-988-867-669
-					p.contact_txt 傳真：+886-2-2712-6113
-					p.contact_txt 信箱：SW.Meng@npc.com.tw
+					p.contact_txt {{$t(`${$route.name}.info.person`)}}
+					p.contact_txt {{$t(`${$route.name}.info.phone`)}}
+					p.contact_txt {{$t(`${$route.name}.info.mobile`)}}
+					p.contact_txt {{$t(`${$route.name}.info.fax`)}}
+					p.contact_txt {{$t(`${$route.name}.info.email`)}}
 				.box
-					p.name 
-						| 南亞塑膠工業股份有限公司
-						br
-						| 塑一部營業三處
-					p.addr 地址:台北市敦化北路201號3樓502室
+					p.name(v-html="$t(`${$route.name}.info.txt`)")
+					p.addr {{$t(`${$route.name}.info.address`)}}
 		section.form_part
 			.wrapper
-				h1.title 聯絡我們
-				p.txt 
-					| 如果您對南亞公司有任何的建議或批評，我們非常歡迎您能來信指教，
-					br
-					| 或致電客服專線，我們將用心聆聽，並以最快的速度回應給您，謝謝。
+				h1.title {{$t(`${$route.name}.form.title`)}}
+				p.txt {{$t(`${$route.name}.form.remind`)}}
 				.row
-					label(for="") 選擇聯絡性質
-
+					label(for="") {{$t(`${$route.name}.form.nature`)}}
 					select#emailSelect(name="")
-						option(value="1") 內容待補
-						option(value="2") 內容待補
-						option(value="3") 內容待補
-						option(value="4") 內容待補
-						option(value="5") 內容待補
-						option(value="6") 內容待補
-						option(value="7") 內容待補
-						option(value="8") 內容待補
-						option(value="9") 內容待補
-						option(value="10") 內容待補
-						option(value="11") 內容待補
-						option(value="12") 內容待補
-						option(value="13") 內容待補
-						option(value="14") 內容待補
-						option(value="15") 內容待補
-						option(value="16") 內容待補
-						option(value="17") 內容待補
+						option(v-for="item in $t(`${$route.name}.form.emailSelect`)" :key="item.id" :value="item.id") {{item.name}}
 				.row
-					label(for="") 姓名
-					input#name(type="text" placeholder="請輸入您的姓名")
+					label(for="") {{$t(`${$route.name}.form.name`)}}
+					input#name(type="text" :placeholder="$t(`${$route.name}.form.namePlaceholder`)")
 				.row
-					label(for="") 聯絡電話
-					input#tel(type="tel" placeholder="請輸入您的聯絡電話")
+					label(for="") {{$t(`${$route.name}.form.phone`)}}
+					input#tel(type="tel" :placeholder="$t(`${$route.name}.form.phonePlaceholder`)")
 				.row
-					label(for="") 手機號碼
-					input#phone(type="tel" placeholder="請輸入您的手機號碼" maxLength="10")
+					label(for="") {{$t(`${$route.name}.form.mobile`)}}
+					input#phone(type="tel" :placeholder="$t(`${$route.name}.form.mobilePlaceholder`)" maxLength="10")
 				.row
-					label(for="") 電子信箱
-					input#email(type="text" placeholder="請輸入您的電子信箱")
+					label(for="") {{$t(`${$route.name}.form.email`)}}
+					input#email(type="text" :placeholder="$t(`${$route.name}.form.emailPlaceholder`)")
 				.row
-					label(for="") 您的留言
-					textarea#txt(name="", placeholder="您想反應的狀況，建議，或諮詢事項")
-				.send_btn(@click="") 送出
+					label(for="") {{$t(`${$route.name}.form.message`)}}
+					textarea#txt(name="", :placeholder="$t(`${$route.name}.form.messagePlaceholder`)")
+				.send_btn(@click="") {{$t(`${$route.name}.form.submit`)}}
 
 		section.map
 			iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.33372852544!2d121.54750761500672!3d25.05667548396177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abef461278a7%3A0x2cc681970e60513d!2z5Y-w5aGR5aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1604591479166!5m2!1szh-TW!2stw" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)

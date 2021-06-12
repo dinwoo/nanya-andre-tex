@@ -3,255 +3,1480 @@
     "home": "首页",
     "plastics": "南亚塑胶城",
     "application": "防火材应用",
-    "pipe": "塑料管材防火包覆",
-    "welding": "电焊防火用",
-    "household": "家庭防火用",
-    "seats": "座椅内包覆防火材",
-    "daily": "民生防火材",
-    "insulation": "耐燃绝缘包覆材",
-    "customize": "客制产品开发",
+    "pipe": "塑料管材",
+    "welding": "电焊用",
+    "household": "家庭/饭店",
+    "seats": "座椅内用",
+    "daily": "排风管",
+    "insulation": "电线管路",
+    "customize": "客制开发",
+    "more": "更多南亚商品",
     "test": "防火测试",
     "case": "成功案例",
     "certificate": "品质证书",
     "contact": "联络我们",
     "lang": "语系"
   },
-  "Home": {
-    "title": "123",
-    "card": [{
-      "link": "Application",
-      "img": "btnCard-1.jpg",
-      "imgMob": "btnCard-1-m.jpg",
-      "title": "塑膠管材",
-      "desc": "給你住家、辦公大樓最好的防護"
-    }, {
-      "link": "#",
-      "img": "btnCard-2.jpg",
-      "imgMob": "btnCard-2-m.jpg",
-      "title": "電焊用",
-      "desc": "防火毯耐拉扯、阻攔電焊熔渣飛濺"
-    }, {
-      "link": "#",
-      "img": "btnCard-3.jpg",
-      "imgMob": "btnCard-3-m.jpg",
-      "title": "家庭/飯店",
-      "desc": "家庭、飯店防火安全防護最佳守衛"
-    }, {
-      "link": "#",
-      "img": "btnCard-4.jpg",
-      "imgMob": "btnCard-4-m.jpg",
-      "title": "座椅內用",
-      "desc": "通過多項BS國際認證與  ISO 5660:2015測試"
-    }, {
-      "link": "#",
-      "img": "btnCard-5.jpg",
-      "imgMob": "btnCard-5-m.jpg",
-      "title": "排風管",
-      "desc": "排風管防火、防水包覆"
-    }, {
-      "link": "#",
-      "img": "btnCard-6.jpg",
-      "imgMob": "btnCard-6-m.jpg",
-      "title": "電線管路",
-      "desc": "電線管路防火、耐燃絕緣、 防水的首選"
-    }, {
-      "link": "#",
-      "img": "btnCard-7.jpg",
-      "imgMob": "btnCard-7-m.jpg",
-      "title": "客製開發",
-      "desc": "提供定製開發，問題解決方案"
-    }, {
-      "link": "#",
-      "img": "btnCard-8.jpg",
-      "imgMob": "btnCard-8-m.jpg",
-      "title": "防火測試",
-      "desc": "耐瞬燃1200℃，長時耐熱350℃ 具不燃不熔融、焚燒無毒特性。"
-    }]
+  "Footer": {
+    "title1": "全球销售通路",
+    "title2": "产品资讯",
+    "title3": "联络资讯",
+    "title4": "快速连结",
+    "plastics": "南亚塑胶城",
+    "pipe": "塑料管材",
+    "welding": "电焊用",
+    "household": "家庭/饭店",
+    "seats": "座椅内用",
+    "daily": "排风管",
+    "insulation": "电线管路",
+    "customize": "客制开发",
+    "more": "更多南亚商品",
+    "address": "台北市敦化北路201号台塑大楼3楼502室",
+    "copyright": "Copyright © 2019 南亚塑胶工业股份有限公司 All Rights Reserved.",
+    "remind": "网站内之所有著作及资料，其著作权、专利权、商标、其他智慧财产权、所有权或其他权利，均为本企业所有，非经本企业合法授权，不得擅自重制、改作或以其他任何形式、基于任何目的加以使用。"
   },
-  "About": {
-    "title": "123"
+  "Home": {
+    "thermometer": [
+      {
+        "title": "ANDRE-TEX P",
+        "detail1": "厚度x宽度：2.2mm x 40”",
+        "detail2": "重量：400 g/M",
+        "detail3": "限氧指数(L.O.I.)：>40"
+      },
+      {
+        "title": "ANDRE-TEX T",
+        "detail1": "厚度x宽度：2.5mm x 59”",
+        "detail2": "重量：300 g/M",
+        "detail3": "限氧指数(L.O.I.)：40"
+      },
+      {
+        "title": "ANDRE-TEX W",
+        "detail1": "厚度x宽度：3.0mm x 55”",
+        "detail2": "重量：500 g/M",
+        "detail3": "限氧指数(L.O.I.)：>40"
+      },
+      {
+        "title": "ANDRE-TEX I",
+        "detail1": "厚度x宽度：0.3mm x 40”",
+        "detail2": "重量：400 g/M",
+        "detail3": "限氧指数(L.O.I.)：35"
+      },
+      {
+        "title": "ANDRE-TEX S",
+        "detail1": "厚度x宽度：4.0mm x 59”",
+        "detail2": "重量：600 g/M",
+        "detail3": "限氧指数(L.O.I.)：35"
+      },
+      {
+        "title": "ANDRE-TEX H",
+        "detail1": "厚度x宽度：3.0mm x 59”",
+        "detail2": "重量：500 g/M",
+        "detail3": "限氧指数(L.O.I.)：40"
+      }
+    ],
+    "card": [
+      {
+        "link": "/nanya-andre-tex/#/application/pipe",
+        "img": "btnCard-1.jpg",
+        "imgMob": "btnCard-1-m.jpg",
+        "title": "塑胶管材",
+        "desc": "给你住家、办公大楼最好的防护"
+      },
+      {
+        "link": "/nanya-andre-tex/#/application/welding",
+        "img": "btnCard-2.jpg",
+        "imgMob": "btnCard-2-m.jpg",
+        "title": "电焊用",
+        "desc": "防火毯耐拉扯、阻拦电焊熔渣飞溅"
+      },
+      {
+        "link": "/nanya-andre-tex/#/application/household",
+        "img": "btnCard-3.jpg",
+        "imgMob": "btnCard-3-m.jpg",
+        "title": "家庭/饭店",
+        "desc": "家庭、饭店防火安全防护最佳守卫"
+      },
+      {
+        "link": "/nanya-andre-tex/#/application/seats",
+        "img": "btnCard-4.jpg",
+        "imgMob": "btnCard-4-m.jpg",
+        "title": "座椅内用",
+        "desc": "通过多项BS国际认证与 ISO 5660:2015测试"
+      },
+      {
+        "link": "/nanya-andre-tex/#/application/daily",
+        "img": "btnCard-5.jpg",
+        "imgMob": "btnCard-5-m.jpg",
+        "title": "排风管",
+        "desc": "排风管防火、防水包覆"
+      },
+      {
+        "link": "/nanya-andre-tex/#/application/insulation",
+        "img": "btnCard-6.jpg",
+        "imgMob": "btnCard-6-m.jpg",
+        "title": "电线管路",
+        "desc": "电线管路防火、耐燃绝缘、 防水的首选"
+      },
+      {
+        "link": "/nanya-andre-tex/#/customize",
+        "img": "btnCard-7.jpg",
+        "imgMob": "btnCard-7-m.jpg",
+        "title": "客制开发",
+        "desc": "提供定制开发，问题解决方案"
+      },
+      {
+        "link": "/nanya-andre-tex/#/test",
+        "img": "btnCard-8.jpg",
+        "imgMob": "btnCard-8-m.jpg",
+        "title": "防火测试",
+        "desc": "耐瞬燃1200℃，长时耐热350℃ 具不燃不熔融、焚烧无毒特性。"
+      }
+    ],
+    "recommend": {
+      "title": "推荐首选",
+      "product": [
+        {
+          "name": "运动商品缠条(不织布)",
+          "description": "用途<br>网球拍、高尔夫球杆、手套等缠条用不织布基材。<br><br>特性<br>厚度可依客户需求调整，不织布复合树脂微伸缩性，易加工。"
+        }
+      ]
+    },
+    "contact": {
+      "title": "联络我们"
+    }
   },
   "Application": {
+    "pipe": {
+      "title": "塑料管材",
+      "text": "建筑技术规则247条规定高层建物(16楼以上)的管材须采用不燃材，或以不燃材包覆后方可使用。Andre-tex P包覆塑胶管材后符合规定，特色为载重轻、耐水压高、好施工且价格低。",
+      "subTitle": "大楼、商场",
+      "subText": "Andre-tex P通过CNS14705-1耐燃一级测试并取得内政部新技术新工法认证，可以在高层建筑上的包覆防火使用。",
+      "Swiper": {
+        "val": 0,
+        "pic": [
+          {
+            "title": "塑料管材防火包覆",
+            "subTitle": "塑胶管材",
+            "link": [
+              "pipe/pipe-1.jpg",
+              "pipe/pipe-2.jpg",
+              "pipe/pipe-3.png",
+              "pipe/pipe-4.jpg",
+              "pipe/pipe- 5.jpg",
+              "pipe/pipe-6.jpg",
+              "pipe/pipe-7.jpg"
+            ]
+          }
+        ],
+        "option": {
+          "title": "塑料管材防火包覆",
+          "item": ["塑胶管材"]
+        }
+      },
+      "tab": {
+        "title": "内容介绍",
+        "content": [
+          {
+            "name": "产品介绍",
+            "data": [
+              {
+                "img": "different.png",
+                "title": "产品差异",
+                "desc": "管路防火材比起一般防火材多了人造矿物纤维加强结构"
+              },
+              {
+                "img": "size.png",
+                "title": "产品尺寸",
+                "desc": "产品认证2.0mm厚、宽幅100公分一种规格"
+              },
+              {
+                "img": "transaction.png",
+                "title": "交易模式",
+                "desc": "由经销商服务接洽"
+              },
+              {
+                "img": "min.png",
+                "title": "最低购量",
+                "desc": "由经销商服务接洽，基本上以卷为单位(18米)"
+              }
+            ]
+          },
+          {
+            "name": "产品特性",
+            "data": [
+              {
+                "img": "safe.png",
+                "title": "产品安全",
+                "desc": "无毒、无烟、不引起皮肤不适"
+              },
+              {
+                "img": "soft.png",
+                "title": "产品施工",
+                "desc": "相较于其他防火毯柔软、好施工"
+              },
+              {
+                "img": "stable.jpg",
+                "title": "品质稳定",
+                "desc": "制程控制、产品测试"
+              },
+              {
+                "img": "custom.jpg",
+                "title": "客制展品开发",
+                "desc": "用量大时可配合客户要求做调整"
+              }
+            ]
+          },
+          {
+            "name": "品质证书",
+            "data": [
+              {
+                "img": "certificate-1.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-2.jpg",
+                "title": "检验报告"
+              }
+            ]
+          }
+        ]
+      },
+      "video": {
+        "title": "产品影片",
+        "link": "https://www.youtube.com/embed/Zqx_Q_gWiZo"
+      }
+    },
+    "household": {
+      "title": "家庭/饭店",
+      "text": "Andre-tex H简易收纳，可铺盖隔绝空气直至灭火，过程完全无毒，即时扑灭常见的居家火源，为未来居家基本配备。",
+      "subTitle": "家庭、饭店、厨房用",
+      "subText": "搭配美观、功能性外袋组成活泼可爱的抱枕或折叠毯，平时摆放美观、灾害发生时则变成保命用具。",
+      "Swiper": {
+        "val": 0,
+        "pic": [
+          {
+            "title": "家庭防火用",
+            "subTitle": "家庭/饭店",
+            "link": [
+              "household/hotelFamily-1.jpg",
+              "household/hotelFamily-2.jpg",
+              "household/hotelFamily-3.jpg",
+              "household/hotelFamily-4.jpg",
+              "household/hotelFamily- 5.jpg",
+              "household/hotelFamily-6.jpg",
+              "household/hotelFamily-7.jpg",
+              "household/hotelFamily-8.jpg",
+              "household/hotelFamily-9.jpg"
+            ]
+          }
+        ],
+        "option": {
+          "title": "家庭防火用",
+          "item": ["家庭/饭店"]
+        }
+      },
+      "tab": {
+        "title": "内容介绍",
+        "content": [
+          {
+            "name": "产品介绍",
+            "data": [
+              {
+                "img": "different.jpg",
+                "title": "产品差异",
+                "desc": "比起他牌防火毯防火能力更佳、对人体无影响"
+              },
+              {
+                "img": "size.png",
+                "title": "产品尺寸",
+                "desc": "厚度分为1.5、2.5、3.0、6.0四种厚度，宽幅150公分"
+              },
+              {
+                "img": "transaction.png",
+                "title": "交易模式",
+                "desc": "50码以下由材料商提供，50码以上由公司直接提供(购物说明)"
+              },
+              {
+                "img": "min.png",
+                "title": "最低购量",
+                "desc": "50码"
+              }
+            ]
+          },
+          {
+            "name": "产品特性",
+            "data": [
+              {
+                "img": "safe.png",
+                "title": "产品安全",
+                "desc": "无毒、无烟、不引起皮肤不适"
+              },
+              {
+                "img": "soft.png",
+                "title": "产品施工",
+                "desc": "相较于其他防火毯柔软、好施工"
+              },
+              {
+                "img": "stable.jpg",
+                "title": "品质稳定",
+                "desc": "制程控制、产品测试"
+              },
+              {
+                "img": "custom.jpg",
+                "title": "客制产品开发",
+                "desc": "用量大时可配合客户要求做调整"
+              }
+            ]
+          },
+          {
+            "name": "品质证书",
+            "data": [
+              {
+                "img": "certificate-1.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-2.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-3.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-4.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-5.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-6.jpg",
+                "title": "检验报告"
+              }
+            ]
+          }
+        ]
+      },
+      "video": {
+        "title": "产品影片",
+        "link": "https://www.youtube.com/embed/fXYThc0ofws"
+      }
+    },
+    "daily": {
+      "title": "排风管",
+      "text": "火灾发生时，排风管就会成为火焰乱窜的通道，因此做好排风管的防火对防火安全是相当必要的。",
+      "subTitle": "风管、排气管",
+      "subText": "Andre-tex WP同时兼顾防水及防火，平常可保护管路不被脏污污染，意外发生时又可以保护管路，是相当优良的防火产品。",
+      "Swiper": {
+        "val": 0,
+        "pic": [
+          {
+            "title": "排风管",
+            "subTitle": "排风管",
+            "link": ["daily/exhaustPipe-1.jpg", "daily/exhaustPipe-2.jpg"]
+          }
+        ],
+        "option": {
+          "title": "排风管",
+          "item": ["排风管"]
+        }
+      },
+      "tab": {
+        "title": "内容介绍",
+        "content": [
+          {
+            "name": "产品介绍",
+            "data": [
+              {
+                "img": "different.png",
+                "title": "产品差异",
+                "desc": "较他牌防火材防水、防火性能更好"
+              },
+              {
+                "img": "size.png",
+                "title": "产品尺寸",
+                "desc": "厚度为3.5mm，宽幅为100公分"
+              },
+              {
+                "img": "transaction.png",
+                "title": "交易模式",
+                "desc": "由本公司直接提供"
+              },
+              {
+                "img": "min.png",
+                "title": "最低购量",
+                "desc": "300码"
+              }
+            ]
+          },
+          {
+            "name": "产品特性",
+            "data": [
+              {
+                "img": "safe.png",
+                "title": "产品安全",
+                "desc": "无毒、无烟、不引起皮肤不适"
+              },
+              {
+                "img": "soft.png",
+                "title": "产品施工",
+                "desc": "相较于其他防火毯柔软、好施工"
+              },
+              {
+                "img": "stable.jpg",
+                "title": "品质稳定",
+                "desc": "制程控制、产品测试"
+              },
+              {
+                "img": "custom.jpg",
+                "title": "客制展品开发",
+                "desc": "用量大时可配合客户要求做调整"
+              }
+            ]
+          },
+          {
+            "name": "品质证书",
+            "data": []
+          }
+        ]
+      },
+      "video": {
+        "title": "产品影片",
+        "link": "https://www.youtube.com/embed/fXYThc0ofws"
+      }
+    },
+    "insulation": {
+      "title": "电线管路",
+      "text": "通过CNS14705-1耐燃一级认证外，绝缘方面介电强度可达11kV，体积阻抗大于6x10^14欧姆，兼具防火、防水和绝缘性质的优良材料。",
+      "subTitle": "电线防火、汇流排、遮烟卷帘",
+      "subText": "可用于汇流排、电线等管线的绝缘及耐燃上，避免系统在火灾发生后断电，造成更大的危害。",
+      "Swiper": {
+        "val": 0,
+        "pic": [
+          {
+            "title": "电线管路",
+            "subTitle": "电线管路",
+            "link": [
+              "insulation/wire-1.jpg",
+              "insulation/wire-2.jpg",
+              "insulation/wire-3.jpg",
+              "insulation/wire-4.jpg"
+            ]
+          }
+        ],
+        "option": {
+          "title": "电线管路",
+          "item": ["电线管路"]
+        }
+      },
+      "tab": {
+        "title": "内容介绍",
+        "content": [
+          {
+            "name": "产品介绍",
+            "data": [
+              {
+                "img": "different.png",
+                "title": "产品差异",
+                "desc": "产品厚度较其他产品薄、且绝缘效果极佳"
+              },
+              {
+                "img": "size.png",
+                "title": "产品尺寸",
+                "desc": "厚度0.3mm，宽幅100公分"
+              },
+              {
+                "img": "transaction.png",
+                "title": "交易模式",
+                "desc": "由本公司直接提供"
+              },
+              {
+                "img": "min.png",
+                "title": "最低购量",
+                "desc": "300码"
+              }
+            ]
+          },
+          {
+            "name": "产品特性",
+            "data": [
+              {
+                "img": "safe.png",
+                "title": "产品安全",
+                "desc": "无毒、无烟、不引起皮肤不适"
+              },
+              {
+                "img": "soft.png",
+                "title": "产品施工",
+                "desc": "相较于其他防火毯柔软、好施工"
+              },
+              {
+                "img": "stable.jpg",
+                "title": "品质稳定",
+                "desc": "制程控制、产品测试"
+              },
+              {
+                "img": "custom.jpg",
+                "title": "客制展品开发",
+                "desc": "用量大时可配合客户要求做调整"
+              }
+            ]
+          },
+          {
+            "name": "品质证书",
+            "data": []
+          }
+        ]
+      },
+      "video": {
+        "title": "产品影片",
+        "link": "https://www.youtube.com/embed/fXYThc0ofws"
+      }
+    },
     "seats": {
-      "title": "seats的標題",
-      "content": [{
-        "name": "產品簡介",
-        "data": [{
-          "img": "different.jpg",
-          "title": "產品差異",
-          "desc": "比起他牌防火毯防火能力更佳、對人體無影響"
-        }, {
-          "img": "size.jpg",
-          "title": "產品尺寸",
-          "desc": "認證厚度為2.5mm，寬幅為150公分"
-        }, {
-          "img": "transaction.jpg",
-          "title": "交易模式",
-          "desc": "50碼以下由材料商提供，50碼以上由公司直接提供"
-        }, {
-          "img": "min.jpg",
-          "title": "最低購量",
-          "desc": "50碼"
-        }]
-      }, {
-        "name": "產品特性",
-        "data": [{
-          "img": "safe.jpg",
-          "title": "產品安全",
-          "desc": "無毒、無煙、不引起皮膚不適"
-        }, {
-          "img": "soft.jpg",
-          "title": "產品施工",
-          "desc": "相較於其他防火毯柔軟、好施工"
-        }, {
-          "img": "stable.jpg",
-          "title": "品質穩定",
-          "desc": "製程控制、產品測試"
-        }, {
-          "img": "custom.jpg",
-          "title": "客製展品開發",
-          "desc": "用量大時可配合客戶要求做調整"
-        }]
-      }, {
-        "name": "品質證書",
-        "data": [{
-          "img": "safe.jpg",
-          "title": "產品安全",
-          "desc": "無毒、無煙、不引起皮膚不適"
-        }, {
-          "img": "soft.jpg",
-          "title": "產品施工",
-          "desc": "相較於其他防火毯柔軟、好施工"
-        }, {
-          "img": "stable.jpg",
-          "title": "品質穩定",
-          "desc": "製程控制、產品測試"
-        }, {
-          "img": "custom.jpg",
-          "title": "客製展品開發",
-          "desc": "用量大時可配合客戶要求做調整"
-        }]
-      }]
+      "title": "座椅内用",
+      "text": "装潢座椅内衬缝制防火毯，当火灾意外发生时，可避免火势扩散，增加人员疏散时间。防火材夹于座椅内衬，可通过多项BS国际认证与ISO 5660:2015 。",
+      "subTitle": "大众运输、室内座椅",
+      "subText": "飞机、高铁、汽车座椅内衬防火毯，当大规模火灾发生时，每一张座椅都成为阻绝火势的工具，让乘客的安全多一层保护。由于室内电影院聚集很多人，当火灾意外发生时容易造成大量伤亡，因此于电影座位内衬缝制防火毯，可减缓火势延烧​​，增加人员疏散时间。",
+      "Swiper": {
+        "val": 0,
+        "pic": [
+          {
+            "title": "座椅内用防火材",
+            "subTitle": "飞机座椅",
+            "link": [
+              "seats/airplane-1.jpg",
+              "seats/airplane-2.jpg",
+              "seats/airplane-3.jpg",
+              "seats/airplane-4.jpg",
+              "seats/airplane- 5.jpg",
+              "seats/airplane-6.jpg"
+            ]
+          },
+          {
+            "title": "座椅内用防火材",
+            "subTitle": "轿车座椅",
+            "link": [
+              "seats/car-1.jpg",
+              "seats/car-2.jpg",
+              "seats/car-3.jpg",
+              "seats/car-4.jpg",
+              "seats/car- 5.jpg"
+            ]
+          },
+          {
+            "title": "座椅内用防火材",
+            "subTitle": "儿童座椅",
+            "link": [
+              "seats/children-1.jpg",
+              "seats/children-2.jpg",
+              "seats/children-3.jpg",
+              "seats/children-4.jpg"
+            ]
+          },
+          {
+            "title": "座椅内用防火材",
+            "subTitle": "高铁座椅",
+            "link": [
+              "seats/highSpeedRail-1.jpg",
+              "seats/highSpeedRail-2.jpg",
+              "seats/highSpeedRail-3.jpg",
+              "seats/highSpeedRail-4.jpg",
+              "seats/highSpeedRail- 5.jpg"
+            ]
+          },
+          {
+            "title": "座椅内用防火材",
+            "subTitle": "电影院座椅",
+            "link": [
+              "seats/movieTheater-1.jpg",
+              "seats/movieTheater-2.jpg",
+              "seats/movieTheater-3.jpg"
+            ]
+          },
+          {
+            "title": "座椅内用防火材",
+            "subTitle": "游览车座椅",
+            "link": ["seats/bus-1.jpg"]
+          },
+          {
+            "title": "座椅内用防火材",
+            "subTitle": "游艇内用",
+            "link": [
+              "seats/yacht-1.jpg",
+              "seats/yacht-2.jpg",
+              "seats/yacht-3.jpg",
+              "seats/yacht-4.jpg",
+              "seats/yacht- 5.jpg",
+              "seats/yacht-6.jpg"
+            ]
+          }
+        ],
+        "option": {
+          "title": "座椅内用防火材",
+          "item": [
+            "飞机座椅",
+            "轿车座椅",
+            "儿童座椅",
+            "高铁座椅",
+            "电影院座椅",
+            "游览车座椅",
+            "游艇内用"
+          ]
+        }
+      },
+      "tab": {
+        "title": "内容介绍",
+        "content": [
+          {
+            "name": "产品介绍",
+            "data": [
+              {
+                "img": "different.jpg",
+                "title": "产品差异",
+                "desc": "比起他牌防火毯防火能力更佳、对人体无影响"
+              },
+              {
+                "img": "size.png",
+                "title": "产品尺寸",
+                "desc": "认证厚度为2.5mm，宽幅为150公分"
+              },
+              {
+                "img": "transaction.png",
+                "title": "交易模式",
+                "desc": "50码以下由材料商提供，50码以上由公司直接提供"
+              },
+              {
+                "img": "min.png",
+                "title": "最低购量",
+                "desc": "50码"
+              }
+            ]
+          },
+          {
+            "name": "产品特性",
+            "data": [
+              {
+                "img": "safe.png",
+                "title": "产品安全",
+                "desc": "无毒、无烟、不引起皮肤不适"
+              },
+              {
+                "img": "soft.png",
+                "title": "产品施工",
+                "desc": "相较于其他防火毯柔软、好施工"
+              },
+              {
+                "img": "stable.jpg",
+                "title": "品质稳定",
+                "desc": "制程控制、产品测试"
+              },
+              {
+                "img": "custom.jpg",
+                "title": "客制展品开发",
+                "desc": "用量大时可配合客户要求做调整"
+              }
+            ]
+          },
+          {
+            "name": "品质证书",
+            "data": [
+              {
+                "img": "certificate-1-1.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-1-2.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-1-3.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-1-4.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-2-1.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-2-2.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-2-3.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-2-4.jpg",
+                "title": "检验报告"
+              }
+            ]
+          }
+        ]
+      },
+      "video": {
+        "title": "产品影片",
+        "link": "https://www.youtube.com/embed/fXYThc0ofws"
+      }
+    },
+    "welding": {
+      "title": "电焊用",
+      "text": "Andre-tex W可抗瞬燃1,200度，且通过国内CNS防焰一级与欧洲最高等级的烟毒测试。",
+      "subTitle": "化工厂、工厂、钢铁厂",
+      "subText": "除了可避免焊渣滴落也加强了拉扯强度，使用过程不会对皮肤、呼吸道造成伤害和不适，使用时间久了还是会破损，届时应立即更换，目前已于国内大型化工厂、钢铁厂、发电厂等地使用",
+      "Swiper": {
+        "val": 0,
+        "pic": [
+          {
+            "title": "电焊用",
+            "subTitle": "电焊用",
+            "link": [
+              "welding/welding-1.jpg",
+              "welding/welding-2.jpg",
+              "welding/welding-3.jpg",
+              "welding/welding-4.jpg",
+              "welding/welding- 5.jpg",
+              "welding/welding-6.jpg",
+              "welding/welding-7.jpg",
+              "welding/welding-8.jpg",
+              "welding/welding-9.jpg",
+              "welding/welding- 10.jpg",
+              "welding/welding-11.jpg",
+              "welding/welding-12.jpg"
+            ]
+          }
+        ],
+        "option": {
+          "title": "电焊用",
+          "item": ["电焊用"]
+        }
+      },
+      "tab": {
+        "title": "内容介绍",
+        "content": [
+          {
+            "name": "产品介绍",
+            "data": [
+              {
+                "img": "different.png",
+                "title": "产品差异",
+                "desc": "电焊防火毯有多一层夹网，强化物性及防止熔渣掉落"
+              },
+              {
+                "img": "size.png",
+                "title": "产品尺寸",
+                "desc": "分为3.0及6.0mm两种"
+              },
+              {
+                "img": "transaction.png",
+                "title": "交易模式",
+                "desc": "50码以下由材料商提供，50码以上由公司直接提供"
+              },
+              {
+                "img": "min.png",
+                "title": "最低购量",
+                "desc": "50码"
+              }
+            ]
+          },
+          {
+            "name": "产品特性",
+            "data": [
+              {
+                "img": "safe.png",
+                "title": "产品安全",
+                "desc": "无毒、无烟、不引起皮肤不适"
+              },
+              {
+                "img": "soft.png",
+                "title": "产品施工",
+                "desc": "相较于其他防火毯柔软、好施工"
+              },
+              {
+                "img": "stable.jpg",
+                "title": "品质稳定",
+                "desc": "制程控制、产品测试"
+              },
+              {
+                "img": "custom.jpg",
+                "title": "客制展品开发",
+                "desc": "用量大时可配合客户要求做调整"
+              }
+            ]
+          },
+          {
+            "name": "品质证书",
+            "data": [
+              {
+                "img": "certificate-1-1.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-1-2.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-1-3.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-1-4.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-1-5.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-1-6.jpg",
+                "title": "检验报告"
+              },
+              {
+                "img": "certificate-2-1.jpg",
+                "title": "检验报告"
+              }
+            ]
+          }
+        ]
+      },
+      "video": {
+        "title": "产品影片",
+        "link": "https://www.youtube.com/embed/fXYThc0ofws"
+      }
     }
   },
   "Examples": {
-    "card": [{
-      "link": "#swiperTarget",
-      "img": "taoyuan.jpg",
-      "imgMob": "taoyuan.jpg",
-      "title": "桃園 芙蓉匯"
-    }, {
-      "link": "#swiperTarget",
-      "img": "xinzhuang.jpg",
-      "imgMob": "xinzhuang.jpg",
-      "title": "新莊 麗寶雙璽"
-    }, {
-      "link": "#swiperTarget",
-      "img": "building95.jpg",
-      "imgMob": "building95.jpg",
-      "title": "遠雄95大樓"
-    }, {
-      "link": "#swiperTarget",
-      "img": "seaPalace.jpg",
-      "imgMob": "seaPalace.jpg",
-      "title": "海上皇宮"
-    }, {
-      "link": "#swiperTarget",
-      "img": "sea.jpg",
-      "imgMob": "sea.jpg",
-      "title": "海洋都心三期"
-    }]
+    "pipe": {
+      "title": "塑胶管材",
+      "card": [
+        {
+          "img": "pipe/taoyuan.jpg",
+          "imgMob": "pipe/taoyuan.jpg",
+          "title": "桃园 芙蓉汇"
+        },
+        {
+          "img": "pipe/xinzhuang.jpg",
+          "imgMob": "pipe/xinzhuang.jpg",
+          "title": "新庄 丽宝双玺"
+        },
+        {
+          "img": "pipe/building95.jpg",
+          "imgMob": "pipe/building95.jpg",
+          "title": "远雄95大楼"
+        },
+        {
+          "img": "pipe/seaPalace.jpg",
+          "imgMob": "pipe/seaPalace.jpg",
+          "title": "海上皇宫"
+        },
+        {
+          "img": "pipe/sea.jpg",
+          "imgMob": "pipe/sea.jpg",
+          "title": "海洋都心三期"
+        }
+      ],
+      "Swiper": {
+        "pic": [
+          {
+            "title": "桃园 芙蓉汇",
+            "link": [
+              "pipe/taoyuan-1.jpg",
+              "pipe/taoyuan-2.jpg",
+              "pipe/taoyuan-3.jpg",
+              "pipe/taoyuan-4.jpg",
+              "pipe/taoyuan- 5.jpg",
+              "pipe/taoyuan-6.jpg"
+            ]
+          },
+          {
+            "title": "新庄 丽宝双玺",
+            "link": [
+              "pipe/xinzhuang-1.jpg",
+              "pipe/xinzhuang-2.jpg",
+              "pipe/xinzhuang-3.jpg",
+              "pipe/xinzhuang-4.jpg",
+              "pipe/xinzhuang- 5.jpg"
+            ]
+          },
+          {
+            "title": "远雄95大楼",
+            "link": [
+              "pipe/building95-1.jpg",
+              "pipe/building95-2.jpg",
+              "pipe/building95-3.jpg",
+              "pipe/building95-4.jpg",
+              "pipe/building95- 5.jpg",
+              "pipe/building95-6.jpg"
+            ]
+          },
+          {
+            "title": "海上皇宫",
+            "link": [
+              "pipe/seaPalace-1.jpg",
+              "pipe/seaPalace-2.jpg",
+              "pipe/seaPalace-3.jpg",
+              "pipe/seaPalace-4.jpg"
+            ]
+          },
+          {
+            "title": "海洋都心三期",
+            "link": [
+              "pipe/sea-1.jpg",
+              "pipe/sea-2.jpg",
+              "pipe/sea-3.jpg",
+              "pipe/sea-4.jpg",
+              "pipe/sea- 5.jpg",
+              "pipe/sea-6.jpg"
+            ]
+          }
+        ],
+        "option": [
+          "桃园 芙蓉汇",
+          "新庄 丽宝双玺",
+          "远雄95大楼",
+          "海上皇宫",
+          "海洋都心三期"
+        ]
+      }
+    },
+    "welding": {
+      "title": "电焊用",
+      "card": [
+        {
+          "img": "welding/FPG.jpg",
+          "imgMob": "welding/FPG.jpg",
+          "title": "台塑集团"
+        },
+        {
+          "img": "welding/repair.jpg",
+          "imgMob": "welding/repair.jpg",
+          "title": "石化厂管路维修"
+        },
+        {
+          "img": "welding/restaurant.jpg",
+          "imgMob": "welding/restaurant.jpg",
+          "title": "高级饭店/餐厅装修"
+        },
+        {
+          "img": "welding/ship.jpg",
+          "imgMob": "welding/ship.jpg",
+          "title": "船舶维修"
+        },
+        {
+          "img": "welding/steel.jpg",
+          "imgMob": "welding/steel.jpg",
+          "title": "钢铁厂"
+        }
+      ],
+      "Swiper": {
+        "pic": [
+          {
+            "title": "台塑集团",
+            "link": [
+              "welding/FPG-1.jpg",
+              "welding/FPG-2.jpg",
+              "welding/FPG-3.jpg",
+              "welding/FPG-4.jpg",
+              "welding/FPG- 5.jpg",
+              "welding/FPG-6.jpg"
+            ]
+          },
+          {
+            "title": "石化厂管路维修",
+            "link": [
+              "welding/repair-1.jpg",
+              "welding/repair-2.jpg",
+              "welding/repair-3.jpg",
+              "welding/repair-4.jpg",
+              "welding/repair- 5.jpg",
+              "welding/repair-6.jpg",
+              "welding/repair-7.jpg"
+            ]
+          },
+          {
+            "title": "高级饭店/餐厅装修",
+            "link": [
+              "welding/restaurant-1.jpg",
+              "welding/restaurant-2.jpg",
+              "welding/restaurant-3.jpg",
+              "welding/restaurant-4.jpg",
+              "welding/restaurant- 5.jpg",
+              "welding/restaurant-6.jpg"
+            ]
+          },
+          {
+            "title": "船舶维修",
+            "link": [
+              "welding/ship-1.jpg",
+              "welding/ship-2.jpg",
+              "welding/ship-3.jpg",
+              "welding/ship-4.jpg"
+            ]
+          },
+          {
+            "title": "钢铁厂",
+            "link": [
+              "welding/steel-1.jpg",
+              "welding/steel-2.jpg",
+              "welding/steel-3.jpg",
+              "welding/steel-4.jpg",
+              "welding/steel- 5.jpg",
+              "welding/steel-6.jpg",
+              "welding/steel-7.jpg"
+            ]
+          }
+        ],
+        "option": [
+          "台塑集团",
+          "石化厂管路维修",
+          "高级饭店/餐厅装修",
+          "船舶维修",
+          "钢铁厂"
+        ]
+      }
+    },
+    "household": {
+      "title": "家庭/饭店",
+      "card": [
+        {
+          "img": "household/family.jpg",
+          "imgMob": "household/family.jpg",
+          "title": "家庭防火用"
+        },
+        {
+          "img": "household/restaurant.png",
+          "imgMob": "household/restaurant.png",
+          "title": "饭店防火用"
+        }
+      ],
+      "Swiper": {
+        "pic": [
+          {
+            "title": "家庭防火用",
+            "link": [
+              "household/family-1.jpg",
+              "household/family-2.jpg",
+              "household/family-3.jpg",
+              "household/family-4.jpg",
+              "household/family- 5.jpg",
+              "household/family-6.jpg",
+              "household/family-7.jpg",
+              "household/family-8.jpg",
+              "household/family-9.jpg",
+              "household/family- 10.jpg",
+              "household/family-11.jpg",
+              "household/family-12.jpg",
+              "household/family-13.png"
+            ]
+          },
+          {
+            "title": "饭店防火用",
+            "link": [
+              "household/restaurant-1.png",
+              "household/restaurant-2.jpg",
+              "household/restaurant-3.jpg",
+              "household/restaurant-4.jpg",
+              "household/restaurant- 5.jpg"
+            ]
+          }
+        ],
+        "option": ["家庭防火用", "饭店防火用"]
+      }
+    },
+    "seats": {
+      "title": "座椅用",
+      "card": [
+        {
+          "img": "seats/train.png",
+          "imgMob": "seats/train.png",
+          "title": "列车座椅"
+        },
+        {
+          "img": "seats/seat.jpg",
+          "imgMob": "seats/seat.jpg",
+          "title": "座椅测试"
+        }
+      ],
+      "Swiper": {
+        "pic": [
+          {
+            "title": "列车座椅",
+            "link": [
+              "seats/train-1.jpg",
+              "seats/train-2.jpg",
+              "seats/train-3.jpg",
+              "seats/train-4.jpg",
+              "seats/train- 5.jpg",
+              "seats/train-6.jpg",
+              "seats/train-7.jpg",
+              "seats/train-8.jpg",
+              "seats/train-9.jpg",
+              "seats/train- 10.jpg",
+              "seats/train-11.jpg"
+            ]
+          },
+          {
+            "title": "座椅测试",
+            "link": [
+              "seats/seat-1.jpg",
+              "seats/seat-2.jpg",
+              "seats/seat-3.jpg",
+              "seats/seat-4.jpg",
+              "seats/seat- 5.jpg",
+              "seats/seat-6.jpg",
+              "seats/seat-7.jpg"
+            ]
+          }
+        ],
+        "option": ["列车座椅", "座椅测试"]
+      }
+    }
+  },
+  "FireTest": {
+    "tab": {
+      "title": "防火材测试",
+      "desc": "经塑胶中心测试，评等1级。可抗瞬燃1200℃高温，长时间耐热范围350～450℃，具不燃烧、不熔融特性，焚烧过程不会产生有毒废气，无二次公害。 可供防火毯(灭火毯)、耐燃包覆材、耐热垫材等安全防护用途。",
+      "btn": [
+        {
+          "link": "#swiperTarget",
+          "text": "Ander-tex火焰实测"
+        },
+        {
+          "link": "#tableTarget",
+          "text": "测试项目条件"
+        },
+        {
+          "link": "#centerTarget",
+          "text": "塑胶中心测试"
+        },
+        {
+          "link": "#resultTarget",
+          "text": "测试结果"
+        }
+      ]
+    },
+    "Swiper": {
+      "pic": [
+        {
+          "title": "座椅内用防火材",
+          "subTitle": "影片：加工燃烧测试",
+          "link": [
+            "test01-1.jpg",
+            "test01-2.jpg",
+            "test01-3.jpg",
+            "test01-4.jpg",
+            "test01-5.jpg",
+            "test01-6. jpg"
+          ]
+        },
+        {
+          "title": "座椅内用防火材",
+          "subTitle": "影片：加工燃烧测试",
+          "link": ["test02-1.jpg", "test02-2.jpg"]
+        },
+        {
+          "title": "座椅内用防火材",
+          "subTitle": "影片：加工燃烧测试",
+          "link": [
+            "test03-1.jpg",
+            "test03-2.jpg",
+            "test03-3.jpg",
+            "test03-4.jpg",
+            "test03-5.jpg",
+            "test03-6. jpg"
+          ]
+        },
+        {
+          "title": "座椅内用防火材",
+          "subTitle": "影片：加工燃烧测试",
+          "link": ["test04-1.jpg", "test04-2.jpg"]
+        }
+      ],
+      "option": [
+        "喷灯600℃X2min",
+        "电焊1070℃X30sec",
+        "喷灯1100℃X2min",
+        "电焊1300℃X30sec"
+      ]
+    },
+    "table": {
+      "title": "测试项目及条件",
+      "thead": {
+        "item": "项次",
+        "source": "防火隔热材来源",
+        "species": "明火种类",
+        "temperature": "温度",
+        "time": "接触时间",
+        "status": "防火隔热材状态"
+      },
+      "tr1": {
+        "item": "1",
+        "source": "市售一般级<br>保温.隔热.隔音材",
+        "species": "喷灯",
+        "temperature": "600℃",
+        "time": "4sec",
+        "status": "延烧、破洞、黑烟、熔融。"
+      },
+      "tr2": {
+        "item": "2",
+        "source": "市售防火.隔热.保温毯",
+        "temperature": "600℃",
+        "time": "18sec",
+        "status": "不延烧、破洞、白烟、熔融。"
+      },
+      "tr3": {
+        "item": "南亚",
+        "source": "树林厂开发防火毯",
+        "temperature": "635℃",
+        "time": "2 min",
+        "status": "不延烧、无熔融、无废气产生、1000℃↑有碳化现象。"
+      },
+      "tr4": {
+        "temperature": "1100℃"
+      },
+      "tr5": {
+        "source": "树林厂开发防火毯",
+        "species": "电焊焊渣<br><span class='note'>(掉落高度40cm)</span>",
+        "temperature": "1070℃",
+        "time": "30sec",
+        "status": "不延烧、无熔融、无废气产生、降低电焊焊渣弹跳高度与范围。"
+      },
+      "tr6": {
+        "temperature": "1300℃"
+      },
+      "remark1": "※防火材测试使用热影像对照图。",
+      "remark2": "※当日测试实况：",
+      "remarkLink": "YouTube搜寻南亚防火毯"
+    },
+    "test": {
+      "title": "塑胶中心测试",
+      "attach": "评等1级",
+      "content": {
+        "title": "南亚防火毯，喷灯高温燃烧防火性、防焰性、限氧指数，测试评等 1 级。",
+        "list": [
+          {
+            "text": "防火性：评等 1 级。",
+            "note": "(依CNS 10285 L3196 A4测试)"
+          },
+          {
+            "text": "防焰性：评等 1 级。",
+            "note": "(以CNS 7614 A3125 前处理A法测试)"
+          },
+          {
+            "text": "限氧指数：指数45↑。",
+            "note": "(以ASTM D2863法测试)"
+          }
+        ]
+      }
+    },
+    "list": {
+      "title": "测试结果",
+      "listItem": [
+        "南亚防火材经喷灯高温燃烧测试较一般市售防火、灭火(隔热、保温)等材质，坚固耐用、不易破损、不延烧、不熔融、不产生毒废气造成二次公害。",
+        "电焊测试可降低电焊焊渣弹跳高度与范围。",
+        "重量适当可折叠、易收藏不会有玻璃纤维易脆化缺点、不含石棉及限用物质等优异特性。",
+        "限氧指数:ASTM D2863法指数45↑。",
+        "应用范围广泛如工程明火防火毯(电焊、气焊、砂磨、高温切割) 防火隔帘、耐热包覆材、保温材、耐热垫、汽车隔音、隔热材、高温作业区隔热毯、家庭灭火毯安全防护用途。",
+        "测试结果CNS 10285 L3196 A4、CNS 7614 A3125均评等1级。限氧指数:ASTM D2863法指数45↑。"
+      ]
+    }
   },
   "Certificate": {
-    "content": [{
-      "btnImg": "tab01.jpg",
-      "name": "塑膠管材防火包覆",
-      "data": [{
-        "img": "certificate01-1.jpg",
-        "title": "CNS 14705認證"
-      }, {
-        "img": "certificate01-2.jpg",
-        "title": "新技術新工法證書"
-      }, {
-        "img": "certificate01-3.jpg",
-        "title": "新技術新工法證書"
-      }]
-    }, {
-      "btnImg": "tab02.jpg",
-      "name": "電焊防火用",
-      "data": [{
-        "img": "certificate01-1.jpg",
-        "title": "CNS 14705認證"
-      }, {
-        "img": "certificate01-2.jpg",
-        "title": "新技術新工法證書"
-      }, {
-        "img": "certificate01-3.jpg",
-        "title": "新技術新工法證書"
-      }]
-    }, {
-      "btnImg": "tab03.jpg",
-      "name": "座椅內包防火材",
-      "data": [{
-        "img": "certificate01-1.jpg",
-        "title": "CNS 14705認證"
-      }, {
-        "img": "certificate01-2.jpg",
-        "title": "新技術新工法證書"
-      }, {
-        "img": "certificate01-3.jpg",
-        "title": "新技術新工法證書"
-      }]
-    }, {
-      "btnImg": "tab04.jpg",
-      "name": "家庭、飯店防火毯",
-      "data": [{
-        "img": "certificate01-1.jpg",
-        "title": "CNS 14705認證"
-      }, {
-        "img": "certificate01-2.jpg",
-        "title": "新技術新工法證書"
-      }, {
-        "img": "certificate01-3.jpg",
-        "title": "新技術新工法證書"
-      }]
-    }, {
-      "btnImg": "tab05.jpg",
-      "name": "耐燃絕緣包覆材",
-      "data": [{
-        "img": "certificate01-1.jpg",
-        "title": "CNS 14705認證"
-      }, {
-        "img": "certificate01-2.jpg",
-        "title": "新技術新工法證書"
-      }, {
-        "img": "certificate01-3.jpg",
-        "title": "新技術新工法證書"
-      }]
-    }, {
-      "btnImg": "tab06.jpg",
-      "name": "ISO認證",
-      "data": [{
-        "img": "certificate01-1.jpg",
-        "title": "CNS 14705認證"
-      }, {
-        "img": "certificate01-2.jpg",
-        "title": "新技術新工法證書"
-      }, {
-        "img": "certificate01-3.jpg",
-        "title": "新技術新工法證書"
-      }]
-    }]
+    "content": [
+      {
+        "btnImg": "tab01.jpg",
+        "name": "塑胶管材防火包覆",
+        "data": [
+          {
+            "img": "certificate01-1.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate01-2.jpg",
+            "title": "检验报告"
+          }
+        ]
+      },
+      {
+        "btnImg": "tab02.jpg",
+        "name": "电焊防火用",
+        "data": [
+          {
+            "img": "certificate02-1-1.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate02-1-2.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate02-1-3.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate02-1-4.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate02-1-5.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate02-1-6.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate02-2-1.jpg",
+            "title": "检验报告"
+          }
+        ]
+      },
+      {
+        "btnImg": "tab03.jpg",
+        "name": "座椅内包防火材",
+        "data": [
+          {
+            "img": "certificate03-1-1.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate03-1-2.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate03-1-3.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate03-1-4.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate03-2-1.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate03-2-2.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate03-2-3.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate03-2-4.jpg",
+            "title": "检验报告"
+          }
+        ]
+      },
+      {
+        "btnImg": "tab04.jpg",
+        "name": "家庭、饭店防火毯",
+        "data": [
+          {
+            "img": "certificate04-1.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate04-2.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate04-3.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate04-4.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate04-5.jpg",
+            "title": "检验报告"
+          },
+          {
+            "img": "certificate04-6.jpg",
+            "title": "检验报告"
+          }
+        ]
+      }
+    ]
+  },
+  "Contact": {
+    "info": {
+      "person": "联络人：孟书玮",
+      "phone": "电话：+886-2-2717-8249",
+      "mobile": "手机：+886-988-867-669",
+      "fax": "传真：+886-2-2712-6113",
+      "email": "信箱：SW.Meng@npc.com.tw",
+      "txt": "南亚塑胶工业股份有限公司<br>塑一部营业三处",
+      "address": "地址:台北市敦化北路201号3楼502室"
+    },
+    "form": {
+      "title": "联络我们",
+      "remind": "如果您对南亚公司有任何的建议或批评，我们非常欢迎您能来信指教，或致电客服专线，我们将用心聆听，并以最快的速度回应给您，谢谢。",
+      "nature": "选择联络性质",
+      "name": "姓名",
+      "namePlaceholder": "请输入您的姓名",
+      "phone": "联络电话",
+      "phonePlaceholder": "请输入您的联络电话",
+      "mobile": "手机号码",
+      "mobilePlaceholder": "请输入您的手机号码",
+      "email": "电子信箱",
+      "emailPlaceholder": "请输入您的电子信箱",
+      "message": "您的留言",
+      "messagePlaceholder": "您想反应的状况，建议，或咨询事项",
+      "submit": "送出",
+      "emailSelect": [
+        {
+          "id": 1,
+          "name": "塑胶管材"
+        },
+        {
+          "id": 2,
+          "name": "电焊用"
+        },
+        {
+          "id": 3,
+          "name": "家庭/饭店"
+        },
+        {
+          "id": 4,
+          "name": "座椅内用"
+        },
+        {
+          "id": 5,
+          "name": "排风管"
+        },
+        {
+          "id": 6,
+          "name": "电线管路"
+        },
+        {
+          "id": 7,
+          "name": "客制开发"
+        },
+        {
+          "id": 8,
+          "name": "其他"
+        }
+      ]
+    }
   },
   "Swiper": {
-    "pic": [{
-        "title": "ch1",
-        "subTitle": "飞机座椅1",
+    "pic": [
+      {
+        "title": "座椅內用防火材1",
+        "subTitle": "飛機座椅1",
         "link": ["fuli.jpg", "blackcat1.jpg", "blackcat2.jpg"]
       },
       {
-        "title": "ch2",
-        "subTitle": "飞机座椅2",
+        "title": "座椅內用防火材2",
+        "subTitle": "飛機座椅2",
         "link": ["test.jpg", "test2.png", "test3.png", "test4.png"]
       }
     ]
