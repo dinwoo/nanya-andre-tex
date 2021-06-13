@@ -289,12 +289,13 @@ article#contact
 					margin-top: 20px
 				label
 					font-size: 22px
-					padding: 11.5px 0
+					padding: 11.5px 5px
 					line-height: 1.5
 					color: $gray
-					width: 160px
+					width: 170px
 					display: inline-block
 					vertical-align: middle
+					box-sizing: border-box
 				select
 					appearance: none
 					background-image: url("../assets/images/select_arrow.png")
@@ -302,7 +303,7 @@ article#contact
 					background-position: calc(100% - 50px) center
 					background-repeat: no-repeat
 					font-size: 20px
-					width: calc(100% - 160px)
+					width: calc(100% - 170px)
 					padding: 14px 20px
 					box-sizing: border-box
 					border-radius: 5px
@@ -313,7 +314,7 @@ article#contact
 					// option
 				input,textarea
 					font-size: 20px
-					width: calc(100% - 160px)
+					width: calc(100% - 170px)
 					padding: 15px 20px
 					box-sizing: border-box
 					border-radius: 5px
