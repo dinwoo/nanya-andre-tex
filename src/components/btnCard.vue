@@ -79,6 +79,18 @@ export default {
     &-content
       min-height: auto
       padding: 20px
+  .en-style &.examples &
+    &-content
+      position: relative
+      box-sizing: border-box
+      height: 98px
+      padding: 10px
+    &-title
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: calc( 100% - 20px )
   @include rwd(960px)
     &-item
       width: calc( (100% - 40px)/2 )
@@ -105,4 +117,7 @@ export default {
         margin: 10px
       &-title
         font-size: 22px
+    .en-style &.examples &
+      &-content
+        height: 75px
 </style>

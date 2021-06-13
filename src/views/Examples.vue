@@ -113,6 +113,9 @@ export default {
         color: #f0511d
         &:before
           background-color: #f0511d
+    .en-style &
+      &-items
+        padding: 0
     @include rwd(960px)
       &-box
         text-align: center

@@ -12,7 +12,8 @@
               a.tab-btn(href="#" :class="{'active': active == index}" v-for="item,index in $t(`${$route.name}.content`)" @click.prevent="active = index" :key="index")
                 .tab-img
                   img(:src="compileFilePath(item.btnImg)")
-                .tab-name {{item.name}}
+                .tab-name
+                  span {{item.name}}
             .tab-content
               .certificate-items
                 template(v-for="item,itemIndex in $t(`${$route.name}.content`)")
@@ -76,6 +77,15 @@ export default {
     &-name
       color: #fff
       background-color: #f0511d
+  .en-style &.certificate &
+    &-btn
+      height: auto
+    &-name
+      position: relative
+      box-sizing: border-box
+      height: 92px
+      span
+        width: calc( 100% - 20px )
   @include rwd(960px)
     &.certificate &
       &-btn
@@ -86,6 +96,11 @@ export default {
         font-size: 15px
       &-content
         margin-top: 30px
+    .en-style &.certificate &
+      &-name
+        height: 55px
+        span
+          width: calc( 100% - 10px )
 
 .certificate
   &-items
@@ -105,12 +120,14 @@ export default {
     text-align: center
     color: $orange
   @include rwd(960px)
-    &-items
-      margin: 0 -20px -30px -20px
     &-item
       width: calc( (100% - 80px)/2 )
       margin: 0 20px 30px 20px
     &-title
       margin-top: 20px
       font-size: 14px
+  @include rwd(540px)
+    &-item
+      width: calc( (100% - 60px)/2 )
+      margin: 0 15px 30px 15px
 </style>

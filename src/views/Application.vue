@@ -31,7 +31,8 @@
           .title {{$t(`${$route.name}.${$route.params.seats}.tab.title`)}}
           .tab
             .tab-action
-              a.tab-btn(href="#" :class="{'active': active == index}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.tab.content`)" @click.prevent="active = index" :key="index") {{item.name}}
+              a.tab-btn(href="#" :class="{'active': active == index}" v-for="item,index in $t(`${$route.name}.${$route.params.seats}.tab.content`)" @click.prevent="active = index" :key="index")
+                span {{item.name}}
             .tab-content
               template(v-for="item,index in $t(`${$route.name}.${$route.params.seats}.tab.content`)")
                 .graphicIntro(:class="{'certificate':index == '2'}" v-for="el,elIndex in item.data" v-if="active == index" :key="elIndex")
@@ -141,6 +142,9 @@ export default {
         color: #f0511d
         &:before
           background-color: #f0511d
+    .en-style &
+      &-items
+        padding: 0 30px
     @include rwd(960px)
       &-box
         text-align: center
@@ -174,7 +178,7 @@ export default {
     position: relative
     box-sizing: border-box
     width: 45%
-    padding: 8px
+    padding: 2%
     pointer-events: none
     &::after
       content: ''
@@ -275,6 +279,9 @@ export default {
     border: 1px solid #d53d26
     &+&
       margin-left: 90px
+    span
+      display: inline-block
+      width: 100%
 
     &.active
       color: #ffffff
@@ -298,7 +305,23 @@ export default {
         background-color: #f0511d
       &:nth-of-type(1)
         margin-left: 0
-
+  .en-style &
+    &-btn
+      position: relative
+      vertical-align: middle
+      width: 240px
+      height: 82px
+      letter-spacing: 0
+      span
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: calc( 100% - 32px )
+      &.solid
+        width: calc( (100% - 45px)/4 )
+        span
+          width: 100%
 
   @include rwd(960px)
     &-desc
@@ -322,6 +345,23 @@ export default {
         padding: 12px 8px
         &:nth-of-type(2n-1)
           margin-left: 0
+    .en-style &
+      &-btn
+        width: 132px
+        height: 55px
+        span
+          width: calc( 100% - 16px )
+        &.solid
+          display: inline-block
+          width: calc( (100% - 10px)/2 )
+          height: 80px
+          margin-left: 10px
+          margin-top: 10px
+          &:nth-of-type(2n-1)
+            margin-left: 0
+          span
+            padding: 12px 0
+
   @include rwd(540px)
     &-btn
       &.solid
@@ -334,9 +374,12 @@ export default {
           box-sizing: border-box
           width: 100%
           padding: 12px 8px
-
-    // &-content
-    //   margin-top: 20px
+    .en-style &
+      &-btn
+        display: block
+        margin: auto
+    .en-style &-btn + &-btn
+      margin-top: 10px
 
 .video
   position: relative
