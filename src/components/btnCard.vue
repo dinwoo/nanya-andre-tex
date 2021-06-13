@@ -120,4 +120,14 @@ export default {
     .en-style &.examples &
       &-content
         height: 75px
+
+.en-style
+  .btnCard
+    &-content
+      min-height: 175px
+      padding: 10px
+      @include rwd(960px)
+        min-height: 120px
+      @include rwd(374px)
+        min-height: 130px
 </style>
