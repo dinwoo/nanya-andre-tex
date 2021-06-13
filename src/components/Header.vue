@@ -74,7 +74,9 @@ header
 					include ../assets/pug/earth_svg.pug
 				p(
 					@click="isLangMenuOpen=!isLangMenuOpen"
-				) {{$t(`Header.lang`)}} : {{langTxt}} ▼
+				)
+					span(v-if="lang!='en'") {{$t(`Header.lang`)}} : 
+					| {{langTxt}} ▼
 				ul.subMenu(
 					v-if="isLangMenuOpen||screenWidth>960"
 				)
@@ -750,4 +752,13 @@ header
 					width: 250px
 				.close
 					right: 10px
+
+.en-style
+	header
+		.wrapper
+			.main
+				ul.mainMenu
+					li.mainItem
+						width: auto
+						margin: 0 10px
 </style>
