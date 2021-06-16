@@ -3695,4 +3695,9 @@ article
           display: none
         &:nth-of-type(2)
             display: block
+  .en-style &
+    .application
+      width: 732px
+      @include rwd(960px)
+        width: 46vw
 </style>
