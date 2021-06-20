@@ -367,7 +367,14 @@ export default {
           margin: auto
         &:nth-child(4)
           bottom: 0
-
+.en-style
+  .title
+      figure.thermometer-title
+        width: 940px
+        @include rwd(960px)
+          width: 740px
+        @include rwd(768px)
+          width: 57vw
 
 .recommend-block
   padding-bottom: 8%
@@ -3695,9 +3702,4 @@ article
           display: none
         &:nth-of-type(2)
             display: block
-  .en-style &
-    .application
-      width: 732px
-      @include rwd(960px)
-        width: 46vw
 </style>
