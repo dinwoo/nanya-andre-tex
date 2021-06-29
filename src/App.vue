@@ -22,6 +22,13 @@ export default {
   data() {
     return {};
   },
+  created() {
+    console.log(this.$route.params.lang)
+    if(this.$route.params.lang==undefined){
+			this.$router.push(`/zh/`)
+
+    }
+  },
   methods: {
     // 儲存切換的語系
     setLang(value) {
