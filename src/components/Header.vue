@@ -1,7 +1,7 @@
 <template lang="pug">
 header
 	.wrapper
-		a.nanya_logo(href="./")
+		router-link.nanya_logo(:to="{ name:'Home'}")
 			figure.pic
 				//- img(:src="compileFilePath('logo.jpg')" alt='')
 				img(src="@/assets/images/logo.png", alt="")
@@ -10,7 +10,7 @@ header
 		)
 			ul.mainMenu
 				li.mainItem 
-					router-link.mainA(to="/") {{$t(`Header.home`)}}
+					router-link.mainA(:to="{ name:'Home'}") {{$t(`Header.home`)}}
 				//- li.mainItem 
 				//- 	a.mainA(href="http://www.nanya-plastics-mall.com.tw") {{$t(`Header.plastics`)}}
 				li.mainItem(
@@ -25,19 +25,19 @@ header
 						:class="{'disnone':screenWidth>960}"
 					)
 						li.subItem
-							router-link.subA(to="/application/pipe") {{$t(`Header.pipe`)}}
+							router-link.subA(:to="{ name:'Application', params: { lang: this.lang ,seats: 'pipe' }}") {{$t(`Header.pipe`)}}
 						li.subItem
-							router-link.subA(to="/application/welding") {{$t(`Header.welding`)}}
+							router-link.subA(:to="{ name:'Application', params: { lang: this.lang ,seats: 'welding' }}") {{$t(`Header.welding`)}}
 						li.subItem
-							router-link.subA(to="/application/household") {{$t(`Header.household`)}}
+							router-link.subA(:to="{ name:'Application', params: { lang: this.lang ,seats: 'household' }}") {{$t(`Header.household`)}}
 						li.subItem
-							router-link.subA(to="/application/seats") {{$t(`Header.seats`)}}
+							router-link.subA(:to="{ name:'Application', params: { lang: this.lang ,seats: 'seats' }}") {{$t(`Header.seats`)}}
 						li.subItem
-							router-link.subA(to="/application/daily") {{$t(`Header.daily`)}}
+							router-link.subA(:to="{ name:'Application', params: { lang: this.lang ,seats: 'daily' }}") {{$t(`Header.daily`)}}
 						li.subItem
-							router-link.subA(to="/application/insulation") {{$t(`Header.insulation`)}}
+							router-link.subA(:to="{ name:'Application', params: { lang: this.lang ,seats: 'insulation' }}") {{$t(`Header.insulation`)}}
 						li.subItem
-							router-link.subA(to="/customize") {{$t(`Header.customize`)}}
+							router-link.subA(:to="{ name:'Customized', params: { lang: this.lang }}") {{$t(`Header.customize`)}}
 						li.subItem
 							a.subA.more(href="http://www.nanya-plastics-mall.com.tw" target="_blank") {{$t(`Header.more`)}}
 								|
@@ -45,7 +45,7 @@ header
 									img(src="@/assets/images/arrow.png", alt="")
 							img(src="@/assets/images/nanya-house.png", alt="")
 				li.mainItem 
-					router-link.mainA(to="/test") {{$t(`Header.test`)}}
+					router-link.mainA(:to="{ name:'FireTest'}") {{$t(`Header.test`)}}
 				li.mainItem(
 					:class="{'active':isCaseMenuOpen}"
 				)
@@ -58,17 +58,17 @@ header
 						:class="{'disnone':screenWidth>960}"
 					)
 						li.subItem
-							router-link.subA(to="/case/pipe") {{$t(`Header.pipe`)}}
+							router-link.subA(:to="{ name:'Examples', params: { lang: this.lang,pipe: 'pipe' }}") {{$t(`Header.pipe`)}}
 						li.subItem
-							router-link.subA(to="/case/welding") {{$t(`Header.welding`)}}
+							router-link.subA(:to="{ name:'Examples', params: { lang: this.lang,pipe: 'welding' }}") {{$t(`Header.welding`)}}
 						li.subItem
-							router-link.subA(to="/case/household") {{$t(`Header.household`)}}
+							router-link.subA(:to="{ name:'Examples', params: { lang: this.lang,pipe: 'household' }}") {{$t(`Header.household`)}}
 						li.subItem
-							router-link.subA(to="/case/seats") {{$t(`Header.seats`)}}
+							router-link.subA(:to="{ name:'Examples', params: { lang: this.lang,pipe: 'seats' }}") {{$t(`Header.seats`)}}
 				li.mainItem 
-					router-link.mainA(to="/certificate") {{$t(`Header.certificate`)}}
+					router-link.mainA(:to="{ name:'Certificate'}") {{$t(`Header.certificate`)}}
 				li.mainItem 
-					router-link.mainA(to="/contact") {{$t(`Header.contact`)}}
+					router-link.mainA(:to="{ name:'Contact'}") {{$t(`Header.contact`)}}
 			.lang(href="")
 				.svg_box
 					include ../assets/pug/earth_svg.pug
@@ -107,6 +107,7 @@ export default {
       isCaseMenuOpen: false,
       isLangMenuOpen: false,
       screenWidth: document.body.clientWidth,
+			timer: false
     };
   },
   computed: {
@@ -122,17 +123,15 @@ export default {
   },
   watch: {
     screenWidth(val) {
-      if (!this.timer) {
+			console.log(val)
+      // if (!this.timer) {
         this.screenWidth = val;
-        this.timer = true;
-        let that = this;
-        setTimeout(function() {
-          // that.screenWidth = that.$store.state.canvasWidth
-          console.log(that.screenWidth);
-          // that.init();
-          that.timer = false;
-        }, 400);
-      }
+        // this.timer = true;
+        // setTimeout(()=>{
+        //   console.log(this.screenWidth);
+        //   this.timer = false;
+        // }, 400);
+      // }
     },
     $route: function() {
       this.isHamOpen = false;
@@ -155,6 +154,7 @@ export default {
       this.$store.commit("setLang", value);
       this.$i18n.locale = value;
       localStorage.setItem("footmark-lang", value);
+			this.$router.push(`/${value}/`)
     },
     // findText(text) {
     //   return this.text;

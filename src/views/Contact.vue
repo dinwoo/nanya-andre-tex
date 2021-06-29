@@ -44,6 +44,15 @@
 				.row
 					label(for="") {{$t(`${$route.name}.form.message`)}}
 					textarea#txt(name="", :placeholder="$t(`${$route.name}.form.messagePlaceholder`)")
+				.row.verification-code
+					label(for="") {{$t(`${$route.name}.form.verificationCode`)}}
+					input#verificationCode(type="text")
+					.get-code
+						Identify(:identifyCode="identifyCode")
+					figure.refresh(
+						@click="refreshCode()"
+					)
+						img(src="@/assets/images/refresh.png")
 				.send_btn(@click="") {{$t(`${$route.name}.form.submit`)}}
 
 		section.map
@@ -52,12 +61,14 @@
 
 <script>
 import BannerSwiper from "@/components/BannerSwiper.vue";
+import Identify from "@/components/Identify.vue";
 // import Email from "../../public/assets/js/smtp";
 import emailjs from "emailjs-com";
 
 export default {
   components: {
     BannerSwiper,
+		Identify
   },
   data() {
     return {
@@ -69,8 +80,13 @@ export default {
           1: "banner-1-m.jpg",
         },
       ],
+			identifyCode: "",
+			identifyCodes: "0123456789abcdefghijklmnopqrstuvwxuzABCDEFGHIJKLMNOPQRSTUVWXYZ",
     };
   },
+	created() {
+		this.refreshCode()
+	},
   methods: {
     sendMail() {
       const templateParams = {
@@ -90,6 +106,20 @@ export default {
         }
       );
     },
+		refreshCode() {//
+			this.identifyCode = "";
+			this.makeCode(this.identifyCodes,4);
+		},
+		randomNum (min, max) {
+			max = max + 1
+			return Math.floor(Math.random() * (max - min) + min)
+		},
+		// 隨機生成驗證碼字符串
+		makeCode (data, len) {
+			for (let i = 0; i < len; i++) {
+				this.identifyCode += data[this.randomNum(0, data.length - 1)]
+			}
+		}
   },
 };
 </script>
@@ -326,6 +356,18 @@ article#contact
 					resize: none
 					height: 330px
 					vertical-align: top
+				&.verification-code
+					text-align: left
+					input
+						width: 120px
+						+dib
+					.get-code
+						margin: 0 10px
+						+dib
+					.refresh
+						width: 30px
+						cursor: pointer
+						+dib
 			.send_btn
 				width: 170px
 				padding: 19px 0

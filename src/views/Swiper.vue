@@ -6,6 +6,7 @@
       :dotNum = "3"
       :pictureLink="pictureArr[val].link"
       :key="val"
+      :pictureArrLength="pictureArr.length"
     )
       template(slot="option")
         .item(@click="val=0") aaa

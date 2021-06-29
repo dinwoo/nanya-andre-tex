@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "emailjs-com": "^2.6.3",
+    "identify": "^0.1.5",
     "swiper": "^6.3.5",
     "vue": "^2.6.11",
     "vue-cli-plugin-pug": "^1.0.7",

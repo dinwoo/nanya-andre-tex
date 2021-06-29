@@ -250,6 +250,7 @@ export default {
 .recommend-dots
   bottom: 0px
   li
+    width: 5%
     button
       &:before
         color: #eee

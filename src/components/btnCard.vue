@@ -58,8 +58,8 @@ export default {
   &-img
     overflow: hidden
   &-content
-    min-height: 100px
-    padding: 10px 18px
+    min-height: 140px
+    padding: 10px 19px
   &-title
     font-size: 26px
     font-weight: bold
@@ -68,6 +68,7 @@ export default {
     margin-top: 5px
     font-size: 18px
     text-align: left
+    line-height: 1.5
   &.examples
     margin: -20px
     text-align: left
@@ -102,7 +103,7 @@ export default {
           display: block
     &-content
       padding: 5px 10px
-      min-height: 60px
+      min-height: 90px
     &-title
       font-size: 14px
     &-desc
@@ -124,10 +125,12 @@ export default {
 .en-style
   .btnCard
     &-content
-      min-height: 175px
+      min-height: 275px
       padding: 10px
       @include rwd(960px)
-        min-height: 120px
+        min-height: 163px
       @include rwd(374px)
-        min-height: 130px
+        min-height: 180px
+    &-desc
+      text-align: left
 </style>

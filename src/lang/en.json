@@ -1,7 +1,7 @@
 {
   "Header": {
     "home": "Home",
-    "plastics": "南亞塑膠城",
+    "plastics": "南亞塑膠網絡商城",
     "application": "Application",
     "pipe": "Plastic Pipe",
     "welding": "Welding",
@@ -22,7 +22,7 @@
     "title2": "Product Information",
     "title3": "聯絡資訊",
     "title4": "Quick Link",
-    "plastics": "南亞塑膠城",
+    "plastics": "南亞塑膠網絡商城",
     "pipe": "Plastic Pipe",
     "welding": "Welding",
     "household": "House/Hotel",
@@ -32,7 +32,7 @@
     "customize": "Custom Development",
     "more": "more",
     "address": "台北市敦化北路201號台塑大樓3樓502室",
-    "copyright": "Copyright © 2019 南亞塑膠工業股份有限公司 All Rights Reserved.",
+    "copyright": "Copyright © 2021 南亞塑膠工業股份有限公司 All Rights Reserved.",
     "remind": "網站內之所有著作及資料，其著作權、專利權、商標、其他智慧財產權、所有權或其他權利，均為本企業所有，非經本企業合法授權，不得擅自重製、改作或以其他任何形式、基於任何目的加以使用。"
   },
   "Home": {
@@ -1431,6 +1431,7 @@
       "emailPlaceholder": "Please enter your email address",
       "message": "Your message",
       "messagePlaceholder": "The situation, suggestion, or consultation you want to respond.",
+      "verificationCode": "Verification",
       "submit": "Send out",
       "emailSelect": [
         {

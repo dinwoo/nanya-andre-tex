@@ -18,6 +18,7 @@
               :dotNum = "5"
               :pictureLink="pictureArr[val].link"
               :key="`${$route.params.pipe}-${val}`"
+              :pictureArrLength="pictureArr.length"
             )
               template(slot="option")
                 .option-items

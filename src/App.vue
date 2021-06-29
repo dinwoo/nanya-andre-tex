@@ -5,6 +5,10 @@
     Header
     router-view
     Footer
+    figure.go-top(
+      @click="goTop()"
+    )
+      img(src="@/assets/images/chevron-up.png", alt="")
 </template>
 
 <script>
@@ -25,6 +29,12 @@ export default {
       this.$i18n.locale = value;
       localStorage.setItem("footmark-lang", value);
     },
+    goTop(){
+      window.scrollTo({
+        top:0,
+        behavior:"smooth"
+      });
+    }
   },
   watch: {
     $route(to, from) {
@@ -56,4 +66,11 @@ export default {
     color: #2c3e50
     &.router-link-exact-active
       color: #42b983
+
+figure.go-top
+  width: 30px
+  cursor: pointer
+  position: fixed
+  bottom: 15px
+  right: 15px
 </style>

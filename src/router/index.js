@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Layout from "../Layout.vue";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Swiper from "../views/Swiper.vue";
@@ -18,42 +19,42 @@ const routes = [{
         component: Home,
     },
     {
-        path: "/about",
+        path: "about",
         name: "About",
         component: About,
     },
     {
-        path: "/swiper",
+        path: "swiper",
         name: "Swiper",
         component: Swiper,
     },
     {
-        path: "/application/:seats",
+        path: "application/:seats",
         name: "Application",
         component: Application,
     },
     {
-        path: "/customize",
+        path: "customize",
         name: "Customized",
         component: Customized,
     },
     {
-        path: "/test",
+        path: "test",
         name: "FireTest",
         component: FireTest,
     },
     {
-        path: "/case/:pipe",
+        path: "case/:pipe",
         name: "Examples",
         component: Examples,
     },
     {
-        path: "/certificate",
+        path: "certificate",
         name: "Certificate",
         component: Certificate,
     },
     {
-        path: "/contact",
+        path: "contact",
         name: "Contact",
         component: Contact,
     },
@@ -62,7 +63,22 @@ const routes = [{
 const router = new VueRouter({
     mode: "",
     base: process.env.BASE_URL,
-    routes,
+    routes:[
+        {
+            path:'/:lang',
+            component: Layout,
+            children: routes
+        },
+        // {
+        //     path:'/en',
+        //     component: Layout,
+        //     children: routes
+        // },{
+        //     path:'/ch',
+        //     component: Layout,
+        //     children: routes
+        // }
+    ],
 });
 
 export default router;

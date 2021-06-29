@@ -3,6 +3,7 @@
     .title {{title}}
     .sub-title {{subTitle}}
     .option-btn(
+      v-if="pictureArrLength>1"
       @click="showOption=!showOption"
     )
     .carousel-box
@@ -55,7 +56,7 @@ export default {
   components: {
     VueSlickCarousel,
   },
-  props: ["title", "subTitle", "dotNum", "pictureLink"],
+  props: ["title", "subTitle", "dotNum", "pictureLink","pictureArrLength"],
   data() {
     return {
       slidesToShow: 0,
@@ -124,7 +125,7 @@ export default {
     .option-box
       width: 100%
       padding: 15px
-      background-color: rgba(#fff,.55)
+      background-color: rgba(#fff,1)
       box-sizing: border-box
       box-shadow: 0px 16px 35px rgba(#000,.4)
       position: absolute
