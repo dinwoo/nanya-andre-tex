@@ -122,17 +122,17 @@ export default {
     },
   },
   watch: {
-    screenWidth(val) {
-			console.log(val)
-      // if (!this.timer) {
-        this.screenWidth = val;
-        // this.timer = true;
-        // setTimeout(()=>{
-        //   console.log(this.screenWidth);
-        //   this.timer = false;
-        // }, 400);
-      // }
-    },
+    // screenWidth(val) {
+		// 	console.log(val)
+    //   // if (!this.timer) {
+    //     this.screenWidth = val;
+    //     // this.timer = true;
+    //     // setTimeout(()=>{
+    //     //   console.log(this.screenWidth);
+    //     //   this.timer = false;
+    //     // }, 400);
+    //   // }
+    // },
     $route: function() {
       this.isHamOpen = false;
       this.isApplicationMenuOpen = false;
