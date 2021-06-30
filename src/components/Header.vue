@@ -98,6 +98,9 @@ header
 </template>
 
 <script>
+import {
+  mapState
+} from "vuex";
 // import "/public/assets/css/style.min.css";
 export default {
   data() {
@@ -106,11 +109,12 @@ export default {
       isApplicationMenuOpen: false,
       isCaseMenuOpen: false,
       isLangMenuOpen: false,
-      screenWidth: document.body.clientWidth,
+      // screenWidth: document.body.clientWidth,
 			timer: false
     };
   },
   computed: {
+    ...mapState(["screenWidth"]),
     langTxt() {
       if (this.lang == "en") {
         return "English";
@@ -140,13 +144,14 @@ export default {
     },
   },
   mounted() {
-    const that = this;
-    window.onresize = () => {
-      return (() => {
-        window.screenWidth = document.body.clientWidth;
-        that.screenWidth = window.screenWidth;
-      })();
-    };
+    // const that = this;
+    // window.onresize = () => {
+    //   return (() => {
+    //     window.screenWidth = document.body.clientWidth;
+    //     that.screenWidth = window.screenWidth;
+		// 		console.log(that.screenWidth)
+    //   })();
+    // };
   },
   methods: {
     // 儲存切換的語系

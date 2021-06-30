@@ -11,15 +11,38 @@ export default {
   components: {
   },
   data() {
-    return {};
+    return {
+      title: this.$t(`Meta.title`)
+    };
+  },
+  metaInfo() {
+    return{
+      meta: [
+        {
+          name:'title',
+          content: this.$t(`Meta.title`)},
+        {
+          name:'description',
+          content: this.$t(`Meta.description`)},
+        {
+          name:'keyword',
+          content: this.$t(`Meta.keyword`)
+        }
+      ]
+    }
   },
   computed: {
     ...mapState(["lang"])
   },
-  // beforeRouteEnter (to, from, next) {
-  //   console.log(to, from, next)
-  //   next()
-  // },
+  mounted() {
+    window.onresize = () => {
+      return (() => {
+        window.screenWidth = document.body.clientWidth;
+        this.$store.commit("setScreenWidth", window.screenWidth);
+        // that.screenWidth = window.screenWidth;
+      })();
+    };
+  },
   methods: {
   },
   watch: {

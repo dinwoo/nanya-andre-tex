@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import VueMeta from 'vue-meta';
 
 import { i18n } from './plugins/i18n'
 import mixinMethod from "@/mixins/index.js";
@@ -11,6 +12,7 @@ import VueImageView from "vue-directive-image-previewer";
 import "vue-directive-image-previewer/dist/assets/style.css";
 
 Vue.mixin(mixinMethod);
+Vue.use(VueMeta);
 
 router.afterEach(() => {
   window.scrollTo(0,300); //切换路由之后滚动条始终在最顶部

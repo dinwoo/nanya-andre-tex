@@ -12,6 +12,9 @@
 </template>
 
 <script>
+import {
+  mapState
+} from "vuex";
 import VueSlickCarousel from "vue-slick-carousel";
 // optional style for arrows & dots
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
@@ -38,34 +41,26 @@ export default {
       },
       slidesToShow: 0,
       showOption: false,
-      screenWidth: document.body.clientWidth,
+      // screenWidth: document.body.clientWidth,
       isMobile: document.body.clientWidth < 775,
     };
   },
   watch: {
     screenWidth(val) {
       this.isMobile = val < 775;
-      if (!this.timer) {
-        this.screenWidth = val;
-        this.timer = true;
-        let that = this;
-        setTimeout(function() {
-          // console.log(val);
-          that.timer = false;
-        }, 400);
-      }
     },
   },
   mounted() {
-    const that = this;
-    window.onresize = () => {
-      return (() => {
-        window.screenWidth = document.body.clientWidth;
-        that.screenWidth = window.screenWidth;
-      })();
-    };
+    // const that = this;
+    // window.onresize = () => {
+    //   return (() => {
+    //     window.screenWidth = document.body.clientWidth;
+    //     that.screenWidth = window.screenWidth;
+    //   })();
+    // };
   },
   computed: {
+    ...mapState(["screenWidth"]),
     linkIndex() {
       return this.isMobile ? 1 : 0;
     },
