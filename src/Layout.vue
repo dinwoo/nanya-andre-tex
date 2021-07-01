@@ -20,14 +20,24 @@ export default {
       meta: [
         {
           name:'title',
-          content: this.$t(`Meta.title`)},
+          content: this.$t(`Meta.title`)
+        },
         {
           name:'description',
-          content: this.$t(`Meta.description`)},
+          content: this.$t(`Meta.description`)
+        },
         {
           name:'keyword',
           content: this.$t(`Meta.keyword`)
-        }
+        },
+        {
+          name:'og:title',
+          content: this.$t(`Meta.title`)
+        },
+        {
+          name:'og:description',
+          content: this.$t(`Meta.description`)
+        },
       ]
     }
   },
