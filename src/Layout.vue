@@ -17,6 +17,7 @@ export default {
   },
   metaInfo() {
     return{
+      title: this.$t(`Meta.title`),
       meta: [
         {
           name:'title',
