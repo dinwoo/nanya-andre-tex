@@ -26,7 +26,9 @@ export default {
     console.log(this.$route.params.lang)
     if(this.$route.params.lang==undefined){
 			this.$router.push(`/zh/`)
-
+      this.setLang('zh')
+    }else{
+      this.setLang(this.$route.params.lang)
     }
   },
   methods: {
@@ -46,6 +48,10 @@ export default {
   watch: {
     $route(to, from) {
       console.log(to,from)
+      if(!to.params.lang){
+        this.$router.push(`/zh/`)
+        this.setLang('zh')
+      }
     }
   }
 };

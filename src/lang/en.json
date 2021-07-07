@@ -81,56 +81,62 @@
     ],
     "card": [
       {
-        "link": "/nanya-andre-tex/#/application/pipe",
+        "routeName": "Application",
+        "seats": "pipe",
         "img": "btnCard-1.jpg",
         "imgMob": "btnCard-1-m.jpg",
         "title": "Plastic Pipe",
         "desc": "Give you the best protection for your home and office"
       },
       {
-        "link": "/nanya-andre-tex/#/application/welding",
+        "routeName": "Application",
+        "seats": "welding",
         "img": "btnCard-2.jpg",
         "imgMob": "btnCard-2-m.jpg",
         "title": "Welding",
         "desc": "Fire blanket is resistant to pulling and prevents welding slag"
       },
       {
-        "link": "/nanya-andre-tex/#/application/household",
+        "routeName": "Application",
+        "seats": "household",
         "img": "btnCard-3.jpg",
         "imgMob": "btnCard-3-m.jpg",
         "title": "House/Hotel",
         "desc": "The best guard for home and hotel fire protection"
       },
       {
-        "link": "/nanya-andre-tex/#/application/seats",
+        "routeName": "Application",
+        "seats": "seats",
         "img": "btnCard-4.jpg",
         "imgMob": "btnCard-4-m.jpg",
         "title": "Seat Lining",
         "desc": "Passed BS certifications and ISO 5660:2015 tests"
       },
       {
-        "link": "/nanya-andre-tex/#/application/daily",
+        "routeName": "Application",
+        "seats": "daily",
         "img": "btnCard-5.jpg",
         "imgMob": "btnCard-5-m.jpg",
         "title": "Air Duct",
         "desc": "Air duct fire protection, fire protection coating"
       },
       {
-        "link": "/nanya-andre-tex/#/application/insulation",
+        "routeName": "Application",
+        "seats": "insulation",
         "img": "btnCard-6.jpg",
         "imgMob": "btnCard-6-m.jpg",
         "title": "Wire Line",
         "desc": "The first choice for fireproofing, insulation of wire Line"
       },
       {
-        "link": "/nanya-andre-tex/#/customize",
+        "routeName": "Customized",
         "img": "btnCard-7.jpg",
         "imgMob": "btnCard-7-m.jpg",
         "title": "Custom Development",
         "desc": "Provide customized development and problem solving"
       },
       {
-        "link": "/nanya-andre-tex/#/test",
+        "routeName": "FireTest",
         "img": "btnCard-8.jpg",
         "imgMob": "btnCard-8-m.jpg",
         "title": "Fire Test",

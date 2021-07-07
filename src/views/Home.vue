@@ -167,7 +167,7 @@
                 v-html="product.description"
               )
     .contact-block
-      router-link.wrapper(to="/contact")
+      router-link.wrapper(:to="{ name:'Contact'}")
         .title {{ $t(`${$route.name}.contact.title`) }}
         figure.contact
           img(src="@/assets/images/home-contact.png")

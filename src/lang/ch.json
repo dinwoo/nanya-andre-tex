@@ -81,56 +81,63 @@
     ],
     "card": [
       {
-        "link": "/nanya-andre-tex/#/application/pipe",
+        "routeName": "Application",
+        "routeName": "Application",
+        "seats": "pipe",
         "img": "btnCard-1.jpg",
         "imgMob": "btnCard-1-m.jpg",
         "title": "塑胶管材",
         "desc": "给你住家、办公大楼最好的防护"
       },
       {
-        "link": "/nanya-andre-tex/#/application/welding",
+        "routeName": "Application",
+        "seats": "welding",
         "img": "btnCard-2.jpg",
         "imgMob": "btnCard-2-m.jpg",
         "title": "电焊用",
         "desc": "防火毯耐拉扯、阻拦电焊熔渣飞溅"
       },
       {
-        "link": "/nanya-andre-tex/#/application/household",
+        "routeName": "Application",
+        "seats": "household",
         "img": "btnCard-3.jpg",
         "imgMob": "btnCard-3-m.jpg",
         "title": "家庭/饭店",
         "desc": "家庭、饭店防火安全防护最佳守卫"
       },
       {
-        "link": "/nanya-andre-tex/#/application/seats",
+        "routeName": "Application",
+        "seats": "seats",
         "img": "btnCard-4.jpg",
         "imgMob": "btnCard-4-m.jpg",
         "title": "座椅内用",
         "desc": "通过多项BS国际认证与 ISO 5660:2015测试"
       },
       {
-        "link": "/nanya-andre-tex/#/application/daily",
+        "routeName": "Application",
+        "seats": "daily",
         "img": "btnCard-5.jpg",
         "imgMob": "btnCard-5-m.jpg",
         "title": "排风管",
         "desc": "排风管防火、防水包覆"
       },
       {
-        "link": "/nanya-andre-tex/#/application/insulation",
+        "routeName": "Application",
+        "seats": "insulation",
         "img": "btnCard-6.jpg",
         "imgMob": "btnCard-6-m.jpg",
         "title": "电线管路",
         "desc": "电线管路防火、耐燃绝缘、 防水的首选"
       },
       {
-        "link": "/nanya-andre-tex/#/customize",
+        "routeName": "Customized",
         "img": "btnCard-7.jpg",
         "imgMob": "btnCard-7-m.jpg",
         "title": "客制开发",
         "desc": "提供定制开发，问题解决方案"
       },
       {
-        "link": "/nanya-andre-tex/#/test",
+        "routeName": "FireTest",
         "img": "btnCard-8.jpg",
         "imgMob": "btnCard-8-m.jpg",
         "title": "防火测试",

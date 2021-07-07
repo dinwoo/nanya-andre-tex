@@ -81,56 +81,62 @@
     ],
     "card": [
       {
-        "link": "/nanya-andre-tex/#/application/pipe",
+        "routeName": "Application",
+        "seats": "pipe",
         "img": "btnCard-1.jpg",
         "imgMob": "btnCard-1-m.jpg",
         "title": "塑膠管材",
         "desc": "給你住家、辦公大樓最好的防護"
       },
       {
-        "link": "/nanya-andre-tex/#/application/welding",
+        "routeName": "Application",
+        "seats": "welding",
         "img": "btnCard-2.jpg",
         "imgMob": "btnCard-2-m.jpg",
         "title": "電焊用",
         "desc": "防火毯耐拉扯、阻攔電焊熔渣飛濺"
       },
       {
-        "link": "/nanya-andre-tex/#/application/household",
+        "routeName": "Application",
+        "seats": "household",
         "img": "btnCard-3.jpg",
         "imgMob": "btnCard-3-m.jpg",
         "title": "家庭/飯店",
         "desc": "家庭、飯店防火安全防護最佳守衛"
       },
       {
-        "link": "/nanya-andre-tex/#/application/seats",
+        "routeName": "Application",
+        "seats": "seats",
         "img": "btnCard-4.jpg",
         "imgMob": "btnCard-4-m.jpg",
         "title": "座椅內用",
         "desc": "通過多項BS國際認證與  ISO 5660:2015測試"
       },
       {
-        "link": "/nanya-andre-tex/#/application/daily",
+        "routeName": "Application",
+        "seats": "daily",
         "img": "btnCard-5.jpg",
         "imgMob": "btnCard-5-m.jpg",
         "title": "排風管",
         "desc": "排風管防火、防水包覆"
       },
       {
-        "link": "/nanya-andre-tex/#/application/insulation",
+        "routeName": "Application",
+        "seats": "insulation",
         "img": "btnCard-6.jpg",
         "imgMob": "btnCard-6-m.jpg",
         "title": "電線管路",
         "desc": "電線管路防火、耐燃絕緣、 防水的首選"
       },
       {
-        "link": "/nanya-andre-tex/#/customize",
+        "routeName": "Customized",
         "img": "btnCard-7.jpg",
         "imgMob": "btnCard-7-m.jpg",
         "title": "客製開發",
         "desc": "提供定製開發，問題解決方案"
       },
       {
-        "link": "/nanya-andre-tex/#/test",
+        "routeName": "FireTest",
         "img": "btnCard-8.jpg",
         "imgMob": "btnCard-8-m.jpg",
         "title": "防火測試",

@@ -21,13 +21,13 @@ footer
 			.content.product
 				.title {{$t(`Footer.title2`)}}
 				.link_box
-					router-link.item(to="/application/pipe") {{$t(`Footer.pipe`)}}
-					router-link.item(to="/application/welding") {{$t(`Footer.welding`)}}
-					router-link.item(to="/application/household") {{$t(`Footer.household`)}}
-					router-link.item(to="/application/seats") {{$t(`Footer.seats`)}}
-					router-link.item(to="/application/daily") {{$t(`Footer.daily`)}}
-					router-link.item(to="/application/insulation") {{$t(`Footer.insulation`)}}
-					router-link.item(to="/customize") {{$t(`Footer.customize`)}}
+					router-link.item(:to="{ name:'Application', params: { lang: this.lang ,seats: 'pipe' }}") {{$t(`Footer.pipe`)}}
+					router-link.item(:to="{ name:'Application', params: { lang: this.lang ,seats: 'welding' }}") {{$t(`Footer.welding`)}}
+					router-link.item(:to="{ name:'Application', params: { lang: this.lang ,seats: 'household' }}") {{$t(`Footer.household`)}}
+					router-link.item(:to="{ name:'Application', params: { lang: this.lang ,seats: 'seats' }}") {{$t(`Footer.seats`)}}
+					router-link.item(:to="{ name:'Application', params: { lang: this.lang ,seats: 'daily' }}") {{$t(`Footer.daily`)}}
+					router-link.item(:to="{ name:'Application', params: { lang: this.lang ,seats: 'insulation' }}") {{$t(`Footer.insulation`)}}
+					router-link.item(:to="{ name:'Customized', params: { lang: this.lang }}") {{$t(`Footer.customize`)}}
 					a.item.more(href="http://www.nanya-plastics-mall.com.tw" target="_blank") {{$t(`Footer.more`)}}
 						|
 						span.arrow
