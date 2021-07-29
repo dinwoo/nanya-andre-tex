@@ -13,13 +13,15 @@
           .thermometer(
             :style="`background-image:url('${compileFilePath(thermometerMobileLink)}')`"
           )
-          .change-btn(@click="thermometerMobileLink='thermometer-img8-1.png'")
-          .change-btn(@click="thermometerMobileLink='thermometer-img8-2.png'")
-          .change-btn(@click="thermometerMobileLink='thermometer-img8-3.png'")
+          .change-btn(@click="thermometerMobileLink=`${temperatureUnit}-thermometer-img8-1.png`")
+          .change-btn(@click="thermometerMobileLink=`${temperatureUnit}-thermometer-img8-2.png`")
+          .change-btn(@click="thermometerMobileLink=`${temperatureUnit}-thermometer-img8-3.png`")
+          .change-unit(@click="changeUnit")
         .content
+          .change-unit(@click="changeUnit")
           .top
             .item(
-              @mouseenter="thermometerLink='thermometer-img7-3.jpg'"
+              @mouseenter="thermometerLink=`${temperatureUnit}-thermometer-img7-3.jpg`"
             )
               .pic-box
                 figure.pic
@@ -32,11 +34,11 @@
                     span 2
                   p.detail {{ $t(`${$route.name}.thermometer[0].detail3`) }}
               figure.name
-                img(:src="compileFilePath(`thermometer-img1-2.png`)")
+                img(:src="compileFilePath(`${temperatureUnit}-thermometer-img1-2.png`)")
               figure.arrow
                 img(:src="compileFilePath(`thermometer-arrow-1.png`)")
             .item(
-              @mouseenter="thermometerLink='thermometer-img7-2.jpg'"
+              @mouseenter="thermometerLink=`${temperatureUnit}-thermometer-img7-2.jpg`"
             )
               .pic-box
                 figure.pic
@@ -49,11 +51,11 @@
                     span 2
                   p.detail {{ $t(`${$route.name}.thermometer[1].detail3`) }}
               figure.name
-                img(:src="compileFilePath(`thermometer-img2-2.png`)")
+                img(:src="compileFilePath(`${temperatureUnit}-thermometer-img2-2.png`)")
               figure.arrow
                 img(:src="compileFilePath(`thermometer-arrow-1.png`)")
             .item(
-              @mouseenter="thermometerLink='thermometer-img7-1.jpg'"
+              @mouseenter="thermometerLink=`${temperatureUnit}-thermometer-img7-1.jpg`"
             )
               .pic-box
                 figure.pic
@@ -66,7 +68,7 @@
                     span 2
                   p.detail {{ $t(`${$route.name}.thermometer[2].detail3`) }}
               figure.name
-                img(:src="compileFilePath(`thermometer-img3-2.png`)")
+                img(:src="compileFilePath(`${temperatureUnit}-thermometer-img3-2.png`)")
               figure.arrow
                 img(:src="compileFilePath(`thermometer-arrow-1.png`)")
           .thermometer(
@@ -74,7 +76,7 @@
           )
           .bottom
             .item(
-              @mouseenter="thermometerLink='thermometer-img7-3.jpg'"
+              @mouseenter="thermometerLink=`${temperatureUnit}-thermometer-img7-3.jpg`"
             )
               figure.arrow
                 img(:src="compileFilePath(`thermometer-arrow-2.png`)")
@@ -89,9 +91,9 @@
                     span 2
                   p.detail {{ $t(`${$route.name}.thermometer[3].detail3`) }}
               figure.name
-                img(:src="compileFilePath(`thermometer-img4-2.png`)")
+                img(:src="compileFilePath(`${temperatureUnit}-thermometer-img4-2.png`)")
             .item(
-              @mouseenter="thermometerLink='thermometer-img7-2.jpg'"
+              @mouseenter="thermometerLink=`${temperatureUnit}-thermometer-img7-2.jpg`"
             )
               figure.arrow
                 img(:src="compileFilePath(`thermometer-arrow-2.png`)")
@@ -106,9 +108,9 @@
                     span 2
                   p.detail {{ $t(`${$route.name}.thermometer[4].detail3`) }}
               figure.name
-                img(:src="compileFilePath(`thermometer-img5-2.png`)")
+                img(:src="compileFilePath(`${temperatureUnit}-thermometer-img5-2.png`)")
             .item(
-              @mouseenter="thermometerLink='thermometer-img7-1.jpg'"
+              @mouseenter="thermometerLink=`${temperatureUnit}-thermometer-img7-1.jpg`"
             )
               figure.arrow
                 img(:src="compileFilePath(`thermometer-arrow-2.png`)")
@@ -123,7 +125,7 @@
                     span 2
                   p.detail {{ $t(`${$route.name}.thermometer[5].detail3`) }}
               figure.name
-                img(:src="compileFilePath(`thermometer-img6-2.png`)")
+                img(:src="compileFilePath(`${temperatureUnit}-thermometer-img6-2.png`)")
             
 
 
@@ -192,6 +194,7 @@ export default {
   },
   data() {
     return {
+      temperatureUnit:'c',
       bannerLink: [
         {
           1: "banner-tc1.jpg",
@@ -208,8 +211,8 @@ export default {
           5: "banner-tc5-m.jpg",
         },
       ],
-      thermometerLink: "thermometer-img7-1.jpg",
-      thermometerMobileLink: "thermometer-img8-1.png",
+      thermometerLink: `c-thermometer-img7-1.jpg`,
+      thermometerMobileLink: `c-thermometer-img8-1.png`,
       recommendLink: [
         "recommed-img1.jpg", 
         "recommed-img2.jpg",
@@ -235,11 +238,25 @@ export default {
       recommendSlickIndex: 0,
     };
   },
+  watch:{
+    temperatureUnit(val){
+      console.log(val)
+      this.thermometerLink= `${val}-thermometer-img7-1.jpg`;
+      this.thermometerMobileLink= `${val}-thermometer-img8-1.png`;
+    }
+  },
   methods: {
     changeIndex(index) {
       let sum = this.$t(`${this.$route.name}.recommend.product`).length;
       this.recommendSlickIndex = (index + 1 + sum) % sum;
     },
+    changeUnit(){
+      if(this.temperatureUnit=='c'){
+        this.temperatureUnit='f';
+      }else if(this.temperatureUnit=='f'){
+        this.temperatureUnit='c';
+      }
+    }
   },
 };
 </script>
@@ -279,6 +296,18 @@ export default {
   .content
     width: 100%
     position: relative
+    .change-unit
+      content: ''
+      display: block
+      width: 15%
+      height: 25%
+      position: absolute
+      top: 6%
+      bottom: 0
+      right: 0
+      margin: auto
+      cursor: pointer
+      z-index: 2
     .top
       padding-bottom: 11%
       position: relative
@@ -349,6 +378,16 @@ export default {
     .mobile-content
       display: block
       position: relative
+      .change-unit
+        content: ''
+        display: block
+        width: 60%
+        height: 10%
+        position: absolute
+        top: 0
+        left: 0
+        cursor: pointer
+        z-index: 2
       .thermometer
         width: 100%
         padding-bottom: 208.8%

@@ -125,12 +125,12 @@ export default {
 .en-style
   .btnCard
     &-content
-      min-height: 275px
+      min-height: 145px
       padding: 10px
       @include rwd(960px)
-        min-height: 163px
+        min-height: 90px
       @include rwd(374px)
-        min-height: 180px
+        min-height: 110px
     &-desc
       text-align: left
 </style>
