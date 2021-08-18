@@ -1244,7 +1244,7 @@
       },
       "tr3": {
         "item": "南亚",
-        "source": "树林厂开发防火毯",
+        "source": "南亚防火毯",
         "temperature": "635℃",
         "time": "2 min",
         "status": "不延烧、无熔融、无废气产生、1000℃↑有碳化现象。"
@@ -1253,7 +1253,7 @@
         "temperature": "1100℃"
       },
       "tr5": {
-        "source": "树林厂开发防火毯",
+        "source": "南亚防火毯",
         "species": "电焊焊渣<br><span class='note'>(掉落高度40cm)</span>",
         "temperature": "1070℃",
         "time": "30sec",

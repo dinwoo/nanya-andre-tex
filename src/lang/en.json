@@ -1243,7 +1243,7 @@
       },
       "tr3": {
         "item": "Nan Ya",
-        "source": "Ander-tex fire barrier",
+        "source": "NanYa Fire Barrier",
         "temperature": "635℃",
         "time": "2 min",
         "status": "Flameless, no melting, no gas generation, carbonization phenomenon at 1000℃↑."
@@ -1252,7 +1252,7 @@
         "temperature": "1100℃"
       },
       "tr5": {
-        "source": "Ander-tex fire barrier",
+        "source": "NanYa Fire Barrier",
         "species": "Welding Slag<br><span class='note'>(Drop height 40cm)</span>",
         "temperature": "1070℃",
         "time": "30sec",
