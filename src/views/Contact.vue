@@ -68,7 +68,7 @@ import emailjs from "emailjs-com";
 export default {
   components: {
     BannerSwiper,
-		Identify
+    Identify,
   },
   data() {
     return {
@@ -80,13 +80,14 @@ export default {
           1: "banner-1-m.jpg",
         },
       ],
-			identifyCode: "",
-			identifyCodes: "0123456789abcdefghijklmnopqrstuvwxuzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      identifyCode: "",
+      identifyCodes:
+        "0123456789abcdefghijklmnopqrstuvwxuzABCDEFGHIJKLMNOPQRSTUVWXYZ",
     };
   },
-	created() {
-		this.refreshCode()
-	},
+  created() {
+    this.refreshCode();
+  },
   methods: {
     sendMail() {
       const templateParams = {
@@ -106,20 +107,21 @@ export default {
         }
       );
     },
-		refreshCode() {//
-			this.identifyCode = "";
-			this.makeCode(this.identifyCodes,4);
-		},
-		randomNum (min, max) {
-			max = max + 1
-			return Math.floor(Math.random() * (max - min) + min)
-		},
-		// 隨機生成驗證碼字符串
-		makeCode (data, len) {
-			for (let i = 0; i < len; i++) {
-				this.identifyCode += data[this.randomNum(0, data.length - 1)]
-			}
-		}
+    refreshCode() {
+      //
+      this.identifyCode = "";
+      this.makeCode(this.identifyCodes, 4);
+    },
+    randomNum(min, max) {
+      max = max + 1;
+      return Math.floor(Math.random() * (max - min) + min);
+    },
+    // 隨機生成驗證碼字符串
+    makeCode(data, len) {
+      for (let i = 0; i < len; i++) {
+        this.identifyCode += data[this.randomNum(0, data.length - 1)];
+      }
+    },
   },
 };
 </script>
@@ -207,12 +209,13 @@ article#contact
 					margin-bottom: 30px
 					+fontP
 				p.contact_txt
-					width: 280px
-					padding: 8px 0
+					width: 290px
+					padding: 8px
 					background-color: $orange
 					display: inline-block
 					font-size: 17px
 					color: #fff
+					text-align: left
 					& + p.contact_txt
 						margin-top: 10px
 				p.name
@@ -237,7 +240,7 @@ article#contact
 						// margin-bottom: 30px
 						font-size: 18px
 					p.contact_txt
-						width: 220px
+						width: 250px
 						// padding: 8px 0
 						font-size: 15px
 						& + p.contact_txt
