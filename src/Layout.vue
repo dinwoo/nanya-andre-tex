@@ -4,46 +4,43 @@
 </template>
 
 <script>
-import {
-  mapState
-} from "vuex";
+import { mapState } from "vuex";
 export default {
-  components: {
-  },
+  components: {},
   data() {
     return {
-      title: this.$t(`Meta.title`)
+      title: this.$t(`${this.$route.name}.meta.title`),
     };
   },
   metaInfo() {
-    return{
-      title: this.$t(`Meta.title`),
+    return {
+      title: this.$t(`${this.$route.name}.meta.title`),
       meta: [
         {
-          name:'title',
-          content: this.$t(`Meta.title`)
+          name: "title",
+          content: this.$t(`Meta.title`),
         },
         {
-          name:'description',
-          content: this.$t(`Meta.description`)
+          name: "description",
+          content: this.$t(`Meta.description`),
         },
         {
-          name:'keyword',
-          content: this.$t(`Meta.keyword`)
+          name: "keyword",
+          content: this.$t(`Meta.keyword`),
         },
         {
-          name:'og:title',
-          content: this.$t(`Meta.title`)
+          name: "og:title",
+          content: this.$t(`Meta.title`),
         },
         {
-          name:'og:description',
-          content: this.$t(`Meta.description`)
+          name: "og:description",
+          content: this.$t(`Meta.description`),
         },
-      ]
-    }
+      ],
+    };
   },
   computed: {
-    ...mapState(["lang"])
+    ...mapState(["lang"]),
   },
   mounted() {
     window.onresize = () => {
@@ -54,10 +51,8 @@ export default {
       })();
     };
   },
-  methods: {
-  },
-  watch: {
-  }
+  methods: {},
+  watch: {},
 };
 </script>
 
