@@ -47,15 +47,56 @@ export default {
       ],
       active: 0,
       val: 0,
-      pictureArr: this.$t(`${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`),
+      pictureArr: this.$t(
+        `${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`
+      ),
+    };
+  },
+  metaInfo() {
+    return {
+      title: this.$t(`Meta.title`),
+      meta: [
+        {
+          name: "title",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.pipe}.meta.title`
+          ),
+        },
+        {
+          name: "description",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.pipe}.meta.description`
+          ),
+        },
+        {
+          name: "keyword",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.pipe}.meta.keyword`
+          ),
+        },
+        {
+          name: "og:title",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.pipe}.meta.title`
+          ),
+        },
+        {
+          name: "og:description",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.pipe}.meta.description`
+          ),
+        },
+      ],
     };
   },
   watch: {
-    '$route.params.pipe':function () {
-      this.val = 0
+    "$route.params.pipe": function() {
+      this.val = 0;
     },
     lang() {
-      this.pictureArr = this.$t(`${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`);
+      this.pictureArr = this.$t(
+        `${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`
+      );
     },
     $route() {
       this.bannerLink = [
@@ -66,8 +107,10 @@ export default {
           1: this.$t(`${this.$route.params.pipe}/banner-1-m.jpg`),
         },
       ];
-      this.pictureArr = this.$t(`${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`);
-    }
+      this.pictureArr = this.$t(
+        `${this.$route.name}.${this.$route.params.pipe}.Swiper.pic`
+      );
+    },
   },
   methods: {
     cardVal: function(card) {
@@ -75,7 +118,7 @@ export default {
     },
     valChange: function(swiperVal) {
       return (this.val = swiperVal);
-    }
+    },
   },
 };
 </script>
@@ -130,5 +173,4 @@ export default {
         text-align: left
         &:nth-of-type(3n+1)
           margin-top: 15px
-
 </style>

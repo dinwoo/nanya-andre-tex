@@ -42,9 +42,9 @@
   },
   "Home": {
     "meta": {
-      "title": "NanYa-Andre-tex-index",
-      "description": "Andre-tex以耐燃纖維為原料，應用不織布技術製成防火毯，通過CNS防焰、耐燃一級和國外各測試，用於電銲、家庭、座椅、建築等。",
-      "keyword": "防火毯,防火材,電銲防火毯,耐燃一級,不燃材,隔熱毯,消防毯"
+      "title": "NanYa-Andre-tex",
+      "description": "Andre-tex uses flame-resistant fiber with non-woven technology to make fire barrier, passed many fire tests for welding, homes, seats, buildings, etc.",
+      "keyword": "Fire Blanket,Fireproof material,Welding blanket,Class 1 flame resistance,Non-combustible materials,Insulation blanket,Fire barrier"
     },
     "thermometer": [
       {
@@ -163,6 +163,11 @@
   },
   "Application": {
     "pipe": {
+      "meta": {
+        "title": "NAN YA Plastic pipe-coated fireproof material-- Professional production for various pipe-coated.",
+        "description": "NAN YA Plastic- Pipe-coated fireproof material can resist  instantaneous combustion to 1200℃and long time to 350℃~450℃ with non-combustible, non-melting, low smoke emission, and non-toxic. It is applied to plastic pipes coating, exhaust pipes coating, engineering coating, steel structure coating and wire coating and pipeline coating applications.",
+        "keyword": "Plastic pipe coating, Exhaust pipe coating, Wire pipe coating, Engineering coating, Steel structure coating."
+      },
       "title": "Plastic Pipe",
       "text": "Article 247 of the building technical rules stipulates that the pipes of high-rise buildings must be made of non-combustible materials, or be covered with non-combustible materials. Andre-tex P coated with plastic pipes can meets the requirements. It is characterized by light load, high water pressure resistance, easy construction and low price.",
       "subTitle": "Buildings, shopping malls",
@@ -263,6 +268,11 @@
       }
     },
     "household": {
+      "meta": {
+        "title": "Nan Ya Fireproof Blanket: Fireproof blandket for vehicles and people's livelihood .",
+        "description": "NAN YA Plastic-pipe- Fireproof blanket can resist long-time combustion betwerrn 350℃and 450℃ with no burning, no melting, low smoke, and non-toxic.Due to good performance, easy processing, wide range application, beautiful appearance, colorfulness and other physical property, it used for fireproof of people's livelihood and vehicles.",
+        "keyword": "Home fireproof, Car fireproof, Restaurant fireproof, Seat fireproof, Electric welding fireproof blanket, Fireproof blanket,,"
+      },
       "title": "House/Hotel",
       "text": "Andre-tex H is easy to store, it can be covered and isolated from the air until the fire is extinguished. The process is completely non-toxic. It instantly extinguishes common home fire sources and is the basic equipment for future homes.",
       "subTitle": "Used in House, Hotel and Kitchen",
@@ -381,6 +391,11 @@
       }
     },
     "daily": {
+      "meta": {
+        "title": "NAN YA Plastic pipe-coated fireproof material-- Professional production for various pipe-coated.",
+        "description": "NAN YA Plastic- Pipe-coated fireproof material can resist  instantaneous combustion to 1200℃and long time to 350℃~450℃ with non-combustible, non-melting, low smoke emission, and non-toxic. It is applied to plastic pipes coating, exhaust pipes coating, engineering coating, steel structure coating and wire coating and pipeline coating applications.",
+        "keyword": "Plastic pipe coating, Exhaust pipe coating, Wire pipe coating, Engineering coating, Steel structure coating."
+      },
       "title": "Air Duct",
       "text": "When a fire occurs, the air duct will become a channel for the flames to rush, so it is quite necessary to do a good job of fire prevention of the air duct for fire safety.",
       "subTitle": "Air duct, Exhaust pipe",
@@ -464,6 +479,11 @@
       }
     },
     "insulation": {
+      "meta": {
+        "title": "NAN YA Plastic pipe-coated fireproof material-- Professional production for various pipe-coated.",
+        "description": "NAN YA Plastic- Pipe-coated fireproof material can resist  instantaneous combustion to 1200℃and long time to 350℃~450℃ with non-combustible, non-melting, low smoke emission, and non-toxic. It is applied to plastic pipes coating, exhaust pipes coating, engineering coating, steel structure coating and wire coating and pipeline coating applications.",
+        "keyword": "Plastic pipe coating, Exhaust pipe coating, Wire pipe coating, Engineering coating, Steel structure coating."
+      },
       "title": "Wire Line",
       "text": "In addition to the CNS14705-1 flame retardant certification, the dielectric breakdown strength of insulation can reach 11kV, and impedance plethysmograph  is greater than 6x10^14 Ω. It is an excellent material with fireproof, waterproof and insulating properties.",
       "subTitle": "Wire fire protection, Busway, Smoke shutters",
@@ -552,6 +572,11 @@
       }
     },
     "seats": {
+      "meta": {
+        "title": "Nan Ya Fireproof Blanket: Fireproof blandket for vehicles and people's livelihood .",
+        "description": "NAN YA Plastic-pipe- Fireproof blanket can resist long-time combustion betwerrn 350℃and 450℃ with no burning, no melting, low smoke, and non-toxic.Due to good performance, easy processing, wide range application, beautiful appearance, colorfulness and other physical property, it used for fireproof of people's livelihood and vehicles.",
+        "keyword": "Home fireproof, Car fireproof, Restaurant fireproof, Seat fireproof, Electric welding fireproof blanket, Fireproof blanket,,"
+      },
       "title": "Seat Lining",
       "text": "The fireproof blanket is sewn into the seat lining to prevent the fire from spreading and increase the evacuation time when a fire accident occurs. The fireproof material is clipped to the seat lining, which can pass BS certifications and ISO 5660:2015.",
       "subTitle": "Public transportation, indoor seats",
@@ -741,6 +766,11 @@
       }
     },
     "welding": {
+      "meta": {
+        "title": "Nan Ya Fireproof Blanket: Fireproof blandket for vehicles and people's livelihood .",
+        "description": "NAN YA Plastic-pipe- Fireproof blanket can resist long-time combustion betwerrn 350℃and 450℃ with no burning, no melting, low smoke, and non-toxic.Due to good performance, easy processing, wide range application, beautiful appearance, colorfulness and other physical property, it used for fireproof of people's livelihood and vehicles.",
+        "keyword": "Home fireproof, Car fireproof, Restaurant fireproof, Seat fireproof, Electric welding fireproof blanket, Fireproof blanket,,"
+      },
       "title": "Welding",
       "text": "Andre-tex W can withstand 1,200 degrees of instantaneous ignition, and has passed the CNS flame-proof level I and the highest level of smoke poisoning test in Europe.",
       "subTitle": "Chemical Plants, Factories, Steel Plants",
@@ -869,6 +899,11 @@
   },
   "Examples": {
     "pipe": {
+      "meta": {
+        "title": "NAN YA Plastic pipe-coated fireproof material-- Professional production for various pipe-coated.",
+        "description": "NAN YA Plastic- Pipe-coated fireproof material can resist  instantaneous combustion to 1200℃and long time to 350℃~450℃ with non-combustible, non-melting, low smoke emission, and non-toxic. It is applied to plastic pipes coating and exhaust pipes coating applications.",
+        "keyword": "Plastic pipe coating, Exhaust pipe coating, Wire pipe coating, Engineering coating, Steel structure coating."
+      },
       "title": "Plastic Pipe",
       "card": [
         {
@@ -962,6 +997,11 @@
       }
     },
     "welding": {
+      "meta": {
+        "title": "Nan Ya Fireproof Blanket: Fireproof blandket for electric welding.",
+        "description": "NAN YA Plastic- Pipe-coated fireproof material can resist  instantaneous combustion to 1200℃and long time to 350℃~450℃ with non-combustible, non-melting, low smoke emission, and non-toxic. It is applied to engineering case, steel structure case and electric welding applications.",
+        "keyword": "Electric welding fireproof blanket, Fireproof blanket,,"
+      },
       "title": "Welding",
       "card": [
         {
@@ -1058,6 +1098,11 @@
       }
     },
     "household": {
+      "meta": {
+        "title": "Nan Ya Fireproof Blanket: Fireproof blanket for people's livelihood .",
+        "description": "NAN YA Plastic-pipe- Fireproof blanket can resist long-time combustion betwerrn 350℃and 450℃ with no burning, no melting, low smoke, and non-toxic. Due to good performance, easy processing, wide range application, beautiful appearance, colorfulness and other physical property, it used for fireproof of people's livelihood.",
+        "keyword": "Home fireproof, Restaurant fireproof, Hotel fireproof, livelifood fireproof."
+      },
       "title": "House/Hotel",
       "card": [
         {
@@ -1106,6 +1151,11 @@
       }
     },
     "seats": {
+      "meta": {
+        "title": "Nan Ya Fireproof Blanket: Fireproof blandket for vehicles.",
+        "description": "NAN YA Plastic-pipe- Fireproof blanket can resist long-time combustion betwerrn 350℃and 450℃ with no burning, no melting, low smoke, and non-toxic. Due to good performance, easy processing, wide range application, beautiful appearance, colorfulness and other physical property, it used for fireproof of vehicles.",
+        "keyword": "Car fireproof, Seat fireproof, ttransportation fireproof, high speed train fireproof"
+      },
       "title": "Seat Lining",
       "card": [
         {
@@ -1155,6 +1205,11 @@
     }
   },
   "FireTest": {
+    "meta": {
+      "title": "NAN YA Plastic-Fireproof material possessed inspection standards and quality certification that specializd in fireproof production",
+      "description": "NAN YA Plastic possessed several fireproof certifications in Taiwan and Germany such as fire resistance (Taiwan: CNS 10285 L3196, Germany: DIN4102-1&EN13501-1), flame resistance (Taiwan: CNS 7614 A3125) and oxygen limiting index (Taiwan: ASTM D2863), etc. ",
+      "keyword": "Quality certification, Inspection standards"
+    },
     "tab": {
       "title": "Fire barrier test",
       "desc": "Tested by the PIDC and rated as Level 1. It can resist 1200℃ for instantaneous combustion and 350～450℃ for a long time. It has the characteristics of non-combustion and non-melting. The incineration process won't produce toxic gas, and there is no secondary pollution. It can be used for safety protection such as fire blankets, flame-resistant covering and heat-resistant mat.",
@@ -1304,6 +1359,11 @@
     }
   },
   "Certificate": {
+    "meta": {
+      "title": "NAN YA Plastic-Fireproof material possessed inspection standards and quality certification that specializd in fireproof production",
+      "description": "NAN YA Plastic possessed several fireproof certifications in Taiwan and Germany such as fire resistance (Taiwan: CNS 10285 L3196, Germany: DIN4102-1&EN13501-1), flame resistance (Taiwan: CNS 7614 A3125) and oxygen limiting index (Taiwan: ASTM D2863), etc. ",
+      "keyword": "Quality certification, Inspection standards"
+    },
     "content": [
       {
         "btnImg": "tab01.jpg",
@@ -1424,6 +1484,11 @@
     ]
   },
   "Contact": {
+    "meta": {
+      "title": "NAN YA Plastic│Fireproof material sample book, catalog download,and purchasing procedure",
+      "description": "From raw material inspection to factory production, NAN YA Plastic has formed a complete production system in the field of fireproof material. We are pleased to cooperate any potential dealer.",
+      "keyword": "Fireproof material sample book, Catalog download, Purchasing procedure"
+    },
     "info": {
       "person": "Contact: Chieh-Yu Pang",
       "phone": "Phone: +886-2-2712-2211#6222",
@@ -1483,6 +1548,13 @@
           "name": "Other"
         }
       ]
+    }
+  },
+  "Customized": {
+    "meta": {
+      "title": "NAN YA Plastic is a professional production producer for fireproof material.",
+      "description": "NAN YA Plastic expands domestic and overseas sales in the series of fireproof materials, and continues to explore customized and differentiated products to enhance product value.",
+      "keyword": "Customization of fireproof material"
     }
   }
 }

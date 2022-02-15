@@ -9,34 +9,7 @@ export default {
   components: {},
   data() {
     return {
-      title: this.$t(`${this.$route.name}.meta.title`),
-    };
-  },
-  metaInfo() {
-    return {
-      title: this.$t(`${this.$route.name}.meta.title`),
-      meta: [
-        {
-          name: "title",
-          content: this.$t(`Meta.title`),
-        },
-        {
-          name: "description",
-          content: this.$t(`Meta.description`),
-        },
-        {
-          name: "keyword",
-          content: this.$t(`Meta.keyword`),
-        },
-        {
-          name: "og:title",
-          content: this.$t(`Meta.title`),
-        },
-        {
-          name: "og:description",
-          content: this.$t(`Meta.description`),
-        },
-      ],
+      title: this.$t(`Meta.title`),
     };
   },
   computed: {

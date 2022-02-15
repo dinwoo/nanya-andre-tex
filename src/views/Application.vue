@@ -71,15 +71,56 @@ export default {
       ],
       active: 0,
       val: 0,
-      pictureArr: this.$t(`${this.$route.name}.${this.$route.params.seats}.Swiper.pic`),
+      pictureArr: this.$t(
+        `${this.$route.name}.${this.$route.params.seats}.Swiper.pic`
+      ),
+    };
+  },
+  metaInfo() {
+    return {
+      title: this.$t(`Meta.title`),
+      meta: [
+        {
+          name: "title",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.seats}.meta.title`
+          ),
+        },
+        {
+          name: "description",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.seats}.meta.description`
+          ),
+        },
+        {
+          name: "keyword",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.seats}.meta.keyword`
+          ),
+        },
+        {
+          name: "og:title",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.seats}.meta.title`
+          ),
+        },
+        {
+          name: "og:description",
+          content: this.$t(
+            `${this.$route.name}.${this.$route.params.seats}.meta.description`
+          ),
+        },
+      ],
     };
   },
   watch: {
-    '$route.params.seats':function () {
-      this.val = 0
+    "$route.params.seats": function() {
+      this.val = 0;
     },
     lang() {
-      this.pictureArr = this.$t(`${this.$route.name}.${this.$route.params.seats}.Swiper.pic`);
+      this.pictureArr = this.$t(
+        `${this.$route.name}.${this.$route.params.seats}.Swiper.pic`
+      );
     },
     $route() {
       this.bannerLink = [
@@ -90,8 +131,10 @@ export default {
           1: this.$t(`${this.$route.params.seats}/banner-1-m.jpg`),
         },
       ];
-      this.pictureArr = this.$t(`${this.$route.name}.${this.$route.params.seats}.Swiper.pic`);
-    }
+      this.pictureArr = this.$t(
+        `${this.$route.name}.${this.$route.params.seats}.Swiper.pic`
+      );
+    },
   },
   methods: {},
 };

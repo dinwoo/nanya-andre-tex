@@ -30,6 +30,33 @@ export default {
       ],
     };
   },
+  metaInfo() {
+    return {
+      title: this.$t(`Meta.title`),
+      meta: [
+        {
+          name: "title",
+          content: this.$t(`${this.$route.name}.meta.title`),
+        },
+        {
+          name: "description",
+          content: this.$t(`${this.$route.name}.meta.description`),
+        },
+        {
+          name: "keyword",
+          content: this.$t(`${this.$route.name}.meta.keyword`),
+        },
+        {
+          name: "og:title",
+          content: this.$t(`${this.$route.name}.meta.title`),
+        },
+        {
+          name: "og:description",
+          content: this.$t(`${this.$route.name}.meta.description`),
+        },
+      ],
+    };
+  },
   methods: {},
 };
 </script>

@@ -194,7 +194,7 @@ export default {
   },
   data() {
     return {
-      temperatureUnit:'c',
+      temperatureUnit: "c",
       bannerLink: [
         {
           1: "banner-tc1.jpg",
@@ -214,7 +214,7 @@ export default {
       thermometerLink: `c-thermometer-img7-1.jpg`,
       thermometerMobileLink: `c-thermometer-img8-1.png`,
       recommendLink: [
-        "recommed-img1.jpg", 
+        "recommed-img1.jpg",
         "recommed-img2.jpg",
         "recommed-img3.jpg",
         "recommed-img4.jpg",
@@ -224,7 +224,7 @@ export default {
         "recommed-img8.jpg",
         "recommed-img9.jpg",
         "recommed-img10.jpg",
-        ],
+      ],
       settings: {
         dots: true,
         dotsClass: "slick-dots custom-dot-class recommend-dots",
@@ -238,25 +238,52 @@ export default {
       recommendSlickIndex: 0,
     };
   },
-  watch:{
-    temperatureUnit(val){
-      console.log(val)
-      this.thermometerLink= `${val}-thermometer-img7-1.jpg`;
-      this.thermometerMobileLink= `${val}-thermometer-img8-1.png`;
-    }
+  metaInfo() {
+    return {
+      title: this.$t(`Meta.title`),
+      meta: [
+        {
+          name: "title",
+          content: this.$t(`${this.$route.name}.meta.title`),
+        },
+        {
+          name: "description",
+          content: this.$t(`${this.$route.name}.meta.description`),
+        },
+        {
+          name: "keyword",
+          content: this.$t(`${this.$route.name}.meta.keyword`),
+        },
+        {
+          name: "og:title",
+          content: this.$t(`${this.$route.name}.meta.title`),
+        },
+        {
+          name: "og:description",
+          content: this.$t(`${this.$route.name}.meta.description`),
+        },
+      ],
+    };
+  },
+  watch: {
+    temperatureUnit(val) {
+      console.log(val);
+      this.thermometerLink = `${val}-thermometer-img7-1.jpg`;
+      this.thermometerMobileLink = `${val}-thermometer-img8-1.png`;
+    },
   },
   methods: {
     changeIndex(index) {
       let sum = this.$t(`${this.$route.name}.recommend.product`).length;
       this.recommendSlickIndex = (index + 1 + sum) % sum;
     },
-    changeUnit(){
-      if(this.temperatureUnit=='c'){
-        this.temperatureUnit='f';
-      }else if(this.temperatureUnit=='f'){
-        this.temperatureUnit='c';
+    changeUnit() {
+      if (this.temperatureUnit == "c") {
+        this.temperatureUnit = "f";
+      } else if (this.temperatureUnit == "f") {
+        this.temperatureUnit = "c";
       }
-    }
+    },
   },
 };
 </script>
