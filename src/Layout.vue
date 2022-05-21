@@ -12,6 +12,13 @@ export default {
       title: this.$t(`Meta.title`),
     };
   },
+  metaInfo() {
+    return {
+      htmlAttrs: {
+        lang: this.$t(`Meta.lang`),
+      },
+    };
+  },
   computed: {
     ...mapState(["lang"]),
   },
