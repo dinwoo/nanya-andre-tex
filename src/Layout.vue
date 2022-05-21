@@ -17,6 +17,12 @@ export default {
       htmlAttrs: {
         lang: this.$t(`Meta.lang`),
       },
+      meta: [
+        {
+          name: "og:image",
+          content: this.compileFilePath("banner-tc5.jpg"),
+        },
+      ],
     };
   },
   computed: {
